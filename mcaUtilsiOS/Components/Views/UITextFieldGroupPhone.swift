@@ -1,0 +1,76 @@
+//
+//  UITextFieldGroupPhone.swift
+//  MiClaro
+//
+//  Created by Fernando Rodriguez Minguet on 07/06/18.
+//  Copyright © 2018 am. All rights reserved.
+//
+
+import UIKit
+import Cartography
+
+class UITextFieldGroupPhone : UIView {
+    
+    var textField : SimpleGrayTextField = SimpleGrayTextField(text: "", placeholder: "")
+    var countryCode : UILabel = {
+        let label = UILabel(frame: .zero)
+        label.font = UIFont(name: RobotoFontName.RobotoBold.rawValue, size: 14.0)
+        label.textAlignment = .center
+        return label
+    }()
+    var image   : UIImageView = UIImageView(frame: .zero)
+    var mandatoryInformation : MandatoryInformation = MandatoryInformation(frame: .zero)
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupElements()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setupElements() {
+        self.addSubview(textField)
+        self.addSubview(image)
+        self.addSubview(countryCode)
+        self.addSubview(mandatoryInformation)
+        setupConstraints()
+    }
+    
+    private func setupConstraints() {
+        constrain(self, self.image, textField, countryCode, mandatoryInformation) { (view, img, text, label, mandatory) in
+            
+            img.leading == view.leading
+            img.bottom == label.bottom
+            img.width == 22.0
+            img.height == 22.0
+            
+            label.leading == img.trailing + 5.0
+            label.bottom == text.bottom
+            label.width == 50.0
+            label.height == 30.0
+            
+            text.leading == label.trailing + 8.0
+            text.trailing == view.trailing
+            text.top == view.top
+            text.height == 40.0
+            
+            mandatory.top == text.bottom + 4.0
+            mandatory.height == 16.0
+            mandatory.leading == text.leading
+            mandatory.trailing == view.trailing
+        }
+    }
+    
+    func setupContent(imageName: String?, text: String?, placeHolder : String?, countryCodeText : String?){
+        image.image = UIImage(named: imageName!)
+        textField.title = text != nil ? text! : ""
+        textField.placeholder = placeHolder != nil ? placeHolder! : ""
+        countryCode.text = countryCodeText != nil ? countryCodeText! : ""
+    }
+    
+    func changeFont(font: UIFont) {
+        textField.customFont = font
+    }
+}
