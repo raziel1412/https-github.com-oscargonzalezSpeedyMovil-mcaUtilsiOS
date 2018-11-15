@@ -1035,9 +1035,9 @@
 		62522BBF219CE61900EA4F7A /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				625231C8219CF36800EA4F7A /* Cards */,
 				62522BC0219CE61900EA4F7A /* ListOptionsVC.swift */,
 				62522DCD219CE61900EA4F7A /* ListOptionsVC.xib */,
+				625231C8219CF36800EA4F7A /* Cards */,
 				62522BC1219CE61900EA4F7A /* Models */,
 				62522DCE219CE61900EA4F7A /* Views */,
 			);
