@@ -545,6 +545,7 @@
 		627F0F57219E004900ED0249 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F28219E004900ED0249 /* Appearance.swift */; };
 		627F0F58219E004900ED0249 /* spinMiClaro.json in Resources */ = {isa = PBXBuildFile; fileRef = 627F0F2A219E004900ED0249 /* spinMiClaro.json */; };
 		627F0F59219E004900ED0249 /* spinMiClaro2.json in Resources */ = {isa = PBXBuildFile; fileRef = 627F0F2B219E004900ED0249 /* spinMiClaro2.json */; };
+		627F0F5C219E00FC00ED0249 /* ReachabilityManual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F5B219E00FC00ED0249 /* ReachabilityManual.swift */; };
 		6287465A219CD9B200C53384 /* mcaUtilsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62874650219CD9B200C53384 /* mcaUtilsiOS.framework */; };
 		6287465F219CD9B200C53384 /* mcaUtilsiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6287465E219CD9B200C53384 /* mcaUtilsiOSTests.swift */; };
 		62874661219CD9B200C53384 /* mcaUtilsiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 62874653219CD9B200C53384 /* mcaUtilsiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1099,6 +1100,7 @@
 		627F0F28219E004900ED0249 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 		627F0F2A219E004900ED0249 /* spinMiClaro.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spinMiClaro.json; sourceTree = "<group>"; };
 		627F0F2B219E004900ED0249 /* spinMiClaro2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spinMiClaro2.json; sourceTree = "<group>"; };
+		627F0F5B219E00FC00ED0249 /* ReachabilityManual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManual.swift; sourceTree = "<group>"; };
 		62874650219CD9B200C53384 /* mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62874653219CD9B200C53384 /* mcaUtilsiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mcaUtilsiOS.h; sourceTree = "<group>"; };
 		62874654219CD9B200C53384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -3192,29 +3194,30 @@
 		627F0EF8219E004900ED0249 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				627F0EF9219E004900ED0249 /* HexColorExtension.swift */,
-				627F0EFA219E004900ED0249 /* ALCameraViewController */,
-				627F0F14219E004900ED0249 /* NewUpdateAlertViewController.swift */,
-				627F0F15219E004900ED0249 /* Extension + UIViewController.swift */,
-				627F0F16219E004900ED0249 /* SessionSingleton.swift */,
-				627F0F17219E004900ED0249 /* NewUpdateAlertViewController.xib */,
-				627F0F18219E004900ED0249 /* UILabelExtension.swift */,
-				627F0F19219E004900ED0249 /* CustomAlertViewController.swift */,
-				627F0F1A219E004900ED0249 /* GooglePlacesSearchController.swift */,
-				627F0F1B219E004900ED0249 /* Localizable.strings */,
 				627F0F1C219E004900ED0249 /* MiClaro-Bridging-Header.h */,
+				627F0F1B219E004900ED0249 /* Localizable.strings */,
 				627F0F1D219E004900ED0249 /* AnalyticsInteractionSingleton.swift */,
-				627F0F1E219E004900ED0249 /* ViewExtension.swift */,
-				627F0F1F219E004900ED0249 /* WebViewAlertViewController.swift */,
-				627F0F20219E004900ED0249 /* ImageViewExtension.swift */,
-				627F0F21219E004900ED0249 /* PlanDetailAlertViewController.swift */,
-				627F0F22219E004900ED0249 /* WebServicesWithObjects.swift */,
-				627F0F23219E004900ED0249 /* Observers.swift */,
-				627F0F24219E004900ED0249 /* GeneralUtils.swift */,
-				627F0F25219E004900ED0249 /* StringExtension.swift */,
-				627F0F26219E004900ED0249 /* Extension+UIView.swift */,
-				627F0F27219E004900ED0249 /* Extension+Date.swift */,
 				627F0F28219E004900ED0249 /* Appearance.swift */,
+				627F0F19219E004900ED0249 /* CustomAlertViewController.swift */,
+				627F0F15219E004900ED0249 /* Extension + UIViewController.swift */,
+				627F0F27219E004900ED0249 /* Extension+Date.swift */,
+				627F0F26219E004900ED0249 /* Extension+UIView.swift */,
+				627F0F24219E004900ED0249 /* GeneralUtils.swift */,
+				627F0F1A219E004900ED0249 /* GooglePlacesSearchController.swift */,
+				627F0EF9219E004900ED0249 /* HexColorExtension.swift */,
+				627F0F20219E004900ED0249 /* ImageViewExtension.swift */,
+				627F0F14219E004900ED0249 /* NewUpdateAlertViewController.swift */,
+				627F0F23219E004900ED0249 /* Observers.swift */,
+				627F0F21219E004900ED0249 /* PlanDetailAlertViewController.swift */,
+				627F0F16219E004900ED0249 /* SessionSingleton.swift */,
+				627F0F25219E004900ED0249 /* StringExtension.swift */,
+				627F0F18219E004900ED0249 /* UILabelExtension.swift */,
+				627F0F1E219E004900ED0249 /* ViewExtension.swift */,
+				627F0F22219E004900ED0249 /* WebServicesWithObjects.swift */,
+				627F0F1F219E004900ED0249 /* WebViewAlertViewController.swift */,
+				627F0F17219E004900ED0249 /* NewUpdateAlertViewController.xib */,
+				627F0EFA219E004900ED0249 /* ALCameraViewController */,
+				627F0F5A219E00FC00ED0249 /* Network */,
 				627F0F29219E004900ED0249 /* Spinners */,
 			);
 			name = Utils;
@@ -3281,6 +3284,14 @@
 				627F0F2B219E004900ED0249 /* spinMiClaro2.json */,
 			);
 			path = Spinners;
+			sourceTree = "<group>";
+		};
+		627F0F5A219E00FC00ED0249 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				627F0F5B219E00FC00ED0249 /* ReachabilityManual.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		62874646219CD9B200C53384 = {
@@ -3726,6 +3737,7 @@
 				62522F75219CE61A00EA4F7A /* WarningView.swift in Sources */,
 				627F0F3C219E004900ED0249 /* ConfirmViewController.swift in Sources */,
 				62522ECB219CE61A00EA4F7A /* Home.swift in Sources */,
+				627F0F5C219E00FC00ED0249 /* ReachabilityManual.swift in Sources */,
 				62522E68219CE61A00EA4F7A /* RechargeHistory.swift in Sources */,
 				62522E10219CE61900EA4F7A /* RetrieveProfileInformationResponse.swift in Sources */,
 				62522EDC219CE61A00EA4F7A /* HelpOnlineDynamicOptions.swift in Sources */,
