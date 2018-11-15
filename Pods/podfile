@@ -3,12 +3,12 @@ platform :ios, '8.0'
 # Uncomment this line if you're using Swift
 # use_frameworks!
 workspace 'mcaWorkspaceiOSCL'
-workspace 'mcaWorkspaceiOSCENAM'
-project '/mcaLoginiOS/mcaLoginiOS.xcodeproj'
-project '/mcaManageriOS/mcaManageriOS.xcodeproj'
+#workspace 'mcaWorkspaceiOSCENAM'
+#project '/mcaLoginiOS/mcaLoginiOS.xcodeproj'
+#project '/mcaManageriOS/mcaManageriOS.xcodeproj'
 project '/mcaUtilsiOS/mcaUtilsiOS.xcodeproj'
-project '/mcaWelcomeiOS/mcaWelcomeiOS.xcodeproj'
-project '/mcaWorkspaceiOSCENAM/mcaiOSCENAM.xcodeproj'
+#project '/mcaWelcomeiOS/mcaWelcomeiOS.xcodeproj'
+#project '/mcaWorkspaceiOSCENAM/mcaiOSCENAM.xcodeproj'
 project '/mcaWorkspaceiOSCL/mcaiOSCL.xcodeproj'
 
 def project_pods
@@ -39,23 +39,23 @@ def project_pods
     pod 'SwiftyJSON'
 end
 
-target 'mcaLoginiOS' do
-    platform :ios, '9.0'
-    use_frameworks!
-    project '../../mcaLoginiOS/mcaLoginiOS.xcodeproj'
-    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
-    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
-    project_pods
-end
+#target 'mcaLoginiOS' do
+#    platform :ios, '9.0'
+#    use_frameworks!
+#    project '../../mcaLoginiOS/mcaLoginiOS.xcodeproj'
+#    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+#    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+#    project_pods
+#end
 
-target 'mcaManageriOS' do
-    platform :ios, '9.0'
-    use_frameworks!
-    project '../../mcaManageriOS/mcaManageriOS.xcodeproj'
-    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
-    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
-    project_pods
-end
+#target 'mcaManageriOS' do
+#    platform :ios, '9.0'
+#    use_frameworks!
+#    project '../../mcaManageriOS/mcaManageriOS.xcodeproj'
+#    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+#    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+#    project_pods
+#end
 
 target 'mcaUtilsiOS' do
     platform :ios, '9.0'
@@ -66,23 +66,23 @@ target 'mcaUtilsiOS' do
     project_pods
 end
 
-target 'mcaWelcomeiOS' do
-    platform :ios, '9.0'
-    use_frameworks!
-    project '../../mcaWelcomeiOS/mcaWelcomeiOS.xcodeproj'
-    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
-    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
-    project_pods
-end
-
-target 'mcaiOSCENAM' do
-   platform :ios, '9.0'
-   use_frameworks!
-   project '../../mcaWorkspaceiOSCENAM/mcaiOSCENAM/mcaiOSCENAM.xcodeproj'
-   workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
-   #workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
-   project_pods
-end
+#target 'mcaWelcomeiOS' do
+#    platform :ios, '9.0'
+#    use_frameworks!
+#    project '../../mcaWelcomeiOS/mcaWelcomeiOS.xcodeproj'
+#    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+#    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+#    project_pods
+#end
+#
+#target 'mcaiOSCENAM' do
+#   platform :ios, '9.0'
+#   use_frameworks!
+#   project '../../mcaWorkspaceiOSCENAM/mcaiOSCENAM/mcaiOSCENAM.xcodeproj'
+#   workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+#   #workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+#   project_pods
+#end
 
 target 'mcaiOSCL' do
    platform :ios, '9.0'
