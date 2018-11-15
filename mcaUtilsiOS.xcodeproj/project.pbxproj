@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50916FA9B8B50EA870C2BC6E /* Pods_mcaUtilsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170AEF6659E0C1B563ED2A8C /* Pods_mcaUtilsiOS.framework */; };
 		62522E0A219CE61900EA4F7A /* ListOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62522BC0219CE61900EA4F7A /* ListOptionsVC.swift */; };
 		62522E0B219CE61900EA4F7A /* SendBillNotificationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62522BC4219CE61900EA4F7A /* SendBillNotificationResult.swift */; };
 		62522E0C219CE61900EA4F7A /* SendBillNotificationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62522BC5219CE61900EA4F7A /* SendBillNotificationResponse.swift */; };
@@ -450,6 +451,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		170AEF6659E0C1B563ED2A8C /* Pods_mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62522BC0219CE61900EA4F7A /* ListOptionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOptionsVC.swift; sourceTree = "<group>"; };
 		62522BC4219CE61900EA4F7A /* SendBillNotificationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendBillNotificationResult.swift; sourceTree = "<group>"; };
 		62522BC5219CE61900EA4F7A /* SendBillNotificationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendBillNotificationResponse.swift; sourceTree = "<group>"; };
@@ -883,6 +885,8 @@
 		62874659219CD9B200C53384 /* mcaUtilsiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mcaUtilsiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6287465E219CD9B200C53384 /* mcaUtilsiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mcaUtilsiOSTests.swift; sourceTree = "<group>"; };
 		62874660219CD9B200C53384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		652D227E294C8DDFD4A6583D /* Pods-mcaUtilsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.debug.xcconfig"; path = "../mcaWorkspaceiOSCL/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F1CF92E730F665769834163E /* Pods-mcaUtilsiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.release.xcconfig"; path = "../mcaWorkspaceiOSCL/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -890,6 +894,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50916FA9B8B50EA870C2BC6E /* Pods_mcaUtilsiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -904,6 +909,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ABA20FE799B6879AC113E81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				170AEF6659E0C1B563ED2A8C /* Pods_mcaUtilsiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		62522BBF219CE61900EA4F7A /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -2768,6 +2781,8 @@
 				62874652219CD9B200C53384 /* mcaUtilsiOS */,
 				6287465D219CD9B200C53384 /* mcaUtilsiOSTests */,
 				62874651219CD9B200C53384 /* Products */,
+				E18B7A3FD62D50D680B60D1D /* Pods */,
+				0ABA20FE799B6879AC113E81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2801,6 +2816,15 @@
 			path = mcaUtilsiOSTests;
 			sourceTree = "<group>";
 		};
+		E18B7A3FD62D50D680B60D1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				652D227E294C8DDFD4A6583D /* Pods-mcaUtilsiOS.debug.xcconfig */,
+				F1CF92E730F665769834163E /* Pods-mcaUtilsiOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -2820,10 +2844,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62874664219CD9B200C53384 /* Build configuration list for PBXNativeTarget "mcaUtilsiOS" */;
 			buildPhases = (
+				34D557EC61548A48BA3E4151 /* [CP] Check Pods Manifest.lock */,
 				6287464B219CD9B200C53384 /* Headers */,
 				6287464C219CD9B200C53384 /* Sources */,
 				6287464D219CD9B200C53384 /* Frameworks */,
 				6287464E219CD9B200C53384 /* Resources */,
+				23C91456447769EC7D209451 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2924,6 +2950,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23C91456447769EC7D209451 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../mcaWorkspaceiOSCL/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Resources/Localizations.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Localizations.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../mcaWorkspaceiOSCL/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34D557EC61548A48BA3E4151 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mcaUtilsiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6287464C219CD9B200C53384 /* Sources */ = {
@@ -3410,7 +3477,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -3468,7 +3535,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -3482,6 +3549,7 @@
 		};
 		62874665219CD9B200C53384 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 652D227E294C8DDFD4A6583D /* Pods-mcaUtilsiOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -3491,6 +3559,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = mcaUtilsiOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3499,13 +3568,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = test1.mcaUtilsiOS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		62874666219CD9B200C53384 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1CF92E730F665769834163E /* Pods-mcaUtilsiOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -3515,6 +3585,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = mcaUtilsiOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3523,7 +3594,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = test1.mcaUtilsiOS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -3541,7 +3612,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = test1.mcaUtilsiOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -3559,7 +3630,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = test1.mcaUtilsiOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
