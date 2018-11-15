@@ -435,6 +435,70 @@
 		62522FC4219CE62900EA4F7A /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62522FB3219CE62900EA4F7A /* Roboto-Thin.ttf */; };
 		62522FC5219CE62900EA4F7A /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62522FB4219CE62900EA4F7A /* Roboto-Black.ttf */; };
 		62522FC7219CE6BF00EA4F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62522FC6219CE6BF00EA4F7A /* Assets.xcassets */; };
+		62523218219CF36900EA4F7A /* CardBalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231CA219CF36800EA4F7A /* CardBalanceView.swift */; };
+		62523219219CF36900EA4F7A /* CardBalanceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625231CB219CF36800EA4F7A /* CardBalanceView.xib */; };
+		6252321A219CF36900EA4F7A /* AccountManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231CC219CF36800EA4F7A /* AccountManagement.swift */; };
+		6252321B219CF36900EA4F7A /* CardTitleSummaryPlan.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625231CE219CF36800EA4F7A /* CardTitleSummaryPlan.xib */; };
+		6252321C219CF36900EA4F7A /* CardTitleSummaryPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231CF219CF36800EA4F7A /* CardTitleSummaryPlan.swift */; };
+		6252321D219CF36900EA4F7A /* PopupSelectSubscriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625231D1219CF36800EA4F7A /* PopupSelectSubscriptionViewController.xib */; };
+		6252321E219CF36900EA4F7A /* PopupSelectSubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231D2219CF36800EA4F7A /* PopupSelectSubscriptionViewController.swift */; };
+		6252321F219CF36900EA4F7A /* CardButtonBoletaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625231D4219CF36800EA4F7A /* CardButtonBoletaView.xib */; };
+		62523220219CF36900EA4F7A /* CardButtonBoletaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231D5219CF36800EA4F7A /* CardButtonBoletaView.swift */; };
+		62523221219CF36900EA4F7A /* ViewExpand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231D6219CF36800EA4F7A /* ViewExpand.swift */; };
+		62523222219CF36900EA4F7A /* cardContentSummaryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231D8219CF36800EA4F7A /* cardContentSummaryDetailView.swift */; };
+		62523223219CF36900EA4F7A /* CardSummaryDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625231D9219CF36800EA4F7A /* CardSummaryDetailView.xib */; };
+		62523224219CF36900EA4F7A /* cardContentSummaryDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625231DA219CF36800EA4F7A /* cardContentSummaryDetailView.xib */; };
+		62523225219CF36900EA4F7A /* CardSummaryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231DB219CF36800EA4F7A /* CardSummaryDetailView.swift */; };
+		62523226219CF36900EA4F7A /* CardDetailDataText.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625231DD219CF36800EA4F7A /* CardDetailDataText.xib */; };
+		62523227219CF36900EA4F7A /* CardDetailDataTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231DE219CF36800EA4F7A /* CardDetailDataTable.swift */; };
+		62523228219CF36900EA4F7A /* CardDetailDataGraphic.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625231DF219CF36800EA4F7A /* CardDetailDataGraphic.xib */; };
+		62523229219CF36900EA4F7A /* CardDetailDataSaldo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231E0219CF36800EA4F7A /* CardDetailDataSaldo.swift */; };
+		6252322A219CF36900EA4F7A /* CardDetailDataTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625231E1219CF36800EA4F7A /* CardDetailDataTableCell.xib */; };
+		6252322B219CF36900EA4F7A /* CardDetailDataGraphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231E2219CF36800EA4F7A /* CardDetailDataGraphic.swift */; };
+		6252322C219CF36900EA4F7A /* CardDetailDataSaldo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625231E3219CF36800EA4F7A /* CardDetailDataSaldo.xib */; };
+		6252322D219CF36900EA4F7A /* CardDetailDataTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625231E4219CF36800EA4F7A /* CardDetailDataTable.xib */; };
+		6252322E219CF36900EA4F7A /* CardDetailDataText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231E5219CF36800EA4F7A /* CardDetailDataText.swift */; };
+		6252322F219CF36900EA4F7A /* CardDetailDataTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231E6219CF36800EA4F7A /* CardDetailDataTableCell.swift */; };
+		62523230219CF36900EA4F7A /* CardsTelevisionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231E8219CF36800EA4F7A /* CardsTelevisionModel.swift */; };
+		62523231219CF36900EA4F7A /* CardsInternetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231E9219CF36800EA4F7A /* CardsInternetModel.swift */; };
+		62523232219CF36900EA4F7A /* CardsInternetManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231EA219CF36800EA4F7A /* CardsInternetManagement.swift */; };
+		62523233219CF36900EA4F7A /* CardsTodoClaroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231EB219CF36800EA4F7A /* CardsTodoClaroModel.swift */; };
+		62523234219CF36900EA4F7A /* CardSuscriptionManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231EC219CF36800EA4F7A /* CardSuscriptionManagement.swift */; };
+		62523235219CF36900EA4F7A /* CardsSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231ED219CF36800EA4F7A /* CardsSummaryModel.swift */; };
+		62523236219CF36900EA4F7A /* CardsTodoClaroManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231EE219CF36800EA4F7A /* CardsTodoClaroManagement.swift */; };
+		62523237219CF36900EA4F7A /* CardsSummaryManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231EF219CF36800EA4F7A /* CardsSummaryManagement.swift */; };
+		62523238219CF36900EA4F7A /* CardsMovilModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231F0219CF36800EA4F7A /* CardsMovilModel.swift */; };
+		62523239219CF36900EA4F7A /* CardsLineaFijaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231F1219CF36800EA4F7A /* CardsLineaFijaModel.swift */; };
+		6252323A219CF36900EA4F7A /* CardsMovilManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231F2219CF36800EA4F7A /* CardsMovilManagement.swift */; };
+		6252323B219CF36900EA4F7A /* CardSuscriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231F3219CF36800EA4F7A /* CardSuscriptionModel.swift */; };
+		6252323C219CF36900EA4F7A /* CardsTelevisionManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231F4219CF36800EA4F7A /* CardsTelevisionManagement.swift */; };
+		6252323D219CF36900EA4F7A /* CardsLineaFijaManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231F5219CF36800EA4F7A /* CardsLineaFijaManagement.swift */; };
+		6252323E219CF36900EA4F7A /* ContentDetailSuscription.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625231F7219CF36800EA4F7A /* ContentDetailSuscription.xib */; };
+		6252323F219CF36900EA4F7A /* SelectOptionSuscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231F8219CF36800EA4F7A /* SelectOptionSuscription.swift */; };
+		62523240219CF36900EA4F7A /* DetailSuscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231F9219CF36800EA4F7A /* DetailSuscriptionView.swift */; };
+		62523241219CF36900EA4F7A /* SelectOptionSuscription.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625231FA219CF36800EA4F7A /* SelectOptionSuscription.xib */; };
+		62523242219CF36900EA4F7A /* DetailSuscriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625231FB219CF36800EA4F7A /* DetailSuscriptionView.xib */; };
+		62523243219CF36900EA4F7A /* ContentDetailSuscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625231FC219CF36800EA4F7A /* ContentDetailSuscription.swift */; };
+		62523244219CF36900EA4F7A /* PopupSelectServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625231FF219CF36800EA4F7A /* PopupSelectServiceViewController.xib */; };
+		62523245219CF36900EA4F7A /* PopupSelectServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62523200219CF36800EA4F7A /* PopupSelectServiceViewController.swift */; };
+		62523246219CF36900EA4F7A /* CardSelectServiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62523201219CF36800EA4F7A /* CardSelectServiceView.xib */; };
+		62523247219CF36900EA4F7A /* CardSelectServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62523202219CF36800EA4F7A /* CardSelectServiceView.swift */; };
+		62523248219CF36900EA4F7A /* CardFacturationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62523204219CF36800EA4F7A /* CardFacturationView.xib */; };
+		62523249219CF36900EA4F7A /* CardFacturationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62523205219CF36800EA4F7A /* CardFacturationView.swift */; };
+		6252324A219CF36900EA4F7A /* PopupDescriptionPlanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62523207219CF36800EA4F7A /* PopupDescriptionPlanViewController.xib */; };
+		6252324B219CF36900EA4F7A /* PopupDescriptionPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62523208219CF36800EA4F7A /* PopupDescriptionPlanViewController.swift */; };
+		6252324C219CF36900EA4F7A /* GraphicViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62523209219CF36800EA4F7A /* GraphicViewHeader.swift */; };
+		6252324D219CF36900EA4F7A /* CardsManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6252320A219CF36800EA4F7A /* CardsManagementViewController.swift */; };
+		6252324E219CF36900EA4F7A /* CardContentDetailGraphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6252320C219CF36800EA4F7A /* CardContentDetailGraphic.swift */; };
+		6252324F219CF36900EA4F7A /* CardContentDetailGraphic.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6252320D219CF36800EA4F7A /* CardContentDetailGraphic.xib */; };
+		62523250219CF36900EA4F7A /* CardSinBolsaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6252320F219CF36800EA4F7A /* CardSinBolsaView.xib */; };
+		62523251219CF36900EA4F7A /* CardSinBolsaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62523210219CF36800EA4F7A /* CardSinBolsaView.swift */; };
+		62523252219CF36900EA4F7A /* ViewBodyExpand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62523211219CF36800EA4F7A /* ViewBodyExpand.swift */; };
+		62523253219CF36900EA4F7A /* HeaderCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62523212219CF36800EA4F7A /* HeaderCardView.swift */; };
+		62523254219CF36900EA4F7A /* CardHeaderSummaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62523214219CF36800EA4F7A /* CardHeaderSummaryView.xib */; };
+		62523255219CF36900EA4F7A /* CardHeaderSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62523215219CF36800EA4F7A /* CardHeaderSummaryView.swift */; };
+		62523256219CF36900EA4F7A /* CardHeaderServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62523216219CF36800EA4F7A /* CardHeaderServiceView.swift */; };
+		62523257219CF36900EA4F7A /* CardHeaderServiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62523217219CF36800EA4F7A /* CardHeaderServiceView.xib */; };
 		6287465A219CD9B200C53384 /* mcaUtilsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62874650219CD9B200C53384 /* mcaUtilsiOS.framework */; };
 		6287465F219CD9B200C53384 /* mcaUtilsiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6287465E219CD9B200C53384 /* mcaUtilsiOSTests.swift */; };
 		62874661219CD9B200C53384 /* mcaUtilsiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 62874653219CD9B200C53384 /* mcaUtilsiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -879,6 +943,70 @@
 		62522FB3219CE62900EA4F7A /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		62522FB4219CE62900EA4F7A /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		62522FC6219CE6BF00EA4F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Desktop/moveit/Assets.xcassets; sourceTree = "<group>"; };
+		625231CA219CF36800EA4F7A /* CardBalanceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBalanceView.swift; sourceTree = "<group>"; };
+		625231CB219CF36800EA4F7A /* CardBalanceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardBalanceView.xib; sourceTree = "<group>"; };
+		625231CC219CF36800EA4F7A /* AccountManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManagement.swift; sourceTree = "<group>"; };
+		625231CE219CF36800EA4F7A /* CardTitleSummaryPlan.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardTitleSummaryPlan.xib; sourceTree = "<group>"; };
+		625231CF219CF36800EA4F7A /* CardTitleSummaryPlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTitleSummaryPlan.swift; sourceTree = "<group>"; };
+		625231D1219CF36800EA4F7A /* PopupSelectSubscriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupSelectSubscriptionViewController.xib; sourceTree = "<group>"; };
+		625231D2219CF36800EA4F7A /* PopupSelectSubscriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupSelectSubscriptionViewController.swift; sourceTree = "<group>"; };
+		625231D4219CF36800EA4F7A /* CardButtonBoletaView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardButtonBoletaView.xib; sourceTree = "<group>"; };
+		625231D5219CF36800EA4F7A /* CardButtonBoletaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardButtonBoletaView.swift; sourceTree = "<group>"; };
+		625231D6219CF36800EA4F7A /* ViewExpand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExpand.swift; sourceTree = "<group>"; };
+		625231D8219CF36800EA4F7A /* cardContentSummaryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardContentSummaryDetailView.swift; sourceTree = "<group>"; };
+		625231D9219CF36800EA4F7A /* CardSummaryDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardSummaryDetailView.xib; sourceTree = "<group>"; };
+		625231DA219CF36800EA4F7A /* cardContentSummaryDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cardContentSummaryDetailView.xib; sourceTree = "<group>"; };
+		625231DB219CF36800EA4F7A /* CardSummaryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSummaryDetailView.swift; sourceTree = "<group>"; };
+		625231DD219CF36800EA4F7A /* CardDetailDataText.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardDetailDataText.xib; sourceTree = "<group>"; };
+		625231DE219CF36800EA4F7A /* CardDetailDataTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailDataTable.swift; sourceTree = "<group>"; };
+		625231DF219CF36800EA4F7A /* CardDetailDataGraphic.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardDetailDataGraphic.xib; sourceTree = "<group>"; };
+		625231E0219CF36800EA4F7A /* CardDetailDataSaldo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailDataSaldo.swift; sourceTree = "<group>"; };
+		625231E1219CF36800EA4F7A /* CardDetailDataTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardDetailDataTableCell.xib; sourceTree = "<group>"; };
+		625231E2219CF36800EA4F7A /* CardDetailDataGraphic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailDataGraphic.swift; sourceTree = "<group>"; };
+		625231E3219CF36800EA4F7A /* CardDetailDataSaldo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardDetailDataSaldo.xib; sourceTree = "<group>"; };
+		625231E4219CF36800EA4F7A /* CardDetailDataTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardDetailDataTable.xib; sourceTree = "<group>"; };
+		625231E5219CF36800EA4F7A /* CardDetailDataText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailDataText.swift; sourceTree = "<group>"; };
+		625231E6219CF36800EA4F7A /* CardDetailDataTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailDataTableCell.swift; sourceTree = "<group>"; };
+		625231E8219CF36800EA4F7A /* CardsTelevisionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsTelevisionModel.swift; sourceTree = "<group>"; };
+		625231E9219CF36800EA4F7A /* CardsInternetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsInternetModel.swift; sourceTree = "<group>"; };
+		625231EA219CF36800EA4F7A /* CardsInternetManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsInternetManagement.swift; sourceTree = "<group>"; };
+		625231EB219CF36800EA4F7A /* CardsTodoClaroModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsTodoClaroModel.swift; sourceTree = "<group>"; };
+		625231EC219CF36800EA4F7A /* CardSuscriptionManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSuscriptionManagement.swift; sourceTree = "<group>"; };
+		625231ED219CF36800EA4F7A /* CardsSummaryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsSummaryModel.swift; sourceTree = "<group>"; };
+		625231EE219CF36800EA4F7A /* CardsTodoClaroManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsTodoClaroManagement.swift; sourceTree = "<group>"; };
+		625231EF219CF36800EA4F7A /* CardsSummaryManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsSummaryManagement.swift; sourceTree = "<group>"; };
+		625231F0219CF36800EA4F7A /* CardsMovilModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsMovilModel.swift; sourceTree = "<group>"; };
+		625231F1219CF36800EA4F7A /* CardsLineaFijaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsLineaFijaModel.swift; sourceTree = "<group>"; };
+		625231F2219CF36800EA4F7A /* CardsMovilManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsMovilManagement.swift; sourceTree = "<group>"; };
+		625231F3219CF36800EA4F7A /* CardSuscriptionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSuscriptionModel.swift; sourceTree = "<group>"; };
+		625231F4219CF36800EA4F7A /* CardsTelevisionManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsTelevisionManagement.swift; sourceTree = "<group>"; };
+		625231F5219CF36800EA4F7A /* CardsLineaFijaManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsLineaFijaManagement.swift; sourceTree = "<group>"; };
+		625231F7219CF36800EA4F7A /* ContentDetailSuscription.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentDetailSuscription.xib; sourceTree = "<group>"; };
+		625231F8219CF36800EA4F7A /* SelectOptionSuscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectOptionSuscription.swift; sourceTree = "<group>"; };
+		625231F9219CF36800EA4F7A /* DetailSuscriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailSuscriptionView.swift; sourceTree = "<group>"; };
+		625231FA219CF36800EA4F7A /* SelectOptionSuscription.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectOptionSuscription.xib; sourceTree = "<group>"; };
+		625231FB219CF36800EA4F7A /* DetailSuscriptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailSuscriptionView.xib; sourceTree = "<group>"; };
+		625231FC219CF36800EA4F7A /* ContentDetailSuscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentDetailSuscription.swift; sourceTree = "<group>"; };
+		625231FF219CF36800EA4F7A /* PopupSelectServiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupSelectServiceViewController.xib; sourceTree = "<group>"; };
+		62523200219CF36800EA4F7A /* PopupSelectServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupSelectServiceViewController.swift; sourceTree = "<group>"; };
+		62523201219CF36800EA4F7A /* CardSelectServiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardSelectServiceView.xib; sourceTree = "<group>"; };
+		62523202219CF36800EA4F7A /* CardSelectServiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSelectServiceView.swift; sourceTree = "<group>"; };
+		62523204219CF36800EA4F7A /* CardFacturationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardFacturationView.xib; sourceTree = "<group>"; };
+		62523205219CF36800EA4F7A /* CardFacturationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardFacturationView.swift; sourceTree = "<group>"; };
+		62523207219CF36800EA4F7A /* PopupDescriptionPlanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupDescriptionPlanViewController.xib; sourceTree = "<group>"; };
+		62523208219CF36800EA4F7A /* PopupDescriptionPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupDescriptionPlanViewController.swift; sourceTree = "<group>"; };
+		62523209219CF36800EA4F7A /* GraphicViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphicViewHeader.swift; sourceTree = "<group>"; };
+		6252320A219CF36800EA4F7A /* CardsManagementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsManagementViewController.swift; sourceTree = "<group>"; };
+		6252320C219CF36800EA4F7A /* CardContentDetailGraphic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardContentDetailGraphic.swift; sourceTree = "<group>"; };
+		6252320D219CF36800EA4F7A /* CardContentDetailGraphic.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardContentDetailGraphic.xib; sourceTree = "<group>"; };
+		6252320F219CF36800EA4F7A /* CardSinBolsaView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardSinBolsaView.xib; sourceTree = "<group>"; };
+		62523210219CF36800EA4F7A /* CardSinBolsaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSinBolsaView.swift; sourceTree = "<group>"; };
+		62523211219CF36800EA4F7A /* ViewBodyExpand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBodyExpand.swift; sourceTree = "<group>"; };
+		62523212219CF36800EA4F7A /* HeaderCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCardView.swift; sourceTree = "<group>"; };
+		62523214219CF36800EA4F7A /* CardHeaderSummaryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardHeaderSummaryView.xib; sourceTree = "<group>"; };
+		62523215219CF36800EA4F7A /* CardHeaderSummaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardHeaderSummaryView.swift; sourceTree = "<group>"; };
+		62523216219CF36800EA4F7A /* CardHeaderServiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardHeaderServiceView.swift; sourceTree = "<group>"; };
+		62523217219CF36800EA4F7A /* CardHeaderServiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardHeaderServiceView.xib; sourceTree = "<group>"; };
 		62874650219CD9B200C53384 /* mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62874653219CD9B200C53384 /* mcaUtilsiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mcaUtilsiOS.h; sourceTree = "<group>"; };
 		62874654219CD9B200C53384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -922,6 +1050,7 @@
 			children = (
 				62522BC0219CE61900EA4F7A /* ListOptionsVC.swift */,
 				62522DCD219CE61900EA4F7A /* ListOptionsVC.xib */,
+				625231C8219CF36800EA4F7A /* Cards */,
 				62522BC1219CE61900EA4F7A /* Models */,
 				62522DCE219CE61900EA4F7A /* Views */,
 			);
@@ -2775,6 +2904,198 @@
 			path = "../../../../Desktop/moveit/Tipografía";
 			sourceTree = "<group>";
 		};
+		625231C8219CF36800EA4F7A /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				625231CC219CF36800EA4F7A /* AccountManagement.swift */,
+				6252320A219CF36800EA4F7A /* CardsManagementViewController.swift */,
+				62523209219CF36800EA4F7A /* GraphicViewHeader.swift */,
+				62523212219CF36800EA4F7A /* HeaderCardView.swift */,
+				62523211219CF36800EA4F7A /* ViewBodyExpand.swift */,
+				625231D6219CF36800EA4F7A /* ViewExpand.swift */,
+				625231C9219CF36800EA4F7A /* cardBalanceView */,
+				625231D3219CF36800EA4F7A /* cardButtonBoletaView */,
+				6252320B219CF36800EA4F7A /* cardContentDetailGraphic */,
+				625231DC219CF36800EA4F7A /* cardDetailData */,
+				62523203219CF36800EA4F7A /* CardFacturationView */,
+				62523213219CF36800EA4F7A /* cardHeaderService */,
+				625231FD219CF36800EA4F7A /* cardSelectService */,
+				6252320E219CF36800EA4F7A /* CardSinBolsaView */,
+				625231E7219CF36800EA4F7A /* cardsManagement */,
+				625231D7219CF36800EA4F7A /* cardSummary */,
+				625231CD219CF36800EA4F7A /* cardTitleSummaryView */,
+				62523206219CF36800EA4F7A /* popupDescriptionPlan */,
+				625231D0219CF36800EA4F7A /* popupSelectSubscription */,
+				625231F6219CF36800EA4F7A /* suscriptionDetail */,
+			);
+			name = Cards;
+			path = mcaUtilsiOS/Cards;
+			sourceTree = SOURCE_ROOT;
+		};
+		625231C9219CF36800EA4F7A /* cardBalanceView */ = {
+			isa = PBXGroup;
+			children = (
+				625231CA219CF36800EA4F7A /* CardBalanceView.swift */,
+				625231CB219CF36800EA4F7A /* CardBalanceView.xib */,
+			);
+			path = cardBalanceView;
+			sourceTree = "<group>";
+		};
+		625231CD219CF36800EA4F7A /* cardTitleSummaryView */ = {
+			isa = PBXGroup;
+			children = (
+				625231CE219CF36800EA4F7A /* CardTitleSummaryPlan.xib */,
+				625231CF219CF36800EA4F7A /* CardTitleSummaryPlan.swift */,
+			);
+			path = cardTitleSummaryView;
+			sourceTree = "<group>";
+		};
+		625231D0219CF36800EA4F7A /* popupSelectSubscription */ = {
+			isa = PBXGroup;
+			children = (
+				625231D1219CF36800EA4F7A /* PopupSelectSubscriptionViewController.xib */,
+				625231D2219CF36800EA4F7A /* PopupSelectSubscriptionViewController.swift */,
+			);
+			path = popupSelectSubscription;
+			sourceTree = "<group>";
+		};
+		625231D3219CF36800EA4F7A /* cardButtonBoletaView */ = {
+			isa = PBXGroup;
+			children = (
+				625231D4219CF36800EA4F7A /* CardButtonBoletaView.xib */,
+				625231D5219CF36800EA4F7A /* CardButtonBoletaView.swift */,
+			);
+			path = cardButtonBoletaView;
+			sourceTree = "<group>";
+		};
+		625231D7219CF36800EA4F7A /* cardSummary */ = {
+			isa = PBXGroup;
+			children = (
+				625231D8219CF36800EA4F7A /* cardContentSummaryDetailView.swift */,
+				625231D9219CF36800EA4F7A /* CardSummaryDetailView.xib */,
+				625231DA219CF36800EA4F7A /* cardContentSummaryDetailView.xib */,
+				625231DB219CF36800EA4F7A /* CardSummaryDetailView.swift */,
+			);
+			path = cardSummary;
+			sourceTree = "<group>";
+		};
+		625231DC219CF36800EA4F7A /* cardDetailData */ = {
+			isa = PBXGroup;
+			children = (
+				625231DD219CF36800EA4F7A /* CardDetailDataText.xib */,
+				625231DE219CF36800EA4F7A /* CardDetailDataTable.swift */,
+				625231DF219CF36800EA4F7A /* CardDetailDataGraphic.xib */,
+				625231E0219CF36800EA4F7A /* CardDetailDataSaldo.swift */,
+				625231E1219CF36800EA4F7A /* CardDetailDataTableCell.xib */,
+				625231E2219CF36800EA4F7A /* CardDetailDataGraphic.swift */,
+				625231E3219CF36800EA4F7A /* CardDetailDataSaldo.xib */,
+				625231E4219CF36800EA4F7A /* CardDetailDataTable.xib */,
+				625231E5219CF36800EA4F7A /* CardDetailDataText.swift */,
+				625231E6219CF36800EA4F7A /* CardDetailDataTableCell.swift */,
+			);
+			path = cardDetailData;
+			sourceTree = "<group>";
+		};
+		625231E7219CF36800EA4F7A /* cardsManagement */ = {
+			isa = PBXGroup;
+			children = (
+				625231E8219CF36800EA4F7A /* CardsTelevisionModel.swift */,
+				625231E9219CF36800EA4F7A /* CardsInternetModel.swift */,
+				625231EA219CF36800EA4F7A /* CardsInternetManagement.swift */,
+				625231EB219CF36800EA4F7A /* CardsTodoClaroModel.swift */,
+				625231EC219CF36800EA4F7A /* CardSuscriptionManagement.swift */,
+				625231ED219CF36800EA4F7A /* CardsSummaryModel.swift */,
+				625231EE219CF36800EA4F7A /* CardsTodoClaroManagement.swift */,
+				625231EF219CF36800EA4F7A /* CardsSummaryManagement.swift */,
+				625231F0219CF36800EA4F7A /* CardsMovilModel.swift */,
+				625231F1219CF36800EA4F7A /* CardsLineaFijaModel.swift */,
+				625231F2219CF36800EA4F7A /* CardsMovilManagement.swift */,
+				625231F3219CF36800EA4F7A /* CardSuscriptionModel.swift */,
+				625231F4219CF36800EA4F7A /* CardsTelevisionManagement.swift */,
+				625231F5219CF36800EA4F7A /* CardsLineaFijaManagement.swift */,
+			);
+			path = cardsManagement;
+			sourceTree = "<group>";
+		};
+		625231F6219CF36800EA4F7A /* suscriptionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				625231F7219CF36800EA4F7A /* ContentDetailSuscription.xib */,
+				625231F8219CF36800EA4F7A /* SelectOptionSuscription.swift */,
+				625231F9219CF36800EA4F7A /* DetailSuscriptionView.swift */,
+				625231FA219CF36800EA4F7A /* SelectOptionSuscription.xib */,
+				625231FB219CF36800EA4F7A /* DetailSuscriptionView.xib */,
+				625231FC219CF36800EA4F7A /* ContentDetailSuscription.swift */,
+			);
+			path = suscriptionDetail;
+			sourceTree = "<group>";
+		};
+		625231FD219CF36800EA4F7A /* cardSelectService */ = {
+			isa = PBXGroup;
+			children = (
+				625231FE219CF36800EA4F7A /* popupSelectService */,
+				62523201219CF36800EA4F7A /* CardSelectServiceView.xib */,
+				62523202219CF36800EA4F7A /* CardSelectServiceView.swift */,
+			);
+			path = cardSelectService;
+			sourceTree = "<group>";
+		};
+		625231FE219CF36800EA4F7A /* popupSelectService */ = {
+			isa = PBXGroup;
+			children = (
+				625231FF219CF36800EA4F7A /* PopupSelectServiceViewController.xib */,
+				62523200219CF36800EA4F7A /* PopupSelectServiceViewController.swift */,
+			);
+			path = popupSelectService;
+			sourceTree = "<group>";
+		};
+		62523203219CF36800EA4F7A /* CardFacturationView */ = {
+			isa = PBXGroup;
+			children = (
+				62523204219CF36800EA4F7A /* CardFacturationView.xib */,
+				62523205219CF36800EA4F7A /* CardFacturationView.swift */,
+			);
+			path = CardFacturationView;
+			sourceTree = "<group>";
+		};
+		62523206219CF36800EA4F7A /* popupDescriptionPlan */ = {
+			isa = PBXGroup;
+			children = (
+				62523207219CF36800EA4F7A /* PopupDescriptionPlanViewController.xib */,
+				62523208219CF36800EA4F7A /* PopupDescriptionPlanViewController.swift */,
+			);
+			path = popupDescriptionPlan;
+			sourceTree = "<group>";
+		};
+		6252320B219CF36800EA4F7A /* cardContentDetailGraphic */ = {
+			isa = PBXGroup;
+			children = (
+				6252320C219CF36800EA4F7A /* CardContentDetailGraphic.swift */,
+				6252320D219CF36800EA4F7A /* CardContentDetailGraphic.xib */,
+			);
+			path = cardContentDetailGraphic;
+			sourceTree = "<group>";
+		};
+		6252320E219CF36800EA4F7A /* CardSinBolsaView */ = {
+			isa = PBXGroup;
+			children = (
+				6252320F219CF36800EA4F7A /* CardSinBolsaView.xib */,
+				62523210219CF36800EA4F7A /* CardSinBolsaView.swift */,
+			);
+			path = CardSinBolsaView;
+			sourceTree = "<group>";
+		};
+		62523213219CF36800EA4F7A /* cardHeaderService */ = {
+			isa = PBXGroup;
+			children = (
+				62523214219CF36800EA4F7A /* CardHeaderSummaryView.xib */,
+				62523215219CF36800EA4F7A /* CardHeaderSummaryView.swift */,
+				62523216219CF36800EA4F7A /* CardHeaderServiceView.swift */,
+				62523217219CF36800EA4F7A /* CardHeaderServiceView.xib */,
+			);
+			path = cardHeaderService;
+			sourceTree = "<group>";
+		};
 		62874646219CD9B200C53384 = {
 			isa = PBXGroup;
 			children = (
@@ -2919,25 +3240,47 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62523246219CF36900EA4F7A /* CardSelectServiceView.xib in Resources */,
 				62522FBD219CE62900EA4F7A /* Roboto-ThinItalic.ttf in Resources */,
+				6252321F219CF36900EA4F7A /* CardButtonBoletaView.xib in Resources */,
+				62523223219CF36900EA4F7A /* CardSummaryDetailView.xib in Resources */,
 				62522FB7219CE62900EA4F7A /* Roboto-Regular.ttf in Resources */,
+				6252322A219CF36900EA4F7A /* CardDetailDataTableCell.xib in Resources */,
+				62523219219CF36900EA4F7A /* CardBalanceView.xib in Resources */,
+				6252324A219CF36900EA4F7A /* PopupDescriptionPlanViewController.xib in Resources */,
 				62522FC2219CE62900EA4F7A /* Roboto-BlackItalic.ttf in Resources */,
 				62522FBF219CE62900EA4F7A /* Roboto-LightItalic.ttf in Resources */,
+				62523228219CF36900EA4F7A /* CardDetailDataGraphic.xib in Resources */,
 				62522FB5219CE62900EA4F7A /* Roboto-Medium.ttf in Resources */,
 				62522FB9219CE62900EA4F7A /* Roboto-BoldCondensed.ttf in Resources */,
+				62523257219CF36900EA4F7A /* CardHeaderServiceView.xib in Resources */,
+				62523254219CF36900EA4F7A /* CardHeaderSummaryView.xib in Resources */,
 				62522FC1219CE62900EA4F7A /* Roboto-Italic.ttf in Resources */,
 				62522FC5219CE62900EA4F7A /* Roboto-Black.ttf in Resources */,
+				6252324F219CF36900EA4F7A /* CardContentDetailGraphic.xib in Resources */,
 				62522FBE219CE62900EA4F7A /* Roboto-BoldItalic.ttf in Resources */,
+				62523224219CF36900EA4F7A /* cardContentSummaryDetailView.xib in Resources */,
+				6252321D219CF36900EA4F7A /* PopupSelectSubscriptionViewController.xib in Resources */,
 				62522FBB219CE62900EA4F7A /* Roboto-Condensed.ttf in Resources */,
 				62522F7D219CE61A00EA4F7A /* MapsStoryBoard.storyboard in Resources */,
 				62522FB6219CE62900EA4F7A /* Roboto-Light.ttf in Resources */,
+				62523226219CF36900EA4F7A /* CardDetailDataText.xib in Resources */,
+				6252322D219CF36900EA4F7A /* CardDetailDataTable.xib in Resources */,
+				62523242219CF36900EA4F7A /* DetailSuscriptionView.xib in Resources */,
+				6252322C219CF36900EA4F7A /* CardDetailDataSaldo.xib in Resources */,
+				62523244219CF36900EA4F7A /* PopupSelectServiceViewController.xib in Resources */,
+				62523248219CF36900EA4F7A /* CardFacturationView.xib in Resources */,
 				62522FB8219CE62900EA4F7A /* Roboto-MediumItalic.ttf in Resources */,
+				6252321B219CF36900EA4F7A /* CardTitleSummaryPlan.xib in Resources */,
 				62522FC0219CE62900EA4F7A /* Roboto-CondensedItalic.ttf in Resources */,
 				62522FC7219CE6BF00EA4F7A /* Assets.xcassets in Resources */,
 				62522FBC219CE62900EA4F7A /* Roboto_Specimen_Book.pdf in Resources */,
 				62522FC4219CE62900EA4F7A /* Roboto-Thin.ttf in Resources */,
 				62522FC3219CE62900EA4F7A /* Roboto-Bold.ttf in Resources */,
 				62522F73219CE61A00EA4F7A /* ListOptionsVC.xib in Resources */,
+				62523241219CF36900EA4F7A /* SelectOptionSuscription.xib in Resources */,
+				62523250219CF36900EA4F7A /* CardSinBolsaView.xib in Resources */,
+				6252323E219CF36900EA4F7A /* ContentDetailSuscription.xib in Resources */,
 				62522FBA219CE62900EA4F7A /* Roboto-BoldCondensedItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3008,6 +3351,7 @@
 				62522E15219CE61900EA4F7A /* RetrieveProfileInformationRequest.swift in Sources */,
 				62522E90219CE61A00EA4F7A /* UpdateChannelStatusResult.swift in Sources */,
 				62522F5C219CE61A00EA4F7A /* CreateNewRegisterRequest.swift in Sources */,
+				62523220219CF36900EA4F7A /* CardButtonBoletaView.swift in Sources */,
 				62522F55219CE61A00EA4F7A /* PortalUser.swift in Sources */,
 				62522E76219CE61A00EA4F7A /* RetrievePlanTicketHistoryResult.swift in Sources */,
 				62522F20219CE61A00EA4F7A /* ServiceUsage.swift in Sources */,
@@ -3016,6 +3360,7 @@
 				62522F22219CE61A00EA4F7A /* RetrieveConsumptionDetailInformationResponse.swift in Sources */,
 				62522F52219CE61A00EA4F7A /* UpdateTransactionPasswordAttempt.swift in Sources */,
 				62522E31219CE61900EA4F7A /* RetrievePlansRequest.swift in Sources */,
+				6252322B219CF36900EA4F7A /* CardDetailDataGraphic.swift in Sources */,
 				62522F4A219CE61A00EA4F7A /* RetrieveElectronicDocumentPDF.swift in Sources */,
 				62522E2B219CE61900EA4F7A /* BaseRequest.swift in Sources */,
 				62522F23219CE61A00EA4F7A /* RetrieveConsumptionDetailInformationResult.swift in Sources */,
@@ -3030,6 +3375,7 @@
 				62522EE6219CE61A00EA4F7A /* Click2BuyConfig.swift in Sources */,
 				62522F19219CE61A00EA4F7A /* UpdatePortalUserResult.swift in Sources */,
 				62522F8F219CE61A00EA4F7A /* CustomNavigationBar.swift in Sources */,
+				6252323D219CF36900EA4F7A /* CardsLineaFijaManagement.swift in Sources */,
 				62522F74219CE61A00EA4F7A /* ToolTipGroup.swift in Sources */,
 				62522EB0219CE61A00EA4F7A /* HelpSupportRequest.swift in Sources */,
 				62522ED3219CE61A00EA4F7A /* SideNavigationMenu.swift in Sources */,
@@ -3039,10 +3385,13 @@
 				62522E3C219CE61900EA4F7A /* ValidateRUTResult.swift in Sources */,
 				62522EEB219CE61A00EA4F7A /* MandatoryField.swift in Sources */,
 				62522E67219CE61A00EA4F7A /* RetrieveCycleInformationResponse.swift in Sources */,
+				62523255219CF36900EA4F7A /* CardHeaderSummaryView.swift in Sources */,
 				62522E14219CE61900EA4F7A /* RetrieveProfileInformation.swift in Sources */,
 				62522EA7219CE61A00EA4F7A /* AddNewPackageResponse.swift in Sources */,
 				62522E6F219CE61A00EA4F7A /* CountriesRequest.swift in Sources */,
+				62523229219CF36900EA4F7A /* CardDetailDataSaldo.swift in Sources */,
 				62522E22219CE61900EA4F7A /* RetrieveBillDetailsResult.swift in Sources */,
+				62523243219CF36900EA4F7A /* ContentDetailSuscription.swift in Sources */,
 				62522F59219CE61A00EA4F7A /* CreateNewRegisterResult.swift in Sources */,
 				62522EF3219CE61A00EA4F7A /* Subscriptions.swift in Sources */,
 				62522E0C219CE61900EA4F7A /* SendBillNotificationResponse.swift in Sources */,
@@ -3067,6 +3416,7 @@
 				62522E84219CE61A00EA4F7A /* RetrieveSMSPremiumHistoryResponse.swift in Sources */,
 				62522F14219CE61A00EA4F7A /* SendNotificationResponse.swift in Sources */,
 				62522F07219CE61A00EA4F7A /* SwitchPlan.swift in Sources */,
+				62523230219CF36900EA4F7A /* CardsTelevisionModel.swift in Sources */,
 				62522E23219CE61900EA4F7A /* RetrieveBillDetail.swift in Sources */,
 				62522E3E219CE61900EA4F7A /* ValidateRUTRequest.swift in Sources */,
 				62522EC2219CE61A00EA4F7A /* AcknowledgementCode.swift in Sources */,
@@ -3077,6 +3427,7 @@
 				62522F11219CE61A00EA4F7A /* CreateChangePlanTicket.swift in Sources */,
 				62522EFF219CE61A00EA4F7A /* RetrievePromotionsRequest.swift in Sources */,
 				62522F84219CE61A00EA4F7A /* WebViewController.swift in Sources */,
+				62523249219CF36900EA4F7A /* CardFacturationView.swift in Sources */,
 				62522F04219CE61A00EA4F7A /* AddSMSPremiumToBlackListRequest.swift in Sources */,
 				62522F12219CE61A00EA4F7A /* PlanRequest.swift in Sources */,
 				62522E45219CE61900EA4F7A /* ContactMethod.swift in Sources */,
@@ -3085,6 +3436,7 @@
 				62522F1A219CE61A00EA4F7A /* UpdatePortalUserRequest.swift in Sources */,
 				62522F28219CE61A00EA4F7A /* RetrieveAssociatedAccountsResult.swift in Sources */,
 				62522EE4219CE61A00EA4F7A /* Landing.swift in Sources */,
+				62523234219CF36900EA4F7A /* CardSuscriptionManagement.swift in Sources */,
 				62522E13219CE61900EA4F7A /* AddressDetail.swift in Sources */,
 				62522F8A219CE61A00EA4F7A /* SymbolsCustomTableViewCell.swift in Sources */,
 				62522F79219CE61A00EA4F7A /* RadioButtonView.swift in Sources */,
@@ -3095,9 +3447,11 @@
 				62522EEF219CE61A00EA4F7A /* Click2BuyText.swift in Sources */,
 				62522E53219CE61900EA4F7A /* JSONStringToIntTransform.swift in Sources */,
 				62522EFC219CE61A00EA4F7A /* PlanType.swift in Sources */,
+				6252322E219CF36900EA4F7A /* CardDetailDataText.swift in Sources */,
 				62522E6D219CE61A00EA4F7A /* CountryResponse.swift in Sources */,
 				62522F26219CE61A00EA4F7A /* RetrieveConsumptionDetailInformation.swift in Sources */,
 				62522EF9219CE61A00EA4F7A /* RetrievePromotionsResponse.swift in Sources */,
+				62523221219CF36900EA4F7A /* ViewExpand.swift in Sources */,
 				62522EE7219CE61A00EA4F7A /* WebViews.swift in Sources */,
 				62522F68219CE61A00EA4F7A /* StatusChangeEvent.swift in Sources */,
 				62522E87219CE61A00EA4F7A /* RetrieveSMSPremiumHistoryRequest.swift in Sources */,
@@ -3106,27 +3460,33 @@
 				62522E82219CE61A00EA4F7A /* RemoveSMSPremiumFromBlackList.swift in Sources */,
 				62522E16219CE61900EA4F7A /* SetPaperlessResponse.swift in Sources */,
 				62522EF2219CE61A00EA4F7A /* PinMessageRule.swift in Sources */,
+				6252324D219CF36900EA4F7A /* CardsManagementViewController.swift in Sources */,
 				62522E2D219CE61900EA4F7A /* RetrievePlansResult.swift in Sources */,
 				62522E99219CE61A00EA4F7A /* UpdatePasswordEditProfileRequest.swift in Sources */,
+				62523236219CF36900EA4F7A /* CardsTodoClaroManagement.swift in Sources */,
 				62522EAF219CE61A00EA4F7A /* InfoSupport.swift in Sources */,
 				62522E44219CE61900EA4F7A /* EmailContactMethodDetail.swift in Sources */,
 				62522EC8219CE61A00EA4F7A /* PasswordRecovery.swift in Sources */,
 				62522FA0219CE61A00EA4F7A /* SimpleGrayTextField.swift in Sources */,
+				62523232219CF36900EA4F7A /* CardsInternetManagement.swift in Sources */,
 				62522E69219CE61A00EA4F7A /* RetrieveCycleInformationResult.swift in Sources */,
 				62522ED6219CE61A00EA4F7A /* CacDatesTexts.swift in Sources */,
 				62522F85219CE61A00EA4F7A /* WebView.swift in Sources */,
 				62522F7A219CE61A00EA4F7A /* SimpleGreenTextFieldWithQuestionMark.swift in Sources */,
 				62522F60219CE61A00EA4F7A /* AccountDetailsList.swift in Sources */,
+				62523235219CF36900EA4F7A /* CardsSummaryModel.swift in Sources */,
 				62522F56219CE61A00EA4F7A /* RetrievePortalUserResponse.swift in Sources */,
 				62522E5E219CE61900EA4F7A /* ValidateCredentialsResponse.swift in Sources */,
 				62522E94219CE61A00EA4F7A /* ServiceChannel.swift in Sources */,
 				62522E2A219CE61900EA4F7A /* RetrieveChannelsOfferRequest.swift in Sources */,
+				6252323C219CF36900EA4F7A /* CardsTelevisionManagement.swift in Sources */,
 				62522E59219CE61900EA4F7A /* ValidateNumberResponse.swift in Sources */,
 				62522E7F219CE61A00EA4F7A /* RemoveSMSPremiumFromBlackListResponse.swift in Sources */,
 				62522E0D219CE61900EA4F7A /* SendBillNotification.swift in Sources */,
 				62522EC0219CE61A00EA4F7A /* NewRegisterText.swift in Sources */,
 				62522F5E219CE61A00EA4F7A /* PersonalDetailsInformation.swift in Sources */,
 				62522ED7219CE61A00EA4F7A /* UsagePermissionsText.swift in Sources */,
+				6252321E219CF36900EA4F7A /* PopupSelectSubscriptionViewController.swift in Sources */,
 				62522EFD219CE61A00EA4F7A /* RetrievePromotionsResult.swift in Sources */,
 				62522E7A219CE61A00EA4F7A /* UnsubscribeSMSPremiumResponse.swift in Sources */,
 				62522E24219CE61900EA4F7A /* RetrieveBillDetailsRequest.swift in Sources */,
@@ -3134,12 +3494,17 @@
 				62522EFE219CE61A00EA4F7A /* Cost.swift in Sources */,
 				62522F18219CE61A00EA4F7A /* UpdatePortalUserResponse.swift in Sources */,
 				62522EF1219CE61A00EA4F7A /* Node.swift in Sources */,
+				62523231219CF36900EA4F7A /* CardsInternetModel.swift in Sources */,
 				62522ED9219CE61A00EA4F7A /* ProfilePermission.swift in Sources */,
+				6252323F219CF36900EA4F7A /* SelectOptionSuscription.swift in Sources */,
+				6252322F219CF36900EA4F7A /* CardDetailDataTableCell.swift in Sources */,
 				62522F90219CE61A00EA4F7A /* PasswordRulesContainer.swift in Sources */,
+				6252324B219CF36900EA4F7A /* PopupDescriptionPlanViewController.swift in Sources */,
 				62522EDF219CE61A00EA4F7A /* AddService.swift in Sources */,
 				62522F35219CE61A00EA4F7A /* ValidatePersonalVerificationQuestionRequest.swift in Sources */,
 				62522E5D219CE61900EA4F7A /* ValidateCredentialsResult.swift in Sources */,
 				62522E65219CE61A00EA4F7A /* GetPaperles.swift in Sources */,
+				62523225219CF36900EA4F7A /* CardSummaryDetailView.swift in Sources */,
 				62522F9C219CE61A00EA4F7A /* EmailController.swift in Sources */,
 				62522F10219CE61A00EA4F7A /* CreateChangePlanTicketRequest.swift in Sources */,
 				62522E86219CE61A00EA4F7A /* SubscriptionHistory.swift in Sources */,
@@ -3165,6 +3530,8 @@
 				62522F93219CE61A00EA4F7A /* ToolTipElement.swift in Sources */,
 				62522F0B219CE61A00EA4F7A /* VerifyAssociationToUserIdResponse.swift in Sources */,
 				62522E88219CE61A00EA4F7A /* RetrieveSMSPremiumHistory.swift in Sources */,
+				6252321C219CF36900EA4F7A /* CardTitleSummaryPlan.swift in Sources */,
+				62523240219CF36900EA4F7A /* DetailSuscriptionView.swift in Sources */,
 				62522EA5219CE61A00EA4F7A /* MensajeVigencia.swift in Sources */,
 				62522E7C219CE61A00EA4F7A /* UnsubscribeSMSPremium.swift in Sources */,
 				62522E70219CE61A00EA4F7A /* IdentifyUserLoBResult.swift in Sources */,
@@ -3192,6 +3559,7 @@
 				62522F66219CE61A00EA4F7A /* PlanCategory.swift in Sources */,
 				62522F3D219CE61A00EA4F7A /* TypeList.swift in Sources */,
 				62522F50219CE61A00EA4F7A /* UpdateTransactionPasswordAttemptsResult.swift in Sources */,
+				62523233219CF36900EA4F7A /* CardsTodoClaroModel.swift in Sources */,
 				62522F25219CE61A00EA4F7A /* ServiceFeatureUsageLimit.swift in Sources */,
 				62522F29219CE61A00EA4F7A /* RetrieveAssociatedAccountsResponse.swift in Sources */,
 				62522F8E219CE61A00EA4F7A /* SimpleGreenTextField.swift in Sources */,
@@ -3216,6 +3584,7 @@
 				62522F4F219CE61A00EA4F7A /* Account.swift in Sources */,
 				62522E41219CE61900EA4F7A /* UpdateProfileInformationResult.swift in Sources */,
 				62522F9D219CE61A00EA4F7A /* EmailView.swift in Sources */,
+				62523253219CF36900EA4F7A /* HeaderCardView.swift in Sources */,
 				62522F6F219CE61A00EA4F7A /* Plan.swift in Sources */,
 				62522EDD219CE61A00EA4F7A /* Mobile.swift in Sources */,
 				62522F88219CE61A00EA4F7A /* CodeContainerView.swift in Sources */,
@@ -3233,6 +3602,7 @@
 				62522ED0219CE61A00EA4F7A /* ModulesConfiguration.swift in Sources */,
 				62522E5B219CE61900EA4F7A /* ValidateNumber.swift in Sources */,
 				62522E2C219CE61900EA4F7A /* PlansDetailList.swift in Sources */,
+				6252324E219CF36900EA4F7A /* CardContentDetailGraphic.swift in Sources */,
 				62522F34219CE61A00EA4F7A /* ValidatePersonalVerificationQuestion.swift in Sources */,
 				62522EBF219CE61A00EA4F7A /* Pantalla04.swift in Sources */,
 				62522E6C219CE61A00EA4F7A /* RRSS.swift in Sources */,
@@ -3241,6 +3611,7 @@
 				62522E1D219CE61900EA4F7A /* ValidateTransactionPasswordAttempt.swift in Sources */,
 				62522E18219CE61900EA4F7A /* SetPaperles.swift in Sources */,
 				62522EF4219CE61A00EA4F7A /* UserProfileIdConfig.swift in Sources */,
+				62523251219CF36900EA4F7A /* CardSinBolsaView.swift in Sources */,
 				62522E89219CE61A00EA4F7A /* BillDetail.swift in Sources */,
 				62522F2E219CE61A00EA4F7A /* ValidateTempPasswordResult.swift in Sources */,
 				62522E3A219CE61900EA4F7A /* RetrievePersonalVerificationQuestionRequest.swift in Sources */,
@@ -3249,6 +3620,7 @@
 				62522E85219CE61A00EA4F7A /* RetrieveSMSPremiumHistoryResult.swift in Sources */,
 				62522F1B219CE61A00EA4F7A /* UpdatePortalUser.swift in Sources */,
 				62522F6E219CE61A00EA4F7A /* AuthAccUser.swift in Sources */,
+				62523252219CF36900EA4F7A /* ViewBodyExpand.swift in Sources */,
 				62522F54219CE61A00EA4F7A /* RetrievePortalUserResult.swift in Sources */,
 				62522ECC219CE61A00EA4F7A /* BottomMenu.swift in Sources */,
 				62522E95219CE61A00EA4F7A /* UpdateChannelStatus.swift in Sources */,
@@ -3261,6 +3633,7 @@
 				62522F72219CE61A00EA4F7A /* RetrieveAccountDetailsRequest.swift in Sources */,
 				62522E33219CE61900EA4F7A /* GetTempPasswordResponse.swift in Sources */,
 				62522F0E219CE61A00EA4F7A /* CreateChangePlanTicketResponse.swift in Sources */,
+				62523256219CF36900EA4F7A /* CardHeaderServiceView.swift in Sources */,
 				62522E2F219CE61900EA4F7A /* ResponseHeader.swift in Sources */,
 				62522EE9219CE61A00EA4F7A /* Registro.swift in Sources */,
 				62522E7D219CE61A00EA4F7A /* UnsubscribeSMSPremiumRequest.swift in Sources */,
@@ -3276,6 +3649,7 @@
 				62522E78219CE61A00EA4F7A /* RetrievePlanTicketHistory.swift in Sources */,
 				62522F77219CE61A00EA4F7A /* RadioButtonController.swift in Sources */,
 				62522F98219CE61A00EA4F7A /* ArcProgressView.swift in Sources */,
+				62523222219CF36900EA4F7A /* cardContentSummaryDetailView.swift in Sources */,
 				62522EAC219CE61A00EA4F7A /* RetrieveSwitchPlanImplication.swift in Sources */,
 				62522F86219CE61A00EA4F7A /* CardCellView.swift in Sources */,
 				62522EC4219CE61A00EA4F7A /* NewUpdateAvailable.swift in Sources */,
@@ -3287,6 +3661,7 @@
 				62522E56219CE61900EA4F7A /* IdentityLoginRequest.swift in Sources */,
 				62522E30219CE61900EA4F7A /* RetrievePlans.swift in Sources */,
 				62522E4B219CE61900EA4F7A /* Subscription.swift in Sources */,
+				6252324C219CF36900EA4F7A /* GraphicViewHeader.swift in Sources */,
 				62522F51219CE61A00EA4F7A /* UpdateTransactionPasswordAttemptsResponse.swift in Sources */,
 				62522F9A219CE61A00EA4F7A /* UITextFieldGroupPhone.swift in Sources */,
 				62522E91219CE61A00EA4F7A /* UpdateChannelStatusResponse.swift in Sources */,
@@ -3296,6 +3671,7 @@
 				62522F83219CE61A00EA4F7A /* ActionView.swift in Sources */,
 				62522EA3219CE61A00EA4F7A /* AssociateAccount.swift in Sources */,
 				62522EEC219CE61A00EA4F7A /* ConsumptionInternationalFlags.swift in Sources */,
+				62523245219CF36900EA4F7A /* PopupSelectServiceViewController.swift in Sources */,
 				62522E9C219CE61A00EA4F7A /* SubscriptionPeriod.swift in Sources */,
 				62522EAE219CE61A00EA4F7A /* HelpSupportResult.swift in Sources */,
 				62522F3B219CE61A00EA4F7A /* RetrievePackageListResponse.swift in Sources */,
@@ -3310,11 +3686,13 @@
 				62522F7E219CE61A00EA4F7A /* PlaceCAC.swift in Sources */,
 				62522F2D219CE61A00EA4F7A /* ValidateTempPasswordResponse.swift in Sources */,
 				62522EED219CE61A00EA4F7A /* Generale.swift in Sources */,
+				6252323A219CF36900EA4F7A /* CardsMovilManagement.swift in Sources */,
 				62522E50219CE61900EA4F7A /* UpdatePasswordResult.swift in Sources */,
 				62522EBD219CE61A00EA4F7A /* Pago.swift in Sources */,
 				62522F4C219CE61A00EA4F7A /* TokenRequest.swift in Sources */,
 				62522EE8219CE61A00EA4F7A /* Android.swift in Sources */,
 				62522E34219CE61900EA4F7A /* GetTempPasswordRequest.swift in Sources */,
+				62523227219CF36900EA4F7A /* CardDetailDataTable.swift in Sources */,
 				62522F1E219CE61A00EA4F7A /* FeatureUsage.swift in Sources */,
 				62522F61219CE61A00EA4F7A /* RetrieveAccountListResult.swift in Sources */,
 				62522E39219CE61900EA4F7A /* RetrievePersonalVerificationQuestionsResponse.swift in Sources */,
@@ -3322,9 +3700,11 @@
 				62522F03219CE61A00EA4F7A /* AddSMSPremiumToBlackList.swift in Sources */,
 				62522E29219CE61900EA4F7A /* RetrieveChannelsOffer.swift in Sources */,
 				62522F7F219CE61A00EA4F7A /* GoogleDataProvider.swift in Sources */,
+				62523218219CF36900EA4F7A /* CardBalanceView.swift in Sources */,
 				62522EF8219CE61A00EA4F7A /* PlanLine.swift in Sources */,
 				62522F42219CE61A00EA4F7A /* RetrieveRechargeOptionsResult.swift in Sources */,
 				62522F91219CE61A00EA4F7A /* PasswordCustomTableViewCell.swift in Sources */,
+				62523247219CF36900EA4F7A /* CardSelectServiceView.swift in Sources */,
 				62522F08219CE61A00EA4F7A /* NewPlan.swift in Sources */,
 				62522E93219CE61A00EA4F7A /* ProductRequest.swift in Sources */,
 				62522E81219CE61A00EA4F7A /* RemoveSMSPremiumFromBlackListRequest.swift in Sources */,
@@ -3333,14 +3713,18 @@
 				62522EA4219CE61A00EA4F7A /* AssociateAccountRequest.swift in Sources */,
 				62522E1A219CE61900EA4F7A /* ValidateTransactionPasswordAttemptsResponse.swift in Sources */,
 				62522E74219CE61A00EA4F7A /* PlanTicketHistory.swift in Sources */,
+				6252323B219CF36900EA4F7A /* CardSuscriptionModel.swift in Sources */,
 				62522EA6219CE61A00EA4F7A /* AddNewPackageResult.swift in Sources */,
 				62522E6E219CE61A00EA4F7A /* CountryListResponse.swift in Sources */,
+				62523238219CF36900EA4F7A /* CardsMovilModel.swift in Sources */,
 				62522E64219CE61A00EA4F7A /* GetPaperlessRequest.swift in Sources */,
 				62522F2B219CE61A00EA4F7A /* RetrieveAssociatedAccount.swift in Sources */,
 				62522E36219CE61900EA4F7A /* Tooltip.swift in Sources */,
 				62522EA9219CE61A00EA4F7A /* AddNewPackage.swift in Sources */,
 				62522F16219CE61A00EA4F7A /* SendNotification.swift in Sources */,
 				62522E7B219CE61A00EA4F7A /* UnsubscribeService.swift in Sources */,
+				62523239219CF36900EA4F7A /* CardsLineaFijaModel.swift in Sources */,
+				62523237219CF36900EA4F7A /* CardsSummaryManagement.swift in Sources */,
 				62522EBC219CE61A00EA4F7A /* Service.swift in Sources */,
 				62522ED4219CE61A00EA4F7A /* PantallaBienvenida.swift in Sources */,
 				62522F48219CE61A00EA4F7A /* DocumentPeriod.swift in Sources */,
@@ -3376,6 +3760,7 @@
 				62522E96219CE61A00EA4F7A /* Contact.swift in Sources */,
 				62522F43219CE61A00EA4F7A /* RechargeValue.swift in Sources */,
 				62522EE3219CE61A00EA4F7A /* CacInfo.swift in Sources */,
+				6252321A219CF36900EA4F7A /* AccountManagement.swift in Sources */,
 				62522F7C219CE61A00EA4F7A /* LinkableLabel.swift in Sources */,
 				62522EC1219CE61A00EA4F7A /* FlagsCountry.swift in Sources */,
 				62522EE5219CE61A00EA4F7A /* ReportBugCategory.swift in Sources */,

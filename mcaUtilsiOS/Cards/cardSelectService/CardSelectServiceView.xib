@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardSelectServiceView" customModule="MiClaro" customModuleProvider="target">
+            <connections>
+                <outlet property="borderView" destination="siu-LZ-yz4" id="8Db-Fw-rAi"/>
+                <outlet property="imgArrow" destination="GDG-99-EAk" id="5A3-Kt-BB7"/>
+                <outlet property="lblInstruction" destination="Zx6-IE-jtC" id="AtD-hw-KbX"/>
+                <outlet property="lblNameOption" destination="0rY-hy-Afa" id="Qo6-eJ-glV"/>
+                <outlet property="lblTitleOption" destination="L4h-Qj-oQf" id="8t4-rC-eWt"/>
+                <outlet property="viewContent" destination="N44-At-fJ5" id="54y-KK-t6O"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="317" height="95"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N44-At-fJ5">
+                    <rect key="frame" x="0.0" y="0.0" width="317" height="95"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="siu-LZ-yz4" customClass="DesignableView" customModule="MiClaro" customModuleProvider="target">
+                            <rect key="frame" x="10" y="33.5" width="297" height="51.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dirección:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4h-Qj-oQf">
+                                    <rect key="frame" x="8" y="17" width="89" height="18"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                    <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mi Claro" textAlignment="natural" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0rY-hy-Afa">
+                                    <rect key="frame" x="100" y="6" width="160" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="PZp-5a-cvZ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_drop_down" translatesAutoresizingMaskIntoConstraints="NO" id="GDG-99-EAk">
+                                    <rect key="frame" x="263" y="11" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="Luq-2J-Qh4"/>
+                                        <constraint firstAttribute="height" constant="30" id="VqA-AA-BYg"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="L4h-Qj-oQf" firstAttribute="width" secondItem="siu-LZ-yz4" secondAttribute="width" multiplier="0.3" id="5iL-9O-4ZM"/>
+                                <constraint firstItem="GDG-99-EAk" firstAttribute="centerY" secondItem="L4h-Qj-oQf" secondAttribute="centerY" id="Dmn-9W-tsn"/>
+                                <constraint firstItem="GDG-99-EAk" firstAttribute="centerY" secondItem="siu-LZ-yz4" secondAttribute="centerY" id="IkH-vb-uRm"/>
+                                <constraint firstItem="L4h-Qj-oQf" firstAttribute="leading" secondItem="siu-LZ-yz4" secondAttribute="leading" constant="8" id="J2S-lJ-B23"/>
+                                <constraint firstItem="GDG-99-EAk" firstAttribute="leading" secondItem="0rY-hy-Afa" secondAttribute="trailing" constant="3" id="JWK-a3-5OH"/>
+                                <constraint firstItem="0rY-hy-Afa" firstAttribute="centerY" secondItem="L4h-Qj-oQf" secondAttribute="centerY" id="Jxa-K6-dt5"/>
+                                <constraint firstAttribute="trailing" secondItem="GDG-99-EAk" secondAttribute="trailing" constant="4" id="mtn-mf-M16"/>
+                                <constraint firstItem="0rY-hy-Afa" firstAttribute="leading" secondItem="L4h-Qj-oQf" secondAttribute="trailing" constant="3" id="r99-RD-VjC"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                    <color key="value" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                    <size key="value" width="0.0" height="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elige una opción" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zx6-IE-jtC">
+                            <rect key="frame" x="10" y="8" width="297" height="15.5"/>
+                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Zx6-IE-jtC" firstAttribute="top" secondItem="N44-At-fJ5" secondAttribute="top" constant="8" id="0dL-N0-tMt"/>
+                        <constraint firstItem="Zx6-IE-jtC" firstAttribute="leading" secondItem="N44-At-fJ5" secondAttribute="leading" constant="10" id="344-K3-X6x"/>
+                        <constraint firstItem="siu-LZ-yz4" firstAttribute="top" secondItem="Zx6-IE-jtC" secondAttribute="bottom" constant="10" id="Aed-Ej-T00"/>
+                        <constraint firstAttribute="trailing" secondItem="Zx6-IE-jtC" secondAttribute="trailing" constant="10" id="Eco-vG-B4s"/>
+                        <constraint firstItem="siu-LZ-yz4" firstAttribute="leading" secondItem="N44-At-fJ5" secondAttribute="leading" constant="10" id="WiH-Fe-HP3"/>
+                        <constraint firstAttribute="bottom" secondItem="siu-LZ-yz4" secondAttribute="bottom" constant="10" id="jde-sF-HPO"/>
+                        <constraint firstAttribute="trailing" secondItem="siu-LZ-yz4" secondAttribute="trailing" constant="10" id="zId-Vq-EjF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="N44-At-fJ5" secondAttribute="bottom" id="42X-kx-Xid"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="N44-At-fJ5" secondAttribute="trailing" id="apt-y5-ziI"/>
+                <constraint firstItem="N44-At-fJ5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fYT-pw-7Vu"/>
+                <constraint firstItem="N44-At-fJ5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zT7-eK-kRW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="9.5" y="188.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico_drop_down" width="18" height="18"/>
+    </resources>
+</document>
