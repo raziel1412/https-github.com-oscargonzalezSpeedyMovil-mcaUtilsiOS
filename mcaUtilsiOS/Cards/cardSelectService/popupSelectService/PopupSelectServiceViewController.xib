@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupSelectServiceViewController" customModule="MiClaro" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAccept" destination="tbi-9f-JNF" id="Ku3-yW-mGg"/>
+                <outlet property="btnCancel" destination="WGy-xa-HV4" id="Amg-gH-y34"/>
+                <outlet property="lblTitle" destination="FJY-fw-Egb" id="sQr-uT-iKn"/>
+                <outlet property="tbServices" destination="ZgX-Kf-4TV" id="zJU-VI-4Xb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n1M-F9-kTT">
+                    <rect key="frame" x="37.5" y="110" width="300" height="467"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJY-fw-Egb">
+                            <rect key="frame" x="8" y="8" width="284" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="gLg-Qu-0vr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGy-xa-HV4" customClass="DesignableButton" customModule="MiClaro" customModuleProvider="target">
+                            <rect key="frame" x="8" y="417" width="284" height="42"/>
+                            <state key="normal" title="Cancelar">
+                                <color key="titleColor" red="0.062745098039215685" green="0.59215686274509804" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.062745098039215685" green="0.59215686274509804" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnCancelActionWithSender:" destination="-1" eventType="touchUpInside" id="eXj-B8-aYe"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbi-9f-JNF" customClass="DesignableButton" customModule="MiClaro" customModuleProvider="target">
+                            <rect key="frame" x="8" y="367" width="284" height="42"/>
+                            <state key="normal" title="Confirmar">
+                                <color key="titleColor" red="0.062745098039215685" green="0.59215686274509804" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.062745098039215685" green="0.59215686274509804" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnAcceptActionWithSender:" destination="-1" eventType="touchUpInside" id="Q1K-Om-Cum"/>
+                            </connections>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZgX-Kf-4TV">
+                            <rect key="frame" x="8" y="37" width="284" height="322"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="FJY-fw-Egb" firstAttribute="top" secondItem="n1M-F9-kTT" secondAttribute="top" constant="8" id="DIZ-7h-PEZ"/>
+                        <constraint firstAttribute="bottom" secondItem="WGy-xa-HV4" secondAttribute="bottom" constant="8" id="EgS-zh-pv1"/>
+                        <constraint firstAttribute="trailing" secondItem="WGy-xa-HV4" secondAttribute="trailing" constant="8" id="ISl-cf-ENX"/>
+                        <constraint firstAttribute="trailing" secondItem="tbi-9f-JNF" secondAttribute="trailing" constant="8" id="LAU-10-Msk"/>
+                        <constraint firstItem="tbi-9f-JNF" firstAttribute="leading" secondItem="n1M-F9-kTT" secondAttribute="leading" constant="8" id="MMX-2e-Qmg"/>
+                        <constraint firstItem="WGy-xa-HV4" firstAttribute="height" secondItem="tbi-9f-JNF" secondAttribute="height" id="OFz-Jo-KP7"/>
+                        <constraint firstItem="tbi-9f-JNF" firstAttribute="top" secondItem="ZgX-Kf-4TV" secondAttribute="bottom" constant="8" id="SBs-t9-NhT"/>
+                        <constraint firstItem="WGy-xa-HV4" firstAttribute="top" secondItem="tbi-9f-JNF" secondAttribute="bottom" constant="8" id="SaR-Tw-wxy"/>
+                        <constraint firstAttribute="trailing" secondItem="FJY-fw-Egb" secondAttribute="trailing" constant="8" id="WEp-pn-gMP"/>
+                        <constraint firstAttribute="trailing" secondItem="ZgX-Kf-4TV" secondAttribute="trailing" constant="8" id="WHu-kz-XtV"/>
+                        <constraint firstItem="ZgX-Kf-4TV" firstAttribute="leading" secondItem="n1M-F9-kTT" secondAttribute="leading" constant="8" id="YGN-ZC-7yj"/>
+                        <constraint firstItem="FJY-fw-Egb" firstAttribute="leading" secondItem="n1M-F9-kTT" secondAttribute="leading" constant="8" id="YOc-di-b0g"/>
+                        <constraint firstItem="WGy-xa-HV4" firstAttribute="height" secondItem="n1M-F9-kTT" secondAttribute="height" multiplier="0.09" id="b5o-am-lpr"/>
+                        <constraint firstItem="ZgX-Kf-4TV" firstAttribute="top" secondItem="FJY-fw-Egb" secondAttribute="bottom" constant="8" id="cip-rG-VqK"/>
+                        <constraint firstItem="WGy-xa-HV4" firstAttribute="leading" secondItem="n1M-F9-kTT" secondAttribute="leading" constant="8" id="oOs-cW-Bow"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="n1M-F9-kTT" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="0BR-7w-3gB"/>
+                <constraint firstItem="n1M-F9-kTT" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.7" id="8bz-vs-SlX"/>
+                <constraint firstItem="n1M-F9-kTT" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="H2E-xd-OAX"/>
+                <constraint firstItem="n1M-F9-kTT" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="fp8-dN-UTW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="115.5"/>
+        </view>
+    </objects>
+</document>
