@@ -1,0 +1,6 @@
+framework module Pods_mcaiOSCL {
+  umbrella header "Pods-mcaiOSCL-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -499,20 +499,8 @@
 		62523255219CF36900EA4F7A /* CardHeaderSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62523215219CF36800EA4F7A /* CardHeaderSummaryView.swift */; };
 		62523256219CF36900EA4F7A /* CardHeaderServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62523216219CF36800EA4F7A /* CardHeaderServiceView.swift */; };
 		62523257219CF36900EA4F7A /* CardHeaderServiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62523217219CF36800EA4F7A /* CardHeaderServiceView.xib */; };
-		6287465A219CD9B200C53384 /* mcaUtilsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62874650219CD9B200C53384 /* mcaUtilsiOS.framework */; };
-		6287465F219CD9B200C53384 /* mcaUtilsiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6287465E219CD9B200C53384 /* mcaUtilsiOSTests.swift */; };
 		62874661219CD9B200C53384 /* mcaUtilsiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 62874653219CD9B200C53384 /* mcaUtilsiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6287465B219CD9B200C53384 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 62874647219CD9B200C53384 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6287464F219CD9B200C53384;
-			remoteInfo = mcaUtilsiOS;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		170AEF6659E0C1B563ED2A8C /* Pods_mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1010,11 +998,8 @@
 		62874650219CD9B200C53384 /* mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62874653219CD9B200C53384 /* mcaUtilsiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mcaUtilsiOS.h; sourceTree = "<group>"; };
 		62874654219CD9B200C53384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62874659219CD9B200C53384 /* mcaUtilsiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mcaUtilsiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6287465E219CD9B200C53384 /* mcaUtilsiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mcaUtilsiOSTests.swift; sourceTree = "<group>"; };
-		62874660219CD9B200C53384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		652D227E294C8DDFD4A6583D /* Pods-mcaUtilsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.debug.xcconfig"; path = "../mcaWorkspaceiOSCL/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.debug.xcconfig"; sourceTree = "<group>"; };
-		F1CF92E730F665769834163E /* Pods-mcaUtilsiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.release.xcconfig"; path = "../mcaWorkspaceiOSCL/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.release.xcconfig"; sourceTree = "<group>"; };
+		A6DEFDA3D524114A7F85AF9B /* Pods-mcaUtilsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.debug.xcconfig"; path = "Pods/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D83C877DBFD091C133148C26 /* Pods-mcaUtilsiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.release.xcconfig"; path = "Pods/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1023,14 +1008,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				50916FA9B8B50EA870C2BC6E /* Pods_mcaUtilsiOS.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		62874656219CD9B200C53384 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6287465A219CD9B200C53384 /* mcaUtilsiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1043,6 +1020,15 @@
 				170AEF6659E0C1B563ED2A8C /* Pods_mcaUtilsiOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		359C93A3BEAF05AC2D110B3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6DEFDA3D524114A7F85AF9B /* Pods-mcaUtilsiOS.debug.xcconfig */,
+				D83C877DBFD091C133148C26 /* Pods-mcaUtilsiOS.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		62522BBF219CE61900EA4F7A /* Components */ = {
@@ -3100,10 +3086,9 @@
 			isa = PBXGroup;
 			children = (
 				62874652219CD9B200C53384 /* mcaUtilsiOS */,
-				6287465D219CD9B200C53384 /* mcaUtilsiOSTests */,
 				62874651219CD9B200C53384 /* Products */,
-				E18B7A3FD62D50D680B60D1D /* Pods */,
 				0ABA20FE799B6879AC113E81 /* Frameworks */,
+				359C93A3BEAF05AC2D110B3C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -3111,7 +3096,6 @@
 			isa = PBXGroup;
 			children = (
 				62874650219CD9B200C53384 /* mcaUtilsiOS.framework */,
-				62874659219CD9B200C53384 /* mcaUtilsiOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3126,24 +3110,6 @@
 				62874654219CD9B200C53384 /* Info.plist */,
 			);
 			path = mcaUtilsiOS;
-			sourceTree = "<group>";
-		};
-		6287465D219CD9B200C53384 /* mcaUtilsiOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				6287465E219CD9B200C53384 /* mcaUtilsiOSTests.swift */,
-				62874660219CD9B200C53384 /* Info.plist */,
-			);
-			path = mcaUtilsiOSTests;
-			sourceTree = "<group>";
-		};
-		E18B7A3FD62D50D680B60D1D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				652D227E294C8DDFD4A6583D /* Pods-mcaUtilsiOS.debug.xcconfig */,
-				F1CF92E730F665769834163E /* Pods-mcaUtilsiOS.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3170,7 +3136,7 @@
 				6287464C219CD9B200C53384 /* Sources */,
 				6287464D219CD9B200C53384 /* Frameworks */,
 				6287464E219CD9B200C53384 /* Resources */,
-				23C91456447769EC7D209451 /* [CP] Copy Pods Resources */,
+				A5CC414F85F455EE7E48AE33 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -3180,24 +3146,6 @@
 			productName = mcaUtilsiOS;
 			productReference = 62874650219CD9B200C53384 /* mcaUtilsiOS.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		62874658219CD9B200C53384 /* mcaUtilsiOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 62874667219CD9B200C53384 /* Build configuration list for PBXNativeTarget "mcaUtilsiOSTests" */;
-			buildPhases = (
-				62874655219CD9B200C53384 /* Sources */,
-				62874656219CD9B200C53384 /* Frameworks */,
-				62874657219CD9B200C53384 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6287465C219CD9B200C53384 /* PBXTargetDependency */,
-			);
-			name = mcaUtilsiOSTests;
-			productName = mcaUtilsiOSTests;
-			productReference = 62874659219CD9B200C53384 /* mcaUtilsiOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -3210,9 +3158,6 @@
 				ORGANIZATIONNAME = Roberto;
 				TargetAttributes = {
 					6287464F219CD9B200C53384 = {
-						CreatedOnToolsVersion = 10.1;
-					};
-					62874658219CD9B200C53384 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -3230,7 +3175,6 @@
 			projectRoot = "";
 			targets = (
 				6287464F219CD9B200C53384 /* mcaUtilsiOS */,
-				62874658219CD9B200C53384 /* mcaUtilsiOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -3285,36 +3229,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62874657219CD9B200C53384 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		23C91456447769EC7D209451 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/../mcaWorkspaceiOSCL/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
-				"${PODS_ROOT}/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Resources/Localizations.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Localizations.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../mcaWorkspaceiOSCL/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		34D557EC61548A48BA3E4151 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -3331,6 +3248,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5CC414F85F455EE7E48AE33 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Resources/Localizations.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Localizations.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -3791,23 +3728,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62874655219CD9B200C53384 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6287465F219CD9B200C53384 /* mcaUtilsiOSTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6287465C219CD9B200C53384 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6287464F219CD9B200C53384 /* mcaUtilsiOS */;
-			targetProxy = 6287465B219CD9B200C53384 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		62874662219CD9B200C53384 /* Debug */ = {
@@ -3934,7 +3855,7 @@
 		};
 		62874665219CD9B200C53384 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 652D227E294C8DDFD4A6583D /* Pods-mcaUtilsiOS.debug.xcconfig */;
+			baseConfigurationReference = A6DEFDA3D524114A7F85AF9B /* Pods-mcaUtilsiOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -3960,7 +3881,7 @@
 		};
 		62874666219CD9B200C53384 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1CF92E730F665769834163E /* Pods-mcaUtilsiOS.release.xcconfig */;
+			baseConfigurationReference = D83C877DBFD091C133148C26 /* Pods-mcaUtilsiOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -3984,42 +3905,6 @@
 			};
 			name = Release;
 		};
-		62874668219CD9B200C53384 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = mcaUtilsiOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = test1.mcaUtilsiOSTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		62874669219CD9B200C53384 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = mcaUtilsiOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = test1.mcaUtilsiOSTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -4037,15 +3922,6 @@
 			buildConfigurations = (
 				62874665219CD9B200C53384 /* Debug */,
 				62874666219CD9B200C53384 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		62874667219CD9B200C53384 /* Build configuration list for PBXNativeTarget "mcaUtilsiOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				62874668219CD9B200C53384 /* Debug */,
-				62874669219CD9B200C53384 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,6 @@
+framework module Pods_mcaManageriOS {
+  umbrella header "Pods-mcaManageriOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

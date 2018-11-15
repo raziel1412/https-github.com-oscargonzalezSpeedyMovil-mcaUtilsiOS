@@ -1,0 +1,6 @@
+framework module Pods_mcaUtilsiOS {
+  umbrella header "Pods-mcaUtilsiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

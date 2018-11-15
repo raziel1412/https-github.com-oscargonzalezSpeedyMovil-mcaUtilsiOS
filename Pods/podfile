@@ -1,0 +1,106 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+workspace 'mcaWorkspaceiOSCL'
+workspace 'mcaWorkspaceiOSCENAM'
+project '/mcaLoginiOS/mcaLoginiOS.xcodeproj'
+project '/mcaManageriOS/mcaManageriOS.xcodeproj'
+project '/mcaUtilsiOS/mcaUtilsiOS.xcodeproj'
+project '/mcaWelcomeiOS/mcaWelcomeiOS.xcodeproj'
+project '/mcaWorkspaceiOSCENAM/mcaiOSCENAM.xcodeproj'
+project '/mcaWorkspaceiOSCL/mcaiOSCL.xcodeproj'
+
+def project_pods
+    # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+    pod 'IBMMobileFirstPlatformFoundation'
+    pod 'Cartography', '~> 1.1'
+    pod 'SkyFloatingLabelTextField', '~> 3.0'
+    pod 'XLPagerTabStrip', '~> 7.0'
+    pod 'ObjectMapper', '~> 3.3'
+
+    # Pods for MiClaro
+    pod 'SidebarOverlay', '~> 4.1'
+    pod 'FontAwesome.swift', '~> 1.2.0'
+    pod 'MTPopup', '~> 1.0.2'
+    pod 'ReachabilitySwift', '~> 3.0.0'
+    pod 'PKHUD', '~> 4.2.3'
+    pod 'lottie-ios'
+    pod 'IQKeyboardManagerSwift', '4.0.13'
+    pod 'SevenSwitch', '~> 2.1'
+    pod 'DLRadioButton', '~> 1.4.9'
+    pod 'GoogleMaps'
+    pod 'JSONWebToken'
+    #Crash
+    pod 'Fabric', '~> 1.7.3'
+    pod 'Crashlytics', '~> 3.10'
+
+    pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :branch => 'master'
+    pod 'SwiftyJSON'
+end
+
+target 'mcaLoginiOS' do
+    platform :ios, '9.0'
+    use_frameworks!
+    project '../../mcaLoginiOS/mcaLoginiOS.xcodeproj'
+    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+    project_pods
+end
+
+target 'mcaManageriOS' do
+    platform :ios, '9.0'
+    use_frameworks!
+    project '../../mcaManageriOS/mcaManageriOS.xcodeproj'
+    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+    project_pods
+end
+
+target 'mcaUtilsiOS' do
+    platform :ios, '9.0'
+    use_frameworks!
+    project '../../mcaUtilsiOS/mcaUtilsiOS.xcodeproj'
+    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+    project_pods
+end
+
+target 'mcaWelcomeiOS' do
+    platform :ios, '9.0'
+    use_frameworks!
+    project '../../mcaWelcomeiOS/mcaWelcomeiOS.xcodeproj'
+    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+    project_pods
+end
+
+target 'mcaiOSCENAM' do
+   platform :ios, '9.0'
+   use_frameworks!
+   project '../../mcaWorkspaceiOSCENAM/mcaiOSCENAM/mcaiOSCENAM.xcodeproj'
+   workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+   #workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+   project_pods
+end
+
+target 'mcaiOSCL' do
+   platform :ios, '9.0'
+   use_frameworks!
+   project '../../mcaWorkspaceiOSCL/mcaiOSCL/mcaiOSCL.xcodeproj'
+   workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+   #workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+   project_pods
+end
+
+post_install do |installer|
+    
+    installer.pods_project.targets.each do |target|
+        
+        if target.name == 'JSONWebToken'
+            system("rm -rf Pods/JSONWebToken/CommonCrypto")
+        end
+        
+    end
+    
+end
