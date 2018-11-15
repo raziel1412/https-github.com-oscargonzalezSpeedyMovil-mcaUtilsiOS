@@ -499,6 +499,58 @@
 		62523255219CF36900EA4F7A /* CardHeaderSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62523215219CF36800EA4F7A /* CardHeaderSummaryView.swift */; };
 		62523256219CF36900EA4F7A /* CardHeaderServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62523216219CF36800EA4F7A /* CardHeaderServiceView.swift */; };
 		62523257219CF36900EA4F7A /* CardHeaderServiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62523217219CF36800EA4F7A /* CardHeaderServiceView.xib */; };
+<<<<<<< HEAD
+=======
+		627F0F2C219E004900ED0249 /* HexColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0EF9219E004900ED0249 /* HexColorExtension.swift */; };
+		627F0F2D219E004900ED0249 /* CameraViewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627F0EFB219E004900ED0249 /* CameraViewAssets.xcassets */; };
+		627F0F2E219E004900ED0249 /* CroppingParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0EFD219E004900ED0249 /* CroppingParameters.swift */; };
+		627F0F2F219E004900ED0249 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0EFE219E004900ED0249 /* Utilities.swift */; };
+		627F0F30219E004900ED0249 /* CameraGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0EFF219E004900ED0249 /* CameraGlobals.swift */; };
+		627F0F31219E004900ED0249 /* SingleImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F00219E004900ED0249 /* SingleImageFetcher.swift */; };
+		627F0F32219E004900ED0249 /* CameraShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F01219E004900ED0249 /* CameraShot.swift */; };
+		627F0F33219E004900ED0249 /* SingleImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F02219E004900ED0249 /* SingleImageSaver.swift */; };
+		627F0F34219E004900ED0249 /* VolumeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F03219E004900ED0249 /* VolumeControl.swift */; };
+		627F0F35219E004900ED0249 /* PhotoLibraryAuthorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F04219E004900ED0249 /* PhotoLibraryAuthorizer.swift */; };
+		627F0F36219E004900ED0249 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F05219E004900ED0249 /* UIViewExtensions.swift */; };
+		627F0F37219E004900ED0249 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F06219E004900ED0249 /* UIButtonExtensions.swift */; };
+		627F0F38219E004900ED0249 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F07219E004900ED0249 /* ImageFetcher.swift */; };
+		627F0F39219E004900ED0249 /* CameraView.strings in Resources */ = {isa = PBXBuildFile; fileRef = 627F0F08219E004900ED0249 /* CameraView.strings */; };
+		627F0F3A219E004900ED0249 /* CameraViewControllerConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F0A219E004900ED0249 /* CameraViewControllerConstraint.swift */; };
+		627F0F3B219E004900ED0249 /* PhotoLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F0B219E004900ED0249 /* PhotoLibraryViewController.swift */; };
+		627F0F3C219E004900ED0249 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F0C219E004900ED0249 /* ConfirmViewController.swift */; };
+		627F0F3D219E004900ED0249 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F0D219E004900ED0249 /* CameraViewController.swift */; };
+		627F0F3E219E004900ED0249 /* ConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 627F0F0E219E004900ED0249 /* ConfirmViewController.xib */; };
+		627F0F3F219E004900ED0249 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F10219E004900ED0249 /* CameraView.swift */; };
+		627F0F40219E004900ED0249 /* CropOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F11219E004900ED0249 /* CropOverlay.swift */; };
+		627F0F41219E004900ED0249 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F12219E004900ED0249 /* PermissionsView.swift */; };
+		627F0F42219E004900ED0249 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F13219E004900ED0249 /* ImageCell.swift */; };
+		627F0F43219E004900ED0249 /* NewUpdateAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F14219E004900ED0249 /* NewUpdateAlertViewController.swift */; };
+		627F0F44219E004900ED0249 /* Extension + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F15219E004900ED0249 /* Extension + UIViewController.swift */; };
+		627F0F45219E004900ED0249 /* SessionSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F16219E004900ED0249 /* SessionSingleton.swift */; };
+		627F0F46219E004900ED0249 /* NewUpdateAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 627F0F17219E004900ED0249 /* NewUpdateAlertViewController.xib */; };
+		627F0F47219E004900ED0249 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F18219E004900ED0249 /* UILabelExtension.swift */; };
+		627F0F48219E004900ED0249 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F19219E004900ED0249 /* CustomAlertViewController.swift */; };
+		627F0F49219E004900ED0249 /* GooglePlacesSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F1A219E004900ED0249 /* GooglePlacesSearchController.swift */; };
+		627F0F4A219E004900ED0249 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 627F0F1B219E004900ED0249 /* Localizable.strings */; };
+		627F0F4B219E004900ED0249 /* MiClaro-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 627F0F1C219E004900ED0249 /* MiClaro-Bridging-Header.h */; };
+		627F0F4C219E004900ED0249 /* AnalyticsInteractionSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F1D219E004900ED0249 /* AnalyticsInteractionSingleton.swift */; };
+		627F0F4D219E004900ED0249 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F1E219E004900ED0249 /* ViewExtension.swift */; };
+		627F0F4E219E004900ED0249 /* WebViewAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F1F219E004900ED0249 /* WebViewAlertViewController.swift */; };
+		627F0F4F219E004900ED0249 /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F20219E004900ED0249 /* ImageViewExtension.swift */; };
+		627F0F50219E004900ED0249 /* PlanDetailAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F21219E004900ED0249 /* PlanDetailAlertViewController.swift */; };
+		627F0F51219E004900ED0249 /* WebServicesWithObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F22219E004900ED0249 /* WebServicesWithObjects.swift */; };
+		627F0F52219E004900ED0249 /* Observers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F23219E004900ED0249 /* Observers.swift */; };
+		627F0F53219E004900ED0249 /* GeneralUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F24219E004900ED0249 /* GeneralUtils.swift */; };
+		627F0F54219E004900ED0249 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F25219E004900ED0249 /* StringExtension.swift */; };
+		627F0F55219E004900ED0249 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F26219E004900ED0249 /* Extension+UIView.swift */; };
+		627F0F56219E004900ED0249 /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F27219E004900ED0249 /* Extension+Date.swift */; };
+		627F0F57219E004900ED0249 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F28219E004900ED0249 /* Appearance.swift */; };
+		627F0F58219E004900ED0249 /* spinMiClaro.json in Resources */ = {isa = PBXBuildFile; fileRef = 627F0F2A219E004900ED0249 /* spinMiClaro.json */; };
+		627F0F59219E004900ED0249 /* spinMiClaro2.json in Resources */ = {isa = PBXBuildFile; fileRef = 627F0F2B219E004900ED0249 /* spinMiClaro2.json */; };
+		627F0F5C219E00FC00ED0249 /* ReachabilityManual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F0F5B219E00FC00ED0249 /* ReachabilityManual.swift */; };
+		6287465A219CD9B200C53384 /* mcaUtilsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62874650219CD9B200C53384 /* mcaUtilsiOS.framework */; };
+		6287465F219CD9B200C53384 /* mcaUtilsiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6287465E219CD9B200C53384 /* mcaUtilsiOSTests.swift */; };
+>>>>>>> 9de3ae5ecaa7129a9cadff92f6ea5c32404e2875
 		62874661219CD9B200C53384 /* mcaUtilsiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 62874653219CD9B200C53384 /* mcaUtilsiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -995,6 +1047,53 @@
 		62523215219CF36800EA4F7A /* CardHeaderSummaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardHeaderSummaryView.swift; sourceTree = "<group>"; };
 		62523216219CF36800EA4F7A /* CardHeaderServiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardHeaderServiceView.swift; sourceTree = "<group>"; };
 		62523217219CF36800EA4F7A /* CardHeaderServiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardHeaderServiceView.xib; sourceTree = "<group>"; };
+		627F0EF9219E004900ED0249 /* HexColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColorExtension.swift; sourceTree = "<group>"; };
+		627F0EFB219E004900ED0249 /* CameraViewAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CameraViewAssets.xcassets; sourceTree = "<group>"; };
+		627F0EFD219E004900ED0249 /* CroppingParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CroppingParameters.swift; sourceTree = "<group>"; };
+		627F0EFE219E004900ED0249 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		627F0EFF219E004900ED0249 /* CameraGlobals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraGlobals.swift; sourceTree = "<group>"; };
+		627F0F00219E004900ED0249 /* SingleImageFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleImageFetcher.swift; sourceTree = "<group>"; };
+		627F0F01219E004900ED0249 /* CameraShot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraShot.swift; sourceTree = "<group>"; };
+		627F0F02219E004900ED0249 /* SingleImageSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleImageSaver.swift; sourceTree = "<group>"; };
+		627F0F03219E004900ED0249 /* VolumeControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeControl.swift; sourceTree = "<group>"; };
+		627F0F04219E004900ED0249 /* PhotoLibraryAuthorizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibraryAuthorizer.swift; sourceTree = "<group>"; };
+		627F0F05219E004900ED0249 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		627F0F06219E004900ED0249 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
+		627F0F07219E004900ED0249 /* ImageFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
+		627F0F08219E004900ED0249 /* CameraView.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = CameraView.strings; sourceTree = "<group>"; };
+		627F0F0A219E004900ED0249 /* CameraViewControllerConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewControllerConstraint.swift; sourceTree = "<group>"; };
+		627F0F0B219E004900ED0249 /* PhotoLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibraryViewController.swift; sourceTree = "<group>"; };
+		627F0F0C219E004900ED0249 /* ConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
+		627F0F0D219E004900ED0249 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		627F0F0E219E004900ED0249 /* ConfirmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmViewController.xib; sourceTree = "<group>"; };
+		627F0F10219E004900ED0249 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		627F0F11219E004900ED0249 /* CropOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropOverlay.swift; sourceTree = "<group>"; };
+		627F0F12219E004900ED0249 /* PermissionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
+		627F0F13219E004900ED0249 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		627F0F14219E004900ED0249 /* NewUpdateAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUpdateAlertViewController.swift; sourceTree = "<group>"; };
+		627F0F15219E004900ED0249 /* Extension + UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension + UIViewController.swift"; sourceTree = "<group>"; };
+		627F0F16219E004900ED0249 /* SessionSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionSingleton.swift; sourceTree = "<group>"; };
+		627F0F17219E004900ED0249 /* NewUpdateAlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewUpdateAlertViewController.xib; sourceTree = "<group>"; };
+		627F0F18219E004900ED0249 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		627F0F19219E004900ED0249 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		627F0F1A219E004900ED0249 /* GooglePlacesSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlacesSearchController.swift; sourceTree = "<group>"; };
+		627F0F1B219E004900ED0249 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		627F0F1C219E004900ED0249 /* MiClaro-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MiClaro-Bridging-Header.h"; sourceTree = "<group>"; };
+		627F0F1D219E004900ED0249 /* AnalyticsInteractionSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsInteractionSingleton.swift; sourceTree = "<group>"; };
+		627F0F1E219E004900ED0249 /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		627F0F1F219E004900ED0249 /* WebViewAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewAlertViewController.swift; sourceTree = "<group>"; };
+		627F0F20219E004900ED0249 /* ImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
+		627F0F21219E004900ED0249 /* PlanDetailAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanDetailAlertViewController.swift; sourceTree = "<group>"; };
+		627F0F22219E004900ED0249 /* WebServicesWithObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesWithObjects.swift; sourceTree = "<group>"; };
+		627F0F23219E004900ED0249 /* Observers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observers.swift; sourceTree = "<group>"; };
+		627F0F24219E004900ED0249 /* GeneralUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUtils.swift; sourceTree = "<group>"; };
+		627F0F25219E004900ED0249 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		627F0F26219E004900ED0249 /* Extension+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		627F0F27219E004900ED0249 /* Extension+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
+		627F0F28219E004900ED0249 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		627F0F2A219E004900ED0249 /* spinMiClaro.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spinMiClaro.json; sourceTree = "<group>"; };
+		627F0F2B219E004900ED0249 /* spinMiClaro2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spinMiClaro2.json; sourceTree = "<group>"; };
+		627F0F5B219E00FC00ED0249 /* ReachabilityManual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManual.swift; sourceTree = "<group>"; };
 		62874650219CD9B200C53384 /* mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62874653219CD9B200C53384 /* mcaUtilsiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mcaUtilsiOS.h; sourceTree = "<group>"; };
 		62874654219CD9B200C53384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1034,6 +1133,7 @@
 		62522BBF219CE61900EA4F7A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				627F0EF8219E004900ED0249 /* Utils */,
 				62522BC0219CE61900EA4F7A /* ListOptionsVC.swift */,
 				62522DCD219CE61900EA4F7A /* ListOptionsVC.xib */,
 				625231C8219CF36800EA4F7A /* Cards */,
@@ -3082,6 +3182,109 @@
 			path = cardHeaderService;
 			sourceTree = "<group>";
 		};
+		627F0EF8219E004900ED0249 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				627F0F1C219E004900ED0249 /* MiClaro-Bridging-Header.h */,
+				627F0F1B219E004900ED0249 /* Localizable.strings */,
+				627F0F1D219E004900ED0249 /* AnalyticsInteractionSingleton.swift */,
+				627F0F28219E004900ED0249 /* Appearance.swift */,
+				627F0F19219E004900ED0249 /* CustomAlertViewController.swift */,
+				627F0F15219E004900ED0249 /* Extension + UIViewController.swift */,
+				627F0F27219E004900ED0249 /* Extension+Date.swift */,
+				627F0F26219E004900ED0249 /* Extension+UIView.swift */,
+				627F0F24219E004900ED0249 /* GeneralUtils.swift */,
+				627F0F1A219E004900ED0249 /* GooglePlacesSearchController.swift */,
+				627F0EF9219E004900ED0249 /* HexColorExtension.swift */,
+				627F0F20219E004900ED0249 /* ImageViewExtension.swift */,
+				627F0F14219E004900ED0249 /* NewUpdateAlertViewController.swift */,
+				627F0F23219E004900ED0249 /* Observers.swift */,
+				627F0F21219E004900ED0249 /* PlanDetailAlertViewController.swift */,
+				627F0F16219E004900ED0249 /* SessionSingleton.swift */,
+				627F0F25219E004900ED0249 /* StringExtension.swift */,
+				627F0F18219E004900ED0249 /* UILabelExtension.swift */,
+				627F0F1E219E004900ED0249 /* ViewExtension.swift */,
+				627F0F22219E004900ED0249 /* WebServicesWithObjects.swift */,
+				627F0F1F219E004900ED0249 /* WebViewAlertViewController.swift */,
+				627F0F17219E004900ED0249 /* NewUpdateAlertViewController.xib */,
+				627F0EFA219E004900ED0249 /* ALCameraViewController */,
+				627F0F5A219E00FC00ED0249 /* Network */,
+				627F0F29219E004900ED0249 /* Spinners */,
+			);
+			name = Utils;
+			path = mcaUtilsiOS/Utils;
+			sourceTree = SOURCE_ROOT;
+		};
+		627F0EFA219E004900ED0249 /* ALCameraViewController */ = {
+			isa = PBXGroup;
+			children = (
+				627F0EFB219E004900ED0249 /* CameraViewAssets.xcassets */,
+				627F0EFC219E004900ED0249 /* Utilities */,
+				627F0F08219E004900ED0249 /* CameraView.strings */,
+				627F0F09219E004900ED0249 /* ViewController */,
+				627F0F0F219E004900ED0249 /* Views */,
+			);
+			path = ALCameraViewController;
+			sourceTree = "<group>";
+		};
+		627F0EFC219E004900ED0249 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				627F0EFD219E004900ED0249 /* CroppingParameters.swift */,
+				627F0EFE219E004900ED0249 /* Utilities.swift */,
+				627F0EFF219E004900ED0249 /* CameraGlobals.swift */,
+				627F0F00219E004900ED0249 /* SingleImageFetcher.swift */,
+				627F0F01219E004900ED0249 /* CameraShot.swift */,
+				627F0F02219E004900ED0249 /* SingleImageSaver.swift */,
+				627F0F03219E004900ED0249 /* VolumeControl.swift */,
+				627F0F04219E004900ED0249 /* PhotoLibraryAuthorizer.swift */,
+				627F0F05219E004900ED0249 /* UIViewExtensions.swift */,
+				627F0F06219E004900ED0249 /* UIButtonExtensions.swift */,
+				627F0F07219E004900ED0249 /* ImageFetcher.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		627F0F09219E004900ED0249 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				627F0F0A219E004900ED0249 /* CameraViewControllerConstraint.swift */,
+				627F0F0B219E004900ED0249 /* PhotoLibraryViewController.swift */,
+				627F0F0C219E004900ED0249 /* ConfirmViewController.swift */,
+				627F0F0D219E004900ED0249 /* CameraViewController.swift */,
+				627F0F0E219E004900ED0249 /* ConfirmViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		627F0F0F219E004900ED0249 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				627F0F10219E004900ED0249 /* CameraView.swift */,
+				627F0F11219E004900ED0249 /* CropOverlay.swift */,
+				627F0F12219E004900ED0249 /* PermissionsView.swift */,
+				627F0F13219E004900ED0249 /* ImageCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		627F0F29219E004900ED0249 /* Spinners */ = {
+			isa = PBXGroup;
+			children = (
+				627F0F2A219E004900ED0249 /* spinMiClaro.json */,
+				627F0F2B219E004900ED0249 /* spinMiClaro2.json */,
+			);
+			path = Spinners;
+			sourceTree = "<group>";
+		};
+		627F0F5A219E00FC00ED0249 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				627F0F5B219E00FC00ED0249 /* ReachabilityManual.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		62874646219CD9B200C53384 = {
 			isa = PBXGroup;
 			children = (
@@ -3119,6 +3322,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				627F0F4B219E004900ED0249 /* MiClaro-Bridging-Header.h in Headers */,
 				62522E80219CE61A00EA4F7A /* RemoveSMSPremiumFromBlackList.h in Headers */,
 				62874661219CD9B200C53384 /* mcaUtilsiOS.h in Headers */,
 			);
@@ -3185,6 +3389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62523246219CF36900EA4F7A /* CardSelectServiceView.xib in Resources */,
+				627F0F4A219E004900ED0249 /* Localizable.strings in Resources */,
 				62522FBD219CE62900EA4F7A /* Roboto-ThinItalic.ttf in Resources */,
 				6252321F219CF36900EA4F7A /* CardButtonBoletaView.xib in Resources */,
 				62523223219CF36900EA4F7A /* CardSummaryDetailView.xib in Resources */,
@@ -3192,14 +3397,18 @@
 				6252322A219CF36900EA4F7A /* CardDetailDataTableCell.xib in Resources */,
 				62523219219CF36900EA4F7A /* CardBalanceView.xib in Resources */,
 				6252324A219CF36900EA4F7A /* PopupDescriptionPlanViewController.xib in Resources */,
+				627F0F58219E004900ED0249 /* spinMiClaro.json in Resources */,
+				627F0F46219E004900ED0249 /* NewUpdateAlertViewController.xib in Resources */,
 				62522FC2219CE62900EA4F7A /* Roboto-BlackItalic.ttf in Resources */,
 				62522FBF219CE62900EA4F7A /* Roboto-LightItalic.ttf in Resources */,
 				62523228219CF36900EA4F7A /* CardDetailDataGraphic.xib in Resources */,
 				62522FB5219CE62900EA4F7A /* Roboto-Medium.ttf in Resources */,
 				62522FB9219CE62900EA4F7A /* Roboto-BoldCondensed.ttf in Resources */,
 				62523257219CF36900EA4F7A /* CardHeaderServiceView.xib in Resources */,
+				627F0F39219E004900ED0249 /* CameraView.strings in Resources */,
 				62523254219CF36900EA4F7A /* CardHeaderSummaryView.xib in Resources */,
 				62522FC1219CE62900EA4F7A /* Roboto-Italic.ttf in Resources */,
+				627F0F3E219E004900ED0249 /* ConfirmViewController.xib in Resources */,
 				62522FC5219CE62900EA4F7A /* Roboto-Black.ttf in Resources */,
 				6252324F219CF36900EA4F7A /* CardContentDetailGraphic.xib in Resources */,
 				62522FBE219CE62900EA4F7A /* Roboto-BoldItalic.ttf in Resources */,
@@ -3218,7 +3427,9 @@
 				6252321B219CF36900EA4F7A /* CardTitleSummaryPlan.xib in Resources */,
 				62522FC0219CE62900EA4F7A /* Roboto-CondensedItalic.ttf in Resources */,
 				62522FC7219CE6BF00EA4F7A /* Assets.xcassets in Resources */,
+				627F0F59219E004900ED0249 /* spinMiClaro2.json in Resources */,
 				62522FBC219CE62900EA4F7A /* Roboto_Specimen_Book.pdf in Resources */,
+				627F0F2D219E004900ED0249 /* CameraViewAssets.xcassets in Resources */,
 				62522FC4219CE62900EA4F7A /* Roboto-Thin.ttf in Resources */,
 				62522FC3219CE62900EA4F7A /* Roboto-Bold.ttf in Resources */,
 				62522F73219CE61A00EA4F7A /* ListOptionsVC.xib in Resources */,
@@ -3285,6 +3496,7 @@
 				62522F30219CE61A00EA4F7A /* ValidateTempPasswordRequest.swift in Sources */,
 				62522F06219CE61A00EA4F7A /* SwitchPlanResponse.swift in Sources */,
 				62522E9E219CE61A00EA4F7A /* RetrieveVASDetailsResult.swift in Sources */,
+				627F0F48219E004900ED0249 /* CustomAlertViewController.swift in Sources */,
 				62522E15219CE61900EA4F7A /* RetrieveProfileInformationRequest.swift in Sources */,
 				62522E90219CE61A00EA4F7A /* UpdateChannelStatusResult.swift in Sources */,
 				62522F5C219CE61A00EA4F7A /* CreateNewRegisterRequest.swift in Sources */,
@@ -3300,6 +3512,7 @@
 				6252322B219CF36900EA4F7A /* CardDetailDataGraphic.swift in Sources */,
 				62522F4A219CE61A00EA4F7A /* RetrieveElectronicDocumentPDF.swift in Sources */,
 				62522E2B219CE61900EA4F7A /* BaseRequest.swift in Sources */,
+				627F0F49219E004900ED0249 /* GooglePlacesSearchController.swift in Sources */,
 				62522F23219CE61A00EA4F7A /* RetrieveConsumptionDetailInformationResult.swift in Sources */,
 				62522F95219CE61A00EA4F7A /* GreenBorderWhiteBackgroundButton.swift in Sources */,
 				62522E9A219CE61A00EA4F7A /* UpdatePasswordEditProfile.swift in Sources */,
@@ -3309,11 +3522,13 @@
 				62522F37219CE61A00EA4F7A /* RetrieveSMSPremiumBlackListStatusResult.swift in Sources */,
 				62522F9E219CE61A00EA4F7A /* SquaredCheckbox.swift in Sources */,
 				62522F02219CE61A00EA4F7A /* class AddSMSPremiumToBlackListResponse.swift in Sources */,
+				627F0F4E219E004900ED0249 /* WebViewAlertViewController.swift in Sources */,
 				62522EE6219CE61A00EA4F7A /* Click2BuyConfig.swift in Sources */,
 				62522F19219CE61A00EA4F7A /* UpdatePortalUserResult.swift in Sources */,
 				62522F8F219CE61A00EA4F7A /* CustomNavigationBar.swift in Sources */,
 				6252323D219CF36900EA4F7A /* CardsLineaFijaManagement.swift in Sources */,
 				62522F74219CE61A00EA4F7A /* ToolTipGroup.swift in Sources */,
+				627F0F33219E004900ED0249 /* SingleImageSaver.swift in Sources */,
 				62522EB0219CE61A00EA4F7A /* HelpSupportRequest.swift in Sources */,
 				62522ED3219CE61A00EA4F7A /* SideNavigationMenu.swift in Sources */,
 				62522EB7219CE61A00EA4F7A /* Pantalla02.swift in Sources */,
@@ -3336,12 +3551,14 @@
 				62522E4C219CE61900EA4F7A /* RetrieveSMSPremiumSubscriptionsResult.swift in Sources */,
 				62522F00219CE61A00EA4F7A /* RetrievePromotion.swift in Sources */,
 				62522F2F219CE61A00EA4F7A /* ValidateTempPassword.swift in Sources */,
+				627F0F40219E004900ED0249 /* CropOverlay.swift in Sources */,
 				62522F31219CE61A00EA4F7A /* ValidatePersonalVerificationQuestionsResponse.swift in Sources */,
 				62522F3A219CE61A00EA4F7A /* RetrievePackageResult.swift in Sources */,
 				62522EE1219CE61A00EA4F7A /* CachedService.swift in Sources */,
 				62522EAA219CE61A00EA4F7A /* RetrieveSwitchPlanImplicationsResult.swift in Sources */,
 				62522E5F219CE61900EA4F7A /* ValidateCredentialsRequest.swift in Sources */,
 				62522F89219CE61A00EA4F7A /* BlackTitleLabel.swift in Sources */,
+				627F0F55219E004900ED0249 /* Extension+UIView.swift in Sources */,
 				62522E25219CE61900EA4F7A /* ChannelList.swift in Sources */,
 				62522E4F219CE61900EA4F7A /* UpdatePasswordResponse.swift in Sources */,
 				62522E52219CE61900EA4F7A /* UpdatePassword.swift in Sources */,
@@ -3349,6 +3566,7 @@
 				62522F38219CE61A00EA4F7A /* RetrieveSMSPremiumBlackListStatus.swift in Sources */,
 				62522E57219CE61900EA4F7A /* IdentityLogin.swift in Sources */,
 				62522F92219CE61A00EA4F7A /* UIHeaderForm.swift in Sources */,
+				627F0F43219E004900ED0249 /* NewUpdateAlertViewController.swift in Sources */,
 				62522E9D219CE61A00EA4F7A /* RetrieveVASDetailsResponse.swift in Sources */,
 				62522E84219CE61A00EA4F7A /* RetrieveSMSPremiumHistoryResponse.swift in Sources */,
 				62522F14219CE61A00EA4F7A /* SendNotificationResponse.swift in Sources */,
@@ -3358,6 +3576,7 @@
 				62522E3E219CE61900EA4F7A /* ValidateRUTRequest.swift in Sources */,
 				62522EC2219CE61A00EA4F7A /* AcknowledgementCode.swift in Sources */,
 				62522EB1219CE61A00EA4F7A /* Childs.swift in Sources */,
+				627F0F2E219E004900ED0249 /* CroppingParameters.swift in Sources */,
 				62522F5D219CE61A00EA4F7A /* PersonalId.swift in Sources */,
 				62522F8C219CE61A00EA4F7A /* PhoneLabel.swift in Sources */,
 				62522F0F219CE61A00EA4F7A /* CreateChangePlanTicketResult.swift in Sources */,
@@ -3366,6 +3585,7 @@
 				62522F84219CE61A00EA4F7A /* WebViewController.swift in Sources */,
 				62523249219CF36900EA4F7A /* CardFacturationView.swift in Sources */,
 				62522F04219CE61A00EA4F7A /* AddSMSPremiumToBlackListRequest.swift in Sources */,
+				627F0F2F219E004900ED0249 /* Utilities.swift in Sources */,
 				62522F12219CE61A00EA4F7A /* PlanRequest.swift in Sources */,
 				62522E45219CE61900EA4F7A /* ContactMethod.swift in Sources */,
 				62522F3F219CE61A00EA4F7A /* RetrievePackageListRequest.swift in Sources */,
@@ -3382,6 +3602,7 @@
 				62522EC5219CE61A00EA4F7A /* Pantalla03.swift in Sources */,
 				62522F5A219CE61A00EA4F7A /* CreateNewRegisterResponse.swift in Sources */,
 				62522EEF219CE61A00EA4F7A /* Click2BuyText.swift in Sources */,
+				627F0F54219E004900ED0249 /* StringExtension.swift in Sources */,
 				62522E53219CE61900EA4F7A /* JSONStringToIntTransform.swift in Sources */,
 				62522EFC219CE61A00EA4F7A /* PlanType.swift in Sources */,
 				6252322E219CF36900EA4F7A /* CardDetailDataText.swift in Sources */,
@@ -3413,6 +3634,7 @@
 				62522F60219CE61A00EA4F7A /* AccountDetailsList.swift in Sources */,
 				62523235219CF36900EA4F7A /* CardsSummaryModel.swift in Sources */,
 				62522F56219CE61A00EA4F7A /* RetrievePortalUserResponse.swift in Sources */,
+				627F0F4F219E004900ED0249 /* ImageViewExtension.swift in Sources */,
 				62522E5E219CE61900EA4F7A /* ValidateCredentialsResponse.swift in Sources */,
 				62522E94219CE61A00EA4F7A /* ServiceChannel.swift in Sources */,
 				62522E2A219CE61900EA4F7A /* RetrieveChannelsOfferRequest.swift in Sources */,
@@ -3420,6 +3642,7 @@
 				62522E59219CE61900EA4F7A /* ValidateNumberResponse.swift in Sources */,
 				62522E7F219CE61A00EA4F7A /* RemoveSMSPremiumFromBlackListResponse.swift in Sources */,
 				62522E0D219CE61900EA4F7A /* SendBillNotification.swift in Sources */,
+				627F0F4D219E004900ED0249 /* ViewExtension.swift in Sources */,
 				62522EC0219CE61A00EA4F7A /* NewRegisterText.swift in Sources */,
 				62522F5E219CE61A00EA4F7A /* PersonalDetailsInformation.swift in Sources */,
 				62522ED7219CE61A00EA4F7A /* UsagePermissionsText.swift in Sources */,
@@ -3429,6 +3652,9 @@
 				62522E24219CE61900EA4F7A /* RetrieveBillDetailsRequest.swift in Sources */,
 				62522E0B219CE61900EA4F7A /* SendBillNotificationResult.swift in Sources */,
 				62522EFE219CE61A00EA4F7A /* Cost.swift in Sources */,
+				627F0F53219E004900ED0249 /* GeneralUtils.swift in Sources */,
+				627F0F32219E004900ED0249 /* CameraShot.swift in Sources */,
+				627F0F31219E004900ED0249 /* SingleImageFetcher.swift in Sources */,
 				62522F18219CE61A00EA4F7A /* UpdatePortalUserResponse.swift in Sources */,
 				62522EF1219CE61A00EA4F7A /* Node.swift in Sources */,
 				62523231219CF36900EA4F7A /* CardsInternetModel.swift in Sources */,
@@ -3451,7 +3677,9 @@
 				62522F53219CE61A00EA4F7A /* UpdateTransactionPasswordAttemptsRequest.swift in Sources */,
 				62522EEE219CE61A00EA4F7A /* Pantalla.swift in Sources */,
 				62522F75219CE61A00EA4F7A /* WarningView.swift in Sources */,
+				627F0F3C219E004900ED0249 /* ConfirmViewController.swift in Sources */,
 				62522ECB219CE61A00EA4F7A /* Home.swift in Sources */,
+				627F0F5C219E00FC00ED0249 /* ReachabilityManual.swift in Sources */,
 				62522E68219CE61A00EA4F7A /* RechargeHistory.swift in Sources */,
 				62522E10219CE61900EA4F7A /* RetrieveProfileInformationResponse.swift in Sources */,
 				62522EDC219CE61A00EA4F7A /* HelpOnlineDynamicOptions.swift in Sources */,
@@ -3466,6 +3694,7 @@
 				62522E5C219CE61900EA4F7A /* SDK.swift in Sources */,
 				62522F93219CE61A00EA4F7A /* ToolTipElement.swift in Sources */,
 				62522F0B219CE61A00EA4F7A /* VerifyAssociationToUserIdResponse.swift in Sources */,
+				627F0F3B219E004900ED0249 /* PhotoLibraryViewController.swift in Sources */,
 				62522E88219CE61A00EA4F7A /* RetrieveSMSPremiumHistory.swift in Sources */,
 				6252321C219CF36900EA4F7A /* CardTitleSummaryPlan.swift in Sources */,
 				62523240219CF36900EA4F7A /* DetailSuscriptionView.swift in Sources */,
@@ -3477,6 +3706,7 @@
 				62522E62219CE61A00EA4F7A /* GetPaperlessResult.swift in Sources */,
 				62522EFA219CE61A00EA4F7A /* PromotionDescription.swift in Sources */,
 				62522ECD219CE61A00EA4F7A /* Paperles.swift in Sources */,
+				627F0F57219E004900ED0249 /* Appearance.swift in Sources */,
 				62522E6B219CE61A00EA4F7A /* RetrieveCycleInformation.swift in Sources */,
 				62522F62219CE61A00EA4F7A /* RetrieveAccountListResponse.swift in Sources */,
 				62522E98219CE61A00EA4F7A /* UpdatePasswordEditProfileResponse.swift in Sources */,
@@ -3486,6 +3716,7 @@
 				62522E51219CE61900EA4F7A /* UpdatePasswordRequest.swift in Sources */,
 				62522F64219CE61A00EA4F7A /* RetrieveAccountListRequest.swift in Sources */,
 				62522FA1219CE61A00EA4F7A /* RedBackgroundButton.swift in Sources */,
+				627F0F51219E004900ED0249 /* WebServicesWithObjects.swift in Sources */,
 				62522FA2219CE61A00EA4F7A /* TermsAndConditions.swift in Sources */,
 				62522F0D219CE61A00EA4F7A /* VerifyAssociationToUserId.swift in Sources */,
 				62522F47219CE61A00EA4F7A /* RetrieveElectronicDocumentPDFResult.swift in Sources */,
@@ -3523,6 +3754,7 @@
 				62522F9D219CE61A00EA4F7A /* EmailView.swift in Sources */,
 				62523253219CF36900EA4F7A /* HeaderCardView.swift in Sources */,
 				62522F6F219CE61A00EA4F7A /* Plan.swift in Sources */,
+				627F0F45219E004900ED0249 /* SessionSingleton.swift in Sources */,
 				62522EDD219CE61A00EA4F7A /* Mobile.swift in Sources */,
 				62522F88219CE61A00EA4F7A /* CodeContainerView.swift in Sources */,
 				62522E43219CE61900EA4F7A /* AddressContactMethodDetail.swift in Sources */,
@@ -3546,12 +3778,14 @@
 				62522E8A219CE61A00EA4F7A /* PaymentTypeOtherDetail.swift in Sources */,
 				62522F21219CE61A00EA4F7A /* ServiceUsagePeriod.swift in Sources */,
 				62522E1D219CE61900EA4F7A /* ValidateTransactionPasswordAttempt.swift in Sources */,
+				627F0F36219E004900ED0249 /* UIViewExtensions.swift in Sources */,
 				62522E18219CE61900EA4F7A /* SetPaperles.swift in Sources */,
 				62522EF4219CE61A00EA4F7A /* UserProfileIdConfig.swift in Sources */,
 				62523251219CF36900EA4F7A /* CardSinBolsaView.swift in Sources */,
 				62522E89219CE61A00EA4F7A /* BillDetail.swift in Sources */,
 				62522F2E219CE61A00EA4F7A /* ValidateTempPasswordResult.swift in Sources */,
 				62522E3A219CE61900EA4F7A /* RetrievePersonalVerificationQuestionRequest.swift in Sources */,
+				627F0F3A219E004900ED0249 /* CameraViewControllerConstraint.swift in Sources */,
 				62522E6A219CE61A00EA4F7A /* RetrieveCycleInformationRequest.swift in Sources */,
 				62522F49219CE61A00EA4F7A /* RetrieveElectronicDocumentPDFRequest.swift in Sources */,
 				62522E85219CE61A00EA4F7A /* RetrieveSMSPremiumHistoryResult.swift in Sources */,
@@ -3561,6 +3795,7 @@
 				62522F54219CE61A00EA4F7A /* RetrievePortalUserResult.swift in Sources */,
 				62522ECC219CE61A00EA4F7A /* BottomMenu.swift in Sources */,
 				62522E95219CE61A00EA4F7A /* UpdateChannelStatus.swift in Sources */,
+				627F0F2C219E004900ED0249 /* HexColorExtension.swift in Sources */,
 				62522F17219CE61A00EA4F7A /* SendNotificationRequest.swift in Sources */,
 				62522EB9219CE61A00EA4F7A /* Promos.swift in Sources */,
 				62522EE2219CE61A00EA4F7A /* DataConfig.swift in Sources */,
@@ -3574,6 +3809,7 @@
 				62522E2F219CE61900EA4F7A /* ResponseHeader.swift in Sources */,
 				62522EE9219CE61A00EA4F7A /* Registro.swift in Sources */,
 				62522E7D219CE61A00EA4F7A /* UnsubscribeSMSPremiumRequest.swift in Sources */,
+				627F0F56219E004900ED0249 /* Extension+Date.swift in Sources */,
 				62522E8F219CE61A00EA4F7A /* RetrieveBillHistoryListRequest.swift in Sources */,
 				62522F1F219CE61A00EA4F7A /* ServiceFeatureUsage.swift in Sources */,
 				62522E61219CE61900EA4F7A /* BaseResult.swift in Sources */,
@@ -3581,6 +3817,7 @@
 				62522EB8219CE61A00EA4F7A /* ConfigRRSS.swift in Sources */,
 				62522F3E219CE61A00EA4F7A /* RetrievePackageList.swift in Sources */,
 				62522EC9219CE61A00EA4F7A /* MobileNumberRule.swift in Sources */,
+				627F0F52219E004900ED0249 /* Observers.swift in Sources */,
 				62522F13219CE61A00EA4F7A /* SendNotificationResult.swift in Sources */,
 				62522F87219CE61A00EA4F7A /* MandatoryInformation.swift in Sources */,
 				62522E78219CE61A00EA4F7A /* RetrievePlanTicketHistory.swift in Sources */,
@@ -3598,8 +3835,10 @@
 				62522E56219CE61900EA4F7A /* IdentityLoginRequest.swift in Sources */,
 				62522E30219CE61900EA4F7A /* RetrievePlans.swift in Sources */,
 				62522E4B219CE61900EA4F7A /* Subscription.swift in Sources */,
+				627F0F50219E004900ED0249 /* PlanDetailAlertViewController.swift in Sources */,
 				6252324C219CF36900EA4F7A /* GraphicViewHeader.swift in Sources */,
 				62522F51219CE61A00EA4F7A /* UpdateTransactionPasswordAttemptsResponse.swift in Sources */,
+				627F0F3D219E004900ED0249 /* CameraViewController.swift in Sources */,
 				62522F9A219CE61A00EA4F7A /* UITextFieldGroupPhone.swift in Sources */,
 				62522E91219CE61A00EA4F7A /* UpdateChannelStatusResponse.swift in Sources */,
 				62522EB3219CE61A00EA4F7A /* Options.swift in Sources */,
@@ -3614,6 +3853,7 @@
 				62522F3B219CE61A00EA4F7A /* RetrievePackageListResponse.swift in Sources */,
 				62522EC3219CE61A00EA4F7A /* BillingPayment.swift in Sources */,
 				62522EF5219CE61A00EA4F7A /* HomePromo.swift in Sources */,
+				627F0F3F219E004900ED0249 /* CameraView.swift in Sources */,
 				62522E47219CE61900EA4F7A /* UpdateProfileInformation.swift in Sources */,
 				62522E63219CE61A00EA4F7A /* GetPaperlessResponse.swift in Sources */,
 				62522F80219CE61A00EA4F7A /* GooglePlace.swift in Sources */,
@@ -3621,6 +3861,7 @@
 				62522E9F219CE61A00EA4F7A /* RetrieveVASDetailsRequest.swift in Sources */,
 				62522F5B219CE61A00EA4F7A /* CreateNewRegister.swift in Sources */,
 				62522F7E219CE61A00EA4F7A /* PlaceCAC.swift in Sources */,
+				627F0F30219E004900ED0249 /* CameraGlobals.swift in Sources */,
 				62522F2D219CE61A00EA4F7A /* ValidateTempPasswordResponse.swift in Sources */,
 				62522EED219CE61A00EA4F7A /* Generale.swift in Sources */,
 				6252323A219CF36900EA4F7A /* CardsMovilManagement.swift in Sources */,
@@ -3635,11 +3876,13 @@
 				62522E39219CE61900EA4F7A /* RetrievePersonalVerificationQuestionsResponse.swift in Sources */,
 				62522E11219CE61900EA4F7A /* RetrieveProfileInformationResult.swift in Sources */,
 				62522F03219CE61A00EA4F7A /* AddSMSPremiumToBlackList.swift in Sources */,
+				627F0F37219E004900ED0249 /* UIButtonExtensions.swift in Sources */,
 				62522E29219CE61900EA4F7A /* RetrieveChannelsOffer.swift in Sources */,
 				62522F7F219CE61A00EA4F7A /* GoogleDataProvider.swift in Sources */,
 				62523218219CF36900EA4F7A /* CardBalanceView.swift in Sources */,
 				62522EF8219CE61A00EA4F7A /* PlanLine.swift in Sources */,
 				62522F42219CE61A00EA4F7A /* RetrieveRechargeOptionsResult.swift in Sources */,
+				627F0F35219E004900ED0249 /* PhotoLibraryAuthorizer.swift in Sources */,
 				62522F91219CE61A00EA4F7A /* PasswordCustomTableViewCell.swift in Sources */,
 				62523247219CF36900EA4F7A /* CardSelectServiceView.swift in Sources */,
 				62522F08219CE61A00EA4F7A /* NewPlan.swift in Sources */,
@@ -3650,14 +3893,18 @@
 				62522EA4219CE61A00EA4F7A /* AssociateAccountRequest.swift in Sources */,
 				62522E1A219CE61900EA4F7A /* ValidateTransactionPasswordAttemptsResponse.swift in Sources */,
 				62522E74219CE61A00EA4F7A /* PlanTicketHistory.swift in Sources */,
+				627F0F42219E004900ED0249 /* ImageCell.swift in Sources */,
 				6252323B219CF36900EA4F7A /* CardSuscriptionModel.swift in Sources */,
 				62522EA6219CE61A00EA4F7A /* AddNewPackageResult.swift in Sources */,
+				627F0F4C219E004900ED0249 /* AnalyticsInteractionSingleton.swift in Sources */,
 				62522E6E219CE61A00EA4F7A /* CountryListResponse.swift in Sources */,
+				627F0F34219E004900ED0249 /* VolumeControl.swift in Sources */,
 				62523238219CF36900EA4F7A /* CardsMovilModel.swift in Sources */,
 				62522E64219CE61A00EA4F7A /* GetPaperlessRequest.swift in Sources */,
 				62522F2B219CE61A00EA4F7A /* RetrieveAssociatedAccount.swift in Sources */,
 				62522E36219CE61900EA4F7A /* Tooltip.swift in Sources */,
 				62522EA9219CE61A00EA4F7A /* AddNewPackage.swift in Sources */,
+				627F0F41219E004900ED0249 /* PermissionsView.swift in Sources */,
 				62522F16219CE61A00EA4F7A /* SendNotification.swift in Sources */,
 				62522E7B219CE61A00EA4F7A /* UnsubscribeService.swift in Sources */,
 				62523239219CF36900EA4F7A /* CardsLineaFijaModel.swift in Sources */,
@@ -3700,6 +3947,7 @@
 				6252321A219CF36900EA4F7A /* AccountManagement.swift in Sources */,
 				62522F7C219CE61A00EA4F7A /* LinkableLabel.swift in Sources */,
 				62522EC1219CE61A00EA4F7A /* FlagsCountry.swift in Sources */,
+				627F0F47219E004900ED0249 /* UILabelExtension.swift in Sources */,
 				62522EE5219CE61A00EA4F7A /* ReportBugCategory.swift in Sources */,
 				62522F96219CE61A00EA4F7A /* InstructionLabel.swift in Sources */,
 				62522E9B219CE61A00EA4F7A /* VASDetail.swift in Sources */,
@@ -3707,6 +3955,7 @@
 				62522E0F219CE61900EA4F7A /* BillPeriod.swift in Sources */,
 				62522EAB219CE61A00EA4F7A /* RetrieveSwitchPlanImplicationsResponse.swift in Sources */,
 				62522EA2219CE61A00EA4F7A /* AssociateAccountResponse.swift in Sources */,
+				627F0F44219E004900ED0249 /* Extension + UIViewController.swift in Sources */,
 				62522E83219CE61A00EA4F7A /* JSONStringToFloatTransform.swift in Sources */,
 				62522EC6219CE61A00EA4F7A /* Pantalla01.swift in Sources */,
 				62522EFB219CE61A00EA4F7A /* UsageLimit.swift in Sources */,
@@ -3715,6 +3964,7 @@
 				62522EF7219CE61A00EA4F7A /* PromotionsDetail.swift in Sources */,
 				62522F40219CE61A00EA4F7A /* RechargeList.swift in Sources */,
 				62522F97219CE61A00EA4F7A /* BlackBodyLabel.swift in Sources */,
+				627F0F38219E004900ED0249 /* ImageFetcher.swift in Sources */,
 				62522EEA219CE61A00EA4F7A /* AssetsBase.swift in Sources */,
 				62522E4E219CE61900EA4F7A /* RetrieveSMSPremiumSubscriptionsRequest.swift in Sources */,
 				62522F6D219CE61A00EA4F7A /* CategoryDetailList.swift in Sources */,

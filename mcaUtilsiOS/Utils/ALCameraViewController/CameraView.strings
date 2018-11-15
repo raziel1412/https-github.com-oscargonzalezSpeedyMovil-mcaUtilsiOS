@@ -1,0 +1,18 @@
+/* 
+  ALCameraView.strings
+  ALCameraViewController
+
+  Created by Alex Littlejohn on 2015/06/25.
+  Copyright (c) 2015 zero. All rights reserved.
+*/
+
+"permissions.title" = "Acceso a la cámara denegado";
+"permissions.description" = "Habilite el acceso a la cámara en su configuración de privacidad";
+
+"permissions.library.title" = "Acceso a la biblioteca de fotos denegado";
+"permissions.library.description" = "Habilite el acceso a la biblioteca de fotos en su configuración de privacidad";
+
+"permissions.settings" = "Configuración";
+
+"error.cant-fetch-photo" = "No se puede recuperar la imagen";
+"error.cant-fetch-photo.description" = "Por favor revisa tu configuración de red";

@@ -1,0 +1,193 @@
+/*
+ Localizable.strings
+ MiClaro
+ 
+ Created by Mauricio Javier Perez Flores on 7/31/17.
+ Copyright © 2017 am. All rights reserved.
+ */
+
+"Argentina" = "Argentina";
+"Brasil" = "Brasil";
+"Chile" = "Chile";
+"Colombia" = "Colombia";
+"CostaRica" = "Costa Rica";
+"Ecuador" = "Ecuador";
+"ElSalvador" = "El Salvador";
+"Guatemala" = "Guatemala";
+"Honduras" = "Honduras";
+"Mexico" = "México";
+"Nicaragua" = "Nicaragua";
+"Panama" = "Panamá";
+"Paraguay" = "Paraguay";
+"Peru" = "Perú";
+"PuertoRico" = "Puerto Rico";
+"RepublicaDominicana" = "República Dominicana";
+"Uruguay" = "Uruguay";
+"next" = "Siguiente";
+"msg-no-fields-update" = "No hay campos que actualizar.";
+"msg-incomplete-password" = "Debe completar todos los campos Cambiar Contraseña.";
+"msg-cerrar-sesion" = "¿Estás seguro que deseas cerrar sesión?";
+"alert-si-button" = "SI";
+"alert-no-button" = "NO";
+"alert-aceptar-button" = "ACEPTAR";
+"alert-cancelar-button" = "CANCELAR";
+"ingresa-tus-datos" = "Ingresa tus datos para poder crear tu cuenta en Mi Claro App";
+"placeholder-rut" = "RUT";
+"numero-de-serie" = "Número de Serie";
+"correo-electronico" = "Correo electrónico";
+"numero-de-documento" = "Número de Documento";
+"ingresa-numero-prepago-claro" = "Ingresa tu número móvil prepago Claro para agregarlo a Mi Claro App";
+"AddPrepaid-Title" = "Agregar Prepago";
+"AddPrepaid-Title-SMS" = "Ingresa el código que te enviamos por mensaje de texto.";
+"AddPrepaid-Confirmation" = "Tu prepago fue agregado correctamente.";
+"Centro-de-Soporte-Title" = "Centro de Soporte";
+"ingresa-contraseña-claro-app" = "Ingresa una contraseña para Mi Claro App";
+"ingresa-nueva-contraseña-claro-app" = "Ingresa tu nueva contraseña";
+"label-nueva-contraseña" = "Nueva contraseña";
+"label-nueva-confirmar-contraseña" = "Confirmar tu nueva contraseña";
+"contraseña-no-coincide" = "Las contraseñas introducidas no coinciden";
+"aceptar-terminos-y-condiciones" = "Debe aceptar los términos y condiciones";
+"msg-passowrds-do-not-match" = "La contraseña no coincide.";
+"title-current-password" = "Contraseña actual";
+"title-edit" = "EDITAR";
+"label-contraseña" = "Contraseña";
+"label-confirmar-contraseña" = "Confirmar tu contraseña";
+"label-aceptas-terminos-y-condiciones" = "<b>Términos y Condiciones de Uso.</b>";
+"identificador-de-tu-carne" = "Identificador de tu carné";
+"label-olvidaste-tu-mail" = "¿Olvidaste tu correo electrónico?\n<b>Registra</b> tu perfil nuevamente.";
+"perfil" = "Mi Perfil";
+"ingresar" = "Ingresar";
+"register" = "Registro";
+"accept" = "Aceptar";
+"alertSmsSent" = "Hemos enviado un código de verificación por mensaje de texto.";
+"alert-error-mail" = "Favor de ingresar un mail válido.";
+"alert-Edit" = "Los datos se actualizaron correctamente.";
+"alert-txtEmpty" = "Favor de validar que todos los campos estén completos.";
+"alert-Password-notEquals" = "La nueva contraseña debe deser igual";
+"resendCode" = "<b>Volver a enviar Código ></b>";
+"enterYourPrepaidMobileNumber" = "Ingresa tu número Prepago Claro";
+"mobileNumber" = "Número Móvil";
+"insertCode" = "Ingresa el código que te enviamos por mensaje de texto, para verificar tu cuenta.";
+"insertCodeRecoveryPassword" = "Ingresa el código que te enviamos por mensaje de texto, para recuperar tu contraseña.";
+"code" = "Código";
+"validate" = "Validar";
+"guardar-cambios" = "Guardar Cambios";
+"ingresa-tu-rut" = "Ingresa tu RUT";
+"insertRUT" = "Ingresa tu RUT y te enviaremos un código de recuperación de contraseña.";
+"alertSmsSent2" = "Te enviamos un código de verificación por mensaje de texto.";
+"debes-ingresar-codigo-verificacion" = "Debes ingresar el código de verificación";
+"acepta-terminos-y-condiciones" = "Debes aceptar nuestros Términos y Condiciones de Uso";
+"debes-ingresar-rut" = "Debes ingresar tu RUT";
+"validar-Login" = "Iniciar Sesión";
+"lengthValidation" = "Entre 6 y 12 caracteres";
+"numbersValidation" = "Al menos un número";
+"charsValidation" = "Al menos una letra";
+"symbolsValidation" = "Puedes agregar símbolos (*^'-)";
+"atencion-en-linea" = "Atención en línea";
+"onlinePayment" = "Pago en línea";
+"reloadBalance" = "Recarga";
+"terms" = "Términos y Condiciones";
+"claroAccounts" = "Todas tus cuentas Claro";
+"payAllTheBills" = "Paga todas tus cuentas Claro en un solo clic";
+"payAllTheBillsPrepago" = "Haz tu recarga y disfruta la mejores tarifas para ti";
+"totalToPay" = "Total a pagar";
+"totalPay" = "Pagar Total";
+"payBill" = "Pagar Boleta";
+"paymentDetail" = "Detalle de tu pago";
+"watchBill" = "<b>Ver Boleta ></b>";
+"detailPlan" = "<b>Ver detalles de tu plan</b>";
+"monthConsumption" = "Consumo del mes";
+"consumptionData" = "Datos Consumidos";
+"infiniteData" = "ILIMITADO";
+"availableData" = "Datos disponibles:";
+"reload" = "Recargar";
+"lb-Activar-Boleta" = "Activar boleta electrónica";
+"lb-Enviar-Boleta" = "Enviar boleta a mi correo";
+"lb-descargar-Boleta" = "Descarga de boleta";
+"encabezado" = "Boleta Electrónica Claro, cuida el Medio Ambiente y recibe tu boleta por correo electrónico.";
+"ticket" = "Tu Boleta:";
+"ticketTipo" = "Móvil";
+"ticketNumCta" = "Cuenta";
+"ticketSend" = "Será enviada a:";
+"ticketSendAditional" = "Deseas recibir tu boleta en una cuenta adicional de correo electrónico";
+"ticket-btn" = "Solicitar";
+"titleTicket" = "Alta de boleta electrónica";
+"title-alert-mail" = "Aceptar";
+"validate-info" = "Validar su correo electrónico";
+// MARK: LoginVC
+"error-title-response" = "Error";
+"error-on-service" = "Error en servicio";
+"unavailable-region" = "Región no soportada";
+"password" = "Contraseña";
+"404-response-update-transaction" = "Sin información UpdateTransaction (404)";
+"404-response-profile-information" = "Sin Información ProfileInformation (404)";
+"CL" = "RUT Titular";
+"EC" = "CC";
+"SV" = "DNI";
+"AR" = "DNI";
+"PE" = "DNI";
+"UY" = "CI";
+"CO" = "CI";
+"DO" = "CI";
+"CR" = "CI";
+"NI" = "CI";
+"PR" = "ID";
+"HN" = "TI";
+"GT" = "DPI";
+"PA" = "CIC";
+"BR" = "CPF";
+
+// MARK: CardsManagementVC
+"ammount-pay" = "Monto a pagar";
+"before-of" = "Antes del";
+"credit-available" = "Saldo";
+"valid-until" = "Vigencia";
+"mobile-title" = "Móvil";
+"phone-title" = "Teléfono";
+"tv-title" = "Televisión";
+"internet-title" = "Internet";
+"no-info-available" = "Sin información";
+"non-limits" = "Ilimitado";
+"loading-pull-info" = "CARGANDO ...";
+
+// MARK: ViewExpandVC
+"get-plan-detail" = "Ver detalles de tu plan";
+
+// MARK: ViewBodyExpandVC
+"view-detail" = "Ver detalle";
+
+// MARK: GraphicHeaderView
+"updating-info" = "Actualizando...";
+"on-going-month-comsuption" = "Consumo del mes";
+"available-data" = "Datos disponibles";
+"expires-on" = "Vence el";
+"used-data" = "Datos consumidos";
+"last-update" = "Última actualización: ";
+
+// MARK: AddPrepaidStep1VC
+"error-empty-fields" = "No deben existir campos vacíos";
+
+// MARK: PasswordRecoveryVC
+"pin-title" = "PIN";
+"accept-title" = "ACEPTAR";
+"error-invalid-email" = "El correo no es un formato válido";//"Email inválido";
+"error-empty-option" = "No ha seleccionado una opción";
+"error-empty-fields-found" = "Favor no dejar campos vacíos";
+"error-device-not-able-send-emails" = "Tú dispositivo no puede enviar correos";
+"version-number-title" = "Número de versión";
+"ok-button" = "Ok";
+"empty-fields" = "No deben existir campos vacíos.";
+"password-required" = "La contraseña es un campo requerido.";
+"support-title" = "Soporte Mi Claro";
+"info-updated" = "Tu información se actualizó correctamente.";
+"nine-digits" = "El número móvil debe ser a 9 dígitos.";
+"eight-digits" = "El número móvil debe ser a 8 dígitos.";
+// MARK: ShowTicket
+"planHomeAddress" = "Dirección:";
+
+
+"failure-services" = "Esta consulta por el momento no está disponible. Intenta más tarde.";
+
+"rut-required" = "El RUT es un campo requerido";
+"password-required" = "La contraseña es un campo requerido";
+
