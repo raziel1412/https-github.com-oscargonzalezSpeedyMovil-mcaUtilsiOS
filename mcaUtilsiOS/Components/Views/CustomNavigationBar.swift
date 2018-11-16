@@ -572,8 +572,8 @@ extension UIViewController  {
         UIApplication.shared.keyWindow?.rootViewController  = ContainerVC();
 
     }
-    func goToEditProfile(){
-        self.navigationController?.pushViewController(EditarPerfilVC(), animated: true)
+    func goToEditProfile(perfilVC: UIViewController){
+        self.navigationController?.pushViewController(perfilVC, animated: true)
     }
     
     func goBack(_sender: UIButton) {
