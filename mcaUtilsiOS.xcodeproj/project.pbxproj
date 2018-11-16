@@ -549,23 +549,9 @@
 		62EBFFC8219F1EEB00F85A3D /* RedBackgroundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFDBF219F1EEA00F85A3D /* RedBackgroundButton.swift */; };
 		62EBFFC9219F1EEB00F85A3D /* TermsAndConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFDC0219F1EEA00F85A3D /* TermsAndConditions.swift */; };
 		62EBFFCB219F204C00F85A3D /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFFCA219F204C00F85A3D /* ContainerVC.swift */; };
-		62EBFFE3219F233A00F85A3D /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62EBFFCE219F233A00F85A3D /* HomeHeaderView.xib */; };
-		62EBFFE4219F233A00F85A3D /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFFCF219F233A00F85A3D /* HomeHeaderView.swift */; };
-		62EBFFE5219F233A00F85A3D /* HomeManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFFD0219F233A00F85A3D /* HomeManagementViewController.swift */; };
-		62EBFFE6219F233A00F85A3D /* HomeContainerPromo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62EBFFD2219F233A00F85A3D /* HomeContainerPromo.xib */; };
-		62EBFFE7219F233A00F85A3D /* HomeContainerPromo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFFD3219F233A00F85A3D /* HomeContainerPromo.swift */; };
-		62EBFFE8219F233A00F85A3D /* HomePromoImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62EBFFD4219F233A00F85A3D /* HomePromoImageView.xib */; };
-		62EBFFE9219F233A00F85A3D /* HomePromoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFFD5219F233A00F85A3D /* HomePromoImageView.swift */; };
-		62EBFFEA219F233A00F85A3D /* HomeSelectOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFFD7219F233A00F85A3D /* HomeSelectOptionView.swift */; };
-		62EBFFEB219F233A00F85A3D /* HomeContainerOptionMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62EBFFD8219F233A00F85A3D /* HomeContainerOptionMenu.xib */; };
-		62EBFFEC219F233A00F85A3D /* HomeContainerOptionMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFFD9219F233A00F85A3D /* HomeContainerOptionMenu.swift */; };
-		62EBFFED219F233A00F85A3D /* HomeSelectOptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62EBFFDA219F233A00F85A3D /* HomeSelectOptionView.xib */; };
-		62EBFFEE219F233A00F85A3D /* HomeServiceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFFDC219F233A00F85A3D /* HomeServiceDetailView.swift */; };
-		62EBFFEF219F233A00F85A3D /* HomeContainerServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFFDD219F233A00F85A3D /* HomeContainerServiceView.swift */; };
-		62EBFFF0219F233A00F85A3D /* HomeContainerServiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62EBFFDE219F233A00F85A3D /* HomeContainerServiceView.xib */; };
-		62EBFFF1219F233A00F85A3D /* HomeServiceDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62EBFFDF219F233A00F85A3D /* HomeServiceDetailView.xib */; };
-		62EBFFF2219F233A00F85A3D /* HomeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFFE1219F233A00F85A3D /* HomeTitleView.swift */; };
-		62EBFFF3219F233A00F85A3D /* HomeTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62EBFFE2219F233A00F85A3D /* HomeTitleView.xib */; };
+		62EBFFF8219F26F000F85A3D /* ADBMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFFF5219F26EF00F85A3D /* ADBMobile.h */; };
+		62EBFFF9219F26F000F85A3D /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 62EBFFF6219F26EF00F85A3D /* ADBMobileConfig.json */; };
+		62EBFFFA219F26F000F85A3D /* AdobeMobileLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EBFFF7219F26EF00F85A3D /* AdobeMobileLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1113,23 +1099,9 @@
 		62EBFDBF219F1EEA00F85A3D /* RedBackgroundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedBackgroundButton.swift; sourceTree = "<group>"; };
 		62EBFDC0219F1EEA00F85A3D /* TermsAndConditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsAndConditions.swift; sourceTree = "<group>"; };
 		62EBFFCA219F204C00F85A3D /* ContainerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
-		62EBFFCE219F233A00F85A3D /* HomeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
-		62EBFFCF219F233A00F85A3D /* HomeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
-		62EBFFD0219F233A00F85A3D /* HomeManagementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeManagementViewController.swift; sourceTree = "<group>"; };
-		62EBFFD2219F233A00F85A3D /* HomeContainerPromo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeContainerPromo.xib; sourceTree = "<group>"; };
-		62EBFFD3219F233A00F85A3D /* HomeContainerPromo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeContainerPromo.swift; sourceTree = "<group>"; };
-		62EBFFD4219F233A00F85A3D /* HomePromoImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePromoImageView.xib; sourceTree = "<group>"; };
-		62EBFFD5219F233A00F85A3D /* HomePromoImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePromoImageView.swift; sourceTree = "<group>"; };
-		62EBFFD7219F233A00F85A3D /* HomeSelectOptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSelectOptionView.swift; sourceTree = "<group>"; };
-		62EBFFD8219F233A00F85A3D /* HomeContainerOptionMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeContainerOptionMenu.xib; sourceTree = "<group>"; };
-		62EBFFD9219F233A00F85A3D /* HomeContainerOptionMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeContainerOptionMenu.swift; sourceTree = "<group>"; };
-		62EBFFDA219F233A00F85A3D /* HomeSelectOptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeSelectOptionView.xib; sourceTree = "<group>"; };
-		62EBFFDC219F233A00F85A3D /* HomeServiceDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeServiceDetailView.swift; sourceTree = "<group>"; };
-		62EBFFDD219F233A00F85A3D /* HomeContainerServiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeContainerServiceView.swift; sourceTree = "<group>"; };
-		62EBFFDE219F233A00F85A3D /* HomeContainerServiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeContainerServiceView.xib; sourceTree = "<group>"; };
-		62EBFFDF219F233A00F85A3D /* HomeServiceDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeServiceDetailView.xib; sourceTree = "<group>"; };
-		62EBFFE1219F233A00F85A3D /* HomeTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTitleView.swift; sourceTree = "<group>"; };
-		62EBFFE2219F233A00F85A3D /* HomeTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTitleView.xib; sourceTree = "<group>"; };
+		62EBFFF5219F26EF00F85A3D /* ADBMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADBMobile.h; sourceTree = "<group>"; };
+		62EBFFF6219F26EF00F85A3D /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfig.json; sourceTree = "<group>"; };
+		62EBFFF7219F26EF00F85A3D /* AdobeMobileLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AdobeMobileLibrary.a; sourceTree = "<group>"; };
 		A6DEFDA3D524114A7F85AF9B /* Pods-mcaUtilsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.debug.xcconfig"; path = "Pods/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D83C877DBFD091C133148C26 /* Pods-mcaUtilsiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.release.xcconfig"; path = "Pods/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1140,6 +1112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50916FA9B8B50EA870C2BC6E /* Pods_mcaUtilsiOS.framework in Frameworks */,
+				62EBFFFA219F26F000F85A3D /* AdobeMobileLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1184,10 +1157,11 @@
 		62874652219CD9B200C53384 /* mcaUtilsiOS */ = {
 			isa = PBXGroup;
 			children = (
-				62EBFAEE219F1EE900F85A3D /* Components */,
+				62EBFFF4219F26EF00F85A3D /* AdobeMobileLibrary */,
 				62874653219CD9B200C53384 /* mcaUtilsiOS.h */,
 				62874654219CD9B200C53384 /* Info.plist */,
 				62EB36A6219E444500864FD4 /* Assets.xcassets */,
+				62EBFAEE219F1EE900F85A3D /* Components */,
 				62EB3B81219E447900864FD4 /* Tipografía */,
 			);
 			path = mcaUtilsiOS;
@@ -1221,10 +1195,10 @@
 			isa = PBXGroup;
 			children = (
 				62EBFAEF219F1EE900F85A3D /* ListOptionsVC.swift */,
-				62EBFAF0219F1EE900F85A3D /* Cards */,
-				62EBFB40219F1EE900F85A3D /* Utils */,
-				62EBFB76219F1EE900F85A3D /* Models */,
 				62EBFD82219F1EEA00F85A3D /* ListOptionsVC.xib */,
+				62EBFAF0219F1EE900F85A3D /* Cards */,
+				62EBFB76219F1EE900F85A3D /* Models */,
+				62EBFB40219F1EE900F85A3D /* Utils */,
 				62EBFD83219F1EEA00F85A3D /* ViewControllers */,
 				62EBFD85219F1EEA00F85A3D /* Views */,
 			);
@@ -1527,73 +1501,73 @@
 		62EBFB76219F1EE900F85A3D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				62EBFB77219F1EE900F85A3D /* 21 - SendBillNotification */,
-				62EBFB7F219F1EE900F85A3D /* 06 - RetrieveProfileInformation */,
-				62EBFB88219F1EE900F85A3D /* 23 - SetPaperless */,
-				62EBFB8F219F1EE900F85A3D /* 11 - ValidateTransactionPasswordAttempts */,
-				62EBFB96219F1EE900F85A3D /* 18 - RetrieveBillDetails */,
-				62EBFBA0219F1EE900F85A3D /* 55 - RetrieveChannelsOffer */,
+				62EBFBCA219F1EE900F85A3D /* BaseFault.swift */,
 				62EBFBA9219F1EE900F85A3D /* BaseRequest.swift */,
-				62EBFBAA219F1EE900F85A3D /* 13 - RetrievePlans */,
-				62EBFBB3219F1EE900F85A3D /* 05 - GetTempPassword */,
+				62EBFBD6219F1EE900F85A3D /* BaseResponse.swift */,
+				62EBFBFD219F1EE900F85A3D /* BaseResult.swift */,
+				62EBFC05219F1EE900F85A3D /* JSONIntToStringTransformation.swift */,
+				62EBFC34219F1EE900F85A3D /* JSONStringToFloatTransform.swift */,
+				62EBFBE6219F1EE900F85A3D /* JSONStringToIntTransform.swift */,
+				62EBFC68219F1EE900F85A3D /* MensajeVigencia.swift */,
+				62EBFD68219F1EEA00F85A3D /* PlanCard.swift */,
+				62EBFC0E219F1EE900F85A3D /* RRSS.swift */,
+				62EBFBF5219F1EE900F85A3D /* SDK.swift */,
 				62EBFBBA219F1EE900F85A3D /* Tooltip.swift */,
 				62EBFBBB219F1EE900F85A3D /* 01 - RetrievePersonalVerificationQuestions */,
-				62EBFBC3219F1EE900F85A3D /* 45 - ValidateRUT */,
-				62EBFBCA219F1EE900F85A3D /* BaseFault.swift */,
-				62EBFBCB219F1EE900F85A3D /* 08 - UpdateProfileInformation */,
-				62EBFBD6219F1EE900F85A3D /* BaseResponse.swift */,
-				62EBFBD7219F1EE900F85A3D /* 50 - RetrieveSMSPremiumSubscriptions */,
-				62EBFBDF219F1EE900F85A3D /* 07 - UpdatePassword */,
-				62EBFBE6219F1EE900F85A3D /* JSONStringToIntTransform.swift */,
-				62EBFBE7219F1EE900F85A3D /* 30 - IdentityLogin */,
-				62EBFBEE219F1EE900F85A3D /* 14 - ValidateNumber */,
-				62EBFBF5219F1EE900F85A3D /* SDK.swift */,
-				62EBFBF6219F1EE900F85A3D /* 31 - ValidateCredentials */,
-				62EBFBFD219F1EE900F85A3D /* BaseResult.swift */,
-				62EBFBFE219F1EE900F85A3D /* 22 - GetPaperless */,
-				62EBFC05219F1EE900F85A3D /* JSONIntToStringTransformation.swift */,
-				62EBFC06219F1EE900F85A3D /* 38 - RetrieveCycleInformation */,
-				62EBFC0E219F1EE900F85A3D /* RRSS.swift */,
-				62EBFC0F219F1EE900F85A3D /* 36 - RetrieveCountries */,
-				62EBFC15219F1EE900F85A3D /* 43 - IdentifyUserLoB */,
-				62EBFC1C219F1EE900F85A3D /* 41 - RetrievePlanTicketHistory */,
-				62EBFC24219F1EE900F85A3D /* 51 - UnsubscribeSMSPremium */,
-				62EBFC2C219F1EE900F85A3D /* 47 - RemoveSMSPremiumFromBlackList */,
-				62EBFC34219F1EE900F85A3D /* JSONStringToFloatTransform.swift */,
-				62EBFC35219F1EE900F85A3D /* 49 - RetrieveSMSPremiumHistory */,
-				62EBFC3D219F1EE900F85A3D /* 19 - RetrieveBillHistoryList */,
-				62EBFC47219F1EE900F85A3D /* 54 - UpdateChannelStatus */,
-				62EBFC51219F1EE900F85A3D /* 33 - UpdatePasswordEditProfile */,
-				62EBFC58219F1EE900F85A3D /* 27 - RetrieveVASDetails */,
-				62EBFC61219F1EE900F85A3D /* 34 - AssociateAccount */,
-				62EBFC68219F1EE900F85A3D /* MensajeVigencia.swift */,
-				62EBFC69219F1EE900F85A3D /* 53 - AddNewPackage */,
-				62EBFC70219F1EE900F85A3D /* 29 - RetrieveSwitchPlanImplications */,
-				62EBFC77219F1EE900F85A3D /* 32 - HelpSupport */,
-				62EBFC7D219F1EE900F85A3D /* ConfigMiClaro */,
-				62EBFCC4219F1EE900F85A3D /* 12 - RetrievePromotions */,
-				62EBFCD1219F1EE900F85A3D /* 46 - AddSMSPremiumToBlackList */,
-				62EBFCD8219F1EE900F85A3D /* 28 - SwitchPlan */,
-				62EBFCE0219F1EE900F85A3D /* 44 - VerifyAssociationToUserId */,
-				62EBFCE7219F1EE900F85A3D /* 42 - CreateChangePlanTicket */,
-				62EBFCEF219F1EE900F85A3D /* 03 - SendNotification */,
-				62EBFCF7219F1EE900F85A3D /* 40 - UpdatePortalUser */,
-				62EBFCFE219F1EE900F85A3D /* 37 - RetrieveConfigurationFile */,
-				62EBFD03219F1EE900F85A3D /* 24 - RetrieveConsumptionDetailInformation */,
-				62EBFD10219F1EE900F85A3D /* 17 - RetrieveAssociatedAccounts */,
-				62EBFD18219F1EE900F85A3D /* 10 - ValidateTempPassword */,
 				62EBFD1F219F1EE900F85A3D /* 02 - ValidatePersonalVerificationQuestions */,
-				62EBFD27219F1EE900F85A3D /* 48 - RetrieveSMSPremiumBlackListStatus */,
-				62EBFD2E219F1EEA00F85A3D /* 52 - RetrievePackageList */,
-				62EBFD37219F1EEA00F85A3D /* 26 - RetrieveRechargeOptions */,
-				62EBFD40219F1EEA00F85A3D /* 20 - RetrieveElectronicDocumentPDF */,
-				62EBFD48219F1EEA00F85A3D /* 35 - RetrieveToken */,
-				62EBFD50219F1EEA00F85A3D /* 09 - UpdateTransactionPasswordAttempts */,
-				62EBFD57219F1EEA00F85A3D /* 39 - RetrievePortalUser */,
+				62EBFCEF219F1EE900F85A3D /* 03 - SendNotification */,
 				62EBFD5F219F1EEA00F85A3D /* 04 - CreateNewRegister */,
-				62EBFD68219F1EEA00F85A3D /* PlanCard.swift */,
-				62EBFD69219F1EEA00F85A3D /* 16 - RetrieveAccountList */,
+				62EBFBB3219F1EE900F85A3D /* 05 - GetTempPassword */,
+				62EBFB7F219F1EE900F85A3D /* 06 - RetrieveProfileInformation */,
+				62EBFBDF219F1EE900F85A3D /* 07 - UpdatePassword */,
+				62EBFBCB219F1EE900F85A3D /* 08 - UpdateProfileInformation */,
+				62EBFD50219F1EEA00F85A3D /* 09 - UpdateTransactionPasswordAttempts */,
+				62EBFD18219F1EE900F85A3D /* 10 - ValidateTempPassword */,
+				62EBFB8F219F1EE900F85A3D /* 11 - ValidateTransactionPasswordAttempts */,
+				62EBFCC4219F1EE900F85A3D /* 12 - RetrievePromotions */,
+				62EBFBAA219F1EE900F85A3D /* 13 - RetrievePlans */,
+				62EBFBEE219F1EE900F85A3D /* 14 - ValidateNumber */,
 				62EBFD71219F1EEA00F85A3D /* 15 - RetrieveAccountDetailsFixed */,
+				62EBFD69219F1EEA00F85A3D /* 16 - RetrieveAccountList */,
+				62EBFD10219F1EE900F85A3D /* 17 - RetrieveAssociatedAccounts */,
+				62EBFB96219F1EE900F85A3D /* 18 - RetrieveBillDetails */,
+				62EBFC3D219F1EE900F85A3D /* 19 - RetrieveBillHistoryList */,
+				62EBFD40219F1EEA00F85A3D /* 20 - RetrieveElectronicDocumentPDF */,
+				62EBFB77219F1EE900F85A3D /* 21 - SendBillNotification */,
+				62EBFBFE219F1EE900F85A3D /* 22 - GetPaperless */,
+				62EBFB88219F1EE900F85A3D /* 23 - SetPaperless */,
+				62EBFD03219F1EE900F85A3D /* 24 - RetrieveConsumptionDetailInformation */,
+				62EBFD37219F1EEA00F85A3D /* 26 - RetrieveRechargeOptions */,
+				62EBFC58219F1EE900F85A3D /* 27 - RetrieveVASDetails */,
+				62EBFCD8219F1EE900F85A3D /* 28 - SwitchPlan */,
+				62EBFC70219F1EE900F85A3D /* 29 - RetrieveSwitchPlanImplications */,
+				62EBFBE7219F1EE900F85A3D /* 30 - IdentityLogin */,
+				62EBFBF6219F1EE900F85A3D /* 31 - ValidateCredentials */,
+				62EBFC77219F1EE900F85A3D /* 32 - HelpSupport */,
+				62EBFC51219F1EE900F85A3D /* 33 - UpdatePasswordEditProfile */,
+				62EBFC61219F1EE900F85A3D /* 34 - AssociateAccount */,
+				62EBFD48219F1EEA00F85A3D /* 35 - RetrieveToken */,
+				62EBFC0F219F1EE900F85A3D /* 36 - RetrieveCountries */,
+				62EBFCFE219F1EE900F85A3D /* 37 - RetrieveConfigurationFile */,
+				62EBFC06219F1EE900F85A3D /* 38 - RetrieveCycleInformation */,
+				62EBFD57219F1EEA00F85A3D /* 39 - RetrievePortalUser */,
+				62EBFCF7219F1EE900F85A3D /* 40 - UpdatePortalUser */,
+				62EBFC1C219F1EE900F85A3D /* 41 - RetrievePlanTicketHistory */,
+				62EBFCE7219F1EE900F85A3D /* 42 - CreateChangePlanTicket */,
+				62EBFC15219F1EE900F85A3D /* 43 - IdentifyUserLoB */,
+				62EBFCE0219F1EE900F85A3D /* 44 - VerifyAssociationToUserId */,
+				62EBFBC3219F1EE900F85A3D /* 45 - ValidateRUT */,
+				62EBFCD1219F1EE900F85A3D /* 46 - AddSMSPremiumToBlackList */,
+				62EBFC2C219F1EE900F85A3D /* 47 - RemoveSMSPremiumFromBlackList */,
+				62EBFD27219F1EE900F85A3D /* 48 - RetrieveSMSPremiumBlackListStatus */,
+				62EBFC35219F1EE900F85A3D /* 49 - RetrieveSMSPremiumHistory */,
+				62EBFBD7219F1EE900F85A3D /* 50 - RetrieveSMSPremiumSubscriptions */,
+				62EBFC24219F1EE900F85A3D /* 51 - UnsubscribeSMSPremium */,
+				62EBFD2E219F1EEA00F85A3D /* 52 - RetrievePackageList */,
+				62EBFC69219F1EE900F85A3D /* 53 - AddNewPackage */,
+				62EBFC47219F1EE900F85A3D /* 54 - UpdateChannelStatus */,
+				62EBFBA0219F1EE900F85A3D /* 55 - RetrieveChannelsOffer */,
+				62EBFC7D219F1EE900F85A3D /* ConfigMiClaro */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -3198,7 +3172,6 @@
 		62EBFD83219F1EEA00F85A3D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				62EBFFCC219F233A00F85A3D /* HomeManagement */,
 				62EBFFCA219F204C00F85A3D /* ContainerVC.swift */,
 				62EBFD84219F1EEA00F85A3D /* PagerTabMenuVC.swift */,
 			);
@@ -3355,68 +3328,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		62EBFFCC219F233A00F85A3D /* HomeManagement */ = {
+		62EBFFF4219F26EF00F85A3D /* AdobeMobileLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				62EBFFCD219F233A00F85A3D /* homeHeaderView */,
-				62EBFFD0219F233A00F85A3D /* HomeManagementViewController.swift */,
-				62EBFFD1219F233A00F85A3D /* homeContainerPromo */,
-				62EBFFD6219F233A00F85A3D /* homeOptionMenu */,
-				62EBFFDB219F233A00F85A3D /* homeContainerServiceView */,
-				62EBFFE0219F233A00F85A3D /* homeTitleView */,
+				62EBFFF5219F26EF00F85A3D /* ADBMobile.h */,
+				62EBFFF6219F26EF00F85A3D /* ADBMobileConfig.json */,
+				62EBFFF7219F26EF00F85A3D /* AdobeMobileLibrary.a */,
 			);
-			path = HomeManagement;
-			sourceTree = "<group>";
-		};
-		62EBFFCD219F233A00F85A3D /* homeHeaderView */ = {
-			isa = PBXGroup;
-			children = (
-				62EBFFCE219F233A00F85A3D /* HomeHeaderView.xib */,
-				62EBFFCF219F233A00F85A3D /* HomeHeaderView.swift */,
-			);
-			path = homeHeaderView;
-			sourceTree = "<group>";
-		};
-		62EBFFD1219F233A00F85A3D /* homeContainerPromo */ = {
-			isa = PBXGroup;
-			children = (
-				62EBFFD2219F233A00F85A3D /* HomeContainerPromo.xib */,
-				62EBFFD3219F233A00F85A3D /* HomeContainerPromo.swift */,
-				62EBFFD4219F233A00F85A3D /* HomePromoImageView.xib */,
-				62EBFFD5219F233A00F85A3D /* HomePromoImageView.swift */,
-			);
-			path = homeContainerPromo;
-			sourceTree = "<group>";
-		};
-		62EBFFD6219F233A00F85A3D /* homeOptionMenu */ = {
-			isa = PBXGroup;
-			children = (
-				62EBFFD7219F233A00F85A3D /* HomeSelectOptionView.swift */,
-				62EBFFD8219F233A00F85A3D /* HomeContainerOptionMenu.xib */,
-				62EBFFD9219F233A00F85A3D /* HomeContainerOptionMenu.swift */,
-				62EBFFDA219F233A00F85A3D /* HomeSelectOptionView.xib */,
-			);
-			path = homeOptionMenu;
-			sourceTree = "<group>";
-		};
-		62EBFFDB219F233A00F85A3D /* homeContainerServiceView */ = {
-			isa = PBXGroup;
-			children = (
-				62EBFFDC219F233A00F85A3D /* HomeServiceDetailView.swift */,
-				62EBFFDD219F233A00F85A3D /* HomeContainerServiceView.swift */,
-				62EBFFDE219F233A00F85A3D /* HomeContainerServiceView.xib */,
-				62EBFFDF219F233A00F85A3D /* HomeServiceDetailView.xib */,
-			);
-			path = homeContainerServiceView;
-			sourceTree = "<group>";
-		};
-		62EBFFE0219F233A00F85A3D /* homeTitleView */ = {
-			isa = PBXGroup;
-			children = (
-				62EBFFE1219F233A00F85A3D /* HomeTitleView.swift */,
-				62EBFFE2219F233A00F85A3D /* HomeTitleView.xib */,
-			);
-			path = homeTitleView;
+			path = AdobeMobileLibrary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3426,6 +3345,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62EBFFF8219F26F000F85A3D /* ADBMobile.h in Headers */,
 				62874661219CD9B200C53384 /* mcaUtilsiOS.h in Headers */,
 				62EBFEA6219F1EEA00F85A3D /* RemoveSMSPremiumFromBlackList.h in Headers */,
 				62EBFE22219F1EEA00F85A3D /* MiClaro-Bridging-Header.h in Headers */,
@@ -3497,9 +3417,7 @@
 				62EBFDD7219F1EEA00F85A3D /* CardDetailDataTable.xib in Resources */,
 				62EBFF99219F1EEA00F85A3D /* ListOptionsVC.xib in Resources */,
 				62EBFDD2219F1EEA00F85A3D /* CardDetailDataGraphic.xib in Resources */,
-				62EBFFE6219F233A00F85A3D /* HomeContainerPromo.xib in Resources */,
 				62EBFDEE219F1EEA00F85A3D /* PopupSelectServiceViewController.xib in Resources */,
-				62EBFFE3219F233A00F85A3D /* HomeHeaderView.xib in Resources */,
 				62EBFDF2219F1EEA00F85A3D /* CardFacturationView.xib in Resources */,
 				62EBFDD6219F1EEA00F85A3D /* CardDetailDataSaldo.xib in Resources */,
 				62EB3BA1219E447900864FD4 /* Roboto-Bold.ttf in Resources */,
@@ -3512,23 +3430,19 @@
 				62EB3BA3219E447900864FD4 /* Roboto-Black.ttf in Resources */,
 				62EB3B9A219E447900864FD4 /* Roboto_Specimen_Book.pdf in Resources */,
 				62EB3B9C219E447900864FD4 /* Roboto-BoldItalic.ttf in Resources */,
-				62EBFFEB219F233A00F85A3D /* HomeContainerOptionMenu.xib in Resources */,
 				62EBFDE8219F1EEA00F85A3D /* ContentDetailSuscription.xib in Resources */,
 				62EBFDF0219F1EEA00F85A3D /* CardSelectServiceView.xib in Resources */,
 				62EBFDC5219F1EEA00F85A3D /* CardTitleSummaryPlan.xib in Resources */,
 				62EBFDC3219F1EEA00F85A3D /* CardBalanceView.xib in Resources */,
 				62EBFDFE219F1EEA00F85A3D /* CardHeaderSummaryView.xib in Resources */,
-				62EBFFF1219F233A00F85A3D /* HomeServiceDetailView.xib in Resources */,
 				62EB3B94219E447900864FD4 /* Roboto-Light.ttf in Resources */,
-				62EBFFF0219F233A00F85A3D /* HomeContainerServiceView.xib in Resources */,
 				62EB3B96219E447900864FD4 /* Roboto-MediumItalic.ttf in Resources */,
 				62EB3B98219E447900864FD4 /* Roboto-BoldCondensedItalic.ttf in Resources */,
-				62EBFFF3219F233A00F85A3D /* HomeTitleView.xib in Resources */,
 				62EB3B95219E447900864FD4 /* Roboto-Regular.ttf in Resources */,
 				62EBFDD0219F1EEA00F85A3D /* CardDetailDataText.xib in Resources */,
 				62EB3BA2219E447900864FD4 /* Roboto-Thin.ttf in Resources */,
-				62EBFFE8219F233A00F85A3D /* HomePromoImageView.xib in Resources */,
 				62EBFE01219F1EEA00F85A3D /* CardHeaderServiceView.xib in Resources */,
+				62EBFFF9219F26F000F85A3D /* ADBMobileConfig.json in Resources */,
 				62EB3B9B219E447900864FD4 /* Roboto-ThinItalic.ttf in Resources */,
 				62EB3B99219E447900864FD4 /* Roboto-Condensed.ttf in Resources */,
 				62EB3BA0219E447900864FD4 /* Roboto-BlackItalic.ttf in Resources */,
@@ -3543,7 +3457,6 @@
 				62EB3B97219E447900864FD4 /* Roboto-BoldCondensed.ttf in Resources */,
 				62EBFDCD219F1EEA00F85A3D /* CardSummaryDetailView.xib in Resources */,
 				62EBFE21219F1EEA00F85A3D /* Localizable.strings in Resources */,
-				62EBFFED219F233A00F85A3D /* HomeSelectOptionView.xib in Resources */,
 				62EBFE14219F1EEA00F85A3D /* ConfirmViewController.xib in Resources */,
 				62EBFDF9219F1EEA00F85A3D /* CardContentDetailGraphic.xib in Resources */,
 				62EB3B9D219E447900864FD4 /* Roboto-LightItalic.ttf in Resources */,
@@ -3826,7 +3739,6 @@
 				62EBFEAF219F1EEA00F85A3D /* BillDetail.swift in Sources */,
 				62EBFFA1219F1EEA00F85A3D /* SimpleGreenTextFieldWithQuestionMark.swift in Sources */,
 				62EBFF76219F1EEA00F85A3D /* UpdateTransactionPasswordAttemptsResult.swift in Sources */,
-				62EBFFEF219F233A00F85A3D /* HomeContainerServiceView.swift in Sources */,
 				62EBFE7D219F1EEA00F85A3D /* IdentityLogin.swift in Sources */,
 				62EBFE5E219F1EEA00F85A3D /* RetrievePersonalVerificationQuestionsResult.swift in Sources */,
 				62EBFEBC219F1EEA00F85A3D /* Contact.swift in Sources */,
@@ -3841,7 +3753,6 @@
 				62EBFF3F219F1EEA00F85A3D /* UpdatePortalUserResult.swift in Sources */,
 				62EBFDED219F1EEA00F85A3D /* ContentDetailSuscription.swift in Sources */,
 				62EBFF8F219F1EEA00F85A3D /* StatusChangeEffectivePeriod.swift in Sources */,
-				62EBFFEA219F233A00F85A3D /* HomeSelectOptionView.swift in Sources */,
 				62EBFF34219F1EEA00F85A3D /* CreateChangePlanTicketResponse.swift in Sources */,
 				62EBFFC3219F1EEB00F85A3D /* EmailController.swift in Sources */,
 				62EBFE96219F1EEA00F85A3D /* IdentifyUserLoBResult.swift in Sources */,
@@ -3908,7 +3819,6 @@
 				62EBFF26219F1EEA00F85A3D /* RetrievePromotion.swift in Sources */,
 				62EBFEB7219F1EEA00F85A3D /* UpdateChannelStatusResponse.swift in Sources */,
 				62EBFE0A219F1EEA00F85A3D /* VolumeControl.swift in Sources */,
-				62EBFFE4219F233A00F85A3D /* HomeHeaderView.swift in Sources */,
 				62EBFE94219F1EEA00F85A3D /* CountryListResponse.swift in Sources */,
 				62EBFEB6219F1EEA00F85A3D /* UpdateChannelStatusResult.swift in Sources */,
 				62EBFECB219F1EEA00F85A3D /* MensajeVigencia.swift in Sources */,
@@ -3938,7 +3848,6 @@
 				62EBFF50219F1EEA00F85A3D /* AssociatedAccountList.swift in Sources */,
 				62EBFEA8219F1EEA00F85A3D /* RemoveSMSPremiumFromBlackList.swift in Sources */,
 				62EBFF0A219F1EEA00F85A3D /* Landing.swift in Sources */,
-				62EBFFF2219F233A00F85A3D /* HomeTitleView.swift in Sources */,
 				62EBFF1D219F1EEA00F85A3D /* PromotionsDetail.swift in Sources */,
 				62EBFED9219F1EEA00F85A3D /* Options.swift in Sources */,
 				62EBFF53219F1EEA00F85A3D /* ValidateTempPasswordResponse.swift in Sources */,
@@ -3951,7 +3860,6 @@
 				62EBFFBA219F1EEB00F85A3D /* ToolTipElement.swift in Sources */,
 				62EBFF5D219F1EEA00F85A3D /* RetrieveSMSPremiumBlackListStatusResult.swift in Sources */,
 				62EBFE7B219F1EEA00F85A3D /* IdentityLoginResponse.swift in Sources */,
-				62EBFFE7219F233A00F85A3D /* HomeContainerPromo.swift in Sources */,
 				62EBFDFB219F1EEA00F85A3D /* CardSinBolsaView.swift in Sources */,
 				62EBFF46219F1EEA00F85A3D /* ServiceUsage.swift in Sources */,
 				62EBFEAC219F1EEA00F85A3D /* SubscriptionHistory.swift in Sources */,
@@ -3973,7 +3881,6 @@
 				62EBFF2A219F1EEA00F85A3D /* AddSMSPremiumToBlackListRequest.swift in Sources */,
 				62EBFE0C219F1EEA00F85A3D /* UIViewExtensions.swift in Sources */,
 				62EBFED8219F1EEA00F85A3D /* DigitalBirthText.swift in Sources */,
-				62EBFFE5219F233A00F85A3D /* HomeManagementViewController.swift in Sources */,
 				62EBFE7A219F1EEA00F85A3D /* IdentityLoginResult.swift in Sources */,
 				62EBFF51219F1EEA00F85A3D /* RetrieveAssociatedAccount.swift in Sources */,
 				62EBFF32219F1EEA00F85A3D /* VerifyAssociationToUserIdRequest.swift in Sources */,
@@ -4013,7 +3920,6 @@
 				62EBFE33219F1EEA00F85A3D /* SendBillNotification.swift in Sources */,
 				62EBFFC7219F1EEB00F85A3D /* SimpleGrayTextField.swift in Sources */,
 				62EBFFA5219F1EEA00F85A3D /* PlaceCAC.swift in Sources */,
-				62EBFFEC219F233A00F85A3D /* HomeContainerOptionMenu.swift in Sources */,
 				62EBFF40219F1EEA00F85A3D /* UpdatePortalUserRequest.swift in Sources */,
 				62EBFF7F219F1EEA00F85A3D /* CreateNewRegisterResult.swift in Sources */,
 				62EBFF45219F1EEA00F85A3D /* ServiceFeatureUsage.swift in Sources */,
@@ -4026,7 +3932,6 @@
 				62EBFF6E219F1EEA00F85A3D /* DocumentPeriod.swift in Sources */,
 				62EBFFA9219F1EEA00F85A3D /* PlaceMarker.swift in Sources */,
 				62EBFED5219F1EEA00F85A3D /* InfoSupport.swift in Sources */,
-				62EBFFE9219F233A00F85A3D /* HomePromoImageView.swift in Sources */,
 				62EBFF38219F1EEA00F85A3D /* PlanRequest.swift in Sources */,
 				62EBFE60219F1EEA00F85A3D /* RetrievePersonalVerificationQuestionRequest.swift in Sources */,
 				62EBFE04219F1EEA00F85A3D /* CroppingParameters.swift in Sources */,
@@ -4064,7 +3969,6 @@
 				62EBFE74219F1EEA00F85A3D /* RetrieveSMSPremiumSubscriptionsRequest.swift in Sources */,
 				62EBFEFA219F1EEA00F85A3D /* PantallaBienvenida.swift in Sources */,
 				62EBFF80219F1EEA00F85A3D /* CreateNewRegisterResponse.swift in Sources */,
-				62EBFFEE219F233A00F85A3D /* HomeServiceDetailView.swift in Sources */,
 				62EBFEC7219F1EEA00F85A3D /* AssociateAccountResult.swift in Sources */,
 				62EBFE5D219F1EEA00F85A3D /* SecurityQuestionResponse.swift in Sources */,
 				62EBFDE6219F1EEA00F85A3D /* CardsTelevisionManagement.swift in Sources */,
@@ -4244,6 +4148,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/mcaUtilsiOS/AdobeMobileLibrary",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = test1.mcaUtilsiOS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -4269,6 +4177,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/mcaUtilsiOS/AdobeMobileLibrary",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = test1.mcaUtilsiOS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
