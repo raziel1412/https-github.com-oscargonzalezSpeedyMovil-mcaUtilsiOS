@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		50916FA9B8B50EA870C2BC6E /* Pods_mcaUtilsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170AEF6659E0C1B563ED2A8C /* Pods_mcaUtilsiOS.framework */; };
 		62874661219CD9B200C53384 /* mcaUtilsiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 62874653219CD9B200C53384 /* mcaUtilsiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62EB0004219F453A00F85A3D /* CardsSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB0003219F453A00F85A3D /* CardsSummaryModel.swift */; };
+		62EB0007219F469800F85A3D /* ExtensionsEditarPerfilVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB0006219F469800F85A3D /* ExtensionsEditarPerfilVC.swift */; };
 		62EB36A7219E444500864FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62EB36A6219E444500864FD4 /* Assets.xcassets */; };
 		62EB3B93219E447900864FD4 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62EB3B82219E447900864FD4 /* Roboto-Medium.ttf */; };
 		62EB3B94219E447900864FD4 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62EB3B83219E447900864FD4 /* Roboto-Light.ttf */; };
@@ -53,20 +55,16 @@
 		62EBFE18219F1EEA00F85A3D /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB5B219F1EE900F85A3D /* ImageCell.swift */; };
 		62EBFE19219F1EEA00F85A3D /* NewUpdateAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB5C219F1EE900F85A3D /* NewUpdateAlertViewController.swift */; };
 		62EBFE1A219F1EEA00F85A3D /* Extension + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB5D219F1EE900F85A3D /* Extension + UIViewController.swift */; };
-		62EBFE1B219F1EEA00F85A3D /* SessionSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB5E219F1EE900F85A3D /* SessionSingleton.swift */; };
 		62EBFE1C219F1EEA00F85A3D /* NewUpdateAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62EBFB5F219F1EE900F85A3D /* NewUpdateAlertViewController.xib */; };
 		62EBFE1D219F1EEA00F85A3D /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB60219F1EE900F85A3D /* UILabelExtension.swift */; };
 		62EBFE1E219F1EEA00F85A3D /* ReachabilityManual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB62219F1EE900F85A3D /* ReachabilityManual.swift */; };
 		62EBFE1F219F1EEA00F85A3D /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB63219F1EE900F85A3D /* CustomAlertViewController.swift */; };
 		62EBFE20219F1EEA00F85A3D /* GooglePlacesSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB64219F1EE900F85A3D /* GooglePlacesSearchController.swift */; };
 		62EBFE21219F1EEA00F85A3D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62EBFB65219F1EE900F85A3D /* Localizable.strings */; };
-		62EBFE22219F1EEA00F85A3D /* MiClaro-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFB66219F1EE900F85A3D /* MiClaro-Bridging-Header.h */; };
-		62EBFE23219F1EEA00F85A3D /* AnalyticsInteractionSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB67219F1EE900F85A3D /* AnalyticsInteractionSingleton.swift */; };
 		62EBFE24219F1EEA00F85A3D /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB68219F1EE900F85A3D /* ViewExtension.swift */; };
 		62EBFE25219F1EEA00F85A3D /* WebViewAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB69219F1EE900F85A3D /* WebViewAlertViewController.swift */; };
 		62EBFE26219F1EEA00F85A3D /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB6A219F1EE900F85A3D /* ImageViewExtension.swift */; };
 		62EBFE27219F1EEA00F85A3D /* PlanDetailAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB6B219F1EE900F85A3D /* PlanDetailAlertViewController.swift */; };
-		62EBFE28219F1EEA00F85A3D /* WebServicesWithObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB6C219F1EE900F85A3D /* WebServicesWithObjects.swift */; };
 		62EBFE29219F1EEA00F85A3D /* Observers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB6D219F1EE900F85A3D /* Observers.swift */; };
 		62EBFE2A219F1EEA00F85A3D /* GeneralUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB6E219F1EE900F85A3D /* GeneralUtils.swift */; };
 		62EBFE2B219F1EEA00F85A3D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB6F219F1EE900F85A3D /* StringExtension.swift */; };
@@ -127,6 +125,8 @@
 		62874650219CD9B200C53384 /* mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62874653219CD9B200C53384 /* mcaUtilsiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mcaUtilsiOS.h; sourceTree = "<group>"; };
 		62874654219CD9B200C53384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62EB0003219F453A00F85A3D /* CardsSummaryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsSummaryModel.swift; sourceTree = "<group>"; };
+		62EB0006219F469800F85A3D /* ExtensionsEditarPerfilVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsEditarPerfilVC.swift; sourceTree = "<group>"; };
 		62EB36A6219E444500864FD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62EB3B82219E447900864FD4 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		62EB3B83219E447900864FD4 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
@@ -171,20 +171,16 @@
 		62EBFB5B219F1EE900F85A3D /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		62EBFB5C219F1EE900F85A3D /* NewUpdateAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUpdateAlertViewController.swift; sourceTree = "<group>"; };
 		62EBFB5D219F1EE900F85A3D /* Extension + UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension + UIViewController.swift"; sourceTree = "<group>"; };
-		62EBFB5E219F1EE900F85A3D /* SessionSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionSingleton.swift; sourceTree = "<group>"; };
 		62EBFB5F219F1EE900F85A3D /* NewUpdateAlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewUpdateAlertViewController.xib; sourceTree = "<group>"; };
 		62EBFB60219F1EE900F85A3D /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		62EBFB62219F1EE900F85A3D /* ReachabilityManual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManual.swift; sourceTree = "<group>"; };
 		62EBFB63219F1EE900F85A3D /* CustomAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
 		62EBFB64219F1EE900F85A3D /* GooglePlacesSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlacesSearchController.swift; sourceTree = "<group>"; };
 		62EBFB65219F1EE900F85A3D /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		62EBFB66219F1EE900F85A3D /* MiClaro-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MiClaro-Bridging-Header.h"; sourceTree = "<group>"; };
-		62EBFB67219F1EE900F85A3D /* AnalyticsInteractionSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsInteractionSingleton.swift; sourceTree = "<group>"; };
 		62EBFB68219F1EE900F85A3D /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		62EBFB69219F1EE900F85A3D /* WebViewAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewAlertViewController.swift; sourceTree = "<group>"; };
 		62EBFB6A219F1EE900F85A3D /* ImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
 		62EBFB6B219F1EE900F85A3D /* PlanDetailAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanDetailAlertViewController.swift; sourceTree = "<group>"; };
-		62EBFB6C219F1EE900F85A3D /* WebServicesWithObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesWithObjects.swift; sourceTree = "<group>"; };
 		62EBFB6D219F1EE900F85A3D /* Observers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observers.swift; sourceTree = "<group>"; };
 		62EBFB6E219F1EE900F85A3D /* GeneralUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUtils.swift; sourceTree = "<group>"; };
 		62EBFB6F219F1EE900F85A3D /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -303,6 +299,39 @@
 			path = mcaUtilsiOS;
 			sourceTree = "<group>";
 		};
+		62EB0000219F453A00F85A3D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				62EB0005219F469800F85A3D /* ProfileUser */,
+				62EB0001219F453A00F85A3D /* Cards */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		62EB0001219F453A00F85A3D /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				62EB0002219F453A00F85A3D /* cardsManagement */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		62EB0002219F453A00F85A3D /* cardsManagement */ = {
+			isa = PBXGroup;
+			children = (
+				62EB0003219F453A00F85A3D /* CardsSummaryModel.swift */,
+			);
+			path = cardsManagement;
+			sourceTree = "<group>";
+		};
+		62EB0005219F469800F85A3D /* ProfileUser */ = {
+			isa = PBXGroup;
+			children = (
+				62EB0006219F469800F85A3D /* ExtensionsEditarPerfilVC.swift */,
+			);
+			path = ProfileUser;
+			sourceTree = "<group>";
+		};
 		62EB3B81219E447900864FD4 /* Tipografía */ = {
 			isa = PBXGroup;
 			children = (
@@ -333,6 +362,7 @@
 				62EBFAEF219F1EE900F85A3D /* ListOptionsVC.swift */,
 				62EBFD82219F1EEA00F85A3D /* ListOptionsVC.xib */,
 				62EBFB40219F1EE900F85A3D /* Utils */,
+				62EB0000219F453A00F85A3D /* ViewControllers */,
 				62EBFD85219F1EEA00F85A3D /* Views */,
 			);
 			path = Components;
@@ -341,9 +371,7 @@
 		62EBFB40219F1EE900F85A3D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				62EBFB66219F1EE900F85A3D /* MiClaro-Bridging-Header.h */,
 				62EBFB65219F1EE900F85A3D /* Localizable.strings */,
-				62EBFB67219F1EE900F85A3D /* AnalyticsInteractionSingleton.swift */,
 				62EBFB72219F1EE900F85A3D /* Appearance.swift */,
 				62EBFB63219F1EE900F85A3D /* CustomAlertViewController.swift */,
 				62EBFB5D219F1EE900F85A3D /* Extension + UIViewController.swift */,
@@ -356,11 +384,9 @@
 				62EBFB5C219F1EE900F85A3D /* NewUpdateAlertViewController.swift */,
 				62EBFB6D219F1EE900F85A3D /* Observers.swift */,
 				62EBFB6B219F1EE900F85A3D /* PlanDetailAlertViewController.swift */,
-				62EBFB5E219F1EE900F85A3D /* SessionSingleton.swift */,
 				62EBFB6F219F1EE900F85A3D /* StringExtension.swift */,
 				62EBFB60219F1EE900F85A3D /* UILabelExtension.swift */,
 				62EBFB68219F1EE900F85A3D /* ViewExtension.swift */,
-				62EBFB6C219F1EE900F85A3D /* WebServicesWithObjects.swift */,
 				62EBFB69219F1EE900F85A3D /* WebViewAlertViewController.swift */,
 				62EBFB5F219F1EE900F85A3D /* NewUpdateAlertViewController.xib */,
 				62EBFB42219F1EE900F85A3D /* ALCameraViewController */,
@@ -587,7 +613,6 @@
 			files = (
 				62EBFFF8219F26F000F85A3D /* ADBMobile.h in Headers */,
 				62874661219CD9B200C53384 /* mcaUtilsiOS.h in Headers */,
-				62EBFE22219F1EEA00F85A3D /* MiClaro-Bridging-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -749,15 +774,14 @@
 				62EBFE02219F1EEA00F85A3D /* HexColorExtension.swift in Sources */,
 				62EBFFB1219F1EEA00F85A3D /* SymbolsCustomTableViewCell.swift in Sources */,
 				62EBFE0E219F1EEA00F85A3D /* ImageFetcher.swift in Sources */,
-				62EBFE1B219F1EEA00F85A3D /* SessionSingleton.swift in Sources */,
 				62EBFDC1219F1EEA00F85A3D /* ListOptionsVC.swift in Sources */,
-				62EBFE28219F1EEA00F85A3D /* WebServicesWithObjects.swift in Sources */,
 				62EBFE17219F1EEA00F85A3D /* PermissionsView.swift in Sources */,
 				62EBFFAB219F1EEA00F85A3D /* WebViewController.swift in Sources */,
 				62EBFE25219F1EEA00F85A3D /* WebViewAlertViewController.swift in Sources */,
 				62EBFFC6219F1EEB00F85A3D /* CustomWaitAnimation.swift in Sources */,
 				62EBFFC2219F1EEB00F85A3D /* UIHeaderForm2.swift in Sources */,
 				62EBFFAD219F1EEA00F85A3D /* CardCellView.swift in Sources */,
+				62EB0007219F469800F85A3D /* ExtensionsEditarPerfilVC.swift in Sources */,
 				62EBFE2A219F1EEA00F85A3D /* GeneralUtils.swift in Sources */,
 				62EBFFB7219F1EEB00F85A3D /* PasswordRulesContainer.swift in Sources */,
 				62EBFFC0219F1EEB00F85A3D /* RoundedCheckbox.swift in Sources */,
@@ -768,7 +792,6 @@
 				62EBFF9C219F1EEA00F85A3D /* WarningView.swift in Sources */,
 				62EBFFB3219F1EEA00F85A3D /* PhoneLabel.swift in Sources */,
 				62EBFE1A219F1EEA00F85A3D /* Extension + UIViewController.swift in Sources */,
-				62EBFE23219F1EEA00F85A3D /* AnalyticsInteractionSingleton.swift in Sources */,
 				62EBFFB5219F1EEA00F85A3D /* SimpleGreenTextField.swift in Sources */,
 				62EBFE0D219F1EEA00F85A3D /* UIButtonExtensions.swift in Sources */,
 				62EBFFBC219F1EEB00F85A3D /* GreenBorderWhiteBackgroundButton.swift in Sources */,
@@ -783,6 +806,7 @@
 				62EBFFAE219F1EEA00F85A3D /* MandatoryInformation.swift in Sources */,
 				62EBFFBB219F1EEB00F85A3D /* SimpleGrayTextFieldQuestionMark.swift in Sources */,
 				62EBFE29219F1EEA00F85A3D /* Observers.swift in Sources */,
+				62EB0004219F453A00F85A3D /* CardsSummaryModel.swift in Sources */,
 				62EBFFB2219F1EEA00F85A3D /* UITextFieldGroup.swift in Sources */,
 				62EBFFA3219F1EEA00F85A3D /* LinkableLabel.swift in Sources */,
 				62EBFF9F219F1EEA00F85A3D /* RadioButtonViewCell.swift in Sources */,
