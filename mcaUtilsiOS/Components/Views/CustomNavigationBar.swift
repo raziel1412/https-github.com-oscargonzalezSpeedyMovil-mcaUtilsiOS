@@ -552,6 +552,8 @@ extension UIViewController  {
 
     }
     
+    //begins
+    
     func goBackFromLateralMenu() {
         if(GlobalStruct.strNavType == "T&C"){
             AnalyticsInteractionSingleton.sharedInstance.ADBTrackCustomLink(viewName: "Terminos y condiciones:Regresar")
@@ -629,6 +631,7 @@ extension UIViewController  {
         self.navigationController?.pushViewController(LoginVC(), animated: true)
     }
     
+    //ends
 
     private func setupGenericNavigationBar(_ headerTitle: String, action: Selector = #selector(goBack)) {
         let logoId = -1;

@@ -36,7 +36,7 @@ class Observers: NSObject {
     static let messageFont = [NSFontAttributeName: UIFont(name: RobotoFontName.RobotoLight.rawValue, size: 12.0)!]
 
     /// Inicialización de los observadores
-    static func InitializeObservers() {
+    static func InitializeObservers(add: UIApplicationDelegate) {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(ChangeDateTime),
                                                name: NSNotification.Name.NSSystemClockDidChange,
@@ -97,9 +97,9 @@ class Observers: NSObject {
                                                name: ObserverList.AcceptOnlyAlertPasswordReq.name,
                                                object: nil);
 
-        let ad = UIApplication.shared.delegate as! AppDelegate;
-        NotificationCenter.default.addObserver(ad,
-                                               selector: #selector(AppDelegate.upgradeConfigurationFile),
+        //let ad = UIApplication.shared.delegate as! AppDelegate;
+        NotificationCenter.default.addObserver(add,
+                                               selector: #selector(add.upgradeConfigurationFile),
                                                name: ObserverList.RefreshConfigurationFile.name,
                                                object: nil)
         do {
@@ -110,7 +110,7 @@ class Observers: NSObject {
     }
 
     /// Dealloc de los observadores
-    static func KillObservers() {
+    static func KillObservers(add: UIApplicationDelegate) {
         NotificationCenter.default.removeObserver(self,
                                                   name: NSNotification.Name.NSSystemClockDidChange,
                                                   object: nil);
@@ -159,8 +159,8 @@ class Observers: NSObject {
                                                   name: ObserverList.AcceptOnlyAlertPasswordReq.name,
                                                   object: nil);
         
-        let ad = UIApplication.shared.delegate as! AppDelegate;
-        NotificationCenter.default.removeObserver(ad,
+        //let ad = UIApplication.shared.delegate as! AppDelegate;
+        NotificationCenter.default.removeObserver(add,
                                                   name: ObserverList.RefreshConfigurationFile.name,
                                                   object:nil);
 
@@ -731,3 +731,4 @@ class PlanDetailAlertData : AlertInfo {
     /// Trigger onAcceptEvent
     var onAcceptEvent = {};
 }
+
