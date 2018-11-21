@@ -7,8 +7,13 @@
 //
 
 import Foundation
+import ReachabilitySwift
 
-open func isNetworkConnected() -> Bool {
-    let connected = self.reachability?.isReachable ?? true;
+public func isNetworkConnected() -> Bool {
+    
+    let reachability : Reachability?
+    
+    let connected = reachability?.isReachable ?? true;
     return connected;
 }
+

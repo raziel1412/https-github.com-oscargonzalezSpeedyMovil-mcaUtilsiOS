@@ -12,8 +12,6 @@
 		62E67EFD21A4D29300B4F182 /* enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E67EFC21A4D29300B4F182 /* enums.swift */; };
 		62E67EFF21A4D29F00B4F182 /* structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E67EFE21A4D29F00B4F182 /* structs.swift */; };
 		62E67F0121A4DC6600B4F182 /* deviceFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E67F0021A4DC6600B4F182 /* deviceFeatures.swift */; };
-		62EB0004219F453A00F85A3D /* CardsSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB0003219F453A00F85A3D /* CardsSummaryModel.swift */; };
-		62EB0007219F469800F85A3D /* ExtensionsEditarPerfilVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB0006219F469800F85A3D /* ExtensionsEditarPerfilVC.swift */; };
 		62EB36A7219E444500864FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62EB36A6219E444500864FD4 /* Assets.xcassets */; };
 		62EB3B93219E447900864FD4 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62EB3B82219E447900864FD4 /* Roboto-Medium.ttf */; };
 		62EB3B94219E447900864FD4 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62EB3B83219E447900864FD4 /* Roboto-Light.ttf */; };
@@ -131,8 +129,6 @@
 		62E67EFC21A4D29300B4F182 /* enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enums.swift; sourceTree = "<group>"; };
 		62E67EFE21A4D29F00B4F182 /* structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = structs.swift; sourceTree = "<group>"; };
 		62E67F0021A4DC6600B4F182 /* deviceFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deviceFeatures.swift; sourceTree = "<group>"; };
-		62EB0003219F453A00F85A3D /* CardsSummaryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsSummaryModel.swift; sourceTree = "<group>"; };
-		62EB0006219F469800F85A3D /* ExtensionsEditarPerfilVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsEditarPerfilVC.swift; sourceTree = "<group>"; };
 		62EB36A6219E444500864FD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62EB3B82219E447900864FD4 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		62EB3B83219E447900864FD4 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
@@ -305,39 +301,6 @@
 			path = mcaUtilsiOS;
 			sourceTree = "<group>";
 		};
-		62EB0000219F453A00F85A3D /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				62EB0005219F469800F85A3D /* ProfileUser */,
-				62EB0001219F453A00F85A3D /* Cards */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		62EB0001219F453A00F85A3D /* Cards */ = {
-			isa = PBXGroup;
-			children = (
-				62EB0002219F453A00F85A3D /* cardsManagement */,
-			);
-			path = Cards;
-			sourceTree = "<group>";
-		};
-		62EB0002219F453A00F85A3D /* cardsManagement */ = {
-			isa = PBXGroup;
-			children = (
-				62EB0003219F453A00F85A3D /* CardsSummaryModel.swift */,
-			);
-			path = cardsManagement;
-			sourceTree = "<group>";
-		};
-		62EB0005219F469800F85A3D /* ProfileUser */ = {
-			isa = PBXGroup;
-			children = (
-				62EB0006219F469800F85A3D /* ExtensionsEditarPerfilVC.swift */,
-			);
-			path = ProfileUser;
-			sourceTree = "<group>";
-		};
 		62EB3B81219E447900864FD4 /* Tipografía */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,7 +331,6 @@
 				62EBFAEF219F1EE900F85A3D /* ListOptionsVC.swift */,
 				62EBFD82219F1EEA00F85A3D /* ListOptionsVC.xib */,
 				62EBFB40219F1EE900F85A3D /* Utils */,
-				62EB0000219F453A00F85A3D /* ViewControllers */,
 				62EBFD85219F1EEA00F85A3D /* Views */,
 				62E67EFC21A4D29300B4F182 /* enums.swift */,
 				62E67EFE21A4D29F00B4F182 /* structs.swift */,
@@ -792,7 +754,6 @@
 				62EBFFC6219F1EEB00F85A3D /* CustomWaitAnimation.swift in Sources */,
 				62EBFFC2219F1EEB00F85A3D /* UIHeaderForm2.swift in Sources */,
 				62EBFFAD219F1EEA00F85A3D /* CardCellView.swift in Sources */,
-				62EB0007219F469800F85A3D /* ExtensionsEditarPerfilVC.swift in Sources */,
 				62EBFE2A219F1EEA00F85A3D /* GeneralUtils.swift in Sources */,
 				62EBFFB7219F1EEB00F85A3D /* PasswordRulesContainer.swift in Sources */,
 				62EBFFC0219F1EEB00F85A3D /* RoundedCheckbox.swift in Sources */,
@@ -817,7 +778,6 @@
 				62EBFFAE219F1EEA00F85A3D /* MandatoryInformation.swift in Sources */,
 				62EBFFBB219F1EEB00F85A3D /* SimpleGrayTextFieldQuestionMark.swift in Sources */,
 				62EBFE29219F1EEA00F85A3D /* Observers.swift in Sources */,
-				62EB0004219F453A00F85A3D /* CardsSummaryModel.swift in Sources */,
 				62EBFFB2219F1EEA00F85A3D /* UITextFieldGroup.swift in Sources */,
 				62EBFFA3219F1EEA00F85A3D /* LinkableLabel.swift in Sources */,
 				62EBFF9F219F1EEA00F85A3D /* RadioButtonViewCell.swift in Sources */,

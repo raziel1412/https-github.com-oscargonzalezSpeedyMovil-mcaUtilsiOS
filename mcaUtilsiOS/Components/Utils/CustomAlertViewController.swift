@@ -44,7 +44,7 @@ class CustomAlertView: UIViewController {
         self.bkg?.frame = CGRect(x: margin, y: currentY, width: self.view.frame.width - (margin * 2), height: 100);
         self.view.addSubview(self.bkg!);
         
-        let nameImage = let nameImage = SessionSingleton.sharedInstance.getNameImagePerfil()
+        let nameImage = SessionSingleton.sharedInstance.getNameImagePerfil()
         var tamFoto :CGFloat = 60.0
         if self.alertData?.icon == .IconoAlertaAviso || self.alertData?.icon == .IconoAlertaFelicidades || self.alertData?.icon == .IconoAlertaUnBlock {
             tamFoto = 100.0
