@@ -8,11 +8,6 @@
 
 import UIKit
 
-enum typeOptions: Int {
-    case Account = 1
-    case categories
-}
-
 class OptionModel: NSObject{
     var isSelectedOp: Bool?
     var detailText: String?

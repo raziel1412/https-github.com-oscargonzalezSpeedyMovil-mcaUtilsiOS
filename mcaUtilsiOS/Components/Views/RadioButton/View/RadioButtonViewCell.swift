@@ -9,11 +9,6 @@
 import UIKit
 import Cartography
 
-enum ubicationRadioButton {
-    case left
-    case right
-}
-
 class RadioButtonViewCell: UITableViewCell {
 
     var validationLabel: BlackBodyLabel!

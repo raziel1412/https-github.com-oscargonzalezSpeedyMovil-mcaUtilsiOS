@@ -9,33 +9,9 @@
 import Foundation
 import UIKit
 
-/// Enumerado con las fuentes usadas en MiClaro
-enum RobotoFontName : String {
-    case RobotoRegular = "Roboto-Regular"
-    case RobotoLight = "Roboto-Light"
-    case RobotoMedium = "Roboto-Medium"
-    case RobotoBlack = "Roboto-Black"
-    case RobotoCondensedItalic = "Roboto-CondensedItalic"
-    case RobotoBoldCondensedItalic = "Roboto-BoldCondensedItalic"
-    case RobotoBoldItalic = "Roboto-BoldItalic"
-    case RobotoLightItalic = "Roboto-LightItalic"
-    case RobotoThin = "Roboto-Thin"
-    case RobotoMediumItalic = "Roboto-MediumItalic"
-    case RobotoCondensed = "Roboto-Condensed"
-    case RobotoBold = "Roboto-Bold"
-    case RobotoBlackItalic = "Roboto-BlackItalic"
-    case RobotoItalic = "Roboto-Italic"
-    case RobotoThinItalic = "Roboto-ThinItalic"
-    case RobotoBoldCondensed = "Roboto-BoldCondensed"
-}
 
 let UNAVAILABLE_TEXT = "Texto no disponible"
-/// Enumerado Tipo de Line Of Business
-enum TypeLineOfBussines: String {
-    case Fijo = "1"
-    case Prepago = "2"
-    case Postpago = "3"
-}
+
 /// Variable que contiene todos los tabs que son usadas en MiClaro
 var allTabsArray = ["Resumen", "Móvil", "Internet", "Teléfono", "Televisión", "Todo Claro", "Suscripciones"]
 
@@ -117,32 +93,9 @@ struct cardHeights {
     static let genericBodyInsideCellHeight: CGFloat = 200
 
 }
-/// Enumerado del AppVersion
-enum AppVersionStatus {
-    case Nueva
-    case Actualizacion
-    case SinCambio
-}
-/// Enumerado de DigitalBorn
-enum actionTypeDigitalBorn {
-    case Normal
-    case PrimerLogin
-    case RecuperarPass
-}
 
-/// Enumerado del típo de card
-enum cardType {
-    case Resumen
-    case Móvil
-    case Internet
-    case Teléfono
-    case Televisión
-    var name: String {
-        get {
-            return String(describing: self)
-        }
-    }
-}
+
+
 /// Función que ayuda a obtener la fecha en un formato
 /// - parameter date: Date Fecha a formatear
 /// - Returns String : Fecha formateada
@@ -455,9 +408,6 @@ func isUpdateAppAvailable() throws -> Bool {
     throw VersionError.invalidResponse
 }
 
-enum VersionError: Error {
-    case invalidResponse, invalidBundleInfo
-}
 
 func ShowAlertAcceptOnly(title: String = "", text: String = "", icon: AlertIconType, cancelBtnColor: UIColor? = nil, cancelButtonName: String = "", acceptTitle: String = "", acceptBtnColor: UIColor? = nil, buttonName: String = "", onAccept: @escaping() -> Void) {
     let alert = AlertAcceptOnly();

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		50916FA9B8B50EA870C2BC6E /* Pods_mcaUtilsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170AEF6659E0C1B563ED2A8C /* Pods_mcaUtilsiOS.framework */; };
 		62874661219CD9B200C53384 /* mcaUtilsiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 62874653219CD9B200C53384 /* mcaUtilsiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62E67EFD21A4D29300B4F182 /* enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E67EFC21A4D29300B4F182 /* enums.swift */; };
+		62E67EFF21A4D29F00B4F182 /* structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E67EFE21A4D29F00B4F182 /* structs.swift */; };
+		62E67F0121A4DC6600B4F182 /* deviceFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E67F0021A4DC6600B4F182 /* deviceFeatures.swift */; };
 		62EB0004219F453A00F85A3D /* CardsSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB0003219F453A00F85A3D /* CardsSummaryModel.swift */; };
 		62EB0007219F469800F85A3D /* ExtensionsEditarPerfilVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB0006219F469800F85A3D /* ExtensionsEditarPerfilVC.swift */; };
 		62EB36A7219E444500864FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62EB36A6219E444500864FD4 /* Assets.xcassets */; };
@@ -125,6 +128,9 @@
 		62874650219CD9B200C53384 /* mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62874653219CD9B200C53384 /* mcaUtilsiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mcaUtilsiOS.h; sourceTree = "<group>"; };
 		62874654219CD9B200C53384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62E67EFC21A4D29300B4F182 /* enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enums.swift; sourceTree = "<group>"; };
+		62E67EFE21A4D29F00B4F182 /* structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = structs.swift; sourceTree = "<group>"; };
+		62E67F0021A4DC6600B4F182 /* deviceFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deviceFeatures.swift; sourceTree = "<group>"; };
 		62EB0003219F453A00F85A3D /* CardsSummaryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsSummaryModel.swift; sourceTree = "<group>"; };
 		62EB0006219F469800F85A3D /* ExtensionsEditarPerfilVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsEditarPerfilVC.swift; sourceTree = "<group>"; };
 		62EB36A6219E444500864FD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -364,6 +370,9 @@
 				62EBFB40219F1EE900F85A3D /* Utils */,
 				62EB0000219F453A00F85A3D /* ViewControllers */,
 				62EBFD85219F1EEA00F85A3D /* Views */,
+				62E67EFC21A4D29300B4F182 /* enums.swift */,
+				62E67EFE21A4D29F00B4F182 /* structs.swift */,
+				62E67F0021A4DC6600B4F182 /* deviceFeatures.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -759,8 +768,10 @@
 				62EBFE1F219F1EEA00F85A3D /* CustomAlertViewController.swift in Sources */,
 				62EBFE15219F1EEA00F85A3D /* CameraView.swift in Sources */,
 				62EBFFB4219F1EEA00F85A3D /* MobilePhoneNumberContainerView.swift in Sources */,
+				62E67F0121A4DC6600B4F182 /* deviceFeatures.swift in Sources */,
 				62EBFE0B219F1EEA00F85A3D /* PhotoLibraryAuthorizer.swift in Sources */,
 				62EBFE2B219F1EEA00F85A3D /* StringExtension.swift in Sources */,
+				62E67EFD21A4D29300B4F182 /* enums.swift in Sources */,
 				62EBFFBD219F1EEB00F85A3D /* InstructionLabel.swift in Sources */,
 				62EBFFAA219F1EEA00F85A3D /* ActionView.swift in Sources */,
 				62EBFE19219F1EEA00F85A3D /* NewUpdateAlertViewController.swift in Sources */,
@@ -813,6 +824,7 @@
 				62EBFE0A219F1EEA00F85A3D /* VolumeControl.swift in Sources */,
 				62EBFE07219F1EEA00F85A3D /* SingleImageFetcher.swift in Sources */,
 				62EBFFC5219F1EEB00F85A3D /* SquaredCheckbox.swift in Sources */,
+				62E67EFF21A4D29F00B4F182 /* structs.swift in Sources */,
 				62EBFFA0219F1EEA00F85A3D /* RadioButtonView.swift in Sources */,
 				62EBFFBA219F1EEB00F85A3D /* ToolTipElement.swift in Sources */,
 				62EBFE0C219F1EEA00F85A3D /* UIViewExtensions.swift in Sources */,
