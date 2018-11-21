@@ -9,8 +9,9 @@ import UIKit
 import Cartography
 
 /// Esta clase permite realizar customizaciones del Navigation Bar a partir de los parámetros proporcionados en el constructor
-extension UIViewController  {
 
+extension UIViewController  {
+/*
 /// Tipo de NavigationBar
     enum navType {
         case login
@@ -684,9 +685,10 @@ extension UIViewController  {
             }
         }
     }
-    
+    */
     func indexSelected(selected:Int) {
         print("selected at extension: ()")
     }
 
 }
+

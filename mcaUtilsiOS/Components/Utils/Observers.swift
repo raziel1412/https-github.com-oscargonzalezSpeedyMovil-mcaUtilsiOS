@@ -11,6 +11,7 @@ import PKHUD
 import Lottie
 import Cartography
 import ReachabilitySwift
+import IQKeyboardManagerSwift
 
 /// Clase usada para el uso del NotificationCenter (Observabilidad)
 class Observers: NSObject {
