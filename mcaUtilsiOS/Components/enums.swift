@@ -9,7 +9,7 @@
 import Foundation
 
 /// Tipo de NavigationBar
-enum navType {
+public enum navType {
     case login
     case register
     case onlinePayment
@@ -48,12 +48,12 @@ enum navType {
     case packagesDetail
 }
 
-enum ubicationRadioButton {
+public enum ubicationRadioButton {
     case left
     case right
 }
 
-enum typeOptions: Int {
+public enum typeOptions: Int {
     case Account = 1
     case categories
 }
@@ -69,7 +69,7 @@ public enum ServiceType : Int {
 }
 
 /// Enumerado de Típo de card
-enum TypeCardView : String {
+public enum TypeCardView : String {
     case None
     case Resumen
     case Móvil
@@ -81,14 +81,14 @@ enum TypeCardView : String {
 }
 
 /// Enumerado Tipo de cuenta
-enum TypeAccounts {
+public enum TypeAccounts {
     case Postpago
     case Prepago
     case PostpagoAndPrepago
     case None
 }
 
-enum TypeSocialNetwork {
+public enum TypeSocialNetwork {
     case Facebook// 1
     case Twitter // 2
     case Whatsapp // 3
@@ -104,21 +104,21 @@ enum TypeSocialNetwork {
 }
 
 /// Colocar el borde dependiendo el lado elegido
-enum Sides {
+public enum Sides {
     case left
     case right
     case top
     case bottom
 }
 
-struct SideView {
+public struct SideView {
     var Left: Bool
     var Right: Bool
     var Top: Bool
     var Bottom: Bool
 }
 
-enum TypeAccountService {
+public enum TypeAccountService {
     case None
     case Resumen
     case MovilPrepago
@@ -130,7 +130,7 @@ enum TypeAccountService {
     case Suscripcion
 }
 
-enum SupportSectionType {
+public enum SupportSectionType {
     case ReportError
     case Suggestion
     case SendEmail
@@ -141,13 +141,13 @@ enum SupportSectionType {
 }
 
 /// Enumerador para diferenciar el "Landing" de las otras páginas
-enum WalktrhoughType : Int {
+public enum WalktrhoughType : Int {
     case landing = 0
     case steps = 1
 }
 
 /// Enumerado con las fuentes usadas en MiClaro
-enum RobotoFontName : String {
+public enum RobotoFontName : String {
     case RobotoRegular = "Roboto-Regular"
     case RobotoLight = "Roboto-Light"
     case RobotoMedium = "Roboto-Medium"
@@ -166,28 +166,28 @@ enum RobotoFontName : String {
     case RobotoBoldCondensed = "Roboto-BoldCondensed"
 }
 
-enum TypeLineOfBussines: String {
+public enum TypeLineOfBussines: String {
     case Fijo = "1"
     case Prepago = "2"
     case Postpago = "3"
 }
 
 /// Enumerado del AppVersion
-enum AppVersionStatus {
+public enum AppVersionStatus {
     case Nueva
     case Actualizacion
     case SinCambio
 }
 
 /// Enumerado de DigitalBorn
-enum actionTypeDigitalBorn {
+public enum actionTypeDigitalBorn {
     case Normal
     case PrimerLogin
     case RecuperarPass
 }
 
 /// Enumerado del típo de card
-enum cardType {
+public enum cardType {
     case Resumen
     case Móvil
     case Internet
@@ -200,6 +200,6 @@ enum cardType {
     }
 }
 
-enum VersionError: Error {
+public enum VersionError: Error {
     case invalidResponse, invalidBundleInfo
 }

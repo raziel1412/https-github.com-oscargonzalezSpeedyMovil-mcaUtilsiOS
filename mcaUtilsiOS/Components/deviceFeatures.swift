@@ -11,7 +11,7 @@ import ReachabilitySwift
 
 public func isNetworkConnected() -> Bool {
     
-    let reachability : Reachability?
+    let reachability = Reachability()
     
     let connected = reachability?.isReachable ?? true;
     return connected;
