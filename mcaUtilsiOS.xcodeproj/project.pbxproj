@@ -120,7 +120,7 @@
 		62EBFFC7219F1EEB00F85A3D /* SimpleGrayTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFDBE219F1EEA00F85A3D /* SimpleGrayTextField.swift */; };
 		62EBFFC8219F1EEB00F85A3D /* RedBackgroundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFDBF219F1EEA00F85A3D /* RedBackgroundButton.swift */; };
 		62EBFFC9219F1EEB00F85A3D /* TermsAndConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFDC0219F1EEA00F85A3D /* TermsAndConditions.swift */; };
-		62EBFFF8219F26F000F85A3D /* ADBMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFFF5219F26EF00F85A3D /* ADBMobile.h */; };
+		62EBFFF8219F26F000F85A3D /* ADBMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFFF5219F26EF00F85A3D /* ADBMobile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62EBFFF9219F26F000F85A3D /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 62EBFFF6219F26EF00F85A3D /* ADBMobileConfig.json */; };
 		62EBFFFA219F26F000F85A3D /* AdobeMobileLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EBFFF7219F26EF00F85A3D /* AdobeMobileLibrary.a */; };
 		62F0DFC421A609BD001D98AC /* GeneralAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F0DFC321A609BD001D98AC /* GeneralAlerts.swift */; };
