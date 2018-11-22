@@ -436,7 +436,7 @@ class Observers: NSObject {
     /// Función que ayuda a mostrar un ShowOfflineMessage popup
     /// - parameter info : NSNotification
     static func ShowOfflineMessage(info : NSNotification) {
-        if false == SessionSingleton.sharedInstance.isNetworkConnected() {
+        if false == isNetworkConnected() {
             let alerta = AlertAcceptOnly();
             alerta.icon = .IconoAlertaError
             alerta.title = "Sin internet";
@@ -460,7 +460,7 @@ class Observers: NSObject {
     static func ChangeDateTime(info: NSNotification) {
         _ = mcaManagerSession.shouldRefresh()
         let worker = DispatchWorkItem {
-            if SessionSingleton.sharedInstance.isNetworkConnected() {
+            if isNetworkConnected() {
                 NotificationCenter.default.post(name: ObserverList.RefreshConfigurationFile.name,
                                                 object: nil);
             } else {
@@ -469,7 +469,7 @@ class Observers: NSObject {
             }
         }
 
-        if false == SessionSingleton.sharedInstance.isNetworkConnected() || SessionSingleton.sharedInstance.isConsumingService() {
+        if false == isNetworkConnected() || SessionSingleton.sharedInstance.isConsumingService() {
             mcaManagerSession.setRefreshConfigWorker(worker: nil);
             DispatchQueue.main.asyncAfter(deadline: mcaManagerSession.getExpirationConfigFile(), execute: worker);
             mcaManagerSession.setRefreshConfigWorker(worker: worker);
@@ -478,7 +478,7 @@ class Observers: NSObject {
 
         if mcaManagerSession.expiredTime() /* && nil != SessionSingleton.sharedInstance.getCurrentSession() */{
             DispatchQueue.main.async {
-                if SessionSingleton.sharedInstance.isNetworkConnected() {
+                if isNetworkConnected() {
                     NotificationCenter.default.post(name: ObserverList.RefreshConfigurationFile.name,
                                                     object: nil);
                 }
