@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import mcaManageriOS
 
 class AnalyticsInteractionSingleton {
     static let sharedInstance = AnalyticsInteractionSingleton();
@@ -31,7 +32,7 @@ class AnalyticsInteractionSingleton {
         var perfilUser: String = ""
         var userId : String = ""
         
-        let conf = SessionSingleton.sharedInstance.getGeneralConfig()
+        let conf = mcaManagerSession.getGeneralConfig()
         if conf != nil{
             countryCode = (conf?.country?.code)!
             
@@ -40,7 +41,7 @@ class AnalyticsInteractionSingleton {
             }
         }
         
-        let logSession = SessionSingleton.sharedInstance.getCurrentSession()
+        let logSession = mcaManagerSession.getSession()
         var statusLogin: String = "No logueado"
         
         if(logSession != nil){
@@ -48,7 +49,7 @@ class AnalyticsInteractionSingleton {
             statusLogin = "Logueado"
             
             if(accountArray.count == 0){
-                if let accArray = SessionSingleton.sharedInstance.getFullAccountData(){
+                if let accArray = mcaManagerSession.getFullAccountData(){
                     accountArray = accArray
                 }
             }

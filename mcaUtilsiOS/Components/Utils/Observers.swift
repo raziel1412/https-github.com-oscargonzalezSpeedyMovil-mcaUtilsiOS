@@ -469,7 +469,7 @@ class Observers: NSObject {
             }
         }
 
-        if false == isNetworkConnected() || SessionSingleton.sharedInstance.isConsumingService() {
+        if false == isNetworkConnected() || mcaManagerSession.isConsumingService() {
             mcaManagerSession.setRefreshConfigWorker(worker: nil);
             DispatchQueue.main.asyncAfter(deadline: mcaManagerSession.getExpirationConfigFile(), execute: worker);
             mcaManagerSession.setRefreshConfigWorker(worker: worker);
