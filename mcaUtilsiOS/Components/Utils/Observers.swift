@@ -488,6 +488,7 @@ class Observers: NSObject {
             SessionSingleton.sharedInstance.setRefreshConfigWorker(worker: worker);
         }
 
+        
 //        if (true == SessionSingleton.sharedInstance.isExpiredTime()) {
 //            let myApp = UIApplication.shared.delegate as? AppDelegate;
 //            SessionSingleton.sharedInstance.setGeneralConfig(config: nil);
@@ -641,7 +642,16 @@ public enum AlertIconType : String {
     case IconoAlertaUnBlock = "ico_seccion_pass"
     case IconoAlertaBlock = "ico_seccion_block"
 }
-
+/*
+public enum AlertKind: String {
+    case alertFoto
+    case alertYesNo
+    case alertAcceptOnly
+    case alertAcceptOnlyPasswordReq
+    case webViewAlertData
+    case planDetailAlertData
+}
+*/
 /// Clase para guardar los elementos de un alert
 class AlertInfo {
     /// Variable de título

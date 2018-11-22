@@ -119,6 +119,7 @@
 		62EBFFF8219F26F000F85A3D /* ADBMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFFF5219F26EF00F85A3D /* ADBMobile.h */; };
 		62EBFFF9219F26F000F85A3D /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 62EBFFF6219F26EF00F85A3D /* ADBMobileConfig.json */; };
 		62EBFFFA219F26F000F85A3D /* AdobeMobileLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EBFFF7219F26EF00F85A3D /* AdobeMobileLibrary.a */; };
+		62F0DFC421A609BD001D98AC /* GeneralAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F0DFC321A609BD001D98AC /* GeneralAlerts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -236,6 +237,7 @@
 		62EBFFF5219F26EF00F85A3D /* ADBMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADBMobile.h; sourceTree = "<group>"; };
 		62EBFFF6219F26EF00F85A3D /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfig.json; sourceTree = "<group>"; };
 		62EBFFF7219F26EF00F85A3D /* AdobeMobileLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AdobeMobileLibrary.a; sourceTree = "<group>"; };
+		62F0DFC321A609BD001D98AC /* GeneralAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralAlerts.swift; sourceTree = "<group>"; };
 		A6DEFDA3D524114A7F85AF9B /* Pods-mcaUtilsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.debug.xcconfig"; path = "Pods/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D83C877DBFD091C133148C26 /* Pods-mcaUtilsiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.release.xcconfig"; path = "Pods/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -363,6 +365,7 @@
 				62EBFB42219F1EE900F85A3D /* ALCameraViewController */,
 				62EBFB61219F1EE900F85A3D /* Network */,
 				62EBFB73219F1EE900F85A3D /* Spinners */,
+				62F0DFC321A609BD001D98AC /* GeneralAlerts.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -760,6 +763,7 @@
 				62EBFE16219F1EEA00F85A3D /* CropOverlay.swift in Sources */,
 				62EBFFB0219F1EEA00F85A3D /* BlackTitleLabel.swift in Sources */,
 				62EBFE08219F1EEA00F85A3D /* CameraShot.swift in Sources */,
+				62F0DFC421A609BD001D98AC /* GeneralAlerts.swift in Sources */,
 				62EBFE05219F1EEA00F85A3D /* Utilities.swift in Sources */,
 				62EBFF9C219F1EEA00F85A3D /* WarningView.swift in Sources */,
 				62EBFFB3219F1EEA00F85A3D /* PhoneLabel.swift in Sources */,
