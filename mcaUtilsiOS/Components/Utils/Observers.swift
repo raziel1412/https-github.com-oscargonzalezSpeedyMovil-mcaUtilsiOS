@@ -195,7 +195,7 @@ public class Observers: NSObject {
     /// Función que determina si posee internet el dispositivo
     /// - parameter info : NSNotification
     static func ReachabilityChanged(info: NSNotification) {
-        guard let myReach = mcaManagerSession.reachability else {
+        guard let myReach = mcaManagerSession.getReachability() else {
             print("No WiFi address")
             mcaManagerSession.setIpAddress(newIpAddress: nil)
             return;

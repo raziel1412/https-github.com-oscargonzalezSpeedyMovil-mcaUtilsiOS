@@ -70,7 +70,7 @@ class TermsAndConditions: UIView {
     }
     
     @objc func lnkTerminos_OnClick() {
-        if false == SessionSingleton.sharedInstance.isNetworkConnected() {
+        if false == mcaManagerSession.isNetworkConnected() {
             NotificationCenter.default.post(name: Observers.ObserverList.ShowOfflineMessage.name, object: nil);
             return;
         }

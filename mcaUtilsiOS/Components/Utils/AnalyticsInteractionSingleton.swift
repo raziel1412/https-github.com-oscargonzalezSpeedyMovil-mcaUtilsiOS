@@ -14,8 +14,12 @@ public class AnalyticsInteractionSingleton {
     var timer: Timer;
     var counter: Int;
     
-    var accountArray: [ServiceAccount] = [ServiceAccount]()
-    var arraySummary: [CardsSummaryModel] = [CardsSummaryModel]()
+    //var accountArray: [ServiceAccount] = [ServiceAccount]()
+    //var arraySummary: [CardsSummaryModel] = [CardsSummaryModel]()
+    
+    //MARK:temporalmente
+    var accountArray: [String] = [String]()
+    var arraySummary: [String] = [String]()
     
     private init() {
         timer = Timer.init()
@@ -50,13 +54,17 @@ public class AnalyticsInteractionSingleton {
             
             if(accountArray.count == 0){
                 if let accArray = mcaManagerSession.getFullAccountData(){
-                    accountArray = accArray
+                    //MARK:temporalmente
+                    //accountArray = accArray
                 }
             }
             if(accountArray.count != 0){
-                let accountSummary = AccountManagement.init(arrayServices: accountArray)
+                
+                //MARK:temporalmente
+                //let accountSummary = AccountManagement.init(arrayServices: accountArray)
                 if(arraySummary.count == 0){
-                    arraySummary = accountSummary.getSummaryAccount()
+                    //MARK:temporalmente
+                    //arraySummary = accountSummary.getSummaryAccount()
                 }
                 
                 var hasMovilPre: Bool = false
@@ -67,6 +75,8 @@ public class AnalyticsInteractionSingleton {
                 var hasInternet: Bool = false
                 
                 for summary in arraySummary {
+                    //MARK:temporalmente
+                    /*
                     if (summary.typeAccount == .MovilPrepago) {
                         hasMovilPre = true
                     }
@@ -82,6 +92,7 @@ public class AnalyticsInteractionSingleton {
                     if summary.typeAccount == .Internet {
                         hasInternet = true
                     }
+                    */
                 }
                 
                 if(hasMovilPre){

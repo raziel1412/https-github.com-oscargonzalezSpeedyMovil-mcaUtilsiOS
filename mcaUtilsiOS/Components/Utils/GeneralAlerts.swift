@@ -53,10 +53,10 @@ public class GeneralAlerts {
     }
     
     //case WebViewAlertData
-    static func showDataWebView(title: String, url: String, method: ServiceMethod, acceptTitle: String, onAcceptEvent: @escaping ()->()){
+    static func showDataWebView(title: String, url: String, method: String, acceptTitle: String, onAcceptEvent: @escaping ()->()){
         
         let alert = WebViewAlertData();
-        alert.method = method.rawValue
+        alert.method = method
         alert.url = url
         alert.title = title
         alert.acceptTitle = acceptTitle
