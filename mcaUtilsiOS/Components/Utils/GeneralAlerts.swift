@@ -138,7 +138,7 @@ class GeneralAlerts {
     //case AcceptOnlyAlertPasswordReq
     static func showAcceptOnlyPassword(title:String, text:String, userEmail:String, userPhone:String, acceptTitle:String, icon: AlertIconType, acceptColorBtn: UIColor, onAcceptEvent: @escaping ()->()){
         
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate;
+        //let appDelegate = UIApplication.shared.delegate as! AppDelegate;
         
         let alertInfo = AlertAcceptOnlyPasswordReq();
         alertInfo.userEmail = userEmail.maskAsEmail()
@@ -156,7 +156,7 @@ class GeneralAlerts {
                                         object: alertInfo);
         //traer la informacion de alerta crear registros en entidades
         //se procede a borrar
-        appDelegate.killEntities()
+        //appDelegate.killEntities()
         
     }
     
