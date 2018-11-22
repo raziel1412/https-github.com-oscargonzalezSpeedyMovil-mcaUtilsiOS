@@ -101,7 +101,7 @@ public class Observers: NSObject {
 
         //let ad = UIApplication.shared.delegate as! AppDelegate;
         NotificationCenter.default.addObserver(add,
-                                               selector: #selector(add.upgradeConfigurationFile),
+                                               selector: #selector(mcaManagerSession.upgradeConfigurationFile),
                                                name: ObserverList.RefreshConfigurationFile.name,
                                                object: nil)
         do {
