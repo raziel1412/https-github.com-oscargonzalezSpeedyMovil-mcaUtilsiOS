@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D1CFEB821A61D43003C00E0 /* mcaManageriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1CFEB721A61D43003C00E0 /* mcaManageriOS.framework */; };
 		50916FA9B8B50EA870C2BC6E /* Pods_mcaUtilsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170AEF6659E0C1B563ED2A8C /* Pods_mcaUtilsiOS.framework */; };
 		621A65BB21A769BF00D85FBA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 621A65BA21A769BF00D85FBA /* libsqlite3.tbd */; };
 		626C054521A7296B0031EF19 /* CardsSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C054421A7296B0031EF19 /* CardsSummaryModel.swift */; };
@@ -258,7 +257,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				621A65BB21A769BF00D85FBA /* libsqlite3.tbd in Frameworks */,
-				1D1CFEB821A61D43003C00E0 /* mcaManageriOS.framework in Frameworks */,
 				50916FA9B8B50EA870C2BC6E /* Pods_mcaUtilsiOS.framework in Frameworks */,
 				62EBFFFA219F26F000F85A3D /* AdobeMobileLibrary.a in Frameworks */,
 			);
