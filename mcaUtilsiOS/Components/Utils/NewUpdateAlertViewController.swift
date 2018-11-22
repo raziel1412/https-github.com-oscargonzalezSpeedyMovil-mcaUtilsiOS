@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import mcaManageriOS
 
 class NewUpdateAlertViewController: UIViewController {
     
@@ -46,7 +47,7 @@ class NewUpdateAlertViewController: UIViewController {
     }
     
     func initComponents() {
-        conf = SessionSingleton.sharedInstance.getGeneralConfig()
+        conf = mcaManagerSession.getGeneralConfig()
         updateBtn.addTarget(self, action: #selector(self.updateAction), for: .touchUpInside)
         skipBtn.addTarget(self, action: #selector(self.skipAction), for: .touchUpInside)
         updateBtn.borderColor = institutionalColors.claroBlueColor
@@ -56,7 +57,7 @@ class NewUpdateAlertViewController: UIViewController {
         headerImg.image = UIImage.init(named: "ic_avatar")
         
         if let forceUpdate = conf?.newUpdateAvailable?.forcedUpdate{
-            SessionSingleton.sharedInstance.setCanUpdateApp(canUpdateApp: forceUpdate)
+            mcaManagerSession.setCanUpdateApp(canUpdateApp: forceUpdate)
             if forceUpdate {
                 titleLbl.text = conf?.translations?.data?.newUpdateAvailableTexts?.updateForcedTitle ?? "Actualice la aplicación"
                 subtitleLbl.text = conf?.translations?.data?.newUpdateAvailableTexts?.updateForcedDescription ?? "Actualice su aplicación a la nueva versión"
@@ -71,7 +72,7 @@ class NewUpdateAlertViewController: UIViewController {
             }
             
         } else {
-            SessionSingleton.sharedInstance.setCanUpdateApp(canUpdateApp: false)
+            mcaManagerSession.setCanUpdateApp(canUpdateApp: false)
             skipBtn.isHidden = false
         }
         

@@ -8,6 +8,7 @@
 
 import UIKit
 import Cartography
+import mcaManageriOS
 
 class MandatoryInformation: UIView {
 
@@ -20,7 +21,7 @@ class MandatoryInformation: UIView {
         return label
     }()
     
-    private var mandatoryText = SessionSingleton.sharedInstance.getGeneralConfig()?.translations?.data?.generales?.emptyField ?? ""
+    private var mandatoryText = mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.emptyField ?? ""
     
     override init(frame: CGRect) {
         super.init(frame: frame)

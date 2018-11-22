@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import mcaManageriOS
 
 
 let UNAVAILABLE_TEXT = "Texto no disponible"
@@ -198,7 +199,7 @@ func formatToCountryCurrency(monto : Float) -> String {
         return formatToCountryCurrency(strMonto: strMonto);
     } else {
         let formatter = NumberFormatter();
-        formatter.groupingSeparator = SessionSingleton.sharedInstance.getAmountSeparator();
+        formatter.groupingSeparator = mcaManagerSession.getAmountSeparator()
         formatter.numberStyle = .decimal;
         let strMonto = formatter.string(from: NSNumber(value: monto)) ?? "0"
         return formatToCountryCurrency(strMonto: strMonto);
@@ -209,7 +210,7 @@ func formatToCountryCurrency(monto : Float) -> String {
 /// - parameter monto: String
 /// - Returns String: Formateado
 func formatToCountryCurrency(strMonto: String) -> String {
-    let moneda = String(format: "%@ %@", SessionSingleton.sharedInstance.getGeneralConfig()?.country?.currency ?? "$", strMonto);
+    let moneda = String(format: "%@ %@", mcaManagerSession.getGeneralConfig()?.country?.currency ?? "$", strMonto);
     return moneda;
 }
 
@@ -366,12 +367,12 @@ extension Array {
 func isUpdateAvailable() {
     DispatchQueue.global().async {
         do {
-            let conf = SessionSingleton.sharedInstance.getGeneralConfig()
+            let conf = mcaManagerSession.getGeneralConfig()
             let updateAvailable = conf?.newUpdateAvailable?.updateAvailable ?? false
             
-            if updateAvailable && SessionSingleton.sharedInstance.getCanUpdateApp() {
+            if updateAvailable && mcaManagerSession.getCanUpdateApp() {
                 let update = try isUpdateAppAvailable()
-                SessionSingleton.sharedInstance.setIsUpdateAppAvailable(isUpdateAppAvailable: update)
+                mcaManagerSession.setIsUpdateAppAvailable(isUpdateAppAvailable: update)
                 showUpdateAlertView()
             }
             
@@ -383,14 +384,14 @@ func isUpdateAvailable() {
 
 func showUpdateAlertView() {
     
-    if SessionSingleton.sharedInstance.getIsUpdateAppAvailable() {
+    if mcaManagerSession.getIsUpdateAppAvailable() {
         let alert = AlertAcceptOnly()
         NotificationCenter.default.post(name: Observers.ObserverList.UpdateAppAlert.name, object: alert);
     }
 }
 
 func isUpdateAppAvailable() throws -> Bool {
-    let country = SessionSingleton.sharedInstance.getCurrentCountry()?.lowercased() ?? ""
+    let country = mcaManagerSession.getCountry()?.lowercased() ?? ""
     guard let info = Bundle.main.infoDictionary,
         let currentVersion = info["CFBundleShortVersionString"] as? String,
         let identifier = info["CFBundleIdentifier"] as? String,

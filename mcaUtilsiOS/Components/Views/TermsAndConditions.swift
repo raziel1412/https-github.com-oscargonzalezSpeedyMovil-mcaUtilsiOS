@@ -8,6 +8,7 @@
 
 import UIKit
 import Cartography
+import mcaManageriOS
 
 class TermsAndConditions: UIView {
     
@@ -76,9 +77,9 @@ class TermsAndConditions: UIView {
 
         let alert = WebViewAlertData();
         alert.method = "GET";
-        alert.url = SessionSingleton.sharedInstance.getGeneralConfig()?.termsAndConditions?.url;
-        alert.title = SessionSingleton.sharedInstance.getGeneralConfig()?.translations?.data?.generales?.termsAndConditions ?? "";
-        alert.acceptTitle = SessionSingleton.sharedInstance.getGeneralConfig()?.translations?.data?.generales?.closeBtn ?? "";
+        alert.url = mcaManagerSession.getGeneralConfig()?.termsAndConditions?.url;
+        alert.title = mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.termsAndConditions ?? "";
+        alert.acceptTitle = mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.closeBtn ?? "";
         alert.onAcceptEvent = {
         }
         NotificationCenter.default.post(name: Observers.ObserverList.WebViewAlert.name,

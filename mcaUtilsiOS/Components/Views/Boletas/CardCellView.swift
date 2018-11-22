@@ -9,6 +9,7 @@
 import UIKit
 import SkyFloatingLabelTextField
 import DLRadioButton
+import mcaManageriOS
 
 class CardCellView: UITableViewCell, UITextFieldDelegate {
 
@@ -88,7 +89,7 @@ class CardCellView: UITableViewCell, UITextFieldDelegate {
     ///Creacion he inicializacion de los objetos que seran utilizado dentro de la celda customizada, que sera utilizada en Boletas
     func setup(){
  
-        let conf = SessionSingleton.sharedInstance.getGeneralConfig()
+        let conf = mcaManagerSession.getGeneralConfig()
         let lbNoCta = (conf?.translations?.data?.billing?.accountId) ?? ""
         let lbSeleccPeriods = (conf?.translations?.data?.billing?.period) ?? ""
         let lbmontoEmitido = (conf?.translations?.data?.billing?.totalIssued) ?? ""

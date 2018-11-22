@@ -12,6 +12,7 @@ import Lottie
 import Cartography
 import ReachabilitySwift
 import IQKeyboardManagerSwift
+import mcaManageriOS
 
 /// Clase usada para el uso del NotificationCenter (Observabilidad)
 class Observers: NSObject {
@@ -169,12 +170,12 @@ class Observers: NSObject {
     }
     
     static func updateAppAlert(info: NSNotification) {
-        let conf = SessionSingleton.sharedInstance.getGeneralConfig()
+        let conf = mcaManagerSession.getGeneralConfig()
         
         let updateAvailable = conf?.newUpdateAvailable?.updateAvailable ?? false
         let forceToUpdate = conf?.newUpdateAvailable?.forcedUpdate ?? false
         
-        if updateAvailable && SessionSingleton.sharedInstance.getIsUpdateAppAvailable() && (forceToUpdate || SessionSingleton.sharedInstance.getCanUpdateApp()) {
+        if updateAvailable && mcaManagerSession.getIsUpdateAppAvailable() && (forceToUpdate || mcaManagerSession.getCanUpdateApp()) {
             let custom = NewUpdateAlertViewController()
             custom.providesPresentationContextTransitionStyle = true;
             custom.definesPresentationContext = true;
@@ -196,7 +197,7 @@ class Observers: NSObject {
     static func ReachabilityChanged(info: NSNotification) {
         guard let myReach = SessionSingleton.sharedInstance.reachability else {
             print("No WiFi address")
-            SessionSingleton.sharedInstance.setIpAddress(newIpAddress: nil)
+            mcaManagerSession.setIpAddress(newIpAddress: nil)
             return;
         }
         
@@ -212,13 +213,13 @@ class Observers: NSObject {
             
             if let addr = self.getWiFiAddress() {
                 print("ipAddress : \(addr.getIP())")
-                SessionSingleton.sharedInstance.setIpAddress(newIpAddress: addr.getIP())
+                mcaManagerSession.setIpAddress(newIpAddress: addr.getIP())
             } else {
-                SessionSingleton.sharedInstance.setIpAddress(newIpAddress: nil) // No IP captures
+                mcaManagerSession.setIpAddress(newIpAddress: nil) // No IP captures
                 print("No WiFi address")
             }
         } else {
-            SessionSingleton.sharedInstance.setIpAddress(newIpAddress: nil) // No IP captures
+            mcaManagerSession.setIpAddress(newIpAddress: nil) // No IP captures
             print("Unreachable Network")
         }
     }
@@ -439,7 +440,7 @@ class Observers: NSObject {
             let alerta = AlertAcceptOnly();
             alerta.icon = .IconoAlertaError
             alerta.title = "Sin internet";
-            let config : GeneralConfig? = SessionSingleton.sharedInstance.getGeneralConfig();
+            let config : GeneralConfig? = mcaManagerSession.getGeneralConfig()
             let acknowledgementCodes = config?.translations?.data?.acknowledgementCodes ?? []
             var msgError = "No hay conexión, intente mas tarde. Cod 256"
             for value in acknowledgementCodes {
@@ -457,7 +458,7 @@ class Observers: NSObject {
     /// Función que ayuda a notificar un ChangeDateTime
     /// - parameter info : NSNotification
     static func ChangeDateTime(info: NSNotification) {
-        _ = SessionSingleton.sharedInstance.shouldRefresh()
+        _ = mcaManagerSession.shouldRefresh()
         let worker = DispatchWorkItem {
             if SessionSingleton.sharedInstance.isNetworkConnected() {
                 NotificationCenter.default.post(name: ObserverList.RefreshConfigurationFile.name,
@@ -469,13 +470,13 @@ class Observers: NSObject {
         }
 
         if false == SessionSingleton.sharedInstance.isNetworkConnected() || SessionSingleton.sharedInstance.isConsumingService() {
-            SessionSingleton.sharedInstance.setRefreshConfigWorker(worker: nil);
-            DispatchQueue.main.asyncAfter(deadline: SessionSingleton.sharedInstance.getExpiration(), execute: worker);
-            SessionSingleton.sharedInstance.setRefreshConfigWorker(worker: worker);
+            mcaManagerSession.setRefreshConfigWorker(worker: nil);
+            DispatchQueue.main.asyncAfter(deadline: mcaManagerSession.getExpirationConfigFile(), execute: worker);
+            mcaManagerSession.setRefreshConfigWorker(worker: worker);
             return;
         }
 
-        if SessionSingleton.sharedInstance.isExpiredTime() /* && nil != SessionSingleton.sharedInstance.getCurrentSession() */{
+        if mcaManagerSession.expiredTime() /* && nil != SessionSingleton.sharedInstance.getCurrentSession() */{
             DispatchQueue.main.async {
                 if SessionSingleton.sharedInstance.isNetworkConnected() {
                     NotificationCenter.default.post(name: ObserverList.RefreshConfigurationFile.name,
@@ -483,9 +484,9 @@ class Observers: NSObject {
                 }
             }
         } else {
-            SessionSingleton.sharedInstance.setRefreshConfigWorker(worker: nil);
-            DispatchQueue.main.asyncAfter(deadline: SessionSingleton.sharedInstance.getExpiration(), execute: worker);
-            SessionSingleton.sharedInstance.setRefreshConfigWorker(worker: worker);
+            mcaManagerSession.setRefreshConfigWorker(worker: nil);
+            DispatchQueue.main.asyncAfter(deadline: mcaManagerSession.getExpirationConfigFile(), execute: worker);
+            mcaManagerSession.setRefreshConfigWorker(worker: worker);
         }
 
 //        if (true == SessionSingleton.sharedInstance.isExpiredTime()) {
@@ -697,7 +698,7 @@ class AlertYesNo : AlertInfo {
 /// Clase para guardar los elementos de un AlertAcceptOnly
 class AlertAcceptOnly : AlertInfo {
     /// Variable de acceptTitle
-    var acceptTitle : String = NSLocalizedString(/*"alert-aceptar-button"*/ SessionSingleton.sharedInstance.getGeneralConfig()?.translations?.data?.generales?.acceptBtn?.uppercased() ?? "", comment: "");
+    var acceptTitle : String = NSLocalizedString(/*"alert-aceptar-button"*/ mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.acceptBtn?.uppercased() ?? "", comment: "");
     /// Trigger onAcceptEvent
     var onAcceptEvent = {};
 }
@@ -705,7 +706,7 @@ class AlertAcceptOnly : AlertInfo {
 /// Clase para guardar los elementos de un AlertAcceptOnly
 class AlertAcceptOnlyPasswordReq : AlertInfo {
     /// Variable de acceptTitle
-    var acceptTitle : String = NSLocalizedString(/*"alert-aceptar-button"*/ SessionSingleton.sharedInstance.getGeneralConfig()?.translations?.data?.generales?.acceptBtn?.uppercased() ?? "", comment: "");
+    var acceptTitle : String = NSLocalizedString(/*"alert-aceptar-button"*/ mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.acceptBtn?.uppercased() ?? "", comment: "");
     /// Trigger onAcceptEvent
     var userEmail : String = ""
     var userPhone : String = ""

@@ -8,6 +8,7 @@
 
 import UIKit
 import Cartography
+import mcaManageriOS
 
 /// Este protocolo permite enviar texto
 protocol MobilePhoneNumberOnChangeDelegate {
@@ -35,7 +36,7 @@ class MobilePhoneNumberContainerView: UIView, UITextFieldDelegate {
     init() {
         super.init(frame: CGRect.zero)
         
-        let conf = SessionSingleton.sharedInstance.getGeneralConfig()
+        let conf = mcaManagerSession.getGeneralConfig()
         //let mobileNum = (conf?.translations?.data?.generales?.mobileNumber)!
         let mobileNum = (conf?.translations?.data?.addService?.addPrepaidNumber) ?? ""
         mobileTextfield = SimpleGrayTextField(text: mobileNum, placeholder: mobileNum)
@@ -43,7 +44,7 @@ class MobilePhoneNumberContainerView: UIView, UITextFieldDelegate {
         mobileTextfield.textAlignment = .left
         mobileTextfield.keyboardType = .numberPad
 
-        if let phone = SessionSingleton.sharedInstance.getGeneralConfig()?.country?.phoneCountryCode {
+        if let phone = mcaManagerSession.getGeneralConfig()?.country?.phoneCountryCode {
             phoneLabel = PhoneLabel(text: phone)
             phoneLabel.textAlignment = .center
         }

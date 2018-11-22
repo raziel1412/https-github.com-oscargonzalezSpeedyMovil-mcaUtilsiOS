@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import mcaManageriOS
 
 /// Extensión Strings
 extension String {
@@ -42,7 +43,7 @@ extension String {
     func enmascararRut() -> (maskedString : String, errorString : String?) {
         var maskRUT = self
         var error : String? = nil
-        if let characterSpecial = SessionSingleton.sharedInstance.getGeneralConfig()?.country?.userProfileIdConfig?.separador, var posCharacter = (SessionSingleton.sharedInstance.getGeneralConfig()?.country?.userProfileIdConfig?.posicion), let max =  SessionSingleton.sharedInstance.getGeneralConfig()?.country?.userProfileIdConfig?.max , let min = SessionSingleton.sharedInstance.getGeneralConfig()?.country?.userProfileIdConfig?.min{
+        if let characterSpecial = mcaManagerSession.getGeneralConfig()?.country?.userProfileIdConfig?.separador, var posCharacter = (mcaManagerSession.getGeneralConfig()?.country?.userProfileIdConfig?.posicion), let max =  mcaManagerSession.getGeneralConfig()?.country?.userProfileIdConfig?.max , let min = mcaManagerSession.getGeneralConfig()?.country?.userProfileIdConfig?.min{
             posCharacter = posCharacter - 1
             if !self.contains(characterSpecial) {
                 
@@ -57,9 +58,9 @@ extension String {
                     maskRUT = "\(firstText)\(characterSpecial)\(secondText)"
                     print("MASK RUT \(firstText)\(characterSpecial)\(secondText)")
                 } else if lenghtID > 0 {
-                    error = SessionSingleton.sharedInstance.getGeneralConfig()?.country?.userProfileIdConfig?.msgError
+                    error = mcaManagerSession.getGeneralConfig()?.country?.userProfileIdConfig?.msgError
                 } else {
-                    error = SessionSingleton.sharedInstance.getGeneralConfig()?.translations?.data?.generales?.emptyField ?? "";
+                    error = mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.emptyField ?? "";
                 }
             }
         }
@@ -77,7 +78,7 @@ extension String {
     
     func maskPhone() -> String {
         let number = self
-        if let unmaskedChars = SessionSingleton.sharedInstance.getGeneralConfig()?.pinMessageRules?.unmaskedCharactersForPhone {
+        if let unmaskedChars = mcaManagerSession.getGeneralConfig()?.pinMessageRules?.unmaskedCharactersForPhone {
             let conditionIndex = number.count - unmaskedChars
             var maskedPhone = String(number.enumerated().map{(index, element) -> Character in
                 return index < conditionIndex ? "*" : element

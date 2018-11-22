@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D1CFEB821A61D43003C00E0 /* mcaManageriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1CFEB721A61D43003C00E0 /* mcaManageriOS.framework */; };
 		50916FA9B8B50EA870C2BC6E /* Pods_mcaUtilsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170AEF6659E0C1B563ED2A8C /* Pods_mcaUtilsiOS.framework */; };
 		62874661219CD9B200C53384 /* mcaUtilsiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 62874653219CD9B200C53384 /* mcaUtilsiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62E67EFD21A4D29300B4F182 /* enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E67EFC21A4D29300B4F182 /* enums.swift */; };
@@ -123,6 +124,7 @@
 
 /* Begin PBXFileReference section */
 		170AEF6659E0C1B563ED2A8C /* Pods_mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D1CFEB721A61D43003C00E0 /* mcaManageriOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = mcaManageriOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62874650219CD9B200C53384 /* mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62874653219CD9B200C53384 /* mcaUtilsiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mcaUtilsiOS.h; sourceTree = "<group>"; };
 		62874654219CD9B200C53384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D1CFEB821A61D43003C00E0 /* mcaManageriOS.framework in Frameworks */,
 				50916FA9B8B50EA870C2BC6E /* Pods_mcaUtilsiOS.framework in Frameworks */,
 				62EBFFFA219F26F000F85A3D /* AdobeMobileLibrary.a in Frameworks */,
 			);
@@ -256,6 +259,7 @@
 		0ABA20FE799B6879AC113E81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1D1CFEB721A61D43003C00E0 /* mcaManageriOS.framework */,
 				170AEF6659E0C1B563ED2A8C /* Pods_mcaUtilsiOS.framework */,
 			);
 			name = Frameworks;
