@@ -17,7 +17,7 @@ let UNAVAILABLE_TEXT = "Texto no disponible"
 var allTabsArray = ["Resumen", "Móvil", "Internet", "Teléfono", "Televisión", "Todo Claro", "Suscripciones"]
 
 /// Estructura que verifica si se está usando un simulador
-struct checkForSimulator {
+public struct checkForSimulator {
     
     static func isRuningSimulator() -> Bool {
     
@@ -30,14 +30,14 @@ struct checkForSimulator {
     }
 }
 /// Url contiene el CountryList
-struct urlCountryList{
+public struct urlCountryList{
     static func getContryUrl() -> String{
         let url = "https://firebasestorage.googleapis.com/v0/b/mi-claro-955bc.appspot.com/o/countriesList.json?alt=media&token=12ae69f5-8cbb-4922-a576-a68cb89e3558"
         return url
     }
 }
 /// Url base usada para la contrucción de algunas URL
-struct baseUrl {
+public struct baseUrl {
     static func getBaseUrl(countryCode: String) -> String {
 //        let url = String.init(format: "https://firebasestorage.googleapis.com/v0/b/mi-claro-955bc.appspot.com/o/configMiClaro_%@.json?alt=media&token=7f662957-5ca3-43de-83a8-521e676890be", countryCode.lowercased());
         let url = String.init(format: "http://contenido.speedymovil.com:8007/contenedor/MiClaroTemporal/configMiClaro_%@.json", countryCode.lowercased());
@@ -45,7 +45,7 @@ struct baseUrl {
     }
 }
 /// Estructura que almacena los colores usados en MiClaro
-struct institutionalColors {
+public struct institutionalColors {
     static let claroBlueColor = UIColor(rgb: 0x1F97AE, alphaVal: 1)
     static let claroRedColor = UIColor(rgb: 0xEF3829, alphaVal: 1)
     static let claroGrayNavColor = UIColor(rgb: 0xF5F5F5, alphaVal: 1)
@@ -72,20 +72,20 @@ struct institutionalColors {
     static let claroBorderBalanceView = UIColor(rgb: 0xF1F4FF , alphaVal: 1)
 }
 /// Estructura con los elementos de validación
-struct passwordValidation {
+public struct passwordValidation {
      static var between6and12Characters = NSLocalizedString("lengthValidation", comment: "")
      static var atLeastOneNumber = NSLocalizedString("numbersValidation", comment: "")
      static var atLeastOneLetter = NSLocalizedString("charsValidation", comment: "")
      static var allowedSymbols = NSLocalizedString("symbolsValidation", comment: "")
 }
 /// Estructura con los identificadores de los cells
-struct identifiers {
+public struct identifiers {
    static let genericHeader = "GenericHeaderCell"
    static let genericExpandable = "GenericExpandableCell"
    static let cardCellView = "CardCellView"
 }
 /// Estructura de la altura de las cards
-struct cardHeights {
+public struct cardHeights {
     static let genericHeaderResumeHeight: CGFloat = 280
     static let genericHeaderPrepaidHeight: CGFloat = 420
     static let genericHeaderPospaidHeight: CGFloat = 420
@@ -100,7 +100,7 @@ struct cardHeights {
 /// Función que ayuda a obtener la fecha en un formato
 /// - parameter date: Date Fecha a formatear
 /// - Returns String : Fecha formateada
-func getFullStringDate(date : Date) -> String{
+public func getFullStringDate(date : Date) -> String{
     var stringDate = ""
     let formatter = DateFormatter()
     formatter.dateFormat =  "dd/MMMM/yyyy"
@@ -113,7 +113,7 @@ func getFullStringDate(date : Date) -> String{
 /// Función que ayuda a obtener la fecha en un formato
 /// - parameter date: Date Fecha a formatear
 /// - Returns String : Fecha formateada
-func getStringDate(date : Date) -> String{
+public func getStringDate(date : Date) -> String{
     var stringDate = ""
     let formatter = DateFormatter()
     formatter.dateFormat =  "dd/MM/yyyy"
@@ -124,7 +124,7 @@ func getStringDate(date : Date) -> String{
 /// Función que ayuda a obtener la fecha en un formato fecha y hora
 /// - parameter date: Date Fecha a formatear
 /// - Returns String : Fecha formateada
-func getStringDateTime(date : Date) -> String{
+public func getStringDateTime(date : Date) -> String{
     var stringDate = ""
     let formatter = DateFormatter()
     formatter.dateFormat =  "dd/MM/yyyy HH:mm"
@@ -135,7 +135,7 @@ func getStringDateTime(date : Date) -> String{
 /// Función que ayuda a obtener la fecha en un formato fecha y hora
 /// - parameter date: Date Fecha a formatear
 /// - Returns String : Fecha formateada
-func getStringDateTime2(date : Date) -> String{
+public func getStringDateTime2(date : Date) -> String{
     var stringDate = ""
     let formatter = DateFormatter()
     formatter.dateFormat =  "YYYY-MM-dd"
@@ -146,7 +146,7 @@ func getStringDateTime2(date : Date) -> String{
 /// Función que ayuda a convertir un string en una fecha
 /// - parameter String: Fecha a formatear
 /// - Returns Date : Fecha
-func convertStringToDateO(stringDate : String) -> Date {
+public func convertStringToDateO(stringDate : String) -> Date {
     if stringDate.count < 10 {
         return Date();
     }
@@ -161,7 +161,7 @@ func convertStringToDateO(stringDate : String) -> Date {
 /// Función que ayuda a convertir un string en una fecha con un formato
 /// - parameter String: Fecha a formatear (yyyy-MM-dd'T'HH:mm:ss.SSSXXX)
 /// - Returns Date : Fecha
-func convertStringToDate(stringDate : String) -> Date{
+public func convertStringToDate(stringDate : String) -> Date{
     var date : Date?
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX"
@@ -174,7 +174,7 @@ func convertStringToDate(stringDate : String) -> Date{
     }
 }
 
-func convertStringToDate2(stringDate : String) -> Date{
+public func convertStringToDate2(stringDate : String) -> Date{
     var date : Date?
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -192,7 +192,7 @@ func convertStringToDate2(stringDate : String) -> Date{
 /// Función que da el formato a la moneda según el archivo de configuración del país seleccionado
 /// - parameter monto: Float
 /// - Returns String: Formateado
-func formatToCountryCurrency(monto : Float) -> String {
+public func formatToCountryCurrency(monto : Float) -> String {
     let monto_decimal = modf(monto).1;
     if monto_decimal > 0 {
         let strMonto = monto.description
@@ -209,7 +209,7 @@ func formatToCountryCurrency(monto : Float) -> String {
 /// Función que da el formato a la moneda según el archivo de configuración del país seleccionado
 /// - parameter monto: String
 /// - Returns String: Formateado
-func formatToCountryCurrency(strMonto: String) -> String {
+public func formatToCountryCurrency(strMonto: String) -> String {
     let moneda = String(format: "%@ %@", mcaManagerSession.getGeneralConfig()?.country?.currency ?? "$", strMonto);
     return moneda;
 }
@@ -217,7 +217,7 @@ func formatToCountryCurrency(strMonto: String) -> String {
 /// Función que permite realizar una acción (llamar) sobre un ViewController
 /// - parameter phoneNumber: String
 /// - parameter currentVC: UIViewController
-func callPhone(phoneNumber: String, currentVC: UIViewController ) {
+public func callPhone(phoneNumber: String, currentVC: UIViewController ) {
     let application:UIApplication = UIApplication.shared
     if phoneNumber.contains("*") || phoneNumber.contains("#") {
         
@@ -250,7 +250,7 @@ func callPhone(phoneNumber: String, currentVC: UIViewController ) {
 /// Función que ayuda a convertir un string en una fecha con un formato
 /// - parameter String: Fecha a formatear
 /// - Returns Date : Fecha
-func convertShortStringDateToDate(stringDate : String) -> Date?{
+public func convertShortStringDateToDate(stringDate : String) -> Date?{
     let dateFormatter = DateFormatter()
     dateFormatter.timeZone = NSTimeZone(name: "America/Mexico_City")! as TimeZone
     dateFormatter.dateFormat = "yyyy-MM-dd"; // "dd-MM-yyyy"
@@ -261,7 +261,7 @@ func convertShortStringDateToDate(stringDate : String) -> Date?{
 /// Función que ayuda a convertir un Date en una fecha con un formato
 /// - parameter Date: Fecha a formatear
 /// - Returns String : Fecha
-func getStringMonthDate(in_date : Date?) -> String{
+public func getStringMonthDate(in_date : Date?) -> String{
     guard let my_date = in_date else {
         return "";
     }
@@ -280,7 +280,7 @@ func getStringMonthDate(in_date : Date?) -> String{
 ///Conversion para tablePeriods
 /// - parameter date: Date
 /// - Returns String
-func getStringMonthYear(date : Date) -> String{
+public func getStringMonthYear(date : Date) -> String{
   
     var stringDate = ""
     let formatter = DateFormatter()
@@ -295,7 +295,7 @@ func getStringMonthYear(date : Date) -> String{
 }
 
 /// Restar fechas
-func substractDaysDates(date1: String, date2: String) -> Int {
+public func substractDaysDates(date1: String, date2: String) -> Int {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "YYYY-MM-dd"
     if let someDate = dateFormatter.date(from: date1)
@@ -318,7 +318,7 @@ func substractDaysDates(date1: String, date2: String) -> Int {
 /// Versión formaterada para impresión
 /// - parameter showFullVersion : Bool
 /// - Returns String
-func getFormattedVersion(showFullVersion : Bool) -> String {
+public func getFormattedVersion(showFullVersion : Bool) -> String {
     let currentVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "";
     let currentBuildNumber = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String ?? "";
     let fullVersion = (true == showFullVersion ? String(format: "%@.%@", currentVersion, currentBuildNumber) : currentVersion);
@@ -327,7 +327,7 @@ func getFormattedVersion(showFullVersion : Bool) -> String {
 }
 /// Versión formaterada del OS para impresión
 /// - Returns String
-func getVersionSO() -> Float {
+public func getVersionSO() -> Float {
     let modelPhone: NSString = UIDevice.current.systemVersion as NSString
     print("MODEL PHONE \(modelPhone.floatValue)")
     
@@ -335,7 +335,7 @@ func getVersionSO() -> Float {
 }
 
 /// Extension UINavigationController
-extension UINavigationController {
+public extension UINavigationController {
     /// Reemplaza el TopViewController con un controller nuevo
     /// - parameter viewController: UIViewController
     /// - parameter animated : Bool
@@ -347,7 +347,7 @@ extension UINavigationController {
 }
 
 /// Extensión UITextField
-extension UITextField {
+public extension UITextField {
     /// Perform action
     override open func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
         if action == #selector(copy(_:)) || action == #selector(paste(_:)) || action == #selector(select(_:)) || action == #selector(selectAll(_:)) || action == #selector(cut(_:)) {
@@ -357,14 +357,14 @@ extension UITextField {
     }
 }
 /// Extensión Array
-extension Array {
+public extension Array {
     subscript (safe index: Int) -> Element? {
         return indices ~= index ? self[index] : nil
     }
 }
 
 // Methods for update alert
-func isUpdateAvailable() {
+public func isUpdateAvailable() {
     DispatchQueue.global().async {
         do {
             let conf = mcaManagerSession.getGeneralConfig()
@@ -382,7 +382,7 @@ func isUpdateAvailable() {
     }
 }
 
-func showUpdateAlertView() {
+public func showUpdateAlertView() {
     
     if mcaManagerSession.getIsUpdateAppAvailable() {
         let alert = AlertAcceptOnly()
@@ -390,7 +390,7 @@ func showUpdateAlertView() {
     }
 }
 
-func isUpdateAppAvailable() throws -> Bool {
+public func isUpdateAppAvailable() throws -> Bool {
     let country = mcaManagerSession.getCountry()?.lowercased() ?? ""
     guard let info = Bundle.main.infoDictionary,
         let currentVersion = info["CFBundleShortVersionString"] as? String,
@@ -410,7 +410,7 @@ func isUpdateAppAvailable() throws -> Bool {
 }
 
 
-func ShowAlertAcceptOnly(title: String = "", text: String = "", icon: AlertIconType, cancelBtnColor: UIColor? = nil, cancelButtonName: String = "", acceptTitle: String = "", acceptBtnColor: UIColor? = nil, buttonName: String = "", onAccept: @escaping() -> Void) {
+public func ShowAlertAcceptOnly(title: String = "", text: String = "", icon: AlertIconType, cancelBtnColor: UIColor? = nil, cancelButtonName: String = "", acceptTitle: String = "", acceptBtnColor: UIColor? = nil, buttonName: String = "", onAccept: @escaping() -> Void) {
     let alert = AlertAcceptOnly();
     alert.title = title
     alert.icon = icon

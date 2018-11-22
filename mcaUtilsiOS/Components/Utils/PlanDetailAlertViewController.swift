@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlanDetailAlertViewController: UIViewController {
+public class PlanDetailAlertViewController: UIViewController {
     private var bkg : UIView?
     var alertData : PlanDetailAlertData?
     var myScroll : UIScrollView?
@@ -20,17 +20,17 @@ class PlanDetailAlertViewController: UIViewController {
     var botonOk : UIButton?
     var botonCancel : UIButton?
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3);
     }
 
-    override func viewDidLayoutSubviews() {
+    override public func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         view.layoutIfNeeded()
     }
 
-    override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
         setupView();
         animateView();

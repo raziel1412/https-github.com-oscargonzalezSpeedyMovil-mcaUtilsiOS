@@ -8,7 +8,7 @@
 
 import UIKit
 /// Clase Appearance
-class Appearance: NSObject {
+public class Appearance: NSObject {
 
     /// Función que hace el setup de la apariencia inicial
     static func setInitialAppearance() {
@@ -31,7 +31,7 @@ class Appearance: NSObject {
     
 }
 
-extension NSAttributedString {
+public extension NSAttributedString {
 
     convenience init(htmlString html: String, font: UIFont? = nil, alignment: NSTextAlignment = NSTextAlignment.center, useDocumentFontSize: Bool = true) throws {
         let options: [String : Any] = [

@@ -9,7 +9,7 @@
 import UIKit
 import mcaManageriOS
 
-class AnalyticsInteractionSingleton {
+public class AnalyticsInteractionSingleton {
     static let sharedInstance = AnalyticsInteractionSingleton();
     var timer: Timer;
     var counter: Int;

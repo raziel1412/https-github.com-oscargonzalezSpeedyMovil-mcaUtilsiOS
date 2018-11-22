@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 /// Extension UIColor
-extension UIColor{
+public extension UIColor{
     
     /// Inicialización
     /// - parameter rgb : UInt

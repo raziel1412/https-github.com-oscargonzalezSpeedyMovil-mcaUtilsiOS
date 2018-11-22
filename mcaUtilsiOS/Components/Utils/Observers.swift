@@ -15,7 +15,7 @@ import IQKeyboardManagerSwift
 import mcaManageriOS
 
 /// Clase usada para el uso del NotificationCenter (Observabilidad)
-class Observers: NSObject {
+public class Observers: NSObject {
     /// Enumerado de los tipos de Observers que usa el app
     public enum ObserverList : String, NotificationName {
         case YesNoAlert
@@ -105,7 +105,7 @@ class Observers: NSObject {
                                                name: ObserverList.RefreshConfigurationFile.name,
                                                object: nil)
         do {
-            try SessionSingleton.sharedInstance.reachability?.startNotifier();
+            try mcaManagerSession.startNotifier();
         } catch {
             
         }
@@ -166,7 +166,7 @@ class Observers: NSObject {
                                                   name: ObserverList.RefreshConfigurationFile.name,
                                                   object:nil);
 
-        SessionSingleton.sharedInstance.reachability?.stopNotifier();
+        mcaManagerSession.stopNotifier();
     }
     
     static func updateAppAlert(info: NSNotification) {
@@ -195,7 +195,7 @@ class Observers: NSObject {
     /// Función que determina si posee internet el dispositivo
     /// - parameter info : NSNotification
     static func ReachabilityChanged(info: NSNotification) {
-        guard let myReach = SessionSingleton.sharedInstance.reachability else {
+        guard let myReach = mcaManagerSession.reachability else {
             print("No WiFi address")
             mcaManagerSession.setIpAddress(newIpAddress: nil)
             return;
@@ -436,7 +436,7 @@ class Observers: NSObject {
     /// Función que ayuda a mostrar un ShowOfflineMessage popup
     /// - parameter info : NSNotification
     static func ShowOfflineMessage(info : NSNotification) {
-        if false == isNetworkConnected() {
+        if false == mcaManagerSession.isNetworkConnected() {
             let alerta = AlertAcceptOnly();
             alerta.icon = .IconoAlertaError
             alerta.title = "Sin internet";
@@ -460,7 +460,7 @@ class Observers: NSObject {
     static func ChangeDateTime(info: NSNotification) {
         _ = mcaManagerSession.shouldRefresh()
         let worker = DispatchWorkItem {
-            if isNetworkConnected() {
+            if mcaManagerSession.isNetworkConnected() {
                 NotificationCenter.default.post(name: ObserverList.RefreshConfigurationFile.name,
                                                 object: nil);
             } else {
@@ -469,7 +469,7 @@ class Observers: NSObject {
             }
         }
 
-        if false == isNetworkConnected() || mcaManagerSession.isConsumingService() {
+        if false == mcaManagerSession.isNetworkConnected() || mcaManagerSession.isConsumingWS() {
             mcaManagerSession.setRefreshConfigWorker(worker: nil);
             DispatchQueue.main.asyncAfter(deadline: mcaManagerSession.getExpirationConfigFile(), execute: worker);
             mcaManagerSession.setRefreshConfigWorker(worker: worker);
@@ -478,7 +478,8 @@ class Observers: NSObject {
 
         if mcaManagerSession.expiredTime() /* && nil != SessionSingleton.sharedInstance.getCurrentSession() */{
             DispatchQueue.main.async {
-                if isNetworkConnected() {
+                //if SessionSingleton.sharedInstance.isNetworkConnected() {
+                if mcaManagerSession.isNetworkConnected() {
                     NotificationCenter.default.post(name: ObserverList.RefreshConfigurationFile.name,
                                                     object: nil);
                 }
@@ -654,7 +655,7 @@ public enum AlertKind: String {
 }
 */
 /// Clase para guardar los elementos de un alert
-class AlertInfo {
+public class AlertInfo {
     /// Variable de título
     var title : String = "";
     /// Variable de texto
@@ -673,7 +674,7 @@ class AlertInfo {
 
 
 /// Clase para guardar los elementos de un AlertFoto
-class AlertFoto : AlertInfo {
+public class AlertFoto : AlertInfo {
     /// Variable de acceptTitle
     var acceptTitle : String = NSLocalizedString("alert-aceptar-button", comment: "");
     /// Variable de abrirCamaraTitle
@@ -693,7 +694,7 @@ class AlertFoto : AlertInfo {
 }
 
 /// Clase para guardar los elementos de un AlertYesNo
-class AlertYesNo : AlertInfo {
+public class AlertYesNo : AlertInfo {
     /// Variable de acceptTitle
     var acceptTitle : String = NSLocalizedString("alert-aceptar-button", comment: "");
     /// Variable de cancelTitle
@@ -706,7 +707,7 @@ class AlertYesNo : AlertInfo {
 }
 
 /// Clase para guardar los elementos de un AlertAcceptOnly
-class AlertAcceptOnly : AlertInfo {
+public class AlertAcceptOnly : AlertInfo {
     /// Variable de acceptTitle
     var acceptTitle : String = NSLocalizedString(/*"alert-aceptar-button"*/ mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.acceptBtn?.uppercased() ?? "", comment: "");
     /// Trigger onAcceptEvent
@@ -714,7 +715,7 @@ class AlertAcceptOnly : AlertInfo {
 }
 
 /// Clase para guardar los elementos de un AlertAcceptOnly
-class AlertAcceptOnlyPasswordReq : AlertInfo {
+public class AlertAcceptOnlyPasswordReq : AlertInfo {
     /// Variable de acceptTitle
     var acceptTitle : String = NSLocalizedString(/*"alert-aceptar-button"*/ mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.acceptBtn?.uppercased() ?? "", comment: "");
     /// Trigger onAcceptEvent
@@ -724,7 +725,7 @@ class AlertAcceptOnlyPasswordReq : AlertInfo {
     var onAcceptEvent = {};
 }
 
-class WebViewAlertData : AlertInfo {
+public class WebViewAlertData : AlertInfo {
     var url : String?;
     var method : String = "GET";
     /// Variable de acceptTitle
@@ -733,7 +734,7 @@ class WebViewAlertData : AlertInfo {
     var onAcceptEvent = {};
 }
 
-class PlanDetailAlertData : AlertInfo {
+public class PlanDetailAlertData : AlertInfo {
     /// Variable de subtitle
     var subtitle : String?
     /// Variable de includes

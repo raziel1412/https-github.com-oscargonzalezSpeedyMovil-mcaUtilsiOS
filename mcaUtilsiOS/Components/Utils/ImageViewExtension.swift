@@ -9,7 +9,7 @@
 import UIKit
 
 /// Extensión UIImageView
-extension UIImageView {
+public extension UIImageView {
     
     /// Función que permite descargar asincronamente una imagen de una URL
     /// - parameter url : URL

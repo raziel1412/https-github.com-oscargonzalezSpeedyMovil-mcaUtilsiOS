@@ -11,7 +11,7 @@ import Foundation
 import mcaManageriOS
 
 /// Extensión Strings
-extension String {
+public extension String {
     /// Función que retorna un rango de un String
     /// - parameter range: Range<Index>
     /// - Returns : NSRange

@@ -18,7 +18,7 @@ class DesignableButton: UIButton {
 }
 
 /// Extension UIView
-extension UIView {
+public extension UIView {
     //Pinta las grecas inferiores de las boletas o cualquier vista que lo requiera
     func addBottomGrecas(){
         let grecaCount = 22
@@ -359,7 +359,7 @@ extension UIView {
     }
 }
 
-extension CALayer {
+public extension CALayer {
     
     func addBorder(edge: UIRectEdge, color: UIColor, thickness: CGFloat, shadowSize: CGSize? = nil) {
         //        needsDisplayOnBoundsChange = true

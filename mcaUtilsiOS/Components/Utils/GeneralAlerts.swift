@@ -7,8 +7,9 @@
 //
 import Foundation
 import UIKit
+import mcaManageriOS
 
-class GeneralAlerts {
+public class GeneralAlerts {
     
     //case YesNoAlert
     

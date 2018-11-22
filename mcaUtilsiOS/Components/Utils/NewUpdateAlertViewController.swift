@@ -9,7 +9,7 @@
 import UIKit
 import mcaManageriOS
 
-class NewUpdateAlertViewController: UIViewController {
+public class NewUpdateAlertViewController: UIViewController {
     
     @IBOutlet weak var headerImg: UIImageView!
     @IBOutlet weak var containerView: UIView!
@@ -26,14 +26,14 @@ class NewUpdateAlertViewController: UIViewController {
     var alertData : AlertInfo?
     var urlString: String?
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3);
         initComponents()
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidLayoutSubviews() {
+    override public func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         titleLbl.sizeToFit()
         subtitleLbl.sizeToFit()
@@ -41,7 +41,7 @@ class NewUpdateAlertViewController: UIViewController {
         updateFrames()
     }
 
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

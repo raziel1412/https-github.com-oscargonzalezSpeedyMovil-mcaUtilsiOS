@@ -9,7 +9,7 @@
 import UIKit
 import mcaManageriOS
 
-class CustomAlertView: UIViewController {
+public class CustomAlertView: UIViewController {
     private var bkg : UIView?
     var alertData : AlertInfo?
     var icono : UIImageView?
@@ -20,17 +20,17 @@ class CustomAlertView: UIViewController {
     var botonEliminar: UIButton?
     var botonCancel : UIButton?
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3);
     }
 
-    override func viewDidLayoutSubviews() {
+    override public func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         view.layoutIfNeeded()
     }
 
-    override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
         setupView();
         animateView();

@@ -9,7 +9,7 @@
 import UIKit
 
 /// Extensión de UILabel
-extension UILabel
+public extension UILabel
 {
     /// Estructura AssociatedKeys
     private struct AssociatedKeys {

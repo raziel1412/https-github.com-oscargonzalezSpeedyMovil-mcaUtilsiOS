@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OptionModel: NSObject{
+public class OptionModel: NSObject{
     var isSelectedOp: Bool?
     var detailText: String?
     
@@ -20,7 +20,7 @@ class OptionModel: NSObject{
     
 }
 
-class ListOptionsVC: UIViewController {
+public class ListOptionsVC: UIViewController {
 
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var optionsTableView: UITableView!
@@ -33,7 +33,7 @@ class ListOptionsVC: UIViewController {
     var lastVC: UIViewController?
     var titleStr: String = ""
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         self.optionsTableView.allowsMultipleSelection = true
         self.optionsTableView.allowsMultipleSelectionDuringEditing = true
@@ -83,11 +83,11 @@ extension ListOptionsVC: UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.optionsArray.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let aOption = optionsArray[indexPath.row]
         cell.textLabel?.numberOfLines = 0
