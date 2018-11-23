@@ -8,7 +8,6 @@
 
 import UIKit
 import PKHUD
-import Lottie
 import Cartography
 import ReachabilitySwift
 import IQKeyboardManagerSwift
