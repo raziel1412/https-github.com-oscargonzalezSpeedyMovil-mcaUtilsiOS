@@ -1,4 +1,21 @@
 PODS:
+  - ActionSheetPicker-3.0 (2.3.0)
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - BEMCheckBox (1.4.1)
   - Cartography (1.1.0)
   - Crashlytics (3.10.9):
     - Fabric (~> 1.7.13)
@@ -11,18 +28,35 @@ PODS:
   - GoogleMaps/Maps (2.7.0):
     - GoogleMaps/Base
   - IBMMobileFirstPlatformFoundation (8.0.2018082906)
-  - IQKeyboardManagerSwift (4.0.13)
+  - IQKeyboardManager (5.0.3)
+  - JSONModel (1.7.0)
   - JSONWebToken (2.2.0)
+  - JVFloatLabeledTextField (1.2.1)
+  - khenshin (1.298):
+    - ActionSheetPicker-3.0 (= 2.3.0)
+    - AFNetworking (= 3.1.0)
+    - BEMCheckBox (= 1.4.1)
+    - IQKeyboardManager (= 5.0.3)
+    - JSONModel (= 1.7.0)
+    - JVFloatLabeledTextField (= 1.2.1)
+    - PPTopMostController (= 0.0.1)
+    - RaptureXML (= 1.0.1)
+    - Toast (= 3.1.0)
+    - TTTAttributedLabel (= 2.0.0)
   - lottie-ios (2.5.0)
   - MTPopup (1.0.2)
   - ObjectMapper (3.3.0)
   - PKHUD (4.2.3)
+  - PPTopMostController (0.0.1)
+  - RaptureXML (1.0.1)
   - ReachabilitySwift (3)
   - SevenSwitch (2.1.0)
   - SidebarOverlay (4.2.2)
   - SkyFloatingLabelTextField (3.6.0)
   - SwiftValidator (4.0.0)
   - SwiftyJSON (4.2.0)
+  - Toast (3.1.0)
+  - TTTAttributedLabel (2.0.0)
   - XLPagerTabStrip (7.0.0)
 
 DEPENDENCIES:
@@ -33,8 +67,8 @@ DEPENDENCIES:
   - FontAwesome.swift (~> 1.2.0)
   - GoogleMaps
   - IBMMobileFirstPlatformFoundation
-  - IQKeyboardManagerSwift (= 4.0.13)
   - JSONWebToken
+  - khenshin (from `https://bitbucket.org/khipu/khenshin-pod.git`, tag `1.298`)
   - lottie-ios
   - MTPopup (~> 1.0.2)
   - ObjectMapper (~> 3.3)
@@ -49,6 +83,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - ActionSheetPicker-3.0
+    - AFNetworking
+    - BEMCheckBox
     - Cartography
     - Crashlytics
     - DLRadioButton
@@ -56,30 +93,45 @@ SPEC REPOS:
     - FontAwesome.swift
     - GoogleMaps
     - IBMMobileFirstPlatformFoundation
-    - IQKeyboardManagerSwift
+    - IQKeyboardManager
+    - JSONModel
     - JSONWebToken
+    - JVFloatLabeledTextField
     - lottie-ios
     - MTPopup
     - ObjectMapper
     - PKHUD
+    - PPTopMostController
+    - RaptureXML
     - ReachabilitySwift
     - SevenSwitch
     - SidebarOverlay
     - SkyFloatingLabelTextField
     - SwiftyJSON
+    - Toast
+    - TTTAttributedLabel
     - XLPagerTabStrip
 
 EXTERNAL SOURCES:
+  khenshin:
+    :git: https://bitbucket.org/khipu/khenshin-pod.git
+    :tag: '1.298'
   SwiftValidator:
     :branch: master
     :git: https://github.com/jpotts18/SwiftValidator.git
 
 CHECKOUT OPTIONS:
+  khenshin:
+    :git: https://bitbucket.org/khipu/khenshin-pod.git
+    :tag: '1.298'
   SwiftValidator:
     :commit: c0ee801a2d107eca5f748d07932b449666d8effd
     :git: https://github.com/jpotts18/SwiftValidator.git
 
 SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   Cartography: 0538ccb4044acbbda2266335fc58cb4228794d90
   Crashlytics: 55e24fc23989680285a21cb1146578d9d18e432c
   DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
@@ -87,20 +139,27 @@ SPEC CHECKSUMS:
   FontAwesome.swift: 60063e3f19ba4801155d4b0f2334ab7585763ab3
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   IBMMobileFirstPlatformFoundation: a092592de6c9c72fd1f8c8d416f028ae8e0469c3
-  IQKeyboardManagerSwift: fb399c4cddcd8d9bbcd2d0c7c81ed290b61c088e
+  IQKeyboardManager: dc5b18b47e5170e4d150bb86dbee8c8a2fc48997
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   JSONWebToken: 6fae32489632658d563dd6952a5c34020ea813e4
+  JVFloatLabeledTextField: cfc44e3c4d493b2ed92ede8035e8e89c2912ba64
+  khenshin: 5370cef6374854482a3fc356425abff78fab71cb
   lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
   MTPopup: 7fd0259ba4688aaa65caab223bbb88a4907516f3
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   PKHUD: c7692163a09875cbf15827dc581df3c5cf7f1015
+  PPTopMostController: 4e6f1e5f8c645bdcc74cd837a20f607ff262c048
+  RaptureXML: b5c33c04c1a4adfd8ad0d5463329a31820596e82
   ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
   SevenSwitch: 5543327829b7bec5b29b73bad5f3cc3f92c1736d
   SidebarOverlay: a5365455a2f9d54f70d0765764ca1a2806b1b11d
   SkyFloatingLabelTextField: 38164979b79512f9ff9288ad8acfc4bbf5d843e3
   SwiftValidator: 25ded5ca1f10c05adf57f6ac82a72d28ac8d91af
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   XLPagerTabStrip: 9be80a66c6b7d60306b2c0a6004965016d68f813
 
-PODFILE CHECKSUM: 5aa54d1b37341ae3db95c8bf1177f2d323c5795d
+PODFILE CHECKSUM: 6e8b5570f0d0a502a2eebb014241a98e910f1b3a
 
 COCOAPODS: 1.5.3

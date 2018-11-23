@@ -11,7 +11,7 @@ import UIKit
 public class Appearance: NSObject {
 
     /// Función que hace el setup de la apariencia inicial
-    static func setInitialAppearance() {
+    public static func setInitialAppearance() {
     
         UINavigationBar.appearance().barTintColor = institutionalColors.claroGrayNavColor
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: institutionalColors.claroNavTitleColor]

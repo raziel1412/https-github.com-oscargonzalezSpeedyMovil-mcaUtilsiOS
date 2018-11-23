@@ -18,7 +18,7 @@ def project_pods
     pod 'SkyFloatingLabelTextField', '~> 3.0'
     pod 'XLPagerTabStrip', '~> 7.0'
     pod 'ObjectMapper', '~> 3.3'
-
+    
     # Pods for MiClaro
     pod 'SidebarOverlay', '~> 4.1'
     pod 'FontAwesome.swift', '~> 1.2.0'
@@ -26,18 +26,21 @@ def project_pods
     pod 'ReachabilitySwift', '~> 3.0.0'
     pod 'PKHUD', '~> 4.2.3'
     pod 'lottie-ios'
-    pod 'IQKeyboardManagerSwift', '4.0.13'
+    #    pod 'IQKeyboardManagerSwift', '4.0.13'
     pod 'SevenSwitch', '~> 2.1'
     pod 'DLRadioButton', '~> 1.4.9'
     pod 'GoogleMaps'
+    #    pod 'GooglePlaces'
     pod 'JSONWebToken'
     #Crash
     pod 'Fabric', '~> 1.7.3'
     pod 'Crashlytics', '~> 3.10'
-
+    
     pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :branch => 'master'
     pod 'SwiftyJSON'
-    Pod 
+    #    pod 'GooglePlacesSearchController'
+    
+   pod 'khenshin', :git => 'https://bitbucket.org/khipu/khenshin-pod.git', :tag => '1.298'
 end
 
 target 'mcaLoginiOS' do
