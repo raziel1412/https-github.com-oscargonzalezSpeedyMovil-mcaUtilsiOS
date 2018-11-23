@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		50916FA9B8B50EA870C2BC6E /* Pods_mcaUtilsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170AEF6659E0C1B563ED2A8C /* Pods_mcaUtilsiOS.framework */; };
 		621A65BB21A769BF00D85FBA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 621A65BA21A769BF00D85FBA /* libsqlite3.tbd */; };
+		622ED4DC21A8AE1D00BE746A /* Extension+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622ED4DB21A8AE1D00BE746A /* Extension+UIApplication.swift */; };
 		626C054521A7296B0031EF19 /* CardsSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C054421A7296B0031EF19 /* CardsSummaryModel.swift */; };
 		6282911621A708FD00AF8144 /* AnalyticsInteractionSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6282911521A708FD00AF8144 /* AnalyticsInteractionSingleton.swift */; };
 		6282911821A720CA00AF8144 /* Extension+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6282911721A720CA00AF8144 /* Extension+URL.swift */; };
@@ -130,6 +131,7 @@
 		170AEF6659E0C1B563ED2A8C /* Pods_mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D1CFEB721A61D43003C00E0 /* mcaManageriOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = mcaManageriOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		621A65BA21A769BF00D85FBA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		622ED4DB21A8AE1D00BE746A /* Extension+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIApplication.swift"; sourceTree = "<group>"; };
 		626C054421A7296B0031EF19 /* CardsSummaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsSummaryModel.swift; sourceTree = "<group>"; };
 		6282911521A708FD00AF8144 /* AnalyticsInteractionSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsInteractionSingleton.swift; sourceTree = "<group>"; };
 		6282911721A720CA00AF8144 /* Extension+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+URL.swift"; sourceTree = "<group>"; };
@@ -381,6 +383,7 @@
 				6282911521A708FD00AF8144 /* AnalyticsInteractionSingleton.swift */,
 				6282911721A720CA00AF8144 /* Extension+URL.swift */,
 				626C054421A7296B0031EF19 /* CardsSummaryModel.swift */,
+				622ED4DB21A8AE1D00BE746A /* Extension+UIApplication.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -753,6 +756,7 @@
 				62EBFFB4219F1EEA00F85A3D /* MobilePhoneNumberContainerView.swift in Sources */,
 				62E67F0121A4DC6600B4F182 /* deviceFeatures.swift in Sources */,
 				62EBFE0B219F1EEA00F85A3D /* PhotoLibraryAuthorizer.swift in Sources */,
+				622ED4DC21A8AE1D00BE746A /* Extension+UIApplication.swift in Sources */,
 				62EBFE2B219F1EEA00F85A3D /* StringExtension.swift in Sources */,
 				62E67EFD21A4D29300B4F182 /* enums.swift in Sources */,
 				62EBFFBD219F1EEB00F85A3D /* InstructionLabel.swift in Sources */,

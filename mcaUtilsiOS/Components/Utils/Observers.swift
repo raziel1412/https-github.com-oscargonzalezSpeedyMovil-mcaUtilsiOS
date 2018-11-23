@@ -170,7 +170,7 @@ public class Observers: NSObject {
     
     static func updateAppAlert(info: NSNotification) {
         
-        let presenter = info.userInfo?["presenter"] as? UIViewController
+        //let presenter = info.userInfo?["presenter"] as? UIViewController
         
         let conf = mcaManagerSession.getGeneralConfig()
         
@@ -184,10 +184,15 @@ public class Observers: NSObject {
             custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
             custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
             
-            if presenter is NewUpdateAlertViewController {
+            let presenter2 = UIApplication.topViewController()
+            
+            
+            if presenter2 is NewUpdateAlertViewController {
                 print("already presented!")
             }else{
-                presenter?.present(custom, animated: true, completion: nil)
+                
+                presenter2?.present(custom, animated: true, completion: nil)
+                //presenter?.present(custom, animated: true, completion: nil)
             }
             
             /*if UIApplication.shared.keyWindow?.currentViewController() is NewUpdateAlertViewController {
@@ -237,7 +242,7 @@ public class Observers: NSObject {
     /// - parameter info : NSNotification
     static func AcceptOnlyAlert(info:NSNotification) {
         
-        let presenter = info.userInfo?["presenter"] as? UIViewController
+        //let presenter = info.userInfo?["presenter"] as? UIViewController
         
         if !(info.object is AlertAcceptOnly) {
             fatalError("El tipo del objeto alerta no es correcto!");
@@ -259,7 +264,11 @@ public class Observers: NSObject {
             custom.definesPresentationContext = true;
             custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
             custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-            presenter?.present(custom, animated: true, completion: nil)
+            //presenter?.present(custom, animated: true, completion: nil)
+            
+            let presenter2 = UIApplication.topViewController()
+            presenter2?.present(custom, animated: true, completion: nil)
+            
             //UIApplication.shared.keyWindow?.currentViewController()?.present(custom, animated: true, completion: nil);
             
         }
@@ -270,7 +279,7 @@ public class Observers: NSObject {
     /// - parameter info : NSNotification
     static func AcceptOnlyAlertPasswordReq(info:NSNotification) {
         
-        let presenter = info.userInfo?["presenter"] as? UIViewController
+        //let presenter = info.userInfo?["presenter"] as? UIViewController
         
         if !(info.object is AlertAcceptOnlyPasswordReq) {
             fatalError("El tipo del objeto alerta no es correcto!");
@@ -291,7 +300,10 @@ public class Observers: NSObject {
             custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
             custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
             
-            presenter?.present(custom, animated: true, completion: nil)
+            //presenter?.present(custom, animated: true, completion: nil)
+            
+            let presenter2 = UIApplication.topViewController()
+            presenter2?.present(custom, animated: true, completion: nil)
             
             //UIApplication.shared.keyWindow?.currentViewController()?.present(custom, animated: true, completion: nil);
         }
@@ -301,7 +313,7 @@ public class Observers: NSObject {
     /// - parameter info : NSNotification
     static func WebViewAlert(info:NSNotification) {
         
-        let presenter = info.userInfo?["presenter"] as? UIViewController
+        //let presenter = info.userInfo?["presenter"] as? UIViewController
         
         if !(info.object is WebViewAlertData) {
             fatalError("El tipo del objeto alerta no es correcto!");
@@ -322,7 +334,10 @@ public class Observers: NSObject {
             custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
             custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
             
-            presenter?.present(custom, animated: true, completion: nil)
+            //presenter?.present(custom, animated: true, completion: nil)
+            
+            let presenter2 = UIApplication.topViewController()
+            presenter2?.present(custom, animated: true, completion: nil)
             
             //UIApplication.shared.keyWindow?.currentViewController()?.present(custom, animated: true, completion: nil);
 
@@ -333,7 +348,7 @@ public class Observers: NSObject {
     /// - parameter info : NSNotification
     static func YesNoAlert(info:NSNotification) {
         
-        let presenter = info.userInfo?["presenter"] as? UIViewController
+        //let presenter = info.userInfo?["presenter"] as? UIViewController
         
         if !(info.object is AlertYesNo) {
             fatalError("El tipo del objeto alerta no es correcto!");
@@ -353,7 +368,10 @@ public class Observers: NSObject {
             custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
             custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
             
-            presenter?.present(custom, animated: true, completion: nil)
+            //presenter?.present(custom, animated: true, completion: nil)
+            
+            let presenter2 = UIApplication.topViewController()
+            presenter2?.present(custom, animated: true, completion: nil)
             
             //UIApplication.shared.keyWindow?.currentViewController()?.present(custom, animated: true, completion: nil);
             
@@ -364,7 +382,7 @@ public class Observers: NSObject {
     /// - parameter info : NSNotification
     static func FotoAlert(info:NSNotification) {
         
-        let presenter = info.userInfo?["presenter"] as? UIViewController
+        //let presenter = info.userInfo?["presenter"] as? UIViewController
         
         if !(info.object is AlertFoto) {
             fatalError("El tipo del objeto alerta no es correcto!");
@@ -379,7 +397,10 @@ public class Observers: NSObject {
             custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
             custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
             
-            presenter?.present(custom, animated: true, completion: nil)
+            //presenter?.present(custom, animated: true, completion: nil)
+            
+            let presenter2 = UIApplication.topViewController()
+            presenter2?.present(custom, animated: true, completion: nil)
             
             //UIApplication.shared.keyWindow?.currentViewController()?.present(custom, animated: true, completion: nil);
         }
@@ -388,7 +409,7 @@ public class Observers: NSObject {
     static func PlanDataDetailAlert(info : NSNotification) {
         
         
-        let presenter = info.userInfo?["presenter"] as? UIViewController
+        //let presenter = info.userInfo?["presenter"] as? UIViewController
         
         if !(info.object is PlanDetailAlertData) {
             fatalError("El tipo del objeto alerta no es correcto!");
@@ -414,7 +435,10 @@ public class Observers: NSObject {
             custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
             custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
             
-            presenter?.present(custom, animated: true, completion: nil)
+            //presenter?.present(custom, animated: true, completion: nil)
+            
+            let presenter2 = UIApplication.topViewController()
+            presenter2?.present(custom, animated: true, completion: nil)
             
             //UIApplication.shared.keyWindow?.currentViewController()?.present(custom, animated: true, completion: nil);
         }
