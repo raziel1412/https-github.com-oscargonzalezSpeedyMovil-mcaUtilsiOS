@@ -10,7 +10,7 @@ import UIKit
 import PKHUD
 import Cartography
 import ReachabilitySwift
-import IQKeyboardManagerSwift
+//import IQKeyboardManagerSwift
 import mcaManageriOS
 
 /// Clase usada para el uso del NotificationCenter (Observabilidad)
@@ -169,6 +169,9 @@ public class Observers: NSObject {
     }
     
     static func updateAppAlert(info: NSNotification) {
+        
+        let presenter = info.userInfo?["presenter"] as? UIViewController
+        
         let conf = mcaManagerSession.getGeneralConfig()
         
         let updateAvailable = conf?.newUpdateAvailable?.updateAvailable ?? false
@@ -180,13 +183,20 @@ public class Observers: NSObject {
             custom.definesPresentationContext = true;
             custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
             custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-            if UIApplication.shared.keyWindow?.currentViewController() is NewUpdateAlertViewController {
+            
+            if presenter is NewUpdateAlertViewController {
+                print("already presented!")
+            }else{
+                presenter?.present(custom, animated: true, completion: nil)
+            }
+            
+            /*if UIApplication.shared.keyWindow?.currentViewController() is NewUpdateAlertViewController {
                 print("already presented!")
             } else {
                 UIApplication.shared.keyWindow?.currentViewController()?.present(custom,
                                                                                  animated: true,
                                                                                  completion: nil)
-            }
+            }*/
             
         }
     }
@@ -226,15 +236,21 @@ public class Observers: NSObject {
     /// Función que ayuda a enviar un AcceptOnlyAlert popup
     /// - parameter info : NSNotification
     static func AcceptOnlyAlert(info:NSNotification) {
+        
+        let presenter = info.userInfo?["presenter"] as? UIViewController
+        
         if !(info.object is AlertAcceptOnly) {
             fatalError("El tipo del objeto alerta no es correcto!");
             //            return;
         }
 
+
+        
+        /*
         let topMost = UIApplication.shared.keyWindow?.topMostWindowController();
         if nil != topMost && true == topMost?.isKind(of: CustomAlertView.self) {
             return; // Evita que se muestren en pantalla dos o más alertas
-        }
+        }*/
         
         if let ai = info.object as? AlertAcceptOnly {
             let custom = CustomAlertView();
@@ -243,9 +259,9 @@ public class Observers: NSObject {
             custom.definesPresentationContext = true;
             custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
             custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-            UIApplication.shared.keyWindow?.currentViewController()?.present(custom,
-                                                                             animated: true,
-                                                                             completion: nil);
+            presenter?.present(custom, animated: true, completion: nil)
+            //UIApplication.shared.keyWindow?.currentViewController()?.present(custom, animated: true, completion: nil);
+            
         }
     }
 
@@ -253,15 +269,19 @@ public class Observers: NSObject {
     /// Función que ayuda a enviar un AcceptOnlyAlertPasswordReq popup (Only for Password Req)
     /// - parameter info : NSNotification
     static func AcceptOnlyAlertPasswordReq(info:NSNotification) {
+        
+        let presenter = info.userInfo?["presenter"] as? UIViewController
+        
         if !(info.object is AlertAcceptOnlyPasswordReq) {
             fatalError("El tipo del objeto alerta no es correcto!");
             //            return;
         }
         
+        /*
         let topMost = UIApplication.shared.keyWindow?.topMostWindowController();
         if nil != topMost && true == topMost?.isKind(of: CustomAlertView.self) {
             return; // Evita que se muestren en pantalla dos o más alertas
-        }
+        }*/
         
         if let ai = info.object as? AlertAcceptOnlyPasswordReq {
             let custom = CustomAlertView();
@@ -270,24 +290,29 @@ public class Observers: NSObject {
             custom.definesPresentationContext = true;
             custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
             custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-            UIApplication.shared.keyWindow?.currentViewController()?.present(custom,
-                                                                             animated: true,
-                                                                             completion: nil);
+            
+            presenter?.present(custom, animated: true, completion: nil)
+            
+            //UIApplication.shared.keyWindow?.currentViewController()?.present(custom, animated: true, completion: nil);
         }
     }
     
     /// Función que ayuda a enviar un WebViewAlert popup
     /// - parameter info : NSNotification
     static func WebViewAlert(info:NSNotification) {
+        
+        let presenter = info.userInfo?["presenter"] as? UIViewController
+        
         if !(info.object is WebViewAlertData) {
             fatalError("El tipo del objeto alerta no es correcto!");
             //            return;
         }
 
+        /*
         let topMost = UIApplication.shared.keyWindow?.topMostWindowController();
         if nil != topMost && true == topMost?.isKind(of: CustomAlertView.self) {
             return; // Evita que se muestren en pantalla dos o más alertas
-        }
+        }*/
 
         if let ai = info.object as? WebViewAlertData {
             let custom = WebViewAlertViewController();
@@ -296,9 +321,10 @@ public class Observers: NSObject {
             custom.definesPresentationContext = true;
             custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
             custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-            UIApplication.shared.keyWindow?.currentViewController()?.present(custom,
-                                                                             animated: true,
-                                                                             completion: nil);
+            
+            presenter?.present(custom, animated: true, completion: nil)
+            
+            //UIApplication.shared.keyWindow?.currentViewController()?.present(custom, animated: true, completion: nil);
 
         }
     }
@@ -306,6 +332,9 @@ public class Observers: NSObject {
     /// Función que ayuda a enviar un YesNoAlert popup
     /// - parameter info : NSNotification
     static func YesNoAlert(info:NSNotification) {
+        
+        let presenter = info.userInfo?["presenter"] as? UIViewController
+        
         if !(info.object is AlertYesNo) {
             fatalError("El tipo del objeto alerta no es correcto!");
             //            return;
@@ -323,15 +352,20 @@ public class Observers: NSObject {
             custom.definesPresentationContext = true;
             custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
             custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-            UIApplication.shared.keyWindow?.currentViewController()?.present(custom,
-                                                                             animated: true,
-                                                                             completion: nil);
+            
+            presenter?.present(custom, animated: true, completion: nil)
+            
+            //UIApplication.shared.keyWindow?.currentViewController()?.present(custom, animated: true, completion: nil);
+            
         }
     }
     
     /// Función que ayuda a enviar un FotoAlert popup
     /// - parameter info : NSNotification
     static func FotoAlert(info:NSNotification) {
+        
+        let presenter = info.userInfo?["presenter"] as? UIViewController
+        
         if !(info.object is AlertFoto) {
             fatalError("El tipo del objeto alerta no es correcto!");
             //            return;
@@ -344,22 +378,33 @@ public class Observers: NSObject {
             custom.definesPresentationContext = true;
             custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
             custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-            UIApplication.shared.keyWindow?.currentViewController()?.present(custom,
-                                                                             animated: true,
-                                                                             completion: nil);
+            
+            presenter?.present(custom, animated: true, completion: nil)
+            
+            //UIApplication.shared.keyWindow?.currentViewController()?.present(custom, animated: true, completion: nil);
         }
     }
 
     static func PlanDataDetailAlert(info : NSNotification) {
+        
+        
+        let presenter = info.userInfo?["presenter"] as? UIViewController
+        
         if !(info.object is PlanDetailAlertData) {
             fatalError("El tipo del objeto alerta no es correcto!");
             //            return;
         }
 
+        
+        
+
+        
+        /*
         let topMost = UIApplication.shared.keyWindow?.topMostWindowController();
         if nil != topMost && true == topMost?.isKind(of: PlanDetailAlertData.self) {
             return; // Evita que se muestren en pantalla dos o más alertas
         }
+         */
 
         if let ai = info.object as? PlanDetailAlertData {
             let custom = PlanDetailAlertViewController();
@@ -368,9 +413,10 @@ public class Observers: NSObject {
             custom.definesPresentationContext = true;
             custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
             custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-            UIApplication.shared.keyWindow?.currentViewController()?.present(custom,
-                                                                             animated: true,
-                                                                             completion: nil);
+            
+            presenter?.present(custom, animated: true, completion: nil)
+            
+            //UIApplication.shared.keyWindow?.currentViewController()?.present(custom, animated: true, completion: nil);
         }
     }
 
@@ -669,6 +715,8 @@ public class AlertInfo {
     var cancelButtonName : String? = nil
     /// Button color
     var cancelButtonColor : UIColor? = institutionalColors.claroBlueColor;
+    
+    var presenter: UIViewController? = nil
 }
 
 
