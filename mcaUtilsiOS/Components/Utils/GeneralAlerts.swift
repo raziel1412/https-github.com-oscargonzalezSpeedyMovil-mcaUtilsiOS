@@ -13,10 +13,10 @@ public class GeneralAlerts {
     
     //case YesNoAlert
     
-    private init() {
+    init() {
     }
     
-    static func showYesNo(title: String = "", text: String = "", acceptTitle: String = "Aceptar", cancelTitle: String = "Cancelar", icon: AlertIconType = .NoIcon, acceptColorBtn: UIColor = institutionalColors.claroBlueColor, onAcceptEvent: @escaping ()->() = {}, onCancelEvent: @escaping ()->() = {}){
+    public static func showYesNo(title: String = "", text: String = "", acceptTitle: String = "Aceptar", cancelTitle: String = "Cancelar", icon: AlertIconType = .NoIcon, acceptColorBtn: UIColor = institutionalColors.claroBlueColor, onAcceptEvent: @escaping ()->() = {}, onCancelEvent: @escaping ()->() = {}){
         
         let alert = AlertYesNo();
         alert.title = title
@@ -49,7 +49,7 @@ public class GeneralAlerts {
     }
     
     //case AcceptOnlyAlert
-    static func showAcceptOnly(title: String = "", text: String = "", acceptTitle: String = "Aceptar", icon: AlertIconType = .NoIcon, onAcceptEvent: @escaping ()->() = {}){
+    public static func showAcceptOnly(title: String = "", text: String = "", acceptTitle: String = "Aceptar", icon: AlertIconType = .NoIcon, onAcceptEvent: @escaping ()->() = {}){
         
         let alert = AlertAcceptOnly();
         alert.title = title
@@ -75,7 +75,7 @@ public class GeneralAlerts {
     }
     
     //case WebViewAlertData
-    static func showDataWebView(title: String = "", url: String = "", method: String = "POST", acceptTitle: String = "Aceptar", onAcceptEvent: @escaping ()->() = {}){
+    public static func showDataWebView(title: String = "", url: String = "", method: String = "POST", acceptTitle: String = "Aceptar", onAcceptEvent: @escaping ()->() = {}){
         
         let alert = WebViewAlertData();
         alert.method = method
@@ -103,7 +103,7 @@ public class GeneralAlerts {
     }
     
     //case PlanDataDetailAlert
-        static func showPlanDataDetail(title: String = "", subtitle: String = "", includes: String = "", detallePlan: String = "", acceptTitle: String = "Aceptar", icon: AlertIconType = .NoIcon){
+    public static func showPlanDataDetail(title: String = "", subtitle: String = "", includes: String = "", detallePlan: String = "", acceptTitle: String = "Aceptar", icon: AlertIconType = .NoIcon){
         
         let alert = PlanDetailAlertData();
         
@@ -130,12 +130,12 @@ public class GeneralAlerts {
     }
     
     //case ShowWaitDialog
-    static func showWaitDialog(){
+    public static func showWaitDialog(){
         NotificationCenter.default.post(name: Observers.ObserverList.ShowWaitDialog.name, object: nil);
     }
     
     //case HideWaitDialog
-    static func hideWaitDialog(){
+    public static func hideWaitDialog(){
         NotificationCenter.default.post(name: Observers.ObserverList.HideWaitDialog.name, object: nil);
     }
     
@@ -144,7 +144,7 @@ public class GeneralAlerts {
     
     
     //case FotoAlert
-    static func showFoto(title:String = "", acceptTitle:String = "Aceptar", abrirCamaraTitle:String = "", eliminarFotoTitle:String = "", cancelTitle:String = "", icon: AlertIconType = .NoIcon, onAcceptEvent: @escaping ()->() = {}, onCamaraEvent: @escaping ()->() = {}, onDeletePhotoEvent: @escaping ()->() = {}, onCancelEvent: @escaping ()->() = {}){
+    public static func showFoto(title:String = "", acceptTitle:String = "Aceptar", abrirCamaraTitle:String = "", eliminarFotoTitle:String = "", cancelTitle:String = "", icon: AlertIconType = .NoIcon, onAcceptEvent: @escaping ()->() = {}, onCamaraEvent: @escaping ()->() = {}, onDeletePhotoEvent: @escaping ()->() = {}, onCancelEvent: @escaping ()->() = {}){
         
         let alert = AlertFoto();
         alert.title = title
@@ -186,13 +186,9 @@ public class GeneralAlerts {
         
     }
     
-    //case UpdateAppAlert
-    static func UpdateApp(){
-        
-    }
     
     //case AcceptOnlyAlertPasswordReq
-    static func showAcceptOnlyPassword(title:String = "", text:String = "", userEmail:String = "", userPhone:String = "", acceptTitle:String = "Aceptar", icon: AlertIconType = .NoIcon, acceptColorBtn: UIColor = institutionalColors.claroBlackColor, onAcceptEvent: @escaping ()->() = {}){
+    public static func showAcceptOnlyPassword(title:String = "", text:String = "", userEmail:String = "", userPhone:String = "", acceptTitle:String = "Aceptar", icon: AlertIconType = .NoIcon, acceptColorBtn: UIColor = institutionalColors.claroBlackColor, onAcceptEvent: @escaping ()->() = {}){
         
         //let appDelegate = UIApplication.shared.delegate as! AppDelegate;
         
