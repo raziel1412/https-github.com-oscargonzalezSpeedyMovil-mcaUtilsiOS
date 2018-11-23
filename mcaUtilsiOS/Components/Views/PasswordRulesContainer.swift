@@ -10,7 +10,7 @@ import UIKit
 import Cartography
 
 
-class PasswordRulesContainer : UIView {
+public class PasswordRulesContainer : UIView {
     
     private var titleLabel : UILabel = {
         let label = UILabel(frame: .zero)

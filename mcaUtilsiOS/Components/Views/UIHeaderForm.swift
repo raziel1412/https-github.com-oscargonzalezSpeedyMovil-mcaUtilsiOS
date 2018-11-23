@@ -9,7 +9,7 @@
 import UIKit
 import Cartography
 
-class UIHeaderForm: UIView {
+public class UIHeaderForm: UIView {
 
     private var imageView : UIImageView = {
         let iView = UIImageView(frame: .zero)

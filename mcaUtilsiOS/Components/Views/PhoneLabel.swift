@@ -10,7 +10,7 @@ import UIKit
 import Cartography
 
 /// Esta clase especializa un UILabel para permitirle tener apariencia constante de etiqueta de teléfonos.
-class PhoneLabel: UILabel {
+public class PhoneLabel: UILabel {
     
     init(text: String) {
         super.init(frame: CGRect.zero)

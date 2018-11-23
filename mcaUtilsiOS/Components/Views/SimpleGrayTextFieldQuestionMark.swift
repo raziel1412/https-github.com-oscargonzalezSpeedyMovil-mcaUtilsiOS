@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 
 /// Esta clase es similar a SimpleGreenTextField, pero agrega la capacidad de mostrar un icono representando mas ayuda
-class SimpleGrayTextFieldQuestionMark: SimpleGrayTextField {
+public class SimpleGrayTextFieldQuestionMark: SimpleGrayTextField {
     private var btnView : UIButton?;
     
     var action = {};

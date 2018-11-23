@@ -11,7 +11,7 @@ import SkyFloatingLabelTextField
 import DLRadioButton
 import mcaManageriOS
 
-class CardCellView: UITableViewCell, UITextFieldDelegate {
+public class CardCellView: UITableViewCell, UITextFieldDelegate {
 
     //MARK: Variables
     ///Varibles que se utilizan como referencia en la celda 
@@ -64,14 +64,14 @@ class CardCellView: UITableViewCell, UITextFieldDelegate {
     let vcLinesLower = UIView()
 
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    override public func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(false, animated: false)
     }
     

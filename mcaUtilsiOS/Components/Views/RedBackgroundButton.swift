@@ -9,7 +9,7 @@
 import UIKit
 
 /// Esta clase especializa un UIButton para permitirle que tenga el L&F de Mi Claro constante. Background Rojo, fuente RobotoRegular 18pt y bordes redondeados
-class RedBackgroundButton: UIButton {
+public class RedBackgroundButton: UIButton {
     
     init(textButton: String) {
         super.init(frame: UIScreen.main.bounds)

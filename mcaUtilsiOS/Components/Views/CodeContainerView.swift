@@ -11,7 +11,7 @@ import UIKit
 import Cartography
 
 /// Esta clase especializa un UIView para permitirle tener apariencia de ventana especial para la captura de tokens o códigos enviados por SMS.
-class CodeContainerView: UIView, UITextFieldDelegate {
+public class CodeContainerView: UIView, UITextFieldDelegate {
     
     private var firstCodeTextfield: SimpleGreenTextField!
     private var secondCodeTextfield: SimpleGreenTextField!

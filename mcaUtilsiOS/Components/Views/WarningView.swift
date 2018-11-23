@@ -13,7 +13,7 @@ import Cartography
 import mcaManageriOS
 
 /// Esta clase especializa un UIView para tener L&F de titulo de advertencia en los casos en que los servicios entregan respuesta de fallo o no hay resultados
-class WarningView: UIView {
+public class WarningView: UIView {
     private var lblTexto : UILabel?
     private var imgWarning : UIImageView?
 
@@ -25,7 +25,7 @@ class WarningView: UIView {
         super.init(frame:frame)
     }
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
     }
 

@@ -9,7 +9,7 @@
 import UIKit
 import Cartography
 
-class RadioButtonViewCell: UITableViewCell {
+public class RadioButtonViewCell: UITableViewCell {
 
     var validationLabel: BlackBodyLabel!
     var roundCheckMark: RoundedCheckbox!
@@ -91,7 +91,7 @@ class RadioButtonViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
@@ -99,7 +99,7 @@ class RadioButtonViewCell: UITableViewCell {
     /// Para habilitar el check del radioButton
     /// - Parameter selected: Si el valor es *true* se activa el check, si el valor es *false* se desactiva el check
     /// - Parameter animated: Para agregar animación a la acción de habilitar el check
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    override public func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
 

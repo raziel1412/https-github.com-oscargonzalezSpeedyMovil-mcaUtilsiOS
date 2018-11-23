@@ -10,7 +10,7 @@ import UIKit
 import Cartography
 
 /// Esta clase especializa un UILabel para permitirle tener apariencia visual de titulo centrado.
-class InstructionLabel: UILabel {
+public class InstructionLabel: UILabel {
 
     var contextVC: UIView!
 

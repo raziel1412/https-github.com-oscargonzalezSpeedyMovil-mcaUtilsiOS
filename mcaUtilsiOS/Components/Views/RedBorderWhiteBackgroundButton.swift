@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RedBorderWhiteBackgroundButton: UIButton {
+public class RedBorderWhiteBackgroundButton: UIButton {
 
     init(textButton: String) {
         super.init(frame: UIScreen.main.bounds)

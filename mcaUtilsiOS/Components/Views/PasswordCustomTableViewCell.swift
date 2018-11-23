@@ -10,7 +10,7 @@ import UIKit
 import Cartography
 
 /// Esta clase que hereda de UITableViewCell se utiliza junto con PasswordValContainerView para realizar la función de captura, analisis y despliegue de passwords y su validación
-class PasswordCustomTableViewCell: UITableViewCell {
+public class PasswordCustomTableViewCell: UITableViewCell {
 
     var validationLabel: BlackBodyLabel!
     var roundCheckMark: RoundedCheckbox!
@@ -42,12 +42,12 @@ class PasswordCustomTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    override public func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
 

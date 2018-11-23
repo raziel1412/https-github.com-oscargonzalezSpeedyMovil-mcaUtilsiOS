@@ -10,7 +10,7 @@
 import UIKit
 import Cartography
 
-class ToolTipElement : UIView {
+public class ToolTipElement : UIView {
     
     private var titleLabel : UILabel = {
         let label = UILabel(frame: .zero)

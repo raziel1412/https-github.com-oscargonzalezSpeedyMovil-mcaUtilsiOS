@@ -10,7 +10,7 @@ import UIKit
 import Cartography
 import mcaManageriOS
 
-class TermsAndConditions: UIView {
+public class TermsAndConditions: UIView {
     
     var checkBox : SquaredCheckbox = SquaredCheckbox(frame: .zero)
     private var contentLabel : LinkableLabel = LinkableLabel(frame: .zero)

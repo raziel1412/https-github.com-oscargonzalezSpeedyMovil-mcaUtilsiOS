@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WebView: UIWebView {
+public class WebView: UIWebView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)

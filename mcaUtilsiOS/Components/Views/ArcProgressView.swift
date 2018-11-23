@@ -5,7 +5,7 @@
 import UIKit
 
 /// Esta clase especializa un UIView para tener L&F de gráfica de arco para el despliegue del porcentaje de datos utilizados en un plan de internet.
-class ArcProgressView: UIView {
+public class ArcProgressView: UIView {
     
     var startPoint: CGFloat = 0
     var color: UIColor = institutionalColors.claroBlueColor
@@ -61,7 +61,7 @@ class ArcProgressView: UIView {
         
     } // func
     
-    override func draw(_ rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
 
         if false == showGraph {
             let infinito = UIImageView(image: UIImage(named: "ic_infinito"));

@@ -10,7 +10,7 @@ import UIKit
 import FontAwesome_swift
 
 /// Esta clase es similar a SimpleGreenTextField, pero agrega la capacidad de mostrar un icono representando mas ayuda
-class SimpleGreenTextFieldWithQuestionMark: SimpleGreenTextField {
+public class SimpleGreenTextFieldWithQuestionMark: SimpleGreenTextField {
     private var btnView : UIButton?;
 
     var action = {};

@@ -16,7 +16,7 @@ protocol EmailViewDelegate {
     func sendEmail()
 }
 
-class EmailView: UIView {
+public class EmailView: UIView {
 
     /********************************* Visual elements *********************************/
 //    var lblTitle: BlackTitleLabel!

@@ -9,7 +9,7 @@
 import UIKit
 import Cartography
 
-class UITextFieldGroup : UIView {
+public class UITextFieldGroup : UIView {
     
     var textField : SimpleGrayTextField = SimpleGrayTextField(text: "", placeholder: "")
     var image   : UIImageView = UIImageView(frame: .zero)

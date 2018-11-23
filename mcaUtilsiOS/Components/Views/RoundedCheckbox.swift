@@ -9,7 +9,7 @@
 import UIKit
 
 /// Esta clase especializa un UIButton para permitirle tener apariencia visual de Checkbox redondo.
-class RoundedCheckbox: UIButton {
+public class RoundedCheckbox: UIButton {
     override init(frame: CGRect = CGRect(x: 0, y: 0, width: 0, height: 0)) {
         super.init(frame: frame);
         setup();

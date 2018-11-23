@@ -16,11 +16,11 @@ extension RadioButtonView: UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.arrayOptions.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RadioButtonViewCell
         cell.setMultipleSelection(enable: self.multipleSelection)
         cell.setUbicationCheck(check: self.ubicationCheck)
@@ -66,7 +66,7 @@ extension RadioButtonView: UITableViewDelegate, UITableViewDataSource {
     //MARK: Public functions
     /// Para recuperar las opciones seleccionadas
     /// - Returns [RadioButtonOption]: Arreglo de opciones seleccionadas
-    public func getOptionsSelected() -> [RadioButtonOption] {
+    func getOptionsSelected() -> [RadioButtonOption] {
         arrayOptionsSelected.removeAll()
         let sections = tblOptions.numberOfSections
         for sec in 0 ..< sections {

@@ -9,7 +9,7 @@
 import UIKit
 import Cartography
 
-class UITextFieldGroupPhone : UIView {
+public class UITextFieldGroupPhone : UIView {
     
     var textField : SimpleGrayTextField = SimpleGrayTextField(text: "", placeholder: "")
     var countryCode : UILabel = {

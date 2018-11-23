@@ -10,7 +10,7 @@ import UIKit
 import Cartography
 import mcaManageriOS
 
-class MandatoryInformation: UIView {
+public class MandatoryInformation: UIView {
 
     private var mandatoryField : UILabel = {
         let label = UILabel(frame: .zero)

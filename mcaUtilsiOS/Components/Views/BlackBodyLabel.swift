@@ -9,7 +9,7 @@
 import UIKit
 
 /// Esta clase especializa un UILabel para tener L&F de texto de contenido en color negro con fuente fija y tamaño fijo
-class BlackBodyLabel: UILabel {
+public class BlackBodyLabel: UILabel {
 
     init() {
         super.init(frame: CGRect.zero)

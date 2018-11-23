@@ -10,7 +10,7 @@ import UIKit
 import Cartography
 
 /// Esa clase se utiliza junto con PasswordValContainerView para mostrar las caracerísticas que cumple o no la validación de passwords
-class SymbolsCustomTableViewCell: UITableViewCell {
+public class SymbolsCustomTableViewCell: UITableViewCell {
 
     var symbolsLabel: BlackBodyLabel!
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
@@ -30,12 +30,12 @@ class SymbolsCustomTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    override public func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state

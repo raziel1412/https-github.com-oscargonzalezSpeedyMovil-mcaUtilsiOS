@@ -10,7 +10,7 @@ import UIKit
 //import Lottie
 
 /// Esta clase especializa un UIView para tener L&F de pantalla de carga o loading que se despliega cuando la aplicación está consumiendo recursos externos sobre internet.
-class CustomWaitAnimation: UIView {
+public class CustomWaitAnimation: UIView {
 
     convenience init(width: CGFloat, height: CGFloat) {
         self.init();

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 /// Esta clase especializa un UILabel para tener L&F de titulo en color negro con fuente fija y tamaño fijo
-class BlackTitleLabel: UILabel {
+public class BlackTitleLabel: UILabel {
     
     init() {
         

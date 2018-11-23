@@ -19,7 +19,7 @@ protocol RadioButtonViewDelegate {
     func radioButtonSingleOptionSelected(option: RadioButtonOption)
 }
 
-class RadioButtonView: UIView {
+public class RadioButtonView: UIView {
     
     /********************************* Variables *********************************/
     private var titleCard:String = ""

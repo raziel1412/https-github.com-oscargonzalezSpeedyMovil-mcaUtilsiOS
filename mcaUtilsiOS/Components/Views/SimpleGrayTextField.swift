@@ -9,7 +9,7 @@
 import UIKit
 import SkyFloatingLabelTextField
 
-class SimpleGrayTextField: SkyFloatingLabelTextField {
+public class SimpleGrayTextField: SkyFloatingLabelTextField {
     
     var customFont : UIFont {
         get {

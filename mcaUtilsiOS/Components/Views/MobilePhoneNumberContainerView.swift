@@ -16,7 +16,7 @@ protocol MobilePhoneNumberOnChangeDelegate {
 }
 
 /// Esta clase especializa un UIView para permitirle tener apariencia de ventana especial para la captura de números telefónicos.
-class MobilePhoneNumberContainerView: UIView, UITextFieldDelegate {
+public class MobilePhoneNumberContainerView: UIView, UITextFieldDelegate {
 
     var mobileTextfield: SimpleGrayTextField!
     var phoneLabel: PhoneLabel!

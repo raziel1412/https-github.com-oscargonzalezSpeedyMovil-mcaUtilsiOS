@@ -10,7 +10,7 @@ import UIKit
 import Cartography
 
 /// Esta clase especializa un UITableView para agregar la funcionalidad de validación de passwords iguales en los casos de Recuperación de Contraseña.
-class PasswordValContainerView: UITableView, UITableViewDataSource, UITableViewDelegate {
+public class PasswordValContainerView: UITableView, UITableViewDataSource, UITableViewDelegate {
 
     var validationArray = [passwordValidation.between6and12Characters, passwordValidation.atLeastOneNumber, passwordValidation.atLeastOneLetter]
     var validationCheck = [false,false,false];
@@ -48,11 +48,11 @@ class PasswordValContainerView: UITableView, UITableViewDataSource, UITableViewD
         validationCheck[2] = false
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return validationArray.count + 1
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let lastRowIndex = tableView.numberOfRows(inSection: tableView.numberOfSections-1)
 

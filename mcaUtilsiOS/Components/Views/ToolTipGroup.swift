@@ -10,7 +10,7 @@ import UIKit
 import Cartography
 
 
-class ToolTipGroup : UIView {
+public class ToolTipGroup : UIView {
     
     private var headerView : UIHeaderForm = UIHeaderForm(frame: .zero)
     private var oldId : ToolTipElement = ToolTipElement(frame: .zero)

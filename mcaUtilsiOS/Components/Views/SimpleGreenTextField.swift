@@ -10,7 +10,7 @@ import UIKit
 import SkyFloatingLabelTextField
 
 /// Esta clase especializa un UITextField para tener la funcionalidad de placeholder deslizable hacia arriba, gracias a que hereda del pod SkyFloatingLabelTextField
-class SimpleGreenTextField: SkyFloatingLabelTextField {
+public class SimpleGreenTextField: SkyFloatingLabelTextField {
     
     init(text: String, placeholder: String) {
         super.init(frame: UIScreen.main.bounds)

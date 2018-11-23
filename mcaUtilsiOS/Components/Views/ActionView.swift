@@ -13,7 +13,7 @@ protocol ActionViewDelegate {
     func resultOk()
 }
 
-class ActionView : UIView {
+public class ActionView : UIView {
     
     var btnShowTicket: GreenBorderWhiteBackgroundButton!
     let viewModalActionBlack = UIView()
@@ -29,7 +29,7 @@ class ActionView : UIView {
     override init(frame : CGRect) {
         super.init(frame:frame)
     }
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
     }
     
