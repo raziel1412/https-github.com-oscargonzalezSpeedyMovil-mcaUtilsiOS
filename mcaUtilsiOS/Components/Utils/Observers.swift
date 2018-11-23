@@ -250,6 +250,10 @@ public class Observers: NSObject {
         }
 
 
+        let topMost = UIApplication.shared.topMostViewController();
+        if nil != topMost && true == topMost?.isKind(of: CustomAlertView.self) {
+            return; // Evita que se muestren en pantalla dos o más alertas
+        }
         
         /*
         let topMost = UIApplication.shared.keyWindow?.topMostWindowController();
@@ -286,6 +290,14 @@ public class Observers: NSObject {
             //            return;
         }
         
+        
+        
+         let topMost = UIApplication.shared.topMostViewController();
+         if nil != topMost && true == topMost?.isKind(of: CustomAlertView.self) {
+         return; // Evita que se muestren en pantalla dos o más alertas
+         }
+        
+        
         /*
         let topMost = UIApplication.shared.keyWindow?.topMostWindowController();
         if nil != topMost && true == topMost?.isKind(of: CustomAlertView.self) {
@@ -320,6 +332,14 @@ public class Observers: NSObject {
             //            return;
         }
 
+        
+        
+        let topMost = UIApplication.shared.topMostViewController();
+         if nil != topMost && true == topMost?.isKind(of: CustomAlertView.self) {
+         return; // Evita que se muestren en pantalla dos o más alertas
+         }
+        
+        
         /*
         let topMost = UIApplication.shared.keyWindow?.topMostWindowController();
         if nil != topMost && true == topMost?.isKind(of: CustomAlertView.self) {
@@ -355,10 +375,10 @@ public class Observers: NSObject {
             //            return;
         }
         
-//        let topMost = UIApplication.shared.keyWindow?.topMostWindowController();
-//        if nil != topMost && true == topMost?.isKind(of: CustomAlertView.self) {
-//            return; // Evita que se muestren en pantalla dos o más alertas
-//        }
+        let topMost = UIApplication.shared.topMostViewController();
+        if nil != topMost && true == topMost?.isKind(of: CustomAlertView.self) {
+            return; // Evita que se muestren en pantalla dos o más alertas
+        }
 
         if let ai = info.object as? AlertYesNo {
             let custom = CustomAlertView();
@@ -420,12 +440,19 @@ public class Observers: NSObject {
         
 
         
+        
+        
+        let topMost = UIApplication.shared.topMostViewController();
+        if nil != topMost && true == topMost?.isKind(of: PlanDetailAlertData.self) {
+            return; // Evita que se muestren en pantalla dos o más alertas
+        }
+        
         /*
         let topMost = UIApplication.shared.keyWindow?.topMostWindowController();
         if nil != topMost && true == topMost?.isKind(of: PlanDetailAlertData.self) {
             return; // Evita que se muestren en pantalla dos o más alertas
-        }
-         */
+        }*/
+        
 
         if let ai = info.object as? PlanDetailAlertData {
             let custom = PlanDetailAlertViewController();
