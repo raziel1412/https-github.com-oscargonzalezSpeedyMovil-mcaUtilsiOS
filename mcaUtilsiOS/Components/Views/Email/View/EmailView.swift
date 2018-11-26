@@ -9,7 +9,7 @@
 import UIKit
 import SkyFloatingLabelTextField
 import Cartography
-import mcaManageriOS
+//import mcaManageriOS
 
 protocol EmailViewDelegate {
     func emailViewChangeHeight(newHeight: CGFloat)
@@ -32,7 +32,7 @@ public class EmailView: UIView {
     /********************************* Variables *********************************/
     var delegate: EmailViewDelegate!
     var placeHolderDescription: String = "Place Holder"
-    var conf = mcaManagerSession.getGeneralConfig()
+//    var conf = mcaManagerSession.getGeneralConfig()
     
     /// Constructor del componente de Email, el cual incluye un textfield para ingresar el correo eléctronico y un textView para el comentario
     /// - Parameter titleCard: Titulo del componente de *emailView*
@@ -61,7 +61,7 @@ public class EmailView: UIView {
         bottomBorderLine.backgroundColor = institutionalColors.claroLightGrayColor
         
         lblComment = BlackBodyLabel()
-        lblComment.text = self.conf?.translations?.data?.help?.suggestionsInput ?? "Ingresa tu comentario"
+        lblComment.text = "" //FIXME: self.conf?.translations?.data?.help?.suggestionsInput ?? "Ingresa tu comentario"
         lblComment.font = UIFont(name: RobotoFontName.RobotoBold.rawValue, size: 14)
         lblComment.textColor = institutionalColors.claroBlackColor
         lblComment.textAlignment = .left

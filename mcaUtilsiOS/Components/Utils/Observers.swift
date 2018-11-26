@@ -11,7 +11,7 @@ import PKHUD
 import Cartography
 import ReachabilitySwift
 //import IQKeyboardManagerSwift
-import mcaManageriOS
+//import mcaManageriOS
 
 /// Clase usada para el uso del NotificationCenter (Observabilidad)
 public class Observers: NSObject {
@@ -99,6 +99,8 @@ public class Observers: NSObject {
                                                object: nil);
 
         //let ad = UIApplication.shared.delegate as! AppDelegate;
+        //FIXME: All this
+        /*
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(mcaManagerSession.upgradeConfigurationFile),
                                                name: ObserverList.RefreshConfigurationFile.name,
@@ -107,7 +109,7 @@ public class Observers: NSObject {
             try mcaManagerSession.startNotifier();
         } catch {
             
-        }
+        } */
     }
 
     /// Dealloc de los observadores
@@ -165,19 +167,19 @@ public class Observers: NSObject {
                                                   name: ObserverList.RefreshConfigurationFile.name,
                                                   object:nil);
 
-        mcaManagerSession.stopNotifier();
+        //FIXME: mcaManagerSession.stopNotifier();
     }
     
     public static func updateAppAlert(info: NSNotification) {
         
         //let presenter = info.userInfo?["presenter"] as? UIViewController
         
-        let conf = mcaManagerSession.getGeneralConfig()
+        let conf = "" //FIXME: mcaManagerSession.getGeneralConfig()
         
-        let updateAvailable = conf?.newUpdateAvailable?.updateAvailable ?? false
-        let forceToUpdate = conf?.newUpdateAvailable?.forcedUpdate ?? false
+        let updateAvailable = true //FIXME: conf?.newUpdateAvailable?.updateAvailable ?? false
+        let forceToUpdate = true //FIXME: conf?.newUpdateAvailable?.forcedUpdate ?? false
         
-        if updateAvailable && mcaManagerSession.getIsUpdateAppAvailable() && (forceToUpdate || mcaManagerSession.getCanUpdateApp()) {
+        if true {//FIXME: updateAvailable && mcaManagerSession.getIsUpdateAppAvailable() && (forceToUpdate || mcaManagerSession.getCanUpdateApp()) {
             let custom = NewUpdateAlertViewController()
             custom.providesPresentationContextTransitionStyle = true;
             custom.definesPresentationContext = true;
@@ -209,6 +211,9 @@ public class Observers: NSObject {
     /// Función que determina si posee internet el dispositivo
     /// - parameter info : NSNotification
     public static func ReachabilityChanged(info: NSNotification) {
+        //FIXME: All this
+        /*
+        
         guard let myReach = mcaManagerSession.getReachability() else {
             print("No WiFi address")
             mcaManagerSession.setIpAddress(newIpAddress: nil)
@@ -236,6 +241,7 @@ public class Observers: NSObject {
             mcaManagerSession.setIpAddress(newIpAddress: nil) // No IP captures
             print("Unreachable Network")
         }
+ */
     }
     
     /// Función que ayuda a enviar un AcceptOnlyAlert popup
@@ -532,15 +538,15 @@ public class Observers: NSObject {
     /// Función que ayuda a mostrar un ShowOfflineMessage popup
     /// - parameter info : NSNotification
     public static func ShowOfflineMessage(info : NSNotification) {
-        if false == mcaManagerSession.isNetworkConnected() {
+        if false == false { //FIXME: mcaManagerSession.isNetworkConnected() {
             let alerta = AlertAcceptOnly();
             alerta.icon = .IconoAlertaError
             alerta.title = "Sin internet";
-            let config : GeneralConfig? = mcaManagerSession.getGeneralConfig()
-            let acknowledgementCodes = config?.translations?.data?.acknowledgementCodes ?? []
+            let config =  "" //FIXME:  : GeneralConfig? = mcaManagerSession.getGeneralConfig()
+            let acknowledgementCodes = [String]() //FIXME: config?.translations?.data?.acknowledgementCodes ?? []
             var msgError = "No hay conexión, intente mas tarde. Cod 256"
             for value in acknowledgementCodes {
-                msgError = value.aSSCMACCMANASSACCTFERR6 ?? "No hay conexión, intente mas tarde. Cod 256"
+                msgError = "" //FIXME: value.aSSCMACCMANASSACCTFERR6 ?? "No hay conexión, intente mas tarde. Cod 256"
             }
             
             alerta.text =   msgError
@@ -554,6 +560,9 @@ public class Observers: NSObject {
     /// Función que ayuda a notificar un ChangeDateTime
     /// - parameter info : NSNotification
     public static func ChangeDateTime(info: NSNotification) {
+        
+        //FIXME: All this
+        /*
         _ = mcaManagerSession.shouldRefresh()
         let worker = DispatchWorkItem {
             if mcaManagerSession.isNetworkConnected() {
@@ -592,6 +601,7 @@ public class Observers: NSObject {
 //            SessionSingleton.sharedInstance.setGeneralConfig(config: nil);
 //            myApp?.loadMainScreen();
 //        }
+        */
     }
     
     // Return IP address of WiFi interface (en0) as a String, or `nil`
@@ -807,7 +817,7 @@ class AlertYesNo : AlertInfo {
 /// Clase para guardar los elementos de un AlertAcceptOnly
 class AlertAcceptOnly : AlertInfo {
     /// Variable de acceptTitle
-    var acceptTitle : String = NSLocalizedString(/*"alert-aceptar-button"*/ mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.acceptBtn?.uppercased() ?? "", comment: "");
+    var acceptTitle : String = "" //FIXME: NSLocalizedString(/*"alert-aceptar-button"*/ mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.acceptBtn?.uppercased() ?? "", comment: "");
     /// Trigger onAcceptEvent
     var onAcceptEvent = {};
 }
@@ -815,7 +825,7 @@ class AlertAcceptOnly : AlertInfo {
 /// Clase para guardar los elementos de un AlertAcceptOnly
 class AlertAcceptOnlyPasswordReq : AlertInfo {
     /// Variable de acceptTitle
-    var acceptTitle : String = NSLocalizedString(/*"alert-aceptar-button"*/ mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.acceptBtn?.uppercased() ?? "", comment: "");
+    var acceptTitle : String = "" //FIXME: NSLocalizedString(/*"alert-aceptar-button"*/ mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.acceptBtn?.uppercased() ?? "", comment: "");
     /// Trigger onAcceptEvent
     var userEmail : String = ""
     var userPhone : String = ""

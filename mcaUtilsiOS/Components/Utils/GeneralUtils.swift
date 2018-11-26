@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import mcaManageriOS
+//import mcaManageriOS
 
 
 public let UNAVAILABLE_TEXT = "Texto no disponible"
@@ -199,7 +199,7 @@ public func formatToCountryCurrency(monto : Float) -> String {
         return formatToCountryCurrency(strMonto: strMonto);
     } else {
         let formatter = NumberFormatter();
-        formatter.groupingSeparator = mcaManagerSession.getAmountSeparator()
+        formatter.groupingSeparator = "" //FIXME: mcaManagerSession.getAmountSeparator()
         formatter.numberStyle = .decimal;
         let strMonto = formatter.string(from: NSNumber(value: monto)) ?? "0"
         return formatToCountryCurrency(strMonto: strMonto);
@@ -210,7 +210,8 @@ public func formatToCountryCurrency(monto : Float) -> String {
 /// - parameter monto: String
 /// - Returns String: Formateado
 public func formatToCountryCurrency(strMonto: String) -> String {
-    let moneda = String(format: "%@ %@", mcaManagerSession.getGeneralConfig()?.country?.currency ?? "$", strMonto);
+    //FIXME: let moneda = String(format: "%@ %@", mcaManagerSession.getGeneralConfig()?.country?.currency ?? "$", strMonto);
+    let moneda = String(format: "%@ %@", "" ?? "$", strMonto);
     return moneda;
 }
 
@@ -365,33 +366,36 @@ public extension Array {
 
 // Methods for update alert
 public func isUpdateAvailable() {
+    //FIXME: All this
+    /*
     DispatchQueue.global().async {
         do {
-            let conf = mcaManagerSession.getGeneralConfig()
-            let updateAvailable = conf?.newUpdateAvailable?.updateAvailable ?? false
+            let conf = "" //FIXME: mcaManagerSession.getGeneralConfig()
+            let updateAvailable = "" //FIXME: conf?.newUpdateAvailable?.updateAvailable ?? false
             
-            if updateAvailable && mcaManagerSession.getCanUpdateApp() {
+            if updateAvailable && true //FIXME:  mcaManagerSession.getCanUpdateApp() {
                 let update = try isUpdateAppAvailable()
-                mcaManagerSession.setIsUpdateAppAvailable(isUpdateAppAvailable: update)
+                //FIXME: mcaManagerSession.setIsUpdateAppAvailable(isUpdateAppAvailable: update)
                 showUpdateAlertView()
             }
             
-        } catch {
+        } as! @convention(block) () -> Void catch {
             print(error)
         }
+    */
     }
-}
+
 
 public func showUpdateAlertView() {
     
-    if mcaManagerSession.getIsUpdateAppAvailable() {
+    if true {//FIXME: mcaManagerSession.getIsUpdateAppAvailable() {
         let alert = AlertAcceptOnly()
         NotificationCenter.default.post(name: Observers.ObserverList.UpdateAppAlert.name, object: alert);
     }
 }
 
 public func isUpdateAppAvailable() throws -> Bool {
-    let country = mcaManagerSession.getCountry()?.lowercased() ?? ""
+    let country = "" //FIXME: mcaManagerSession.getCountry()?.lowercased() ?? ""
     guard let info = Bundle.main.infoDictionary,
         let currentVersion = info["CFBundleShortVersionString"] as? String,
         let identifier = info["CFBundleIdentifier"] as? String,

@@ -7,7 +7,7 @@
 //
 import Foundation
 import UIKit
-import mcaManageriOS
+//import mcaManageriOS
 
 public class GeneralAlerts {
     

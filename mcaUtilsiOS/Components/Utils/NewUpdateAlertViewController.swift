@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import mcaManageriOS
+//import mcaManageriOS
 
 public class NewUpdateAlertViewController: UIViewController {
     
@@ -22,7 +22,7 @@ public class NewUpdateAlertViewController: UIViewController {
     var heightTitle: CGFloat?
     var heightSubt: CGFloat?
     var heightDesc: CGFloat?
-    var conf: GeneralConfig?
+    var conf: String? //FIXME: GeneralConfig?
     var alertData : AlertInfo?
     var urlString: String?
 
@@ -47,7 +47,7 @@ public class NewUpdateAlertViewController: UIViewController {
     }
     
     public func initComponents() {
-        conf = mcaManagerSession.getGeneralConfig()
+        conf = "" //FIXME:mcaManagerSession.getGeneralConfig()
         updateBtn.addTarget(self, action: #selector(self.updateAction), for: .touchUpInside)
         skipBtn.addTarget(self, action: #selector(self.skipAction), for: .touchUpInside)
         updateBtn.borderColor = institutionalColors.claroBlueColor
@@ -56,6 +56,8 @@ public class NewUpdateAlertViewController: UIViewController {
         updateBtn.setTitleColor(institutionalColors.claroNavTitleColor, for: .normal)
         headerImg.image = UIImage.init(named: "ic_avatar")
         
+        //FIXME: All this
+        /*
         if let forceUpdate = conf?.newUpdateAvailable?.forcedUpdate{
             mcaManagerSession.setCanUpdateApp(canUpdateApp: forceUpdate)
             if forceUpdate {
@@ -76,12 +78,15 @@ public class NewUpdateAlertViewController: UIViewController {
             skipBtn.isHidden = false
         }
         
-        AnalyticsInteractionSingleton.sharedInstance.ADBTrackView(viewName: "Alerta", detenido: false, mensaje: self.descriptionLbl.text)
+        */
         
+        AnalyticsInteractionSingleton.sharedInstance.ADBTrackView(viewName: "Alerta", detenido: false, mensaje: self.descriptionLbl.text)
+        //FIXME: All this
+        /*
         //Set values from file config
         urlString = conf?.newUpdateAvailable?.itunesURL ?? "https://itunes.apple.com/cl/app/mi-claro/id1319458144?mt=8"
         updateBtn.setTitle(conf?.translations?.data?.newUpdateAvailableTexts?.newUpdateAvailableNow ?? "Actualizar ahora", for: .normal)
-        
+        */
         
         let stringValue = descriptionLbl.text
         let attrString = NSMutableAttributedString(string: stringValue!)

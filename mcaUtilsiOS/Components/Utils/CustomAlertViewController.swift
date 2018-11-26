@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import mcaManageriOS
+//import mcaManageriOS
 
 public class CustomAlertView: UIViewController {
     private var bkg : UIView?
@@ -45,7 +45,7 @@ public class CustomAlertView: UIViewController {
         self.bkg?.frame = CGRect(x: margin, y: currentY, width: self.view.frame.width - (margin * 2), height: 100);
         self.view.addSubview(self.bkg!);
         
-        let nameImage = mcaManagerSession.getNameImageProfile()
+        let nameImage = "" //FIXME: mcaManagerSession.getNameImageProfile()
         var tamFoto :CGFloat = 60.0
         if self.alertData?.icon == .IconoAlertaAviso || self.alertData?.icon == .IconoAlertaFelicidades || self.alertData?.icon == .IconoAlertaUnBlock {
             tamFoto = 100.0
@@ -54,11 +54,11 @@ public class CustomAlertView: UIViewController {
         if let logo = self.alertData?.icon, AlertIconType.NoIcon != self.alertData?.icon {
             self.icono = UIImageView()
            
-            if (self.alertData as? AlertFoto) != nil && mcaManagerSession.checkImageExists(fileName: nameImage){
+            if (self.alertData as? AlertFoto) != nil {//&& mcaManagerSession.checkImageExists(fileName: nameImage){
                 let path = URL.urlInDocumentsDirectory(with: nameImage).path
                 
                 let image = UIImage(contentsOfFile: path)
-                self.icono?.image = mcaManagerSession.resizeImage(image: image!, targetSize: CGSize(width: tamFoto*3, height: tamFoto*3))
+                //FIXME: self.icono?.image = mcaManagerSession.resizeImage(image: image!, targetSize: CGSize(width: tamFoto*3, height: tamFoto*3))
             }else{
                 self.icono?.image = UIImage(named: logo.rawValue)
             }
@@ -250,7 +250,7 @@ public class CustomAlertView: UIViewController {
             self.titulo?.frame = CGRect(x: margin, y: 10.0, width: self.bkg!.frame.size.width - (margin * 2), height: 60);
             self.icono?.frame = CGRect(x: (self.bkg!.frame.size.width - tamFoto*2) / 2, y: iconPosition, width: tamFoto*2, height: tamFoto*2)
             
-            if mcaManagerSession.checkImageExists(fileName: nameImage) {
+            if true {//FIXME: mcaManagerSession.checkImageExists(fileName: nameImage) {
                 self.icono?.contentMode = .scaleAspectFill
                 self.icono?.layer.cornerRadius = (self.icono?.frame.size.width)!/2
                 self.icono?.clipsToBounds = true

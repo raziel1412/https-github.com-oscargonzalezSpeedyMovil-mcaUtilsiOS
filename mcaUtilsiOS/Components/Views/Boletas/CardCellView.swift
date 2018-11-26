@@ -9,7 +9,7 @@
 import UIKit
 import SkyFloatingLabelTextField
 import DLRadioButton
-import mcaManageriOS
+//import mcaManageriOS
 
 public class CardCellView: UITableViewCell, UITextFieldDelegate {
 
@@ -25,7 +25,7 @@ public class CardCellView: UITableViewCell, UITextFieldDelegate {
 
     //MARK: UI-Variables
     ///Referencia a la clase PlanCard que contiene la informacion de cards
-    var plan : PlanCard!
+    //FIXME: var plan : PlanCard!
     ///Textfield contenedor del mes actual de la boleta
     var txtPeriods = UITextField()
     ///Etiqueta que contiene la informacion de la variable billing?.activatePaperless
@@ -89,14 +89,14 @@ public class CardCellView: UITableViewCell, UITextFieldDelegate {
     ///Creacion he inicializacion de los objetos que seran utilizado dentro de la celda customizada, que sera utilizada en Boletas
     func setup(){
  
-        let conf = mcaManagerSession.getGeneralConfig()
-        let lbNoCta = (conf?.translations?.data?.billing?.accountId) ?? ""
-        let lbSeleccPeriods = (conf?.translations?.data?.billing?.period) ?? ""
-        let lbmontoEmitido = (conf?.translations?.data?.billing?.totalIssued) ?? ""
-        let lbVenc = (conf?.translations?.data?.billing?.expiration) ?? ""
-        let lbActivarBoleta = (conf?.translations?.data?.billing?.activatePaperless) ?? ""
-        let lbEnviarBoleta = (conf?.translations?.data?.billing?.sendBill) ?? ""
-        let lbDescargaBoleta = (conf?.translations?.data?.billing?.downloadBill) ?? ""
+        let conf = "" //FIXME: mcaManagerSession.getGeneralConfig()
+        let lbNoCta = "" //FIXME:  (conf?.translations?.data?.billing?.accountId) ?? ""
+        let lbSeleccPeriods = "" //FIXME:  (conf?.translations?.data?.billing?.period) ?? ""
+        let lbmontoEmitido = "" //FIXME:  (conf?.translations?.data?.billing?.totalIssued) ?? ""
+        let lbVenc = "" //FIXME:  (conf?.translations?.data?.billing?.expiration) ?? ""
+        let lbActivarBoleta = "" //FIXME:  (conf?.translations?.data?.billing?.activatePaperless) ?? ""
+        let lbEnviarBoleta = "" //FIXME: (conf?.translations?.data?.billing?.sendBill) ?? ""
+        let lbDescargaBoleta = "" //FIXME:  (conf?.translations?.data?.billing?.downloadBill) ?? ""
         
         self.contentView.backgroundColor = institutionalColors.claroWhiteColor
         let screenSize = UIScreen.main.bounds
@@ -132,7 +132,7 @@ public class CardCellView: UITableViewCell, UITextFieldDelegate {
         vcContainer.borderCard()
         self.addSubview(vcContainer)
 
-        lbNombrePlan.text = self.plan?.plan?.planName
+        lbNombrePlan.text =  "" //FIXME: self.plan?.plan?.planName
         lbNombrePlan.frame = CGRect(x: 50, y: 50, width: textFieldWidth, height: 40)
         lbNombrePlan.textColor = institutionalColors.claroBlackColor
         lbNombrePlan.textAlignment = NSTextAlignment .left
@@ -158,7 +158,7 @@ public class CardCellView: UITableViewCell, UITextFieldDelegate {
         lbNumCta.sizeToFit()
         self.addSubview(lbNumCta)
         
-        lbNumCtaTipo.text = self.plan.accountId ?? ""
+        lbNumCtaTipo.text = "" //FIXME: self.plan.accountId ?? ""
         lbNumCtaTipo.frame = CGRect(x: lbNumCta.frame.maxX + 10, y: lbNombrePlan.frame.maxY + 5, width: 100, height: 40)
         lbNumCtaTipo.textAlignment = NSTextAlignment .right
         lbNumCtaTipo.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(14.0))

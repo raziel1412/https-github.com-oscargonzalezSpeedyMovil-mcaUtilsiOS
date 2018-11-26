@@ -8,7 +8,7 @@
 
 import UIKit
 import Foundation
-import mcaManageriOS
+//import mcaManageriOS
 
 /// Extensión Strings
 public extension String {
@@ -43,7 +43,10 @@ public extension String {
     func enmascararRut() -> (maskedString : String, errorString : String?) {
         var maskRUT = self
         var error : String? = nil
-        if let characterSpecial = mcaManagerSession.getGeneralConfig()?.country?.userProfileIdConfig?.separador, var posCharacter = (mcaManagerSession.getGeneralConfig()?.country?.userProfileIdConfig?.posicion), let max =  mcaManagerSession.getGeneralConfig()?.country?.userProfileIdConfig?.max , let min = mcaManagerSession.getGeneralConfig()?.country?.userProfileIdConfig?.min{
+        //FIXME: if let characterSpecial = mcaManagerSession.getGeneralConfig()?.country?.userProfileIdConfig?.separador, var posCharacter = (mcaManagerSession.getGeneralConfig()?.country?.userProfileIdConfig?.posicion), let max =  mcaManagerSession.getGeneralConfig()?.country?.userProfileIdConfig?.max , let min = mcaManagerSession.getGeneralConfig()?.country?.userProfileIdConfig?.min{
+        if true {
+            //FIXME: All this
+            /*
             posCharacter = posCharacter - 1
             if !self.contains(characterSpecial) {
                 
@@ -63,6 +66,7 @@ public extension String {
                     error = mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.emptyField ?? "";
                 }
             }
+            */
         }
         return (maskRUT, error)
         
@@ -78,6 +82,8 @@ public extension String {
     
     func maskPhone() -> String {
         let number = self
+        
+        /*
         if let unmaskedChars = mcaManagerSession.getGeneralConfig()?.pinMessageRules?.unmaskedCharactersForPhone {
             let conditionIndex = number.count - unmaskedChars
             var maskedPhone = String(number.enumerated().map{(index, element) -> Character in
@@ -91,7 +97,9 @@ public extension String {
             }
             return maskedPhone
         }
+         */
         return number
+    
     }
     
     //current string masked by

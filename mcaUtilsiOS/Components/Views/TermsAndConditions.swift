@@ -8,7 +8,7 @@
 
 import UIKit
 import Cartography
-import mcaManageriOS
+//import mcaManageriOS
 
 public class TermsAndConditions: UIView {
     
@@ -70,16 +70,16 @@ public class TermsAndConditions: UIView {
     }
     
     @objc func lnkTerminos_OnClick() {
-        if false == mcaManagerSession.isNetworkConnected() {
+        if false == false {//mcaManagerSession.isNetworkConnected() {
             NotificationCenter.default.post(name: Observers.ObserverList.ShowOfflineMessage.name, object: nil);
             return;
         }
 
         let alert = WebViewAlertData();
         alert.method = "GET";
-        alert.url = mcaManagerSession.getGeneralConfig()?.termsAndConditions?.url;
-        alert.title = mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.termsAndConditions ?? "";
-        alert.acceptTitle = mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.closeBtn ?? "";
+        alert.url = "" //FIXME: mcaManagerSession.getGeneralConfig()?.termsAndConditions?.url;
+        alert.title = "" //FIXME:  mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.termsAndConditions ?? "";
+        alert.acceptTitle = "" //FIXME:  mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.closeBtn ?? "";
         alert.onAcceptEvent = {
         }
         NotificationCenter.default.post(name: Observers.ObserverList.WebViewAlert.name,

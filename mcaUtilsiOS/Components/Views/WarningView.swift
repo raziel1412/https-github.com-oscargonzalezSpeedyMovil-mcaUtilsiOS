@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 import QuartzCore
 import Cartography
-import mcaManageriOS
+//import mcaManageriOS
 
 /// Esta clase especializa un UIView para tener L&F de titulo de advertencia en los casos en que los servicios entregan respuesta de fallo o no hay resultados
 public class WarningView: UIView {
@@ -31,9 +31,9 @@ public class WarningView: UIView {
 
     func setup() {
         lblTexto = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 30))
-        let myConf = mcaManagerSession.getGeneralConfig()
+        let myConf = ""//FIXME: mcaManagerSession.getGeneralConfig()
         self.imgWarning = UIImageView(image: UIImage(named: "ic_error_naranja_16px"));
-        self.lblTexto?.text = myConf?.translations?.data?.generales?.serviceNotRespond ?? "Información no actualizada por el momento";
+        self.lblTexto?.text = "" //FIXME: myConf?.translations?.data?.generales?.serviceNotRespond ?? "Información no actualizada por el momento";
         self.lblTexto?.textColor = institutionalColors.claroTextColor;
         self.lblTexto?.font = UIFont(name: RobotoFontName.RobotoLight.rawValue, size: CGFloat(13));
         self.lblTexto?.textAlignment = .center
