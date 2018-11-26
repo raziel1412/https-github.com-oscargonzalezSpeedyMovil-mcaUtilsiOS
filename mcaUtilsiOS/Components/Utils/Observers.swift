@@ -37,7 +37,7 @@ public class Observers: NSObject {
     public static let messageFont = [NSFontAttributeName: UIFont(name: RobotoFontName.RobotoLight.rawValue, size: 12.0)!]
 
     /// Inicialización de los observadores
-    public static func InitializeObservers(add: UIApplicationDelegate) {
+    public static func InitializeObservers() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(ChangeDateTime),
                                                name: NSNotification.Name.NSSystemClockDidChange,
@@ -99,7 +99,7 @@ public class Observers: NSObject {
                                                object: nil);
 
         //let ad = UIApplication.shared.delegate as! AppDelegate;
-        NotificationCenter.default.addObserver(add,
+        NotificationCenter.default.addObserver(self,
                                                selector: #selector(mcaManagerSession.upgradeConfigurationFile),
                                                name: ObserverList.RefreshConfigurationFile.name,
                                                object: nil)
@@ -111,7 +111,7 @@ public class Observers: NSObject {
     }
 
     /// Dealloc de los observadores
-    public static func KillObservers(add: UIApplicationDelegate) {
+    public static func KillObservers() {
         NotificationCenter.default.removeObserver(self,
                                                   name: NSNotification.Name.NSSystemClockDidChange,
                                                   object: nil);
@@ -161,7 +161,7 @@ public class Observers: NSObject {
                                                   object: nil);
         
         //let ad = UIApplication.shared.delegate as! AppDelegate;
-        NotificationCenter.default.removeObserver(add,
+        NotificationCenter.default.removeObserver(self,
                                                   name: ObserverList.RefreshConfigurationFile.name,
                                                   object:nil);
 
