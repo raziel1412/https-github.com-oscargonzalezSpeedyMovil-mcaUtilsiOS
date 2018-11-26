@@ -46,7 +46,7 @@ public class NewUpdateAlertViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func initComponents() {
+    public func initComponents() {
         conf = mcaManagerSession.getGeneralConfig()
         updateBtn.addTarget(self, action: #selector(self.updateAction), for: .touchUpInside)
         skipBtn.addTarget(self, action: #selector(self.skipAction), for: .touchUpInside)
@@ -102,7 +102,7 @@ public class NewUpdateAlertViewController: UIViewController {
         heightDesc = descriptionLbl.frame.height
     }
     
-    func updateFrames() {
+    public func updateFrames() {
         
         let margin: CGFloat = 18
         let marginText: CGFloat = 30
@@ -144,7 +144,7 @@ public class NewUpdateAlertViewController: UIViewController {
         
     }
     
-    func updateAction() {
+    public func updateAction() {
         let url = URL(string: urlString!)
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url!) {(result) in
@@ -154,7 +154,7 @@ public class NewUpdateAlertViewController: UIViewController {
             }
         }
     }
-    func skipAction() {
+    public func skipAction() {
         self.dismiss(animated: true,
                      completion: nil)
     }

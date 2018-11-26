@@ -14,7 +14,7 @@ public extension UIImageView {
     /// Función que permite descargar asincronamente una imagen de una URL
     /// - parameter url : URL
     /// - parameter mode : UIViewContentMode
-    func downloadedFrom(url: URL, contentMode mode: UIViewContentMode = .scaleAspectFit) {
+    public func downloadedFrom(url: URL, contentMode mode: UIViewContentMode = .scaleAspectFit) {
         contentMode = mode
         
 //        URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -41,7 +41,7 @@ public extension UIImageView {
     /// Función que permite descargar asincronamente una imagen de una URL
     /// - parameter link : String
     /// - parameter mode : UIViewContentMode
-    func downloadedFrom(link: String, contentMode mode: UIViewContentMode = .scaleAspectFit) {
+    public func downloadedFrom(link: String, contentMode mode: UIViewContentMode = .scaleAspectFit) {
         guard let url = URL(string: link) else { return }
         downloadedFrom(url: url, contentMode: mode)
     }

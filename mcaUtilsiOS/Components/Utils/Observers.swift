@@ -751,7 +751,7 @@ public enum AlertKind: String {
 }
 */
 /// Clase para guardar los elementos de un alert
-public class AlertInfo {
+class AlertInfo {
     /// Variable de título
     var title : String = "";
     /// Variable de texto
@@ -772,7 +772,7 @@ public class AlertInfo {
 
 
 /// Clase para guardar los elementos de un AlertFoto
-public class AlertFoto : AlertInfo {
+class AlertFoto : AlertInfo {
     /// Variable de acceptTitle
     var acceptTitle : String = NSLocalizedString("alert-aceptar-button", comment: "");
     /// Variable de abrirCamaraTitle
@@ -792,7 +792,7 @@ public class AlertFoto : AlertInfo {
 }
 
 /// Clase para guardar los elementos de un AlertYesNo
-public class AlertYesNo : AlertInfo {
+class AlertYesNo : AlertInfo {
     /// Variable de acceptTitle
     var acceptTitle : String = NSLocalizedString("alert-aceptar-button", comment: "");
     /// Variable de cancelTitle
@@ -805,7 +805,7 @@ public class AlertYesNo : AlertInfo {
 }
 
 /// Clase para guardar los elementos de un AlertAcceptOnly
-public class AlertAcceptOnly : AlertInfo {
+class AlertAcceptOnly : AlertInfo {
     /// Variable de acceptTitle
     var acceptTitle : String = NSLocalizedString(/*"alert-aceptar-button"*/ mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.acceptBtn?.uppercased() ?? "", comment: "");
     /// Trigger onAcceptEvent
@@ -813,7 +813,7 @@ public class AlertAcceptOnly : AlertInfo {
 }
 
 /// Clase para guardar los elementos de un AlertAcceptOnly
-public class AlertAcceptOnlyPasswordReq : AlertInfo {
+class AlertAcceptOnlyPasswordReq : AlertInfo {
     /// Variable de acceptTitle
     var acceptTitle : String = NSLocalizedString(/*"alert-aceptar-button"*/ mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.acceptBtn?.uppercased() ?? "", comment: "");
     /// Trigger onAcceptEvent
@@ -823,7 +823,7 @@ public class AlertAcceptOnlyPasswordReq : AlertInfo {
     var onAcceptEvent = {};
 }
 
-public class WebViewAlertData : AlertInfo {
+class WebViewAlertData : AlertInfo {
     var url : String?;
     var method : String = "GET";
     /// Variable de acceptTitle
@@ -832,7 +832,7 @@ public class WebViewAlertData : AlertInfo {
     var onAcceptEvent = {};
 }
 
-public class PlanDetailAlertData : AlertInfo {
+class PlanDetailAlertData : AlertInfo {
     /// Variable de subtitle
     var subtitle : String?
     /// Variable de includes
