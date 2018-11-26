@@ -11,15 +11,15 @@ import UIKit
 import mcaManageriOS
 
 
-let UNAVAILABLE_TEXT = "Texto no disponible"
+public let UNAVAILABLE_TEXT = "Texto no disponible"
 
 /// Variable que contiene todos los tabs que son usadas en MiClaro
-var allTabsArray = ["Resumen", "Móvil", "Internet", "Teléfono", "Televisión", "Todo Claro", "Suscripciones"]
+public var allTabsArray = ["Resumen", "Móvil", "Internet", "Teléfono", "Televisión", "Todo Claro", "Suscripciones"]
 
 /// Estructura que verifica si se está usando un simulador
 public struct checkForSimulator {
     
-    static func isRuningSimulator() -> Bool {
+    public static func isRuningSimulator() -> Bool {
     
         #if (arch(i386) || arch(x86_64)) && os(iOS)
             return true
@@ -31,14 +31,14 @@ public struct checkForSimulator {
 }
 /// Url contiene el CountryList
 public struct urlCountryList{
-    static func getContryUrl() -> String{
+    public static func getContryUrl() -> String{
         let url = "https://firebasestorage.googleapis.com/v0/b/mi-claro-955bc.appspot.com/o/countriesList.json?alt=media&token=12ae69f5-8cbb-4922-a576-a68cb89e3558"
         return url
     }
 }
 /// Url base usada para la contrucción de algunas URL
 public struct baseUrl {
-    static func getBaseUrl(countryCode: String) -> String {
+    public static func getBaseUrl(countryCode: String) -> String {
 //        let url = String.init(format: "https://firebasestorage.googleapis.com/v0/b/mi-claro-955bc.appspot.com/o/configMiClaro_%@.json?alt=media&token=7f662957-5ca3-43de-83a8-521e676890be", countryCode.lowercased());
         let url = String.init(format: "http://contenido.speedymovil.com:8007/contenedor/MiClaroTemporal/configMiClaro_%@.json", countryCode.lowercased());
         return url
@@ -46,52 +46,52 @@ public struct baseUrl {
 }
 /// Estructura que almacena los colores usados en MiClaro
 public struct institutionalColors {
-    static let claroBlueColor = UIColor(rgb: 0x1F97AE, alphaVal: 1)
-    static let claroRedColor = UIColor(rgb: 0xEF3829, alphaVal: 1)
-    static let claroGrayNavColor = UIColor(rgb: 0xF5F5F5, alphaVal: 1)
-    static let claroLightGrayColor = UIColor(rgb: 0xAFAFAF, alphaVal: 1)
-    static let claroSelectionGrayColor = UIColor(rgb: 0xF7F7F7, alphaVal: 1)
-    static let claroToolBarColor = UIColor(rgb: 0xF0F0F0, alphaVal: 1)
-    static let claroTextColor = UIColor(rgb: 0x666666, alphaVal: 1)
-    static let claroNavTitleColor = UIColor(rgb: 0xFFFFFF, alphaVal: 1)
-    static let claroTitleColor = UIColor(rgb: 0x333333, alphaVal: 1)
-    static let claroWhiteColor = UIColor(rgb: 0xffffff, alphaVal: 1);
-    static let claroBlackColor = UIColor(rgb: 0x000000, alphaVal: 1);
-    static let claroPerlColor = UIColor(rgb: 0xFAFAFA, alphaVal: 1);
-    static let claroPlecaColor = UIColor(rgb: 0xFAFAFA, alphaVal: 1);
-    static let claroOrangeColor = UIColor(rgb: 0xF5842B, alphaVal: 1);
-    static let claroLightGrayColorExpandView = UIColor(rgb: 0xF2F2F2, alphaVal: 1);
-    static let claroRedColorDisabled = UIColor(rgb: 0xF69A93, alphaVal: 1)
-    static let claroTextAlertBodyColor = UIColor(rgb: 0x222222, alphaVal: 1)
-    static let claroButtonDetailGraphicSelect = UIColor(rgb: 0xF4F4F4, alphaVal: 1)
+    public static let claroBlueColor = UIColor(rgb: 0x1F97AE, alphaVal: 1)
+    public static let claroRedColor = UIColor(rgb: 0xEF3829, alphaVal: 1)
+    public static let claroGrayNavColor = UIColor(rgb: 0xF5F5F5, alphaVal: 1)
+    public static let claroLightGrayColor = UIColor(rgb: 0xAFAFAF, alphaVal: 1)
+    public static let claroSelectionGrayColor = UIColor(rgb: 0xF7F7F7, alphaVal: 1)
+    public static let claroToolBarColor = UIColor(rgb: 0xF0F0F0, alphaVal: 1)
+    public static let claroTextColor = UIColor(rgb: 0x666666, alphaVal: 1)
+    public static let claroNavTitleColor = UIColor(rgb: 0xFFFFFF, alphaVal: 1)
+    public static let claroTitleColor = UIColor(rgb: 0x333333, alphaVal: 1)
+    public static let claroWhiteColor = UIColor(rgb: 0xffffff, alphaVal: 1);
+    public static let claroBlackColor = UIColor(rgb: 0x000000, alphaVal: 1);
+    public static let claroPerlColor = UIColor(rgb: 0xFAFAFA, alphaVal: 1);
+    public static let claroPlecaColor = UIColor(rgb: 0xFAFAFA, alphaVal: 1);
+    public static let claroOrangeColor = UIColor(rgb: 0xF5842B, alphaVal: 1);
+    public static let claroLightGrayColorExpandView = UIColor(rgb: 0xF2F2F2, alphaVal: 1);
+    public static let claroRedColorDisabled = UIColor(rgb: 0xF69A93, alphaVal: 1)
+    public static let claroTextAlertBodyColor = UIColor(rgb: 0x222222, alphaVal: 1)
+    public static let claroButtonDetailGraphicSelect = UIColor(rgb: 0xF4F4F4, alphaVal: 1)
 
-    static let claroMenuDarkGray = UIColor(rgb: 0x383838, alphaVal: 1);
-    static let claroMenuLightGray = UIColor(rgb: 0x6A6A6A, alphaVal: 1);
-    static let claroMenuChildGray = UIColor(rgb: 0x7D7D7D, alphaVal: 1);
-    static let claroMenuElementSeparatorGray = UIColor(rgb: 0x979797, alphaVal: 1);
-    static let claroBorderBalanceView = UIColor(rgb: 0xF1F4FF , alphaVal: 1)
+    public static let claroMenuDarkGray = UIColor(rgb: 0x383838, alphaVal: 1);
+    public static let claroMenuLightGray = UIColor(rgb: 0x6A6A6A, alphaVal: 1);
+    public static let claroMenuChildGray = UIColor(rgb: 0x7D7D7D, alphaVal: 1);
+    public static let claroMenuElementSeparatorGray = UIColor(rgb: 0x979797, alphaVal: 1);
+    public static let claroBorderBalanceView = UIColor(rgb: 0xF1F4FF , alphaVal: 1)
 }
 /// Estructura con los elementos de validación
 public struct passwordValidation {
-     static var between6and12Characters = NSLocalizedString("lengthValidation", comment: "")
-     static var atLeastOneNumber = NSLocalizedString("numbersValidation", comment: "")
-     static var atLeastOneLetter = NSLocalizedString("charsValidation", comment: "")
-     static var allowedSymbols = NSLocalizedString("symbolsValidation", comment: "")
+     public static var between6and12Characters = NSLocalizedString("lengthValidation", comment: "")
+     public static var atLeastOneNumber = NSLocalizedString("numbersValidation", comment: "")
+     public static var atLeastOneLetter = NSLocalizedString("charsValidation", comment: "")
+     public static var allowedSymbols = NSLocalizedString("symbolsValidation", comment: "")
 }
 /// Estructura con los identificadores de los cells
 public struct identifiers {
-   static let genericHeader = "GenericHeaderCell"
-   static let genericExpandable = "GenericExpandableCell"
-   static let cardCellView = "CardCellView"
+   public static let genericHeader = "GenericHeaderCell"
+   public static let genericExpandable = "GenericExpandableCell"
+   public static let cardCellView = "CardCellView"
 }
 /// Estructura de la altura de las cards
 public struct cardHeights {
-    static let genericHeaderResumeHeight: CGFloat = 280
-    static let genericHeaderPrepaidHeight: CGFloat = 420
-    static let genericHeaderPospaidHeight: CGFloat = 420
-    static let genericHeaderInsideCellResumeHeight: CGFloat = 80
-    static let genericHeaderInsideCellMobileHeight: CGFloat = 40
-    static let genericBodyInsideCellHeight: CGFloat = 200
+    public static let genericHeaderResumeHeight: CGFloat = 280
+    public static let genericHeaderPrepaidHeight: CGFloat = 420
+    public static let genericHeaderPospaidHeight: CGFloat = 420
+    public static let genericHeaderInsideCellResumeHeight: CGFloat = 80
+    public static let genericHeaderInsideCellMobileHeight: CGFloat = 40
+    public static let genericBodyInsideCellHeight: CGFloat = 200
 
 }
 

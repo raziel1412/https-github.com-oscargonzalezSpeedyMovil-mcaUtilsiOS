@@ -31,13 +31,13 @@ public class Observers: NSObject {
     }
 
     /// Constante del formato del título
-    static let titleFont = [NSFontAttributeName: UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: 14.0)!]
+    public static let titleFont = [NSFontAttributeName: UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: 14.0)!]
 
     /// Constante del formato del contenido del mensaje
-    static let messageFont = [NSFontAttributeName: UIFont(name: RobotoFontName.RobotoLight.rawValue, size: 12.0)!]
+    public static let messageFont = [NSFontAttributeName: UIFont(name: RobotoFontName.RobotoLight.rawValue, size: 12.0)!]
 
     /// Inicialización de los observadores
-    static func InitializeObservers(add: UIApplicationDelegate) {
+    public static func InitializeObservers(add: UIApplicationDelegate) {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(ChangeDateTime),
                                                name: NSNotification.Name.NSSystemClockDidChange,
@@ -111,7 +111,7 @@ public class Observers: NSObject {
     }
 
     /// Dealloc de los observadores
-    static func KillObservers(add: UIApplicationDelegate) {
+    public static func KillObservers(add: UIApplicationDelegate) {
         NotificationCenter.default.removeObserver(self,
                                                   name: NSNotification.Name.NSSystemClockDidChange,
                                                   object: nil);
@@ -168,7 +168,7 @@ public class Observers: NSObject {
         mcaManagerSession.stopNotifier();
     }
     
-    static func updateAppAlert(info: NSNotification) {
+    public static func updateAppAlert(info: NSNotification) {
         
         //let presenter = info.userInfo?["presenter"] as? UIViewController
         
@@ -208,7 +208,7 @@ public class Observers: NSObject {
 
     /// Función que determina si posee internet el dispositivo
     /// - parameter info : NSNotification
-    static func ReachabilityChanged(info: NSNotification) {
+    public static func ReachabilityChanged(info: NSNotification) {
         guard let myReach = mcaManagerSession.getReachability() else {
             print("No WiFi address")
             mcaManagerSession.setIpAddress(newIpAddress: nil)
@@ -240,7 +240,7 @@ public class Observers: NSObject {
     
     /// Función que ayuda a enviar un AcceptOnlyAlert popup
     /// - parameter info : NSNotification
-    static func AcceptOnlyAlert(info:NSNotification) {
+    public static func AcceptOnlyAlert(info:NSNotification) {
         
         //let presenter = info.userInfo?["presenter"] as? UIViewController
         
@@ -281,7 +281,7 @@ public class Observers: NSObject {
     
     /// Función que ayuda a enviar un AcceptOnlyAlertPasswordReq popup (Only for Password Req)
     /// - parameter info : NSNotification
-    static func AcceptOnlyAlertPasswordReq(info:NSNotification) {
+    public static func AcceptOnlyAlertPasswordReq(info:NSNotification) {
         
         //let presenter = info.userInfo?["presenter"] as? UIViewController
         
@@ -323,7 +323,7 @@ public class Observers: NSObject {
     
     /// Función que ayuda a enviar un WebViewAlert popup
     /// - parameter info : NSNotification
-    static func WebViewAlert(info:NSNotification) {
+    public static func WebViewAlert(info:NSNotification) {
         
         //let presenter = info.userInfo?["presenter"] as? UIViewController
         
@@ -366,7 +366,7 @@ public class Observers: NSObject {
 
     /// Función que ayuda a enviar un YesNoAlert popup
     /// - parameter info : NSNotification
-    static func YesNoAlert(info:NSNotification) {
+    public static func YesNoAlert(info:NSNotification) {
         
         //let presenter = info.userInfo?["presenter"] as? UIViewController
         
@@ -400,7 +400,7 @@ public class Observers: NSObject {
     
     /// Función que ayuda a enviar un FotoAlert popup
     /// - parameter info : NSNotification
-    static func FotoAlert(info:NSNotification) {
+    public static func FotoAlert(info:NSNotification) {
         
         //let presenter = info.userInfo?["presenter"] as? UIViewController
         
@@ -426,7 +426,7 @@ public class Observers: NSObject {
         }
     }
 
-    static func PlanDataDetailAlert(info : NSNotification) {
+    public static func PlanDataDetailAlert(info : NSNotification) {
         
         
         //let presenter = info.userInfo?["presenter"] as? UIViewController
@@ -473,7 +473,7 @@ public class Observers: NSObject {
 
     /// Función que ayuda a enviar un ShowWaitDialog popup
     /// - parameter info : NSNotification
-    static func ShowWaitDialog(info : NSNotification) {
+    public static func ShowWaitDialog(info : NSNotification) {
         if (nil == UIApplication.shared.keyWindow) {
             return;
         }
@@ -518,7 +518,7 @@ public class Observers: NSObject {
 
     /// Función que ayuda a ocultar un HideWaitDialog popup
     /// - parameter info : NSNotification
-    static func HideWaitDialog(info : NSNotification) {
+    public static func HideWaitDialog(info : NSNotification) {
         if (nil == UIApplication.shared.keyWindow) {
             return;
         }
@@ -531,7 +531,7 @@ public class Observers: NSObject {
 
     /// Función que ayuda a mostrar un ShowOfflineMessage popup
     /// - parameter info : NSNotification
-    static func ShowOfflineMessage(info : NSNotification) {
+    public static func ShowOfflineMessage(info : NSNotification) {
         if false == mcaManagerSession.isNetworkConnected() {
             let alerta = AlertAcceptOnly();
             alerta.icon = .IconoAlertaError
@@ -553,7 +553,7 @@ public class Observers: NSObject {
 
     /// Función que ayuda a notificar un ChangeDateTime
     /// - parameter info : NSNotification
-    static func ChangeDateTime(info: NSNotification) {
+    public static func ChangeDateTime(info: NSNotification) {
         _ = mcaManagerSession.shouldRefresh()
         let worker = DispatchWorkItem {
             if mcaManagerSession.isNetworkConnected() {
@@ -597,7 +597,7 @@ public class Observers: NSObject {
     // Return IP address of WiFi interface (en0) as a String, or `nil`
     /// Función que ayuda a obtener la ip de la interfáz del wifi
     /// - Returns : InternetProtocolAddress?
-    private static func getWiFiAddress() -> InternetProtocolAddress? {
+    public static func getWiFiAddress() -> InternetProtocolAddress? {
         let wifi_name = "en0";
         let cellular_name = "pdp_ip0";
         
@@ -641,7 +641,7 @@ public class Observers: NSObject {
     /// Función que modifica el texto de una alerta
     /// - parameter text : String
     /// - Returns : String
-    static func modifyTextAlert(text: String) -> String {
+    public static func modifyTextAlert(text: String) -> String {
         let spaces = 4
         var textModify = ""
         //We separate text by spaces
