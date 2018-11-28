@@ -375,16 +375,16 @@ class Observers: NSObject {
     /// Función que ayuda a notificar un ChangeDateTime
     /// - parameter info : NSNotification
     static func ChangeDateTime(info: NSNotification) {
-//        piprlet worker = DispatchWorkItem {
-//            if (Reachability()?.isReachable ?? true) {
-//                UIApplication.upgradeConfigurationFile()//PIPRNotificationCenter.default.post(name: ObserverList.RefreshConfigurationFile.name,
+        let worker = DispatchWorkItem {
+            if (Reachability()?.isReachable ?? true) {
+                mcaUtilsHelper.refreshConfigurationFile()//PIPRNotificationCenter.default.post(name: ObserverList.RefreshConfigurationFile.name,
 //                                                object: nil);
-//            } else {
-//                NotificationCenter.default.post(name: NSNotification.Name.NSSystemClockDidChange,
-//                                                object: nil);
-//            }
-//        }
-//
+            } else {
+                NotificationCenter.default.post(name: NSNotification.Name.NSSystemClockDidChange,
+                                                object: nil);
+            }
+        }
+
 //        if false == SessionSingleton.sharedInstance.isNetworkConnected() || SessionSingleton.sharedInstance.isConsumingService() {
 //            SessionSingleton.sharedInstance.setRefreshConfigWorker(worker: nil);
 //            DispatchQueue.main.asyncAfter(deadline: SessionSingleton.sharedInstance.getExpiration(), execute: worker);
@@ -404,12 +404,12 @@ class Observers: NSObject {
 //            DispatchQueue.main.asyncAfter(deadline: SessionSingleton.sharedInstance.getExpiration(), execute: worker);
 //            SessionSingleton.sharedInstance.setRefreshConfigWorker(worker: worker);
 //        }
-        
-        //        if (true == SessionSingleton.sharedInstance.isExpiredTime()) {
-        //            let myApp = UIApplication.shared.delegate as? AppDelegate;
-        //            SessionSingleton.sharedInstance.setGeneralConfig(config: nil);
-        //            myApp?.loadMainScreen();
-        //        }
+//
+//                if (true == SessionSingleton.sharedInstance.isExpiredTime()) {
+//                    let myApp = UIApplication.shared.delegate as? AppDelegate;
+//                    SessionSingleton.sharedInstance.setGeneralConfig(config: nil);
+//                    myApp?.loadMainScreen();
+//                }
     }
     
     // Return IP address of WiFi interface (en0) as a String, or `nil`

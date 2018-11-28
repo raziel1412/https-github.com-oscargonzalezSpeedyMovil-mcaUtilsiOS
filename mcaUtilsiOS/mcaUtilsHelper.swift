@@ -9,7 +9,7 @@
 import UIKit
 
 public class mcaUtilsHelper: NSObject {
-//    public class func refreshConfigurationFile() {
-//        UIApplicationDelegate.upgradeConfigurationFile()
-//    }
+    public class func refreshConfigurationFile() {
+        UIResponder.upgradeConfigurationFile()
+    }
 }
