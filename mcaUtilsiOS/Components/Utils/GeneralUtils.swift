@@ -414,7 +414,7 @@ public func isUpdateAppAvailable() throws -> Bool {
 }
 
 
-public func ShowAlertAcceptOnly(title: String = "", text: String = "", icon: AlertIconType, cancelBtnColor: UIColor? = nil, cancelButtonName: String = "", acceptTitle: String = "", acceptBtnColor: UIColor? = nil, buttonName: String = "", onAccept: @escaping() -> Void) {
+func ShowAlertAcceptOnly(title: String = "", text: String = "", icon: AlertIconType, cancelBtnColor: UIColor? = nil, cancelButtonName: String = "", acceptTitle: String = "", acceptBtnColor: UIColor? = nil, buttonName: String = "", onAccept: @escaping() -> Void) {
     let alert = AlertAcceptOnly();
     alert.title = title
     alert.icon = icon
@@ -439,4 +439,6 @@ public func ShowAlertAcceptOnly(title: String = "", text: String = "", icon: Ale
     
     NotificationCenter.default.post(name: Observers.ObserverList.AcceptOnlyAlert.name, object: alert)
 }
+
+
 

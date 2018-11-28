@@ -40,7 +40,7 @@ public extension String {
     /// Función que permite enmascarar RUT
     /// - Returns maskedString: String
     /// - Returns errorString : String?
-    func enmascararRut() -> (maskedString : String, errorString : String?) {
+    public func enmascararRut() -> (maskedString : String, errorString : String?) {
         var maskRUT = self
         var error : String? = nil
         //FIXME: if let characterSpecial = mcaManagerSession.getGeneralConfig()?.country?.userProfileIdConfig?.separador, var posCharacter = (mcaManagerSession.getGeneralConfig()?.country?.userProfileIdConfig?.posicion), let max =  mcaManagerSession.getGeneralConfig()?.country?.userProfileIdConfig?.max , let min = mcaManagerSession.getGeneralConfig()?.country?.userProfileIdConfig?.min{

@@ -9,6 +9,7 @@
 import UIKit
 import Cartography
 //import mcaManageriOS
+import ReachabilitySwift
 
 public class TermsAndConditions: UIView {
     
@@ -70,8 +71,8 @@ public class TermsAndConditions: UIView {
     }
     
     @objc func lnkTerminos_OnClick() {
-        if false == false {//mcaManagerSession.isNetworkConnected() {
-            NotificationCenter.default.post(name: Observers.ObserverList.ShowOfflineMessage.name, object: nil);
+        if false == Reachability()?.isReachable {//mcaManagerSession.isNetworkConnected() {
+//            PIPRNotificationCenter.default.post(name: Observers.ObserverList.ShowOfflineMessage.name, object: nil);
             return;
         }
 

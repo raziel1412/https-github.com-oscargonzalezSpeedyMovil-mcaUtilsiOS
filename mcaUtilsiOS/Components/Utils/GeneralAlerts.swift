@@ -139,7 +139,6 @@ public class GeneralAlerts {
         NotificationCenter.default.post(name: Observers.ObserverList.HideWaitDialog.name, object: nil);
     }
     
-    //case ShowOfflineMessage
     //case RefreshConfigurationFile
     
     
