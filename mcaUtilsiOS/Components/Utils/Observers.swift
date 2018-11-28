@@ -13,129 +13,13 @@ import Cartography
 import ReachabilitySwift
 
 /// Clase usada para el uso del NotificationCenter (Observabilidad)
-class Observers: NSObject {
-    /// Enumerado de los tipos de Observers que usa el app
-    public enum ObserverList : String, NotificationName {
-        case YesNoAlert
-        case AcceptOnlyAlert
-        case WebViewAlert
-        case PlanDataDetailAlert
-        case ShowWaitDialog
-        case HideWaitDialog
-        case FotoAlert
-        case UpdateAppAlert
-        case AcceptOnlyAlertPasswordReq
-    }
+public class Observers: NSObject {
     
     /// Constante del formato del título
     static let titleFont = [NSFontAttributeName: UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: 14.0)!]
     
     /// Constante del formato del contenido del mensaje
     static let messageFont = [NSFontAttributeName: UIFont(name: RobotoFontName.RobotoLight.rawValue, size: 12.0)!]
-    
-    /// Inicialización de los observadores
-    static func InitializeObservers() {
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(ChangeDateTime),
-                                               name: NSNotification.Name.NSSystemClockDidChange,
-                                               object: nil)
-        
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(YesNoAlert),
-                                               name: ObserverList.YesNoAlert.name,
-                                               object: nil);
-        
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(AcceptOnlyAlert),
-                                               name: ObserverList.AcceptOnlyAlert.name,
-                                               object: nil);
-        
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(WebViewAlert),
-                                               name: ObserverList.WebViewAlert.name,
-                                               object: nil);
-        
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(PlanDataDetailAlert),
-                                               name: ObserverList.PlanDataDetailAlert.name,
-                                               object: nil);
-        
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(ReachabilityChanged),
-                                               name: ReachabilityChangedNotification,
-                                               object: nil)
-        
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(ShowWaitDialog),
-                                               name: ObserverList.ShowWaitDialog.name,
-                                               object: nil);
-        
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(HideWaitDialog),
-                                               name: ObserverList.HideWaitDialog.name,
-                                               object: nil);
-        
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(updateAppAlert),
-                                               name: ObserverList.UpdateAppAlert.name,
-                                               object: nil);
-        
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(FotoAlert),
-                                               name: ObserverList.FotoAlert.name,
-                                               object: nil);
-        
-        do {
-            try Reachability()?.startNotifier();
-        } catch {
-            
-        }
-    }
-    
-    /// Dealloc de los observadores
-    static func KillObservers() {
-        NotificationCenter.default.removeObserver(self,
-                                                  name: NSNotification.Name.NSSystemClockDidChange,
-                                                  object: nil);
-        
-        NotificationCenter.default.removeObserver(self,
-                                                  name: ObserverList.YesNoAlert.name,
-                                                  object: nil);
-        
-        NotificationCenter.default.removeObserver(self,
-                                                  name: ObserverList.AcceptOnlyAlert.name,
-                                                  object: nil);
-        
-        NotificationCenter.default.removeObserver(self,
-                                                  name: ObserverList.WebViewAlert.name,
-                                                  object: nil);
-        
-        NotificationCenter.default.removeObserver(self,
-                                                  name: ObserverList.PlanDataDetailAlert.name,
-                                                  object: nil);
-        
-        NotificationCenter.default.removeObserver(self,
-                                                  name: ReachabilityChangedNotification,
-                                                  object: nil);
-        
-        NotificationCenter.default.removeObserver(self,
-                                                  name: ObserverList.ShowWaitDialog.name,
-                                                  object: nil);
-        
-        NotificationCenter.default.removeObserver(self,
-                                                  name: ObserverList.HideWaitDialog.name,
-                                                  object: nil);
-        
-        NotificationCenter.default.removeObserver(self,
-                                                  name: ObserverList.UpdateAppAlert.name,
-                                                  object: nil);
-        
-        NotificationCenter.default.removeObserver(self,
-                                                  name: ObserverList.FotoAlert.name,
-                                                  object: nil);
-        
-        Reachability()?.stopNotifier()//PIPRSessionSingleton.sharedInstance.reachability?.stopNotifier();
-    }
     
     static func updateAppAlert(info: NSNotification) {
 //       PIPR let conf = SessionSingleton.sharedInstance.getGeneralConfig()
@@ -194,94 +78,59 @@ class Observers: NSObject {
     
     /// Función que ayuda a enviar un AcceptOnlyAlert popup
     /// - parameter info : NSNotification
-    static func AcceptOnlyAlert(info:NSNotification) {
-        if !(info.object is AlertAcceptOnly) {
-            fatalError("El tipo del objeto alerta no es correcto!");
-            //            return;
-        }
+    static func AcceptOnlyAlert(info:AlertAcceptOnly) {
         
         let topMost = UIApplication.shared.keyWindow?.rootViewController//PIPRUIApplication.shared.keyWindow?.topMostWindowController;
         if nil != topMost && true == topMost?.isKind(of: CustomAlertView.self) {
             return; // Evita que se muestren en pantalla dos o más alertas
         }
-        
-        if let ai = info.object as? AlertAcceptOnly {
-            let custom = CustomAlertView();
-            custom.alertData = ai;
-            custom.providesPresentationContextTransitionStyle = true;
-            custom.definesPresentationContext = true;
-            custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
-            custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-            topMost?.present(custom, animated: true, completion: nil)//PIPRUIApplication.shared.keyWindow?.currentViewController?.present(custom,
+        let custom = CustomAlertView()
+        custom.alertData = info
+        custom.providesPresentationContextTransitionStyle = true;
+        custom.definesPresentationContext = true;
+        custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        topMost?.present(custom, animated: true, completion: nil)//PIPRUIApplication.shared.keyWindow?.currentViewController?.present(custom,
 //                                                                           animated: true,
 //                                                                           completion: nil);
-        }
     }
     
     /// Función que ayuda a enviar un WebViewAlert popup
     /// - parameter info : NSNotification
-    static func WebViewAlert(info:NSNotification) {
-        if !(info.object is WebViewAlertData) {
-            fatalError("El tipo del objeto alerta no es correcto!");
-            //            return;
-        }
+    static func WebViewAlert(info:WebViewAlertData) {
         
         let topMost = UIApplication.shared.keyWindow?.rootViewController//PIPRlet topMost = UIApplication.shared.keyWindow?.topMostWindowController;
         if nil != topMost && true == topMost?.isKind(of: CustomAlertView.self) {
             return; // Evita que se muestren en pantalla dos o más alertas
         }
-        
-        if let ai = info.object as? WebViewAlertData {
-            let custom = WebViewAlertViewController();
-            custom.alertData = ai;
-            custom.providesPresentationContextTransitionStyle = true;
-            custom.definesPresentationContext = true;
-            custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
-            custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-            topMost?.present(custom, animated: true, completion: nil)//PIPRUIApplication.shared.keyWindow?.currentViewController?.present(custom,
+        let custom = WebViewAlertViewController()
+        custom.alertData = info
+        custom.providesPresentationContextTransitionStyle = true;
+        custom.definesPresentationContext = true;
+        custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        topMost?.present(custom, animated: true, completion: nil)//PIPRUIApplication.shared.keyWindow?.currentViewController?.present(custom,
             //                                                                           animated: true,
             //                                                                           completion: nil);
-            
-        }
     }
     
     /// Función que ayuda a enviar un YesNoAlert popup
     /// - parameter info : NSNotification
-    static func YesNoAlert(info:NSNotification) {
-        if !(info.object is AlertYesNo) {
-            fatalError("El tipo del objeto alerta no es correcto!");
-            //            return;
-        }
-        
-        //        let topMost = UIApplication.shared.keyWindow?.topMostWindowController();
-        //        if nil != topMost && true == topMost?.isKind(of: CustomAlertView.self) {
-        //            return; // Evita que se muestren en pantalla dos o más alertas
-        //        }
-        
-        if let ai = info.object as? AlertYesNo {
-            let custom = CustomAlertView();
-            custom.alertData = ai;
+    static func YesNoAlert(info:AlertYesNo) {
+            let custom = CustomAlertView()
+            custom.alertData = info
             custom.providesPresentationContextTransitionStyle = true;
             custom.definesPresentationContext = true;
             custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
             custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-            UIApplication.shared.keyWindow?.rootViewController?.present(custom, animated: true, completion: nil)//PIPRUIApplication.shared.keyWindow?.currentViewController??.present(custom,
-//                                                                           animated: true,
-//                                                                           completion: nil);
-        }
+            UIApplication.shared.keyWindow?.rootViewController?.present(custom, animated: true, completion: nil)
     }
     
     /// Función que ayuda a enviar un FotoAlert popup
     /// - parameter info : NSNotification
-    static func FotoAlert(info:NSNotification) {
-        if !(info.object is AlertFoto) {
-            fatalError("El tipo del objeto alerta no es correcto!");
-            //            return;
-        }
-        
-        if let ai = info.object as? AlertFoto {
+    static func FotoAlert(info: AlertFoto) {
             let custom = CustomAlertView();
-            custom.alertData = ai;
+            custom.alertData = info
             custom.providesPresentationContextTransitionStyle = true;
             custom.definesPresentationContext = true;
             custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
@@ -289,39 +138,29 @@ class Observers: NSObject {
             UIApplication.shared.keyWindow?.rootViewController?.present(custom, animated: true, completion: nil)//            PIPRUIApplication.shared.keyWindow?.currentViewController?.present(custom,
 //                                                                           animated: true,
 //                                                                           completion: nil);
-        }
     }
     
-    static func PlanDataDetailAlert(info : NSNotification) {
-        if !(info.object is PlanDetailAlertData) {
-            fatalError("El tipo del objeto alerta no es correcto!");
-            //            return;
-        }
+    static func PlanDataDetailAlert(info : PlanDetailAlertData) {
         
         let topMost = UIApplication.shared.keyWindow?.rootViewController//PIPRlet topMost = UIApplication.shared.keyWindow?.topMostWindowController;
         if nil != topMost && true == topMost?.isKind(of: PlanDetailAlertData.self) {
             return; // Evita que se muestren en pantalla dos o más alertas
         }
-        
-        if let ai = info.object as? PlanDetailAlertData {
-            let custom = PlanDetailAlertViewController();
-            custom.alertData = ai;
-            custom.providesPresentationContextTransitionStyle = true;
-            custom.definesPresentationContext = true;
-            custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
-            custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-            topMost?.present(custom, animated: true, completion: nil);
-        }
+        let custom = PlanDetailAlertViewController()
+        custom.alertData = info
+        custom.providesPresentationContextTransitionStyle = true;
+        custom.definesPresentationContext = true;
+        custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        topMost?.present(custom, animated: true, completion: nil);
     }
     
     /// Función que ayuda a enviar un ShowWaitDialog popup
     /// - parameter info : NSNotification
-    static func ShowWaitDialog(info : NSNotification) {
+    static func ShowWaitDialog(userEnabled:Bool) {
         if (nil == UIApplication.shared.keyWindow) {
             return;
         }
-        
-        let userEnabled = info.object as? Bool ?? false;
         PKHUD.sharedHUD.dimsBackground = !userEnabled;
         PKHUD.sharedHUD.userInteractionOnUnderlyingViewsEnabled = userEnabled;
         
@@ -361,7 +200,7 @@ class Observers: NSObject {
     
     /// Función que ayuda a ocultar un HideWaitDialog popup
     /// - parameter info : NSNotification
-    static func HideWaitDialog(info : NSNotification) {
+    static func HideWaitDialog() {
         if (nil == UIApplication.shared.keyWindow) {
             return;
         }

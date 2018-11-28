@@ -12,18 +12,18 @@ extension WebView: UIWebViewDelegate {
 
     /// Sirve para mostrar el cuadro de loader al momento de iniciar la descarga del recurso externo
     func webViewDidStartLoad(_ webView: UIWebView) {
-        NotificationCenter.default.post(name: Observers.ObserverList.ShowWaitDialog.name, object: nil)
+        Observers.ShowWaitDialog(userEnabled: false)
     }
 
     /// Sirve para ocultar el cuadro de loader al momento de terminar satisfactoriamente la descarga del recurso externo
     func webViewDidFinishLoad(_ webView: UIWebView) {
-        NotificationCenter.default.post(name: Observers.ObserverList.HideWaitDialog.name, object: nil)
+        Observers.HideWaitDialog()
         let myFontScript = String(format: "document.getElementsByTagName('body')[0].style.fontFamily='%@'", RobotoFontName.RobotoRegular.rawValue);
         self.stringByEvaluatingJavaScript(from: myFontScript);
     }
 
     /// Sirve para ocultar el cuadro de loader al momento de terminar la descarga del recurso externo, pero se produjo un error
     func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
-        NotificationCenter.default.post(name: Observers.ObserverList.HideWaitDialog.name, object: nil)
+        Observers.HideWaitDialog()
     }
 }

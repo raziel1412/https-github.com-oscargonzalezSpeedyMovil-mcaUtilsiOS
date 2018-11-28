@@ -230,8 +230,7 @@ public func callPhone(phoneNumber: String, currentVC: UIViewController ) {
             print("Hidde alert")
         }
         
-        NotificationCenter.default.post(name: Observers.ObserverList.AcceptOnlyAlert.name,
-                                        object: accept);
+        Observers.AcceptOnlyAlert(info: accept)
         
     }else {
         if let phoneCallURL:URL = URL(string: "tel://\(phoneNumber)") {
@@ -390,7 +389,7 @@ public func showUpdateAlertView() {
     
     if true {//FIXME: mcaManagerSession.getIsUpdateAppAvailable() {
         let alert = AlertAcceptOnly()
-        NotificationCenter.default.post(name: Observers.ObserverList.UpdateAppAlert.name, object: alert);
+//        NotificationCenter.default.post(name: Observers.ObserverList.UpdateAppAlert.name, object: alert);
     }
 }
 
@@ -411,33 +410,6 @@ public func isUpdateAppAvailable() throws -> Bool {
         return version != currentVersion
     }
     throw VersionError.invalidResponse
-}
-
-
-func ShowAlertAcceptOnly(title: String = "", text: String = "", icon: AlertIconType, cancelBtnColor: UIColor? = nil, cancelButtonName: String = "", acceptTitle: String = "", acceptBtnColor: UIColor? = nil, buttonName: String = "", onAccept: @escaping() -> Void) {
-    let alert = AlertAcceptOnly();
-    alert.title = title
-    alert.icon = icon
-    alert.onAcceptEvent = onAccept
-    if title != "" {
-        alert.title = title
-    }
-    if acceptTitle != "" {
-        alert.acceptTitle = acceptTitle
-    }
-    if text != "" {
-        alert.text = text
-    }
-    if acceptBtnColor != nil{
-        alert.buttonColor = acceptBtnColor
-    }
-    if buttonName != "" {
-        alert.buttonName = buttonName
-    }
-    alert.cancelButtonColor = cancelBtnColor
-    alert.cancelButtonName = cancelButtonName
-    
-    NotificationCenter.default.post(name: Observers.ObserverList.AcceptOnlyAlert.name, object: alert)
 }
 
 

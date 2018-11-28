@@ -83,8 +83,7 @@ public class TermsAndConditions: UIView {
         alert.acceptTitle = "" //FIXME:  mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.closeBtn ?? "";
         alert.onAcceptEvent = {
         }
-        NotificationCenter.default.post(name: Observers.ObserverList.WebViewAlert.name,
-                                        object: alert);
+        Observers.WebViewAlert(info: alert)
 
         if(parentViewName == "Registro"){
             AnalyticsInteractionSingleton.sharedInstance.ADBTrackViewRecoveryPass(viewName: "Recuperar contrasena|Terminos y condiciones", detenido: false)

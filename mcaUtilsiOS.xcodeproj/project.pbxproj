@@ -278,6 +278,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1DCFAC1021AF12D000056A67 /* mcaUtilsGeneral */ = {
+			isa = PBXGroup;
+			children = (
+				1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */,
+				62F0DFC321A609BD001D98AC /* GeneralAlerts.swift */,
+			);
+			path = mcaUtilsGeneral;
+			sourceTree = "<group>";
+		};
 		359C93A3BEAF05AC2D110B3C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,13 +317,13 @@
 		62874652219CD9B200C53384 /* mcaUtilsiOS */ = {
 			isa = PBXGroup;
 			children = (
+				1DCFAC1021AF12D000056A67 /* mcaUtilsGeneral */,
 				62EBFFF4219F26EF00F85A3D /* AdobeMobileLibrary */,
 				62874653219CD9B200C53384 /* mcaUtilsiOS.h */,
 				62874654219CD9B200C53384 /* Info.plist */,
 				62EB36A6219E444500864FD4 /* Assets.xcassets */,
 				62EBFAEE219F1EE900F85A3D /* Components */,
 				62EB3B81219E447900864FD4 /* Tipografía */,
-				1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */,
 			);
 			path = mcaUtilsiOS;
 			sourceTree = "<group>";
@@ -381,7 +390,6 @@
 				62EBFB42219F1EE900F85A3D /* ALCameraViewController */,
 				62EBFB61219F1EE900F85A3D /* Network */,
 				62EBFB73219F1EE900F85A3D /* Spinners */,
-				62F0DFC321A609BD001D98AC /* GeneralAlerts.swift */,
 				6282911521A708FD00AF8144 /* AnalyticsInteractionSingleton.swift */,
 				6282911721A720CA00AF8144 /* Extension+URL.swift */,
 				626C054421A7296B0031EF19 /* CardsSummaryModel.swift */,
