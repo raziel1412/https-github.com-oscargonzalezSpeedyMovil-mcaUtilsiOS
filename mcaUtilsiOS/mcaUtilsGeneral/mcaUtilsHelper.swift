@@ -34,4 +34,12 @@ public class mcaUtilsHelper: NSObject {
         let defaults = UserDefaults.standard
         return defaults.object(forKey: toKey)
     }
+    
+    public class func getImage(image: String) -> UIImage {
+        let bundle = Bundle(identifier: "com.miclaro.app.mcaUtilsiOS")
+        if let aImage = UIImage(named: image, in: bundle, compatibleWith: nil) {
+            return aImage
+        }
+        return UIImage()
+    }
 }
