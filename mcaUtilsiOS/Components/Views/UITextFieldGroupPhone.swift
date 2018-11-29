@@ -11,8 +11,8 @@ import Cartography
 
 public class UITextFieldGroupPhone : UIView {
     
-    var textField : SimpleGrayTextField = SimpleGrayTextField(text: "", placeholder: "")
-    var countryCode : UILabel = {
+    public var textField : SimpleGrayTextField = SimpleGrayTextField(text: "", placeholder: "")
+    public var countryCode : UILabel = {
         let label = UILabel(frame: .zero)
         label.font = UIFont(name: RobotoFontName.RobotoBold.rawValue, size: 14.0)
         label.textAlignment = .center
@@ -63,14 +63,14 @@ public class UITextFieldGroupPhone : UIView {
         }
     }
     
-    func setupContent(imageName: String?, text: String?, placeHolder : String?, countryCodeText : String?){
+    public func setupContent(imageName: String?, text: String?, placeHolder : String?, countryCodeText : String?){
         image.image = UIImage(named: imageName!)
         textField.title = text != nil ? text! : ""
         textField.placeholder = placeHolder != nil ? placeHolder! : ""
         countryCode.text = countryCodeText != nil ? countryCodeText! : ""
     }
     
-    func changeFont(font: UIFont) {
+    public func changeFont(font: UIFont) {
         textField.customFont = font
     }
 }

@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1DCFABEE21ADFCBD00056A67 /* mcaUtilsHelper.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DCFABF721AE006D00056A67 /* mcaUtilsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */; };
 		1DCFABFA21AE065200056A67 /* GeneralAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F0DFC321A609BD001D98AC /* GeneralAlerts.swift */; };
+		1DCFAC5521AF683F00056A67 /* mcaUtilsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */; };
 		50916FA9B8B50EA870C2BC6E /* Pods_mcaUtilsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170AEF6659E0C1B563ED2A8C /* Pods_mcaUtilsiOS.framework */; };
 		621A65BB21A769BF00D85FBA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 621A65BA21A769BF00D85FBA /* libsqlite3.tbd */; };
 		622ED4DC21A8AE1D00BE746A /* Extension+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622ED4DB21A8AE1D00BE746A /* Extension+UIApplication.swift */; };
@@ -759,7 +759,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DCFABF721AE006D00056A67 /* mcaUtilsHelper.swift in Sources */,
+				1DCFAC5521AF683F00056A67 /* mcaUtilsHelper.swift in Sources */,
 				62EBFE2C219F1EEA00F85A3D /* Extension+UIView.swift in Sources */,
 				6282911621A708FD00AF8144 /* AnalyticsInteractionSingleton.swift in Sources */,
 				62EBFFB8219F1EEB00F85A3D /* PasswordCustomTableViewCell.swift in Sources */,

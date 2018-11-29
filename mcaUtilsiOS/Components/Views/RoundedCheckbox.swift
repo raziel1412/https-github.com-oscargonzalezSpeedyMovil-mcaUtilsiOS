@@ -20,7 +20,7 @@ public class RoundedCheckbox: UIButton {
         setup();
     }
 
-    func setup() {
+    public func setup() {
         self.frame.size.width = 20;
         self.frame.size.height = 20;
         let tam = CGSize(width: self.frame.size.width, height: self.frame.size.height);
@@ -32,11 +32,11 @@ public class RoundedCheckbox: UIButton {
         self.isSelected = false;
     }
 
-    func change(sender:UIButton) {
+    public func change(sender:UIButton) {
         self.isSelected = !self.isSelected;
     }
 
-    func changeSelect(isSelected: Bool) {
+    public func changeSelect(isSelected: Bool) {
         self.isSelected = isSelected
     }
 }

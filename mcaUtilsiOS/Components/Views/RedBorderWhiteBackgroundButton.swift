@@ -10,7 +10,7 @@ import UIKit
 
 public class RedBorderWhiteBackgroundButton: UIButton {
 
-    init(textButton: String) {
+    public init(textButton: String) {
         super.init(frame: UIScreen.main.bounds)
         self.backgroundColor = institutionalColors.claroWhiteColor
         self.setTitle(textButton, for: UIControlState.normal)
@@ -23,7 +23,7 @@ public class RedBorderWhiteBackgroundButton: UIButton {
         self.setTitleColor(institutionalColors.claroRedColor, for: UIControlState.normal)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.backgroundColor = institutionalColors.claroWhiteColor
         self.titleLabel?.font = UIFont(name: RobotoFontName.RobotoBold.rawValue, size: 16.0)

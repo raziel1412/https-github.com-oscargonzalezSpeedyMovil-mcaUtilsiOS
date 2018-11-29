@@ -11,7 +11,7 @@ import UIKit
 /// Esta clase especializa un UIButton para permitirle que tenga el L&F de Mi Claro constante. Background Rojo, fuente RobotoRegular 18pt y bordes redondeados
 public class RedBackgroundButton: UIButton {
     
-    init(textButton: String) {
+    public init(textButton: String) {
         super.init(frame: UIScreen.main.bounds)
         
         self.backgroundColor = institutionalColors.claroRedColor
@@ -27,7 +27,7 @@ public class RedBackgroundButton: UIButton {
         self.frame.size.height = 40;
     }
     
-    init(textButton: String, colorBorder: UIColor, thickness: CGFloat, radiusBorder: CGFloat) {
+    public init(textButton: String, colorBorder: UIColor, thickness: CGFloat, radiusBorder: CGFloat) {
         super.init(frame: UIScreen.main.bounds)
         self.layer.cornerRadius = radiusBorder
         self.layer.borderWidth = thickness
@@ -40,7 +40,7 @@ public class RedBackgroundButton: UIButton {
         self.frame.size.height = 40;
     }
     
-    func addDecorationButton(nameImage: String, color: UIColor) {
+    public func addDecorationButton(nameImage: String, color: UIColor) {
         let imgIcon = UIImageView()
         imgIcon.frame = CGRect(x: 0, y: 0, width: 20.0, height: self.frame.height)
         imgIcon.image = UIImage(named: nameImage)
@@ -49,7 +49,7 @@ public class RedBackgroundButton: UIButton {
         self.addSubview(imgIcon)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 

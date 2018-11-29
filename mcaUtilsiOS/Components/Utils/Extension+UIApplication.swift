@@ -31,9 +31,9 @@ public extension UIResponder {
         print("upgrade config file")
     }
     
-    public static func changeValuesOfConfig(checkNetworkAndServices: Bool) {
-        print("changeValuesOfConfig")
-    }
+//    public static func changeValuesOfConfig(checkNetworkAndServices: Bool) {
+//        print("changeValuesOfConfig")
+//    }
     
 }
 
