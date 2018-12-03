@@ -23,13 +23,13 @@ public class MandatoryInformation: UIView {
     
     private var mandatoryText = ""//mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.emptyField ?? ""
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         self.addSubview(mandatoryField)
         setupConstraint()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder);
         self.addSubview(mandatoryField)
         setupConstraint()
@@ -44,13 +44,13 @@ public class MandatoryInformation: UIView {
         }
     }
     
-    func hideView() {
+    public func hideView() {
         UIView.animate(withDuration: 1.0) {
             self.mandatoryField.text = ""
         }
     }
     
-    func displayView(customString: String? = nil) {
+    public func displayView(customString: String? = nil) {
         UIView.animate(withDuration: 1.0) {
             if let displayText = customString, displayText.count > 0 {
                 self.mandatoryField.text = customString!

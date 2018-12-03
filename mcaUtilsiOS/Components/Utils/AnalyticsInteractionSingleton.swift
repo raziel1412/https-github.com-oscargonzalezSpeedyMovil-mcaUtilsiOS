@@ -10,7 +10,7 @@ import UIKit
 //import mcaManageriOS
 
 public class AnalyticsInteractionSingleton {
-    static let sharedInstance = AnalyticsInteractionSingleton();
+    public static let sharedInstance = AnalyticsInteractionSingleton();
     var timer: Timer;
     var counter: Int;
     
@@ -162,7 +162,7 @@ public class AnalyticsInteractionSingleton {
         return contextData
     }
     //Funcion simple para el envio de vista a analytics
-    func ADBTrackView(viewName:String, detenido:Bool, mensaje:String? = ""){
+    public func ADBTrackView(viewName:String, detenido:Bool, mensaje:String? = ""){
         var contextData = NSMutableDictionary()
         
         if(viewName == "Sector Ubicacion"){
@@ -206,7 +206,7 @@ public class AnalyticsInteractionSingleton {
     }
     
     //MARK: Flujo - Soporte
-    func ADBTrackViewSoporte(viewName : String, message : String = "") {
+    public func ADBTrackViewSoporte(viewName : String, message : String = "") {
         let contextData = getBaseParams()
         
         if viewName == "Soporte|Reportar fallas"{
@@ -237,7 +237,7 @@ public class AnalyticsInteractionSingleton {
     }
     
     //MARK: - Flujo - Mis Facturas (Mis boletas)
-    func ADBTrackViewMenuBoletas(viewName : String){
+    public func ADBTrackViewMenuBoletas(viewName : String){
         let contextData = getBaseParams()
         
         print(viewName)
@@ -245,7 +245,7 @@ public class AnalyticsInteractionSingleton {
         ADBMobile.trackState(viewName, data: contextData as? [AnyHashable : Any])
     }
     
-    func ADBTrackViewBoletas(type :  String, viewName : String, nombreServicio : String, detalleServicio : String, fechaVencimiento : String, estatus : String, saldo : String){
+    public func ADBTrackViewBoletas(type :  String, viewName : String, nombreServicio : String, detalleServicio : String, fechaVencimiento : String, estatus : String, saldo : String){
         
         let contextData = getBaseParams()
         let typeValue = type
@@ -272,7 +272,7 @@ public class AnalyticsInteractionSingleton {
         ADBMobile.trackState(viewName, data: contextData as? [AnyHashable : Any])
     }
     
-    func ADBTrackViewActivarBoletas(viewName : String, type :  String, message :  String  = ""){
+    public func ADBTrackViewActivarBoletas(viewName : String, type :  String, message :  String  = ""){
         let contextData = getBaseParams()
         let typeValue = type
         switch typeValue {
@@ -296,7 +296,7 @@ public class AnalyticsInteractionSingleton {
     
     //MARK: Flujo - Registro
     // Pantallas Registro
-    func ADBTrackViewRegistro(viewName:String, type:Int? = 1, detenido:Bool, mensaje:String? = ""){
+    public func ADBTrackViewRegistro(viewName:String, type:Int? = 1, detenido:Bool, mensaje:String? = ""){
         
         let contextData = getBaseParams()
         
@@ -339,7 +339,7 @@ public class AnalyticsInteractionSingleton {
         ADBMobile.trackState(viewName, data: contextData as? [AnyHashable : Any])
     }
     // Pantallas recuperar Contraseña
-    func ADBTrackViewRecoveryPass(viewName:String, type:Int? = 0, detenido:Bool, mensaje:String? = "", intervalo:String? = ""){
+    public func ADBTrackViewRecoveryPass(viewName:String, type:Int? = 0, detenido:Bool, mensaje:String? = "", intervalo:String? = ""){
         
         let contextData = getBaseParams()
         
@@ -378,7 +378,7 @@ public class AnalyticsInteractionSingleton {
     }
     //MARK: Flujo - Mi Perfil
     // Pantallas Mi Perfil
-    func ADBTrackViewMiPerfil(viewName:String, type:Int? = 1){
+    public func ADBTrackViewMiPerfil(viewName:String, type:Int? = 1){
         
         let contextData = getBaseParams()
         switch type {
@@ -400,7 +400,7 @@ public class AnalyticsInteractionSingleton {
         ADBMobile.trackState(viewName, data: contextData as? [AnyHashable : Any])
     }
     
-    func ADBTrackViewServicios(viewName : String, type :  String, nombreServicio : String, detalleServicio : String, fechaVencimiento : String, estatus : String, saldo : String){
+    public func ADBTrackViewServicios(viewName : String, type :  String, nombreServicio : String, detalleServicio : String, fechaVencimiento : String, estatus : String, saldo : String){
         
         let strfechaVencimiento = fechaVencimiento.replacingOccurrences(of: "/", with: "|")
         
@@ -431,7 +431,7 @@ public class AnalyticsInteractionSingleton {
         ADBMobile.trackState(viewName, data: contextData as? [AnyHashable : Any])
     }
     
-    func ADBTrackViewServicioPrepago(viewName : String, type :  String, detenido:Bool, mensaje:String? = "", intervalo:String? = ""){
+    public func ADBTrackViewServicioPrepago(viewName : String, type :  String, detenido:Bool, mensaje:String? = "", intervalo:String? = ""){
         
         let contextData = getBaseParams()
         
@@ -462,7 +462,7 @@ public class AnalyticsInteractionSingleton {
         ADBMobile.trackState(viewName, data: contextData as? [AnyHashable : Any])
     }
     
-    func loadDayName(forDate date: Date) -> String{
+    public func loadDayName(forDate date: Date) -> String{
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat  = "EEEE"//"EE" to get short style
         //        let dayInWeek = dateFormatter.string(from: date as Date)//"Sunday"
@@ -531,7 +531,7 @@ public class AnalyticsInteractionSingleton {
     
     //Actions
     
-    func ADBTrackCustomLink(viewName:String){
+    public func ADBTrackCustomLink(viewName:String){
         
         let contextData = getBaseParams()
         

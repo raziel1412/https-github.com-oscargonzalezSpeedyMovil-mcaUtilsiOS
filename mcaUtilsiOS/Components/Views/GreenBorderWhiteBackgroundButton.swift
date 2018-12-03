@@ -11,7 +11,7 @@ import UIKit
 /// Esta clase especializa un UIButton para permitirle que tenga el L&F de Mi Claro constante. Borde de color azul, fuente RobotoRegular 16pt y bordes redondeados
 public class GreenBorderWhiteBackgroundButton: UIButton {
 
-    init(textButton: String) {
+    public init(textButton: String) {
         super.init(frame: UIScreen.main.bounds)
         
         self.backgroundColor = institutionalColors.claroWhiteColor

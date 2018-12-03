@@ -11,7 +11,7 @@ import SkyFloatingLabelTextField
 
 public class SimpleGrayTextField: SkyFloatingLabelTextField {
     
-    var customFont : UIFont {
+    public var customFont : UIFont {
         get {
             return self.customFont
         }
@@ -20,7 +20,7 @@ public class SimpleGrayTextField: SkyFloatingLabelTextField {
         }
     }
 
-    init(text: String, placeholder: String) {
+    public init(text: String, placeholder: String) {
         super.init(frame: UIScreen.main.bounds)
         setup(text: text, placeholder: placeholder)
     }
@@ -35,7 +35,7 @@ public class SimpleGrayTextField: SkyFloatingLabelTextField {
         setup(text: "", placeholder: "")
     }
     
-    func setup(text: String, placeholder: String) {
+    public func setup(text: String, placeholder: String) {
         self.placeholder = placeholder
         self.placeholderFont = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: 14.0);
         self.titleFont = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: 10.0) ?? .systemFont(ofSize: 10);
@@ -62,7 +62,7 @@ public class SimpleGrayTextField: SkyFloatingLabelTextField {
         }
     }
 
-    func setupSecurityEye() {
+    public func setupSecurityEye() {
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         button.setImage(UIImage(named: "icon_vercontra_inac_input"), for: .normal)
         button.setImage(UIImage(named: "icon_vercontra_input"), for: .selected)
@@ -72,7 +72,7 @@ public class SimpleGrayTextField: SkyFloatingLabelTextField {
         self.rightViewMode = .always
     }
     
-    func protectUnprotect(_ sender: Any) {
+    public func protectUnprotect(_ sender: Any) {
         self.isSecureTextEntry = !self.isSecureTextEntry
         if let selected = (sender as? UIButton)?.isSelected {
             (sender as? UIButton)?.isSelected = !selected

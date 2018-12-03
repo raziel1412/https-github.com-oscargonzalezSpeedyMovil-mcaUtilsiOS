@@ -11,7 +11,7 @@ import FontAwesome_swift
 
 /// Esta clase especializa un UIButton para permitirle tener apariencia visual de Checkbox cuadrado.
 public class SquaredCheckbox: UIButton {
-    override init(frame: CGRect = CGRect(x: 0, y: 0, width: 0, height: 0)) {
+    public override init(frame: CGRect = CGRect(x: 0, y: 0, width: 0, height: 0)) {
         super.init(frame: frame);
         setup();
     }
@@ -33,7 +33,7 @@ public class SquaredCheckbox: UIButton {
         self.isSelected = false;
     }
 
-    func change(sender:UIButton) {
+    public func change(sender:UIButton) {
         self.isSelected = !self.isSelected;
     }
 }
