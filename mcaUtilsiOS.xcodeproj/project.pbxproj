@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1D1E496521B5BCE4007C61B1 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E496421B5BCE4007C61B1 /* CustomNavigationBar.swift */; };
 		1D1E498521B5EB6B007C61B1 /* LinkeableEventDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E498421B5EB6B007C61B1 /* LinkeableEventDelegate.swift */; };
+		1D1E498C21B70D40007C61B1 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E498B21B70D40007C61B1 /* FontExtension.swift */; };
 		1DCFABEE21ADFCBD00056A67 /* mcaUtilsHelper.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DCFABFA21AE065200056A67 /* GeneralAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F0DFC321A609BD001D98AC /* GeneralAlerts.swift */; };
 		1DCFAC5521AF683F00056A67 /* mcaUtilsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */; };
@@ -134,6 +135,7 @@
 		170AEF6659E0C1B563ED2A8C /* Pods_mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D1E496421B5BCE4007C61B1 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		1D1E498421B5EB6B007C61B1 /* LinkeableEventDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkeableEventDelegate.swift; sourceTree = "<group>"; };
+		1D1E498B21B70D40007C61B1 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mcaUtilsHelper.swift; sourceTree = "<group>"; };
 		621A65BA21A769BF00D85FBA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		622ED4DB21A8AE1D00BE746A /* Extension+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIApplication.swift"; sourceTree = "<group>"; };
@@ -288,6 +290,22 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		1D1E498A21B70CE6007C61B1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				62EBFB5D219F1EE900F85A3D /* Extension + UIViewController.swift */,
+				62EBFB71219F1EE900F85A3D /* Extension+Date.swift */,
+				62EBFB70219F1EE900F85A3D /* Extension+UIView.swift */,
+				62EBFB41219F1EE900F85A3D /* HexColorExtension.swift */,
+				62EBFB6A219F1EE900F85A3D /* ImageViewExtension.swift */,
+				62EBFB6F219F1EE900F85A3D /* StringExtension.swift */,
+				62EBFB60219F1EE900F85A3D /* UILabelExtension.swift */,
+				62EBFB68219F1EE900F85A3D /* ViewExtension.swift */,
+				1D1E498B21B70D40007C61B1 /* FontExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		1DCFAC1021AF12D000056A67 /* mcaUtilsGeneral */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,21 +346,6 @@
 		62874652219CD9B200C53384 /* mcaUtilsiOS */ = {
 			isa = PBXGroup;
 			children = (
-				1D1E498321B5EB30007C61B1 /* Protocols */,
-				1DCFAC1021AF12D000056A67 /* mcaUtilsGeneral */,
-				62EBFFF4219F26EF00F85A3D /* AdobeMobileLibrary */,
-				62874653219CD9B200C53384 /* mcaUtilsiOS.h */,
-				62874654219CD9B200C53384 /* Info.plist */,
-				62EB36A6219E444500864FD4 /* Assets.xcassets */,
-				62EBFAEE219F1EE900F85A3D /* Components */,
-				62EB3B81219E447900864FD4 /* Tipografía */,
-			);
-			path = mcaUtilsiOS;
-			sourceTree = "<group>";
-		};
-		62EB3B81219E447900864FD4 /* Tipografía */ = {
-			isa = PBXGroup;
-			children = (
 				62EB3B82219E447900864FD4 /* Roboto-Medium.ttf */,
 				62EB3B83219E447900864FD4 /* Roboto-Light.ttf */,
 				62EB3B84219E447900864FD4 /* Roboto-Regular.ttf */,
@@ -360,6 +363,22 @@
 				62EB3B90219E447900864FD4 /* Roboto-Bold.ttf */,
 				62EB3B91219E447900864FD4 /* Roboto-Thin.ttf */,
 				62EB3B92219E447900864FD4 /* Roboto-Black.ttf */,
+				1D1E498A21B70CE6007C61B1 /* Extensions */,
+				1D1E498321B5EB30007C61B1 /* Protocols */,
+				1DCFAC1021AF12D000056A67 /* mcaUtilsGeneral */,
+				62EBFFF4219F26EF00F85A3D /* AdobeMobileLibrary */,
+				62874653219CD9B200C53384 /* mcaUtilsiOS.h */,
+				62874654219CD9B200C53384 /* Info.plist */,
+				62EB36A6219E444500864FD4 /* Assets.xcassets */,
+				62EBFAEE219F1EE900F85A3D /* Components */,
+				62EB3B81219E447900864FD4 /* Tipografía */,
+			);
+			path = mcaUtilsiOS;
+			sourceTree = "<group>";
+		};
+		62EB3B81219E447900864FD4 /* Tipografía */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = "Tipografía";
 			sourceTree = "<group>";
@@ -384,19 +403,11 @@
 				62EBFB65219F1EE900F85A3D /* Localizable.strings */,
 				62EBFB72219F1EE900F85A3D /* Appearance.swift */,
 				62EBFB63219F1EE900F85A3D /* CustomAlertViewController.swift */,
-				62EBFB5D219F1EE900F85A3D /* Extension + UIViewController.swift */,
-				62EBFB71219F1EE900F85A3D /* Extension+Date.swift */,
-				62EBFB70219F1EE900F85A3D /* Extension+UIView.swift */,
 				62EBFB6E219F1EE900F85A3D /* GeneralUtils.swift */,
 				62EBFB64219F1EE900F85A3D /* GooglePlacesSearchController.swift */,
-				62EBFB41219F1EE900F85A3D /* HexColorExtension.swift */,
-				62EBFB6A219F1EE900F85A3D /* ImageViewExtension.swift */,
 				62EBFB5C219F1EE900F85A3D /* NewUpdateAlertViewController.swift */,
 				62EBFB6D219F1EE900F85A3D /* Observers.swift */,
 				62EBFB6B219F1EE900F85A3D /* PlanDetailAlertViewController.swift */,
-				62EBFB6F219F1EE900F85A3D /* StringExtension.swift */,
-				62EBFB60219F1EE900F85A3D /* UILabelExtension.swift */,
-				62EBFB68219F1EE900F85A3D /* ViewExtension.swift */,
 				62EBFB69219F1EE900F85A3D /* WebViewAlertViewController.swift */,
 				62EBFB5F219F1EE900F85A3D /* NewUpdateAlertViewController.xib */,
 				62EBFB42219F1EE900F85A3D /* ALCameraViewController */,
@@ -846,6 +857,7 @@
 				62EBFE18219F1EEA00F85A3D /* ImageCell.swift in Sources */,
 				62EBFE04219F1EEA00F85A3D /* CroppingParameters.swift in Sources */,
 				62EBFF9D219F1EEA00F85A3D /* RedBorderWhiteBackgroundButton.swift in Sources */,
+				1D1E498C21B70D40007C61B1 /* FontExtension.swift in Sources */,
 				62EBFFC1219F1EEB00F85A3D /* UITextFieldGroupPhone.swift in Sources */,
 				626C054521A7296B0031EF19 /* CardsSummaryModel.swift in Sources */,
 				62EBFFAC219F1EEA00F85A3D /* WebView.swift in Sources */,

@@ -30,6 +30,7 @@ public extension UIViewController  {
     
     public func leftButtonAction() {
         print("left button action")
+        self.navigationController?.popViewController(animated: true)
     }
     
     /// El constructor permite customizar el NavigationBar dependiendo del valor de navigationType

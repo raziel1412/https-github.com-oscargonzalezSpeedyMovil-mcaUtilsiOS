@@ -42,4 +42,8 @@ public class mcaUtilsHelper: NSObject {
         }
         return UIImage()
     }
+    
+    public class func initCustomFonts() {
+        UIFont.loadAllFonts
+    }
 }
