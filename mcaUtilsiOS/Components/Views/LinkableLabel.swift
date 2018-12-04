@@ -8,19 +8,13 @@
 
 import UIKit
 
-/// Este protocolo permite especificar la acción que será desencadenada a partir de los eventos del LinkableLabel
-protocol LinkeableEventDelegate {
-    func ClickedBoldText();
-    func ClickedNormalText();
-}
-
 /// Esta clase especializa un UILabel para permitirle tener apariencia de label subrayado con la posibilidad de detectar clicks o toques en la región donde se visualiza.
-class LinkableLabel: UILabel, UIGestureRecognizerDelegate {
+public class LinkableLabel: UILabel, UIGestureRecognizerDelegate {
     private var linkTextRange : NSRange?;
     private var gesture : UITapGestureRecognizer?;
     public var delegate : LinkeableEventDelegate?;
 
-    override init(frame: CGRect = CGRect(x: 0, y: 0, width: 0, height: 0)) {
+    public override init(frame: CGRect = CGRect(x: 0, y: 0, width: 0, height: 0)) {
         super.init(frame: frame);
         setup();
     }
@@ -56,11 +50,11 @@ class LinkableLabel: UILabel, UIGestureRecognizerDelegate {
         return true;
     }
 
-    func showText(text : String) {
+    public func showText(text : String) {
         self.attributedText = self.boldString(string: text);
     }
     
-    func showTextWithoutUnderline(text : String) {
+    public func showTextWithoutUnderline(text : String) {
         self.attributedText = self.boldStringWithoutUnderline(string: text);
     }
 
@@ -144,7 +138,7 @@ class LinkableLabel: UILabel, UIGestureRecognizerDelegate {
         }
     }
 
-    func showLink(gesture : UITapGestureRecognizer) {
+    public func showLink(gesture : UITapGestureRecognizer) {
         if let ltr = self.linkTextRange {
             if (gesture.didTapAttributedTextInLabel(label: self, inRange: ltr)) {
                 delegate?.ClickedBoldText();

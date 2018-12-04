@@ -13,13 +13,13 @@ import ReachabilitySwift
 
 public class TermsAndConditions: UIView {
     
-    var checkBox : SquaredCheckbox = SquaredCheckbox(frame: .zero)
+    public var checkBox : SquaredCheckbox = SquaredCheckbox(frame: .zero)
     private var contentLabel : LinkableLabel = LinkableLabel(frame: .zero)
     private var content : String = ""
     private var linkTextRange : NSRange?
     private var parentViewName : String = ""
 
-    init(frame: CGRect, content: String? = nil) {
+    public init(frame: CGRect, content: String? = nil) {
         super.init(frame: frame)
         if content != nil {
             contentLabel.text = content!
@@ -33,7 +33,7 @@ public class TermsAndConditions: UIView {
         setupConstraints()
     }
     
-    func setContent(_ content: String) {
+    public func setContent(_ content: String) {
         self.content = content
         contentLabel.showText(text: content)
     }
@@ -61,16 +61,16 @@ public class TermsAndConditions: UIView {
         }
     }
     
-    func setupClickDelegate(target: Any?, action: Selector?) {
+    public func setupClickDelegate(target: Any?, action: Selector?) {
         contentLabel.gestureRecognizers?.removeAll()
         contentLabel.addGestureRecognizer(UITapGestureRecognizer(target: target, action: action))
     }
     
-    var isChecked : Bool {
+    public var isChecked : Bool {
         return checkBox.isSelected
     }
     
-    @objc func lnkTerminos_OnClick() {
+    @objc public func lnkTerminos_OnClick() {
         if false == Reachability()?.isReachable {//mcaManagerSession.isNetworkConnected() {
 //            PIPRNotificationCenter.default.post(name: Observers.ObserverList.ShowOfflineMessage.name, object: nil);
             return;

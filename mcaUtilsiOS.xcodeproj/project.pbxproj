@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D1E496521B5BCE4007C61B1 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E496421B5BCE4007C61B1 /* CustomNavigationBar.swift */; };
+		1D1E498521B5EB6B007C61B1 /* LinkeableEventDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E498421B5EB6B007C61B1 /* LinkeableEventDelegate.swift */; };
 		1DCFABEE21ADFCBD00056A67 /* mcaUtilsHelper.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DCFABFA21AE065200056A67 /* GeneralAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F0DFC321A609BD001D98AC /* GeneralAlerts.swift */; };
 		1DCFAC5521AF683F00056A67 /* mcaUtilsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */; };
@@ -104,7 +106,6 @@
 		62EBFFB3219F1EEA00F85A3D /* PhoneLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFDA7219F1EEA00F85A3D /* PhoneLabel.swift */; };
 		62EBFFB4219F1EEA00F85A3D /* MobilePhoneNumberContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFDA8219F1EEA00F85A3D /* MobilePhoneNumberContainerView.swift */; };
 		62EBFFB5219F1EEA00F85A3D /* SimpleGreenTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFDA9219F1EEA00F85A3D /* SimpleGreenTextField.swift */; };
-		62EBFFB6219F1EEA00F85A3D /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFDAA219F1EEA00F85A3D /* CustomNavigationBar.swift */; };
 		62EBFFB7219F1EEB00F85A3D /* PasswordRulesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFDAB219F1EEA00F85A3D /* PasswordRulesContainer.swift */; };
 		62EBFFB8219F1EEB00F85A3D /* PasswordCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFDAC219F1EEA00F85A3D /* PasswordCustomTableViewCell.swift */; };
 		62EBFFB9219F1EEB00F85A3D /* UIHeaderForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFDAD219F1EEA00F85A3D /* UIHeaderForm.swift */; };
@@ -131,6 +132,8 @@
 
 /* Begin PBXFileReference section */
 		170AEF6659E0C1B563ED2A8C /* Pods_mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D1E496421B5BCE4007C61B1 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		1D1E498421B5EB6B007C61B1 /* LinkeableEventDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkeableEventDelegate.swift; sourceTree = "<group>"; };
 		1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mcaUtilsHelper.swift; sourceTree = "<group>"; };
 		621A65BA21A769BF00D85FBA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		622ED4DB21A8AE1D00BE746A /* Extension+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIApplication.swift"; sourceTree = "<group>"; };
@@ -227,7 +230,6 @@
 		62EBFDA7219F1EEA00F85A3D /* PhoneLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneLabel.swift; sourceTree = "<group>"; };
 		62EBFDA8219F1EEA00F85A3D /* MobilePhoneNumberContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobilePhoneNumberContainerView.swift; sourceTree = "<group>"; };
 		62EBFDA9219F1EEA00F85A3D /* SimpleGreenTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleGreenTextField.swift; sourceTree = "<group>"; };
-		62EBFDAA219F1EEA00F85A3D /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		62EBFDAB219F1EEA00F85A3D /* PasswordRulesContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordRulesContainer.swift; sourceTree = "<group>"; };
 		62EBFDAC219F1EEA00F85A3D /* PasswordCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordCustomTableViewCell.swift; sourceTree = "<group>"; };
 		62EBFDAD219F1EEA00F85A3D /* UIHeaderForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHeaderForm.swift; sourceTree = "<group>"; };
@@ -278,9 +280,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1D1E498321B5EB30007C61B1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1D1E498421B5EB6B007C61B1 /* LinkeableEventDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		1DCFAC1021AF12D000056A67 /* mcaUtilsGeneral */ = {
 			isa = PBXGroup;
 			children = (
+				1D1E496421B5BCE4007C61B1 /* CustomNavigationBar.swift */,
 				1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */,
 				62F0DFC321A609BD001D98AC /* GeneralAlerts.swift */,
 			);
@@ -317,6 +328,7 @@
 		62874652219CD9B200C53384 /* mcaUtilsiOS */ = {
 			isa = PBXGroup;
 			children = (
+				1D1E498321B5EB30007C61B1 /* Protocols */,
 				1DCFAC1021AF12D000056A67 /* mcaUtilsGeneral */,
 				62EBFFF4219F26EF00F85A3D /* AdobeMobileLibrary */,
 				62874653219CD9B200C53384 /* mcaUtilsiOS.h */,
@@ -476,7 +488,6 @@
 				62EBFDB2219F1EEA00F85A3D /* BlackBodyLabel.swift */,
 				62EBFDA4219F1EEA00F85A3D /* BlackTitleLabel.swift */,
 				62EBFDA3219F1EEA00F85A3D /* CodeContainerView.swift */,
-				62EBFDAA219F1EEA00F85A3D /* CustomNavigationBar.swift */,
 				62EBFDBD219F1EEA00F85A3D /* CustomWaitAnimation.swift */,
 				62EBFDB0219F1EEA00F85A3D /* GreenBorderWhiteBackgroundButton.swift */,
 				62EBFDB1219F1EEA00F85A3D /* InstructionLabel.swift */,
@@ -794,6 +805,7 @@
 				62EBFE2A219F1EEA00F85A3D /* GeneralUtils.swift in Sources */,
 				62EBFFB7219F1EEB00F85A3D /* PasswordRulesContainer.swift in Sources */,
 				62EBFFC0219F1EEB00F85A3D /* RoundedCheckbox.swift in Sources */,
+				1D1E498521B5EB6B007C61B1 /* LinkeableEventDelegate.swift in Sources */,
 				62EBFE16219F1EEA00F85A3D /* CropOverlay.swift in Sources */,
 				62EBFFB0219F1EEA00F85A3D /* BlackTitleLabel.swift in Sources */,
 				62EBFE08219F1EEA00F85A3D /* CameraShot.swift in Sources */,
@@ -803,9 +815,9 @@
 				62EBFE1A219F1EEA00F85A3D /* Extension + UIViewController.swift in Sources */,
 				1DCFABFA21AE065200056A67 /* GeneralAlerts.swift in Sources */,
 				62EBFFB5219F1EEA00F85A3D /* SimpleGreenTextField.swift in Sources */,
+				1D1E496521B5BCE4007C61B1 /* CustomNavigationBar.swift in Sources */,
 				62EBFE0D219F1EEA00F85A3D /* UIButtonExtensions.swift in Sources */,
 				62EBFFBC219F1EEB00F85A3D /* GreenBorderWhiteBackgroundButton.swift in Sources */,
-				62EBFFB6219F1EEA00F85A3D /* CustomNavigationBar.swift in Sources */,
 				62EBFE20219F1EEA00F85A3D /* GooglePlacesSearchController.swift in Sources */,
 				62EBFFB9219F1EEB00F85A3D /* UIHeaderForm.swift in Sources */,
 				62EBFE2D219F1EEA00F85A3D /* Extension+Date.swift in Sources */,

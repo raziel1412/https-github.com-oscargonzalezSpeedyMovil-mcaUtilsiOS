@@ -11,15 +11,15 @@ import Cartography
 //import mcaManageriOS
 
 /// Este protocolo permite enviar texto
-protocol MobilePhoneNumberOnChangeDelegate {
+public protocol MobilePhoneNumberOnChangeDelegate {
     func MobilePhoneChangeData(texto: String);
 }
 
 /// Esta clase especializa un UIView para permitirle tener apariencia de ventana especial para la captura de números telefónicos.
 public class MobilePhoneNumberContainerView: UIView, UITextFieldDelegate {
 
-    var mobileTextfield: SimpleGrayTextField!
-    var phoneLabel: PhoneLabel!
+    public var mobileTextfield: SimpleGrayTextField!
+    public var phoneLabel: PhoneLabel!
     private var iconImage : UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.image = UIImage(named: "icon_telefono_input")
@@ -31,9 +31,9 @@ public class MobilePhoneNumberContainerView: UIView, UITextFieldDelegate {
         let view = MandatoryInformation(frame: .zero)
         return view
     }()
-    var delegate : MobilePhoneNumberOnChangeDelegate?;
+    public var delegate : MobilePhoneNumberOnChangeDelegate?;
     
-    init() {
+    public init() {
         super.init(frame: CGRect.zero)
         
         let conf = "" //FIXME: mcaManagerSession.getGeneralConfig()
@@ -102,7 +102,7 @@ public class MobilePhoneNumberContainerView: UIView, UITextFieldDelegate {
         
     }
 
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let maxLength = 11
         guard let text = textField.text else { return true }
         let newLength = text.count + string.count - range.length

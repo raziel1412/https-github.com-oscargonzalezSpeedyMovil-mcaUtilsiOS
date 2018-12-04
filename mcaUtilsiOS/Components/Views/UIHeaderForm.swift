@@ -54,7 +54,7 @@ public class UIHeaderForm: UIView {
         }
     }
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setupElements()
     }
@@ -87,7 +87,7 @@ public class UIHeaderForm: UIView {
         }
     }
     
-    func setupElements(imageName: String?, title: String?, subTitle: String?) {
+    public func setupElements(imageName: String?, title: String?, subTitle: String?) {
         self.imageView.image = UIImage(named: imageName != nil ? imageName! : "" )
         self.viewTitle.text = title != nil ? title! : ""
         self.subTitle.text = subTitle != nil ? subTitle! : ""

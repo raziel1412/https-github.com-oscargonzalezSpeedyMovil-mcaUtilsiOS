@@ -11,11 +11,11 @@ import Cartography
 
 public class UITextFieldGroup : UIView {
     
-    var textField : SimpleGrayTextField = SimpleGrayTextField(text: "", placeholder: "")
-    var image   : UIImageView = UIImageView(frame: .zero)
-    var mandatoryInformation : MandatoryInformation = MandatoryInformation(frame: .zero)
+    public var textField : SimpleGrayTextField = SimpleGrayTextField(text: "", placeholder: "")
+    public var image   : UIImageView = UIImageView(frame: .zero)
+    public var mandatoryInformation : MandatoryInformation = MandatoryInformation(frame: .zero)
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setupElements()
     }
@@ -50,13 +50,13 @@ public class UITextFieldGroup : UIView {
         }
     }
     
-    func setupContent(imageName: String?, text: String?, placeHolder : String?){
+    public func setupContent(imageName: String?, text: String?, placeHolder : String?){
         image.image = UIImage(named: imageName!)
         textField.title = text != nil ? text! : ""
         textField.placeholder = placeHolder != nil ? placeHolder! : ""
     }
     
-    func changeFont(font: UIFont) {
+    public func changeFont(font: UIFont) {
         textField.customFont = font
     }
     

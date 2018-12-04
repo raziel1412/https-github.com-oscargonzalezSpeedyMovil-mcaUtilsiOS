@@ -490,7 +490,7 @@ public class AnalyticsInteractionSingleton {
         //        return dayInWeek
     }
     
-    func initTimer(){
+    public func initTimer(){
         counter = 0
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
         RunLoop.current.add(timer, forMode: RunLoopMode.commonModes)
@@ -501,7 +501,7 @@ public class AnalyticsInteractionSingleton {
         print(counter)
     }
     
-    func stopTimer() -> String{
+    public func stopTimer() -> String{
         //reglas
         //        0:00 a 2:00 mins / 2:01 a 5:00 mins / 5:01 a 10:00 mins
         //        10:01 a 15:00 mins / 15:01 en adelante

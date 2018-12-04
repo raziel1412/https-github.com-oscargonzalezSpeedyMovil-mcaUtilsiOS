@@ -19,7 +19,7 @@ public class CodeContainerView: UIView, UITextFieldDelegate {
     private var fourthCodeTextfield: SimpleGreenTextField!
     //private var codeLabel: PhoneLabel!
     
-    init() {
+    public init() {
         super.init(frame: CGRect.zero)
         
         //let conf = SessionSingleton.sharedInstance.getGeneralConfig();
@@ -117,7 +117,7 @@ public class CodeContainerView: UIView, UITextFieldDelegate {
         
     }
     
-    func resignResponder() {
+    public func resignResponder() {
         if firstCodeTextfield.canResignFirstResponder {
             firstCodeTextfield.resignFirstResponder();
         }
@@ -135,7 +135,7 @@ public class CodeContainerView: UIView, UITextFieldDelegate {
         }
     }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if ((textField.text?.count)! < 1  && string.count > 0){
             if(textField == firstCodeTextfield){
                 secondCodeTextfield.becomeFirstResponder()
@@ -181,7 +181,7 @@ public class CodeContainerView: UIView, UITextFieldDelegate {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func getCode() -> String {
+    public func getCode() -> String {
         let code = String.init(format: "%@%@%@%@", firstCodeTextfield.text!,
                                secondCodeTextfield.text!,
                                thirdCodeTextfield.text!,
@@ -190,7 +190,7 @@ public class CodeContainerView: UIView, UITextFieldDelegate {
         return code
     }
     
-    func cleanCode() {
+    public func cleanCode() {
         firstCodeTextfield.text = "";
         secondCodeTextfield.text = "";
         thirdCodeTextfield.text = "";
