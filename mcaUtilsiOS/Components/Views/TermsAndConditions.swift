@@ -8,7 +8,6 @@
 
 import UIKit
 import Cartography
-//import mcaManageriOS
 import ReachabilitySwift
 
 public class TermsAndConditions: UIView {
@@ -18,6 +17,11 @@ public class TermsAndConditions: UIView {
     private var content : String = ""
     private var linkTextRange : NSRange?
     private var parentViewName : String = ""
+    
+    var url: String = ""
+    var title: String = ""
+    var acceptTitle: String = ""
+    var offlineAction: () -> Void = {}
 
     public init(frame: CGRect, content: String? = nil) {
         super.init(frame: frame)
@@ -33,9 +37,12 @@ public class TermsAndConditions: UIView {
         setupConstraints()
     }
     
-    public func setContent(_ content: String) {
+    public func setContent(_ content: String, url: String, title: String, acceptTitle: String, offlineAction: @escaping () -> Void) {
         self.content = content
         contentLabel.showText(text: content)
+        self.title = title
+        self.url = url
+        self.acceptTitle = acceptTitle
     }
     func setParentView(_ parent: String) {
         parentViewName = parent
@@ -71,19 +78,20 @@ public class TermsAndConditions: UIView {
     }
     
     @objc public func lnkTerminos_OnClick() {
-        if false == Reachability()?.isReachable {//mcaManagerSession.isNetworkConnected() {
-//            PIPRNotificationCenter.default.post(name: Observers.ObserverList.ShowOfflineMessage.name, object: nil);
-            return;
+        if false == Reachability()?.isReachable {
+            offlineAction()
+            return
         }
 
         let alert = WebViewAlertData();
         alert.method = "GET";
-        alert.url = "" //FIXME: mcaManagerSession.getGeneralConfig()?.termsAndConditions?.url;
-        alert.title = "" //FIXME:  mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.termsAndConditions ?? "";
-        alert.acceptTitle = "" //FIXME:  mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.closeBtn ?? "";
+        alert.url = url
+        alert.title = title
+        alert.acceptTitle = acceptTitle
         alert.onAcceptEvent = {
         }
         Observers.WebViewAlert(info: alert)
+        
 
         if(parentViewName == "Registro"){
             AnalyticsInteractionSingleton.sharedInstance.ADBTrackViewRecoveryPass(viewName: "Recuperar contrasena|Terminos y condiciones", detenido: false)
