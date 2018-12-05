@@ -64,7 +64,7 @@ public class UITextFieldGroupPhone : UIView {
     }
     
     public func setupContent(imageName: String?, text: String?, placeHolder : String?, countryCodeText : String?){
-        image.image = UIImage(named: imageName!)
+        image.image =  mcaUtilsHelper.getImage(image: imageName!)
         textField.title = text != nil ? text! : ""
         textField.placeholder = placeHolder != nil ? placeHolder! : ""
         countryCode.text = countryCodeText != nil ? countryCodeText! : ""

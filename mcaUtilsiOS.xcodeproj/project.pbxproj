@@ -65,9 +65,7 @@
 		62EBFE16219F1EEA00F85A3D /* CropOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB59219F1EE900F85A3D /* CropOverlay.swift */; };
 		62EBFE17219F1EEA00F85A3D /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB5A219F1EE900F85A3D /* PermissionsView.swift */; };
 		62EBFE18219F1EEA00F85A3D /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB5B219F1EE900F85A3D /* ImageCell.swift */; };
-		62EBFE19219F1EEA00F85A3D /* NewUpdateAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB5C219F1EE900F85A3D /* NewUpdateAlertViewController.swift */; };
 		62EBFE1A219F1EEA00F85A3D /* Extension + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB5D219F1EE900F85A3D /* Extension + UIViewController.swift */; };
-		62EBFE1C219F1EEA00F85A3D /* NewUpdateAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62EBFB5F219F1EE900F85A3D /* NewUpdateAlertViewController.xib */; };
 		62EBFE1D219F1EEA00F85A3D /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB60219F1EE900F85A3D /* UILabelExtension.swift */; };
 		62EBFE1E219F1EEA00F85A3D /* ReachabilityManual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB62219F1EE900F85A3D /* ReachabilityManual.swift */; };
 		62EBFE1F219F1EEA00F85A3D /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB63219F1EE900F85A3D /* CustomAlertViewController.swift */; };
@@ -190,9 +188,7 @@
 		62EBFB59219F1EE900F85A3D /* CropOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropOverlay.swift; sourceTree = "<group>"; };
 		62EBFB5A219F1EE900F85A3D /* PermissionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
 		62EBFB5B219F1EE900F85A3D /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
-		62EBFB5C219F1EE900F85A3D /* NewUpdateAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUpdateAlertViewController.swift; sourceTree = "<group>"; };
 		62EBFB5D219F1EE900F85A3D /* Extension + UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension + UIViewController.swift"; sourceTree = "<group>"; };
-		62EBFB5F219F1EE900F85A3D /* NewUpdateAlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewUpdateAlertViewController.xib; sourceTree = "<group>"; };
 		62EBFB60219F1EE900F85A3D /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		62EBFB62219F1EE900F85A3D /* ReachabilityManual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManual.swift; sourceTree = "<group>"; };
 		62EBFB63219F1EE900F85A3D /* CustomAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
@@ -405,11 +401,9 @@
 				62EBFB63219F1EE900F85A3D /* CustomAlertViewController.swift */,
 				62EBFB6E219F1EE900F85A3D /* GeneralUtils.swift */,
 				62EBFB64219F1EE900F85A3D /* GooglePlacesSearchController.swift */,
-				62EBFB5C219F1EE900F85A3D /* NewUpdateAlertViewController.swift */,
 				62EBFB6D219F1EE900F85A3D /* Observers.swift */,
 				62EBFB6B219F1EE900F85A3D /* PlanDetailAlertViewController.swift */,
 				62EBFB69219F1EE900F85A3D /* WebViewAlertViewController.swift */,
-				62EBFB5F219F1EE900F85A3D /* NewUpdateAlertViewController.xib */,
 				62EBFB42219F1EE900F85A3D /* ALCameraViewController */,
 				62EBFB61219F1EE900F85A3D /* Network */,
 				62EBFB73219F1EE900F85A3D /* Spinners */,
@@ -719,7 +713,6 @@
 				62EB3B9B219E447900864FD4 /* Roboto-ThinItalic.ttf in Resources */,
 				62EB3B99219E447900864FD4 /* Roboto-Condensed.ttf in Resources */,
 				62EB3BA0219E447900864FD4 /* Roboto-BlackItalic.ttf in Resources */,
-				62EBFE1C219F1EEA00F85A3D /* NewUpdateAlertViewController.xib in Resources */,
 				62EB3B9E219E447900864FD4 /* Roboto-CondensedItalic.ttf in Resources */,
 				62EB3B9F219E447900864FD4 /* Roboto-Italic.ttf in Resources */,
 				62EB3B97219E447900864FD4 /* Roboto-BoldCondensed.ttf in Resources */,
@@ -795,7 +788,6 @@
 				62E67EFD21A4D29300B4F182 /* enums.swift in Sources */,
 				62EBFFBD219F1EEB00F85A3D /* InstructionLabel.swift in Sources */,
 				62EBFFAA219F1EEA00F85A3D /* ActionView.swift in Sources */,
-				62EBFE19219F1EEA00F85A3D /* NewUpdateAlertViewController.swift in Sources */,
 				62EBFE1D219F1EEA00F85A3D /* UILabelExtension.swift in Sources */,
 				62EBFFC8219F1EEB00F85A3D /* RedBackgroundButton.swift in Sources */,
 				62EBFFAF219F1EEA00F85A3D /* CodeContainerView.swift in Sources */,

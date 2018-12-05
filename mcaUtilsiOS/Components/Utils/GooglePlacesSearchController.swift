@@ -21,6 +21,7 @@ public enum PlaceType: String {
     case cities = "(cities)"
 }
 
+
 open class Place: NSObject {
     open let id: String
     open let mainAddress: String

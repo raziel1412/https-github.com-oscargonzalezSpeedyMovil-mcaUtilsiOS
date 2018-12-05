@@ -15,18 +15,18 @@ public class SimpleGrayTextFieldQuestionMark: SimpleGrayTextField {
     
     var action = {};
     
-    override init(text: String, placeholder: String) {
+    public override init(text: String, placeholder: String) {
         super.init(text: text, placeholder: placeholder);
         
         setup();
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder);
         setup();
     }
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame);
         setup()
     }
@@ -36,8 +36,8 @@ public class SimpleGrayTextFieldQuestionMark: SimpleGrayTextField {
         
         let dim = 32;
         
-        let imgNormal = UIImage(named: "icon_question_input")
-        let imgActive = UIImage(named: "icon_question_input")
+        let imgNormal = mcaUtilsHelper.getImage(image: "icon_question_input")
+        let imgActive = mcaUtilsHelper.getImage(image: "icon_question_input")
         btnView = UIButton(type: UIButtonType.custom);
         
         btnView?.setImage(imgNormal, for: UIControlState.normal);
@@ -65,15 +65,15 @@ public class SimpleGrayTextFieldQuestionMark: SimpleGrayTextField {
         self.title = text
     }
     
-    func cmdButton_OnClick(sender : UIButton) {
+    public func cmdButton_OnClick(sender : UIButton) {
         action();
     }
     
-    func hideQuestionMark() {
+    public func hideQuestionMark() {
         self.rightView = nil;
     }
     
-    func showQuestionMark() {
+    public func showQuestionMark() {
         setup();
     }
 }

@@ -88,7 +88,7 @@ public class UIHeaderForm: UIView {
     }
     
     public func setupElements(imageName: String?, title: String?, subTitle: String?) {
-        self.imageView.image = UIImage(named: imageName != nil ? imageName! : "" )
+        self.imageView.image = mcaUtilsHelper.getImage(image:imageName != nil ? imageName! : "" )
         self.viewTitle.text = title != nil ? title! : ""
         self.subTitle.text = subTitle != nil ? subTitle! : ""
     }

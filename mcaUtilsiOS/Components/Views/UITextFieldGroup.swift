@@ -51,7 +51,7 @@ public class UITextFieldGroup : UIView {
     }
     
     public func setupContent(imageName: String?, text: String?, placeHolder : String?){
-        image.image = UIImage(named: imageName!)
+        image.image = mcaUtilsHelper.getImage(image: imageName!)
         textField.title = text != nil ? text! : ""
         textField.placeholder = placeHolder != nil ? placeHolder! : ""
     }

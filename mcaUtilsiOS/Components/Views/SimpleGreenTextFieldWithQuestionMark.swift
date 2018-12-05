@@ -15,13 +15,13 @@ public class SimpleGreenTextFieldWithQuestionMark: SimpleGreenTextField {
 
     var action = {};
 
-    override init(text: String, placeholder: String) {
+    public override init(text: String, placeholder: String) {
         super.init(text: text, placeholder: placeholder);
 
         setup();
     }
 
-    convenience required init?(coder aDecoder: NSCoder) {
+    public convenience required init?(coder aDecoder: NSCoder) {
         self.init(coder: aDecoder);
         setup();
     }
@@ -31,8 +31,8 @@ public class SimpleGreenTextFieldWithQuestionMark: SimpleGreenTextField {
 
         let dim = 32;
         
-        let imgNormal = UIImage(named: "icon_question_input")//UIImage.fontAwesomeIcon(name: .questionCircleO, textColor: institutionalColors.claroBlueColor, size: CGSize(width: dim, height: dim));
-        let imgActive = UIImage(named: "icon_question_input")//UIImage.fontAwesomeIcon(name: .questionCircle, textColor: institutionalColors.claroBlueColor, size: CGSize(width: dim, height: dim));
+        let imgNormal = mcaUtilsHelper.getImage(image: "icon_question_input")//UIImage.fontAwesomeIcon(name: .questionCircleO, textColor: institutionalColors.claroBlueColor, size: CGSize(width: dim, height: dim));
+        let imgActive = mcaUtilsHelper.getImage(image: "icon_question_input")//UIImage.fontAwesomeIcon(name: .questionCircle, textColor: institutionalColors.claroBlueColor, size: CGSize(width: dim, height: dim));
         btnView = UIButton(type: UIButtonType.custom);
 
         btnView?.setImage(imgNormal, for: UIControlState.normal);
@@ -42,15 +42,15 @@ public class SimpleGreenTextFieldWithQuestionMark: SimpleGreenTextField {
         self.rightView = btnView;
     }
 
-    func cmdButton_OnClick(sender : UIButton) {
+    public func cmdButton_OnClick(sender : UIButton) {
         action();
     }
 
-    func hideQuestionMark() {
+    public func hideQuestionMark() {
         self.rightView = nil;
     }
 
-    func showQuestionMark() {
+    public func showQuestionMark() {
         setup();
     }
 

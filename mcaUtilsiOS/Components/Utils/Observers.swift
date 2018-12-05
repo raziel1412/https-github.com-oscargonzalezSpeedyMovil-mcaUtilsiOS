@@ -44,38 +44,6 @@ public class Observers: NSObject {
 //        }
     }
     
-    /// Función que determina si posee internet el dispositivo
-    /// - parameter info : NSNotification
-    static func ReachabilityChanged(info: NSNotification) {
-//        PIPRguard let myReach = Reachability() else {
-//            print("No WiFi address")
-//            SessionSingleton.sharedInstance.setIpAddress(newIpAddress: nil)
-//            return;
-//        }
-//
-//        let reachableWifi = myReach.isReachableViaWiFi
-//        let status = myReach.isReachable;
-//
-//        if status {
-//            if reachableWifi {
-//                print("Reachable via WiFi")
-//            } else {
-//                print("Reachable via Cellular")
-//            }
-//
-//            if let addr = self.getWiFiAddress() {
-//                print("ipAddress : \(addr.getIP())")
-//                SessionSingleton.sharedInstance.setIpAddress(newIpAddress: addr.getIP())
-//            } else {
-//                SessionSingleton.sharedInstance.setIpAddress(newIpAddress: nil) // No IP captures
-//                print("No WiFi address")
-//            }
-//        } else {
-//            SessionSingleton.sharedInstance.setIpAddress(newIpAddress: nil) // No IP captures
-//            print("Unreachable Network")
-//        }
-    }
-    
     /// Función que ayuda a enviar un AcceptOnlyAlert popup
     /// - parameter info : NSNotification
     static func AcceptOnlyAlert(info:AlertAcceptOnly) {
@@ -211,45 +179,6 @@ public class Observers: NSObject {
         }
     }
     
-    /// Función que ayuda a notificar un ChangeDateTime
-    /// - parameter info : NSNotification
-    static func ChangeDateTime(info: NSNotification) {
-        let worker = DispatchWorkItem {
-            if (Reachability()?.isReachable ?? true) {
-                mcaUtilsHelper.refreshConfigurationFile()//PIPRNotificationCenter.default.post(name: ObserverList.RefreshConfigurationFile.name,
-//                                                object: nil);
-            } else {
-                NotificationCenter.default.post(name: NSNotification.Name.NSSystemClockDidChange,
-                                                object: nil);
-            }
-        }
-
-//        if false == SessionSingleton.sharedInstance.isNetworkConnected() || SessionSingleton.sharedInstance.isConsumingService() {
-//            SessionSingleton.sharedInstance.setRefreshConfigWorker(worker: nil);
-//            DispatchQueue.main.asyncAfter(deadline: SessionSingleton.sharedInstance.getExpiration(), execute: worker);
-//            SessionSingleton.sharedInstance.setRefreshConfigWorker(worker: worker);
-//            return;
-//        }
-//
-//        if SessionSingleton.sharedInstance.isExpiredTime() /* && nil != SessionSingleton.sharedInstance.getCurrentSession() */{
-//            DispatchQueue.main.async {
-//                if SessionSingleton.sharedInstance.isNetworkConnected() {
-//                    NotificationCenter.default.post(name: ObserverList.RefreshConfigurationFile.name,
-//                                                    object: nil);
-//                }
-//            }
-//        } else {
-//            SessionSingleton.sharedInstance.setRefreshConfigWorker(worker: nil);
-//            DispatchQueue.main.asyncAfter(deadline: SessionSingleton.sharedInstance.getExpiration(), execute: worker);
-//            SessionSingleton.sharedInstance.setRefreshConfigWorker(worker: worker);
-//        }
-//
-//                if (true == SessionSingleton.sharedInstance.isExpiredTime()) {
-//                    let myApp = UIApplication.shared.delegate as? AppDelegate;
-//                    SessionSingleton.sharedInstance.setGeneralConfig(config: nil);
-//                    myApp?.loadMainScreen();
-//                }
-    }
     
     // Return IP address of WiFi interface (en0) as a String, or `nil`
     /// Función que ayuda a obtener la ip de la interfáz del wifi
@@ -399,21 +328,21 @@ public enum AlertIconType : String {
 }
 
 /// Clase para guardar los elementos de un alert
-class AlertInfo {
+public class AlertInfo {
     /// Variable de título
-    var title : String = "";
+    public var title : String = "";
     /// Variable de texto
-    var text : String = "";
+    public var text : String = "";
     /// Variable de Icono
-    var icon : AlertIconType = AlertIconType.NoIcon;
+    public var icon : AlertIconType = AlertIconType.NoIcon;
     /// Button name
-    var buttonName : String? = nil
+    public var buttonName : String? = nil
     /// Button color
-    var buttonColor : UIColor? = institutionalColors.claroBlueColor;
+    public var buttonColor : UIColor? = institutionalColors.claroBlueColor;
     
-    var cancelButtonName : String? = nil
+    public var cancelButtonName : String? = nil
     /// Button color
-    var cancelButtonColor : UIColor? = institutionalColors.claroBlueColor;
+    public var cancelButtonColor : UIColor? = institutionalColors.claroBlueColor;
 }
 
 

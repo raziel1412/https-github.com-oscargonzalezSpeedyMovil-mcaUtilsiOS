@@ -82,7 +82,7 @@ public class ToolTipElement : UIView {
         titleLabel.text = title
         descriptionLabel.text = description
         if image != nil {
-            imageView.image = UIImage(named: image!)
+            imageView.image = mcaUtilsHelper.getImage(image: image!)
         }
     }
     
