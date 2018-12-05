@@ -17,23 +17,23 @@ public extension UIImageView {
     public func downloadedFrom(url: URL, contentMode mode: UIViewContentMode = .scaleAspectFit) {
         contentMode = mode
         
-//        URLSession.shared.dataTask(with: url) { (data, response, error) in
-//            guard let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
-//                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
-//                let data = data, error == nil,
-//                let image = UIImage(data: data)
-//                else { return }
-//            self.image = image
-//        }.resume()
-
+        //        URLSession.shared.dataTask(with: url) { (data, response, error) in
+        //            guard let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
+        //                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
+        //                let data = data, error == nil,
+        //                let image = UIImage(data: data)
+        //                else { return }
+        //            self.image = image
+        //        }.resume()
+        
         DispatchQueue.main.async {
             do {
                 let data = try Data(contentsOf: url);
                 self.image = UIImage(data: data);
-
+                
             } catch {
                 self.image = nil;
-
+                
             }
         }
     }
@@ -69,9 +69,10 @@ public extension UIImage {
         UIRectFill(rect)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-
+        
         guard let cgImage = image?.cgImage else { return nil }
         self.init(cgImage: cgImage)
     }
 }
+
 

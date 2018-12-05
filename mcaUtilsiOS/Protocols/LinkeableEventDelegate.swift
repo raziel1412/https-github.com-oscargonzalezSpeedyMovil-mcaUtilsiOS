@@ -10,6 +10,6 @@ import UIKit
 
 /// Este protocolo permite especificar la acción que será desencadenada a partir de los eventos del LinkableLabel
 public protocol LinkeableEventDelegate {
-    func ClickedBoldText();
-    func ClickedNormalText();
+    func ClickedBoldText()
+    func ClickedNormalText()
 }

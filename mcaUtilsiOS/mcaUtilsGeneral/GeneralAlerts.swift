@@ -137,7 +137,7 @@ public class GeneralAlerts {
     
     
     //case FotoAlert
-    public static func showFoto(title:String = "", acceptTitle:String = "Aceptar", abrirCamaraTitle:String = "", eliminarFotoTitle:String = "", cancelTitle:String = "", icon: AlertIconType = .NoIcon, onAcceptEvent: @escaping ()->() = {}, onCamaraEvent: @escaping ()->() = {}, onDeletePhotoEvent: @escaping ()->() = {}, onCancelEvent: @escaping ()->() = {}){
+    public static func showFoto(title:String = "", acceptTitle:String = "Aceptar", nameProfile: String, abrirCamaraTitle:String = "", eliminarFotoTitle:String = "", cancelTitle:String = "", icon: AlertIconType = .NoIcon, onAcceptEvent: @escaping ()->() = {}, onCamaraEvent: @escaping ()->() = {}, onDeletePhotoEvent: @escaping ()->() = {}, onCancelEvent: @escaping ()->() = {}){
         
         let alert = AlertFoto();
         alert.title = title
@@ -146,6 +146,7 @@ public class GeneralAlerts {
         alert.eliminarFotoTitle = eliminarFotoTitle
         alert.cancelTitle = cancelTitle
         alert.icon = icon
+        alert.nameProfile = nameProfile
         //alert.presenter = presenter
         
         alert.onAcceptEvent = {

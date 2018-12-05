@@ -435,6 +435,8 @@ class AlertFoto : AlertInfo {
     var onDeletePhotoEvent = {};
     /// Trigger onCancelEvent
     var onCancelEvent = {};
+    
+    var nameProfile: String = ""
 }
 
 /// Clase para guardar los elementos de un AlertYesNo

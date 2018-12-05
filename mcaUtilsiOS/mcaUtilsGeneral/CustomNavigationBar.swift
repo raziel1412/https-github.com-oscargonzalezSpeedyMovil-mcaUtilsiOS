@@ -19,11 +19,6 @@ public extension UIViewController  {
         case IconMenu
     }
     
-    
-    struct GlobalStruct {
-        static var strNavType = ""
-    }
-    
     public func rightButtonAction() {
         print("right button action")
     }
@@ -37,8 +32,6 @@ public extension UIViewController  {
     /// -param:
     ///     - navigationType : enum navType
     public func initWith(navigationType: ButtonNavType, backToMain: Bool = false, headerTitle: String, rightButtontitle: String = "", leftButtonTitle: String = "", isLogged: Bool = false) {
-        
-        GlobalStruct.strNavType = ""
         
         let logoId = -1
         let customfont: UIFont = UIFont(name: RobotoFontName.RobotoMedium.rawValue, size: CGFloat(18)) ?? UIFont()

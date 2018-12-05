@@ -11,16 +11,16 @@ import UIKit
 
 /// Para mostrar el renderizado desde Interface builder
 @IBDesignable
-class DesignableView: UIView {
+public class DesignableView: UIView {
 }
 @IBDesignable
-class DesignableButton: UIButton {
+public class DesignableButton: UIButton {
 }
 
 /// Extension UIView
 public extension UIView {
     //Pinta las grecas inferiores de las boletas o cualquier vista que lo requiera
-    func addBottomGrecas(){
+    public func addBottomGrecas(){
         let grecaCount = 22
         let containerWidth = self.frame.width
         let grecaWidth = containerWidth / CGFloat(grecaCount)
@@ -40,7 +40,7 @@ public extension UIView {
     
     }
     //Pinta linea punteada en la parte inferior en las vistas que lo requera
-    func addBottomlines(){
+    public func addBottomlines(){
         let linesCount = 56
         let containerWidth = self.frame.width
         let linesWidth = containerWidth / CGFloat(linesCount)
@@ -56,7 +56,7 @@ public extension UIView {
         }
     }
     
-    func showShadowBorderTicket(enable: Bool) {
+    public func showShadowBorderTicket(enable: Bool) {
         if enable {
             let border = SideView(Left: true, Right: true, Top: false, Bottom: true)
             self.addBorder(sides: border, color: institutionalColors.claroLightGrayColor, thickness: 0.5)
@@ -74,7 +74,7 @@ public extension UIView {
     
     
     //UIView().addDashedBorder
-    func addDashedBorder(width: CGFloat? = nil, height: CGFloat? = nil, lineWidth: CGFloat = 0.5, lineDashPattern:[NSNumber]? = [6,3], strokeColor: UIColor = institutionalColors.claroLightGrayColor, fillColor: UIColor = UIColor.clear) {
+    public func addDashedBorder(width: CGFloat? = nil, height: CGFloat? = nil, lineWidth: CGFloat = 0.5, lineDashPattern:[NSNumber]? = [6,3], strokeColor: UIColor = institutionalColors.claroLightGrayColor, fillColor: UIColor = UIColor.clear) {
         
         var fWidth: CGFloat? = width
         var fHeight: CGFloat? = height
@@ -104,7 +104,7 @@ public extension UIView {
         self.layer.addSublayer(shapeLayer)
     }
     //UIView.initializeCircle
-    class func initializeCircle(frame : CGRect) -> UIView {
+    public class func initializeCircle(frame : CGRect) -> UIView {
         let view = UIView(frame: frame)
         view.backgroundColor = institutionalColors.claroRedColor
         view.layer.cornerRadius = frame.height / 2
@@ -112,7 +112,7 @@ public extension UIView {
     }
     
     // OUTPUT 1
-    func dropShadow(scale: Bool = true) {
+    public func dropShadow(scale: Bool = true) {
         self.layer.masksToBounds = false
         self.layer.shadowColor = UIColor.black.cgColor
         self.layer.shadowOpacity = 0.5
@@ -125,7 +125,7 @@ public extension UIView {
     }
     
     // OUTPUT 2
-    func dropShadow(color: UIColor, opacity: Float = 0.5, offSet: CGSize, radius: CGFloat = 1, scale: Bool = true) {
+    public func dropShadow(color: UIColor, opacity: Float = 0.5, offSet: CGSize, radius: CGFloat = 1, scale: Bool = true) {
         self.layer.masksToBounds = false
         self.layer.shadowColor = color.cgColor
         self.layer.shadowOpacity = opacity
@@ -137,14 +137,14 @@ public extension UIView {
         self.layer.rasterizationScale = scale ? UIScreen.main.scale : 1
     }
     
-    func borderCard() {
+    public func borderCard() {
         self.layer.cornerRadius = 0
         self.layer.shadowOpacity = 0.0
         self.layer.borderWidth = 0.5
         self.layer.borderColor = institutionalColors.claroLightGrayColor.cgColor
     }
     
-    func addBorder(sides: SideView, color: UIColor, thickness: CGFloat, shadowSize: CGSize? = nil, cornerRadius: CGFloat = 0) {
+    public func addBorder(sides: SideView, color: UIColor, thickness: CGFloat, shadowSize: CGSize? = nil, cornerRadius: CGFloat = 0) {
         self.layer.cornerRadius = cornerRadius
         self.layer.shadowOpacity = 0.0
         self.layer.borderWidth = 0.0
@@ -165,7 +165,7 @@ public extension UIView {
         
     }
     
-    func addBorderLayer(sides: SideView, color: UIColor, thickness: CGFloat, sizeShadow: CGSize = CGSize(width: 0, height: 2)) {
+    public func addBorderLayer(sides: SideView, color: UIColor, thickness: CGFloat, sizeShadow: CGSize = CGSize(width: 0, height: 2)) {
         /*self.layer.cornerRadius = 3.0
         self.layer.shadowOpacity = 0.3
         self.layer.borderWidth = 0.5
@@ -193,7 +193,7 @@ public extension UIView {
         
     }
     
-    func addBorderWithLayer(sides: SideView, color: UIColor, thickness: CGFloat, layers: [(Sides,CALayer)]) {
+    public func addBorderWithLayer(sides: SideView, color: UIColor, thickness: CGFloat, layers: [(Sides,CALayer)]) {
         for border in layers {
             switch border.0 {
             case .left:
@@ -212,7 +212,7 @@ public extension UIView {
         }
     }
     
-    func updateLayers(sides: SideView, thickness: CGFloat) {
+    public func updateLayers(sides: SideView, thickness: CGFloat) {
         if sides.Left {
             self.layer.updateLayers(edge: .left, thickness: thickness)
         }
@@ -227,7 +227,7 @@ public extension UIView {
         }
     }
     
-    func updateLayer(sides: SideView, thickness: CGFloat, layers: [(Sides, CALayer)]) {
+    public func updateLayer(sides: SideView, thickness: CGFloat, layers: [(Sides, CALayer)]) {
         for border in layers {
             switch border.0 {
             case .left:
@@ -246,7 +246,7 @@ public extension UIView {
         }
     }
     
-    func setCircle(colorBorder: UIColor = .clear) {
+    public func setCircle(colorBorder: UIColor = .clear) {
         let radius = self.frame.width / 2
         self.layer.cornerRadius = radius
         self.layer.borderWidth = 2
@@ -254,11 +254,11 @@ public extension UIView {
         self.layer.masksToBounds = true
     }
     
-    func applyGradient(colours: [UIColor]) -> Void {
+    public func applyGradient(colours: [UIColor]) -> Void {
         self.applyGradient(colours: colours, locations: nil)
     }
     
-    func applyGradient(colours: [UIColor], locations: [NSNumber]?) -> Void {
+    public func applyGradient(colours: [UIColor], locations: [NSNumber]?) -> Void {
         let gradient: CAGradientLayer = CAGradientLayer()
         gradient.frame = self.bounds
         gradient.colors = colours.map { $0.cgColor }
@@ -269,7 +269,7 @@ public extension UIView {
     //MARK: Configure data in view
     /// Set and Get the corner radius
     @IBInspectable
-    var cornerRadius: CGFloat {
+    public var cornerRadius: CGFloat {
         get {
             return self.layer.cornerRadius
         }
@@ -280,7 +280,7 @@ public extension UIView {
     
     /// Set and Get the border width
     @IBInspectable
-    var borderWidth: CGFloat {
+    public var borderWidth: CGFloat {
         get {
             return layer.borderWidth
         }
@@ -291,7 +291,7 @@ public extension UIView {
     
     /// Set and Get the border color
     @IBInspectable
-    var borderColor: UIColor? {
+    public var borderColor: UIColor? {
         get {
             if let color = self.layer.borderColor {
                 return UIColor(cgColor: color)
@@ -309,7 +309,7 @@ public extension UIView {
     
     /// Set and Get shadow border
     @IBInspectable
-    var shadowRadius: CGFloat {
+    public var shadowRadius: CGFloat {
         get {
             return layer.shadowRadius
         }
@@ -320,7 +320,7 @@ public extension UIView {
     
     /// Set and Get shadow opacity
     @IBInspectable
-    var shadowOpacity: Float {
+    public var shadowOpacity: Float {
         get {
             return layer.shadowOpacity
         }
@@ -331,7 +331,7 @@ public extension UIView {
     
     /// Set and Get shadow offset
     @IBInspectable
-    var shadowOffset: CGSize {
+    public var shadowOffset: CGSize {
         get {
             return layer.shadowOffset
         }
@@ -342,7 +342,7 @@ public extension UIView {
     
     /// Set and Get shadow color
     @IBInspectable
-    var shadowColor: UIColor? {
+    public var shadowColor: UIColor? {
         get {
             if let color = layer.shadowColor {
                 return UIColor(cgColor: color)
@@ -361,7 +361,7 @@ public extension UIView {
 
 public extension CALayer {
     
-    func addBorder(edge: UIRectEdge, color: UIColor, thickness: CGFloat, shadowSize: CGSize? = nil) {
+    public func addBorder(edge: UIRectEdge, color: UIColor, thickness: CGFloat, shadowSize: CGSize? = nil) {
         //        needsDisplayOnBoundsChange = true
         self.borderWidth = 0.0
         self.layoutIfNeeded()
@@ -403,7 +403,7 @@ public extension CALayer {
         border.setNeedsDisplay()
     }
     
-    func addBorderWithLayer(edge: UIRectEdge, color: UIColor, thickness: CGFloat, layer: CALayer) {
+    public func addBorderWithLayer(edge: UIRectEdge, color: UIColor, thickness: CGFloat, layer: CALayer) {
         self.borderWidth = 0.0
         self.layoutIfNeeded()
         let border = layer
@@ -432,7 +432,7 @@ public extension CALayer {
         border.setNeedsDisplay()
     }
     
-    func updateLayers(edge: UIRectEdge, thickness: CGFloat) {
+    public func updateLayers(edge: UIRectEdge, thickness: CGFloat) {
         
         self.setNeedsDisplay()
         
@@ -456,7 +456,7 @@ public extension CALayer {
         }
     }
     
-    func updateLayers(edge: UIRectEdge, thickness: CGFloat, layer: CALayer) {
+    public func updateLayers(edge: UIRectEdge, thickness: CGFloat, layer: CALayer) {
         switch edge {
         case UIRectEdge.top:
             layer.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: thickness)

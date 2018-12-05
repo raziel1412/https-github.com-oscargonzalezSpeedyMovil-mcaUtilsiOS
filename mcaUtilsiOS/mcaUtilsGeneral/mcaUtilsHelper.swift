@@ -46,4 +46,12 @@ public class mcaUtilsHelper: NSObject {
     public class func initCustomFonts() {
         UIFont.loadAllFonts
     }
+    
+    public class func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
+        return resizeImage(image: image, targetSize: targetSize)
+    }
+    
+    public class func checkImageExists(fileName: String) -> Bool{
+        return checkImageExists(fileName: fileName)
+    }
 }

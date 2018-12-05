@@ -9,9 +9,10 @@ project '/mcaManageriOS/mcaManageriOS.xcodeproj'
 project '/mcaUtilsiOS/mcaUtilsiOS.xcodeproj'
 project '/mcaWelcomeiOS/mcaWelcomeiOS.xcodeproj'
 project '/mcaRecoveryPasswordiOS/mcaRecoveryPassword.xcodeproj'
-
+project '/mcaHelpiOS/mcaHelpiOS.xcodeproj'
 project '/mcaWorkspaceiOSCENAM/mcaiOSCENAM.xcodeproj'
 project '/mcaWorkspaceiOSCL/mcaiOSCL.xcodeproj'
+
 
 def project_pods
     # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -85,6 +86,15 @@ target 'mcaRecoveryPassword' do
     platform :ios, '9.0'
     use_frameworks!
     project '../../mcaRecoveryPasswordiOS/mcaRecoveryPassword.xcodeproj'
+    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+    project_pods
+end
+
+target 'mcaHelpiOS' do
+    platform :ios, '9.0'
+    use_frameworks!
+    project '../../mcaHelpiOS/mcaHelpiOS.xcodeproj'
     workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods

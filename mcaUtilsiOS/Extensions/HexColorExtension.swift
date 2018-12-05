@@ -15,7 +15,7 @@ public extension UIColor{
     /// Inicialización
     /// - parameter rgb : UInt
     /// - parameter alphaVal : CGFloat
-    convenience init(rgb: UInt, alphaVal: CGFloat) {
+    public convenience init(rgb: UInt, alphaVal: CGFloat) {
         self.init(
             red: CGFloat((rgb & 0xFF0000) >> 16) / 255.0,
             green: CGFloat((rgb & 0x00FF00) >> 8) / 255.0,

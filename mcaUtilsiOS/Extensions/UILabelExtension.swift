@@ -17,7 +17,7 @@ public extension UILabel
     }
 
     /// Variable Padding para label
-    var padding: UIEdgeInsets? {
+    public var padding: UIEdgeInsets? {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.padding) as? UIEdgeInsets
         }
@@ -51,7 +51,7 @@ public extension UILabel
     /// Función que determina si necesita ajustar un label según su contenido
     /// - Returns needs: Bool
     /// - Returns newHeight: CGFloat
-    func needAdjustLabel() -> (needs: Bool, newHeight: CGFloat) {
+    public func needAdjustLabel() -> (needs: Bool, newHeight: CGFloat) {
         if let textToEvaluate = self.text as NSString? {
             let expectedSize = textToEvaluate.size(attributes: [NSFontAttributeName: self.font])
             if expectedSize.width > self.frame.width - 3 {
@@ -64,7 +64,7 @@ public extension UILabel
     /// Función que determina si necesita ajustar el Height un label según su contenido
     /// - Returns needs: Bool
     /// - Returns newHeight: CGFloat
-    func needAdjustHeightLabel() -> (needs: Bool, newHeight: CGFloat) {
+    public func needAdjustHeightLabel() -> (needs: Bool, newHeight: CGFloat) {
         if let textToEvaluate = self.text as NSString? {
             let expectedSize = textToEvaluate.size(attributes: [NSFontAttributeName: self.font])
             if expectedSize.width > self.frame.width {
@@ -78,7 +78,7 @@ public extension UILabel
     }
     
     /// Función que ajustar el frame de un label para que se ajuste a su contenido
-    func adjustHeighToFit() {
+    public func adjustHeighToFit() {
         if let textToEvaluate = self.text as NSString? {
             let expectedSize = textToEvaluate.size(attributes: [NSFontAttributeName: self.font])
             if expectedSize.width > self.frame.width - 3 {

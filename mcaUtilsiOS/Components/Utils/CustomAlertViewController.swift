@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import mcaManageriOS
 
 public class CustomAlertView: UIViewController {
     private var bkg : UIView?
@@ -35,7 +34,7 @@ public class CustomAlertView: UIViewController {
         setupView();
         animateView();
     }
-
+    
     private func setupView() {
         let margin : CGFloat = 13;
         var currentY : CGFloat = 10.0;
@@ -45,31 +44,35 @@ public class CustomAlertView: UIViewController {
         self.bkg?.frame = CGRect(x: margin, y: currentY, width: self.view.frame.width - (margin * 2), height: 100);
         self.view.addSubview(self.bkg!);
         
-        let nameImage = "" //FIXME: mcaManagerSession.getNameImageProfile()
+        var nameImage = ""
+        if let a = self.alertData as? AlertFoto {
+            nameImage = a.nameProfile
+        }
+        
         var tamFoto :CGFloat = 60.0
         if self.alertData?.icon == .IconoAlertaAviso || self.alertData?.icon == .IconoAlertaFelicidades || self.alertData?.icon == .IconoAlertaUnBlock {
             tamFoto = 100.0
         }
-
+        
         if let logo = self.alertData?.icon, AlertIconType.NoIcon != self.alertData?.icon {
             self.icono = UIImageView()
-           
-            if (self.alertData as? AlertFoto) != nil {//&& mcaManagerSession.checkImageExists(fileName: nameImage){
+            
+            if (self.alertData as? AlertFoto) != nil && checkImageExists(fileName: nameImage){
                 let path = URL.urlInDocumentsDirectory(with: nameImage).path
                 
                 let image = UIImage(contentsOfFile: path)
-                //FIXME: self.icono?.image = mcaManagerSession.resizeImage(image: image!, targetSize: CGSize(width: tamFoto*3, height: tamFoto*3))
+                self.icono?.image = resizeImage(image: image!, targetSize: CGSize(width: tamFoto*3, height: tamFoto*3))
             }else{
                 self.icono?.image = UIImage(named: logo.rawValue)
             }
-             self.icono?.frame = CGRect(x: (self.bkg!.frame.size.width - tamFoto) / 2, y: currentY, width: tamFoto, height: tamFoto)
+            self.icono?.frame = CGRect(x: (self.bkg!.frame.size.width - tamFoto) / 2, y: currentY, width: tamFoto, height: tamFoto)
             self.bkg?.addSubview(self.icono!);
         } else {
             self.icono = UIImageView()
             self.bkg?.addSubview(self.icono!);
         }
         currentY = self.icono!.frame.origin.y + self.icono!.frame.height + 10;
-
+        
         if "" != (self.alertData?.title ?? "").trimmingCharacters(in: CharacterSet.whitespacesAndNewlines) {
             self.titulo = UILabel();
             self.titulo?.frame = CGRect(x: margin, y: currentY, width: self.bkg!.frame.size.width - (margin * 2), height: 20);
@@ -85,14 +88,14 @@ public class CustomAlertView: UIViewController {
             self.titulo?.frame.size.width = self.bkg!.frame.size.width - (margin * 2);
             currentY = currentY + self.titulo!.frame.size.height + 10
         }
-
+        
         self.cuerpo = UILabel();
         self.cuerpo?.frame = CGRect(x: margin, y: currentY, width: self.bkg!.frame.size.width - (margin * 2), height: 20)
         self.cuerpo?.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(16))
         self.cuerpo?.textColor = institutionalColors.claroTextAlertBodyColor
         self.cuerpo?.textAlignment = .center
         self.cuerpo?.backgroundColor = UIColor.clear
-
+        
         if let attributedText = try? NSAttributedString(htmlString: self.alertData?.text ?? "",
                                                         font: UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(16)),
                                                         alignment : NSTextAlignment.center,
@@ -108,7 +111,7 @@ public class CustomAlertView: UIViewController {
         self.cuerpo?.frame.size.width = self.bkg!.frame.size.width - (margin * 2);
         currentY = currentY + self.cuerpo!.frame.size.height + 20
         AnalyticsInteractionSingleton.sharedInstance.ADBTrackView(viewName: "Alerta", detenido: false, mensaje: self.cuerpo?.text)
-
+        
         if let a = self.alertData as? AlertAcceptOnly {
             self.botonOk = UIButton();
             self.botonOk?.frame = CGRect(x: margin, y: currentY, width: self.bkg!.frame.size.width - (margin * 2), height: 40)
@@ -135,9 +138,9 @@ public class CustomAlertView: UIViewController {
                                     action: #selector(eventoOk),
                                     for: UIControlEvents.touchUpInside)
             self.bkg?.addSubview(self.botonOk!);
-
+            
             currentY = currentY + self.botonOk!.frame.size.height + 20
-
+            
         } else if let a = self.alertData as? AlertAcceptOnlyPasswordReq {
             
             //User phone:
@@ -221,9 +224,9 @@ public class CustomAlertView: UIViewController {
                                     action: #selector(eventoOk),
                                     for: UIControlEvents.touchUpInside)
             self.bkg?.addSubview(self.botonOk!);
-
+            
             currentY = currentY + self.botonOk!.frame.size.height + 20
-
+            
             self.botonCancel = UIButton();
             self.botonCancel?.frame = CGRect(x: margin, y: currentY, width: self.bkg!.frame.size.width - (margin * 2), height: 40)
             self.botonCancel?.setTitle(a.cancelTitle, for: UIControlState.normal);
@@ -250,7 +253,7 @@ public class CustomAlertView: UIViewController {
             self.titulo?.frame = CGRect(x: margin, y: 10.0, width: self.bkg!.frame.size.width - (margin * 2), height: 60);
             self.icono?.frame = CGRect(x: (self.bkg!.frame.size.width - tamFoto*2) / 2, y: iconPosition, width: tamFoto*2, height: tamFoto*2)
             
-            if true {//FIXME: mcaManagerSession.checkImageExists(fileName: nameImage) {
+            if checkImageExists(fileName: nameImage) {
                 self.icono?.contentMode = .scaleAspectFill
                 self.icono?.layer.cornerRadius = (self.icono?.frame.size.width)!/2
                 self.icono?.clipsToBounds = true
@@ -273,7 +276,7 @@ public class CustomAlertView: UIViewController {
                                     action: #selector(eventoOk),
                                     for: UIControlEvents.touchUpInside)
             self.bkg?.addSubview(self.botonOk!);
-    
+            
             let accessoryViewOk = UIImageView(image: UIImage(named: "ico_siguiente")!)
             accessoryViewOk.frame = CGRect(x: (botonOk?.frame.width)! - 15, y: currentY+10, width: 20.0, height: 20.0)
             self.bkg?.addSubview(accessoryViewOk);
@@ -352,18 +355,18 @@ public class CustomAlertView: UIViewController {
             let myCenter = UIView();
             myCenter.backgroundColor = UIColor.clear;
             self.bkg?.addSubview(myCenter);
-
+            
             currentY = currentY + self.botonOk!.frame.size.height + 20
         }
-
+        
         let maxAllowedAlertHeight = self.view.frame.height - margin * 2
         currentY = currentY > maxAllowedAlertHeight ? maxAllowedAlertHeight : currentY
-
+        
         self.bkg?.frame.size.height = currentY
         self.bkg?.frame = CGRect(x: 13, y: (self.view.frame.height - currentY) / 2, width: self.view.frame.width - (13 * 2), height: currentY);
-
+        
     }
-
+    
     private func animateView() {
         self.view.alpha = 0;
         self.view.frame.origin.y = self.view.frame.origin.y + 50
@@ -372,7 +375,7 @@ public class CustomAlertView: UIViewController {
             self.bkg?.frame.origin.y = self.bkg?.frame.origin.y ?? 0 - 50
         })
     }
-
+    
     @objc internal func eventoOk() {
         if let a = self.alertData as? AlertAcceptOnly {
             a.onAcceptEvent();
@@ -386,7 +389,7 @@ public class CustomAlertView: UIViewController {
             a.onAcceptEvent();
             return
         }
-
+        
         self.dismiss(animated: true,
                      completion: nil)
     }
@@ -414,5 +417,6 @@ public class CustomAlertView: UIViewController {
         self.dismiss(animated: true,
                      completion: nil)
     }
-
+    
 }
+

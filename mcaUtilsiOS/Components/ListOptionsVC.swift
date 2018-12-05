@@ -12,7 +12,7 @@ public class OptionModel: NSObject{
     var isSelectedOp: Bool?
     var detailText: String?
     
-    init(isSelected: Bool, detailText: String) {
+    public init(isSelected: Bool, detailText: String) {
         super.init()
         self.isSelectedOp = isSelected
         self.detailText = detailText
@@ -47,7 +47,7 @@ public class ListOptionsVC: UIViewController {
         cancelBtn.addTarget(self, action: #selector(cancelAction), for: .touchUpInside)
     }
     
-    static func show(inViewController: UIViewController, array: [OptionModel], title: String, indexSelected: Int) {
+    public static func show(inViewController: UIViewController, array: [OptionModel], title: String, indexSelected: Int) {
         let popupVC = ListOptionsVC(nibName: "ListOptionsVC", bundle: nil)
         popupVC.modalPresentationStyle = .overFullScreen
         popupVC.providesPresentationContextTransitionStyle = true;
