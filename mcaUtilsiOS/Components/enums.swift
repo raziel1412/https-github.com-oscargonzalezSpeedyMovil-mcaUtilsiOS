@@ -111,7 +111,7 @@ public enum Sides {
     case bottom
 }
 
-public struct SideView {
+public struct SideView{
     var Left: Bool
     var Right: Bool
     var Top: Bool

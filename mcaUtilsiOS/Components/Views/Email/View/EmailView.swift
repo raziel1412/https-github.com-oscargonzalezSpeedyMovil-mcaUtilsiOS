@@ -39,7 +39,7 @@ public class EmailView: UIView {
     /// - Parameter placeHolderEmail: Place holder del componente de *Correo eléctronico*
     /// - Parameter placeHolderDescription: Place holder del componente de *Comentario*
     /// - Parameter size: Tamaño del componente *emailView*
-    init(titleCard: String,placeHolderEmail:String, placeHolderDescription: String, size: CGSize) {
+    public init(titleCard: String,placeHolderEmail:String, placeHolderDescription: String, size: CGSize) {
         super.init(frame: CGRect(origin: CGPoint(x:0.0, y:0.0), size: size))
         
 //        viewContenedor = UIView(frame: self.frame)
@@ -91,18 +91,18 @@ public class EmailView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setBorderTextView() {
+    public func setBorderTextView() {
         txtDescription.layer.borderWidth = 0.5
         txtDescription.layer.borderColor = institutionalColors.claroLightGrayColor.cgColor
     }
     
-    func sendMailAction() {
+    public func sendMailAction() {
         self.delegate.sendEmail()
     }
     /// Agregar linea en la parte inferior del componente *viewEmail*
     /// - Parameter color: Color de la linea inferior
     /// - Parameter width: Ancho de la linea inferior
-    func addBottomBorderWithColor(color: UIColor, width: CGFloat) {
+    public func addBottomBorderWithColor(color: UIColor, width: CGFloat) {
         let bottomBorder = CALayer()
         bottomBorder.frame = CGRect(x:0.0, y: bottomBorderLine.frame.height-1, width: bottomBorderLine.frame.width, height: width)
         bottomBorder.backgroundColor = color.cgColor
@@ -183,7 +183,7 @@ public class EmailView: UIView {
     }
     
     /// Para actualizar la posición de la linea inferior
-    func updateBottomLinePosition() {
+    public func updateBottomLinePosition() {
 //        bottomBorderLine.frame.origin = CGPoint(x: txtDescription.frame.origin.x, y: txtDescription.frame.origin.y + txtDescription.frame.height + 1.0)
         UIView.animate(withDuration: 1.0, animations: {
             self.bottomBorderLine.frame.origin = CGPoint(x: self.txtDescription.frame.origin.x, y: self.txtDescription.frame.origin.y + self.txtDescription.frame.height - 5.0)
