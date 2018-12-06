@@ -10,6 +10,8 @@ project '/mcaUtilsiOS/mcaUtilsiOS.xcodeproj'
 project '/mcaWelcomeiOS/mcaWelcomeiOS.xcodeproj'
 project '/mcaRecoveryPasswordiOS/mcaRecoveryPassword.xcodeproj'
 project '/mcaHelpiOS/mcaHelpiOS.xcodeproj'
+project '/mcaHomeiOS/mcaHomeiOS.xcodeproj'
+
 project '/mcaWorkspaceiOSCENAM/mcaiOSCENAM.xcodeproj'
 project '/mcaWorkspaceiOSCL/mcaiOSCL.xcodeproj'
 
@@ -95,6 +97,15 @@ target 'mcaHelpiOS' do
     platform :ios, '9.0'
     use_frameworks!
     project '../../mcaHelpiOS/mcaHelpiOS.xcodeproj'
+    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+    project_pods
+end
+
+target 'mcaHomeiOS' do
+    platform :ios, '9.0'
+    use_frameworks!
+    project '../../mcaHomeiOS/mcaHomeiOS.xcodeproj'
     workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
