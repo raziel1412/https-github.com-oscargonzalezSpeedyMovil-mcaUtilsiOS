@@ -12,8 +12,7 @@ import UIKit
 /// Esta clase especializa un UILabel para tener L&F de titulo en color negro con fuente fija y tamaño fijo
 public class BlackTitleLabel: UILabel {
     
-    init() {
-        
+    public init() {
         super.init(frame: CGRect.zero)
         self.textColor = institutionalColors.claroTitleColor
         self.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(20));//16
@@ -21,15 +20,7 @@ public class BlackTitleLabel: UILabel {
         self.textAlignment = .center
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    /*
-     // Only override draw() if you perform custom drawing.
-     // An empty implementation adversely affects performance during animation.
-     override func draw(_ rect: CGRect) {
-     // Drawing code
-     }
-     */
-    
 }

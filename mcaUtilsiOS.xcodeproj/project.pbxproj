@@ -127,6 +127,10 @@
 		62EBFFF8219F26F000F85A3D /* ADBMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFFF5219F26EF00F85A3D /* ADBMobile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62EBFFF9219F26F000F85A3D /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 62EBFFF6219F26EF00F85A3D /* ADBMobileConfig.json */; };
 		62EBFFFA219F26F000F85A3D /* AdobeMobileLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EBFFF7219F26EF00F85A3D /* AdobeMobileLibrary.a */; };
+		7B564E4221B9901100890AA0 /* BlackTitleLabel.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFDA4219F1EEA00F85A3D /* BlackTitleLabel.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B564E4721B9986A00890AA0 /* enums.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62E67EFC21A4D29300B4F182 /* enums.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B564E5621B9B05F00890AA0 /* ViewExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFB68219F1EE900F85A3D /* ViewExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BEEA58921B88928005211C6 /* EmailView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFDBB219F1EEA00F85A3D /* EmailView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -631,6 +635,10 @@
 			files = (
 				1DCFABEE21ADFCBD00056A67 /* mcaUtilsHelper.swift in Headers */,
 				62EBFFF8219F26F000F85A3D /* ADBMobile.h in Headers */,
+				7B564E4721B9986A00890AA0 /* enums.swift in Headers */,
+				7BEEA58921B88928005211C6 /* EmailView.swift in Headers */,
+				7B564E5621B9B05F00890AA0 /* ViewExtension.swift in Headers */,
+				7B564E4221B9901100890AA0 /* BlackTitleLabel.swift in Headers */,
 				62874661219CD9B200C53384 /* mcaUtilsiOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
