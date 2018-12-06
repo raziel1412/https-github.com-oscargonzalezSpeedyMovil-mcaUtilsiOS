@@ -57,11 +57,11 @@ public class CustomAlertView: UIViewController {
         if let logo = self.alertData?.icon, AlertIconType.NoIcon != self.alertData?.icon {
             self.icono = UIImageView()
             
-            if (self.alertData as? AlertFoto) != nil && checkImageExists(fileName: nameImage){
+            if (self.alertData as? AlertFoto) != nil && checkImageExistsP(fileName: nameImage){
                 let path = URL.urlInDocumentsDirectory(with: nameImage).path
                 
                 let image = UIImage(contentsOfFile: path)
-                self.icono?.image = resizeImage(image: image!, targetSize: CGSize(width: tamFoto*3, height: tamFoto*3))
+                self.icono?.image = resizeImageP(image: image!, targetSize: CGSize(width: tamFoto*3, height: tamFoto*3))
             }else{
                 self.icono?.image = UIImage(named: logo.rawValue)
             }
@@ -253,7 +253,7 @@ public class CustomAlertView: UIViewController {
             self.titulo?.frame = CGRect(x: margin, y: 10.0, width: self.bkg!.frame.size.width - (margin * 2), height: 60);
             self.icono?.frame = CGRect(x: (self.bkg!.frame.size.width - tamFoto*2) / 2, y: iconPosition, width: tamFoto*2, height: tamFoto*2)
             
-            if checkImageExists(fileName: nameImage) {
+            if checkImageExistsP(fileName: nameImage) {
                 self.icono?.contentMode = .scaleAspectFill
                 self.icono?.layer.cornerRadius = (self.icono?.frame.size.width)!/2
                 self.icono?.clipsToBounds = true

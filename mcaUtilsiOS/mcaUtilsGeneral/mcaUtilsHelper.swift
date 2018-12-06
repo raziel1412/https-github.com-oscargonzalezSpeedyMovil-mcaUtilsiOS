@@ -8,7 +8,10 @@
 
 import UIKit
 
+let BUNDLE_IDENTIFIER = "com.miclaro.app.mcaUtilsiOS"
+
 public class mcaUtilsHelper: NSObject {
+    
     public class func refreshConfigurationFile() {
         UIResponder.upgradeConfigurationFile()
     }
@@ -36,7 +39,7 @@ public class mcaUtilsHelper: NSObject {
     }
     
     public class func getImage(image: String) -> UIImage {
-        let bundle = Bundle(identifier: "com.miclaro.app.mcaUtilsiOS")
+        let bundle = Bundle(identifier: BUNDLE_IDENTIFIER)
         if let aImage = UIImage(named: image, in: bundle, compatibleWith: nil) {
             return aImage
         }
@@ -48,10 +51,15 @@ public class mcaUtilsHelper: NSObject {
     }
     
     public class func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
-        return resizeImage(image: image, targetSize: targetSize)
+        return resizeImageP(image: image, targetSize: targetSize)
     }
     
     public class func checkImageExists(fileName: String) -> Bool{
-        return checkImageExists(fileName: fileName)
+        return checkImageExistsP(fileName: fileName)
+    }
+    
+    class func getLocalized(key: String) -> String{
+        let s =  NSLocalizedString(key, tableName: nil, bundle: Bundle(identifier: BUNDLE_IDENTIFIER) ?? Bundle(for: mcaUtilsHelper.self), value: key, comment: "")
+        return s
     }
 }

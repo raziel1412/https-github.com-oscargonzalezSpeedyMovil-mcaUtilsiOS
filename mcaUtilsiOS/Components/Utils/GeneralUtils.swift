@@ -384,15 +384,6 @@ public func isUpdateAvailable() {
     */
     }
 
-
-public func showUpdateAlertView() {
-    
-    if true {//FIXME: mcaManagerSession.getIsUpdateAppAvailable() {
-        let alert = AlertAcceptOnly()
-//        NotificationCenter.default.post(name: Observers.ObserverList.UpdateAppAlert.name, object: alert);
-    }
-}
-
 public func isUpdateAppAvailable() throws -> Bool {
     let country = "" //FIXME: mcaManagerSession.getCountry()?.lowercased() ?? ""
     guard let info = Bundle.main.infoDictionary,
@@ -412,7 +403,7 @@ public func isUpdateAppAvailable() throws -> Bool {
     throw VersionError.invalidResponse
 }
 
-func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
+func resizeImageP(image: UIImage, targetSize: CGSize) -> UIImage {
     let size = image.size
     
     let widthRatio  = targetSize.width  / size.width
@@ -438,7 +429,7 @@ func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
     return newImage!
 }
 
-func checkImageExists(fileName: String) -> Bool{
+func checkImageExistsP(fileName: String) -> Bool{
     let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
     let url = URL(fileURLWithPath: path)
     

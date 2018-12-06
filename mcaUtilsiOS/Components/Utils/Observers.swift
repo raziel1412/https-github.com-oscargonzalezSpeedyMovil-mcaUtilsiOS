@@ -21,29 +21,6 @@ public class Observers: NSObject {
     /// Constante del formato del contenido del mensaje
     static let messageFont = [NSFontAttributeName: UIFont(name: RobotoFontName.RobotoLight.rawValue, size: 12.0)!]
     
-    static func updateAppAlert(info: NSNotification) {
-//       PIPR let conf = SessionSingleton.sharedInstance.getGeneralConfig()
-//
-//        let updateAvailable = conf?.newUpdateAvailable?.updateAvailable ?? false
-//        let forceToUpdate = conf?.newUpdateAvailable?.forcedUpdate ?? false
-//
-//        if updateAvailable && SessionSingleton.sharedInstance.getIsUpdateAppAvailable() && (forceToUpdate || SessionSingleton.sharedInstance.getCanUpdateApp()) {
-//            let custom = NewUpdateAlertViewController()
-//            custom.providesPresentationContextTransitionStyle = true;
-//            custom.definesPresentationContext = true;
-//            custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
-//            custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-//            if UIApplication.shared.keyWindow?.currentViewController is NewUpdateAlertViewController {
-//                print("already presented!")
-//            } else {
-//                UIApplication.shared.keyWindow?.currentViewController?.present(custom,
-//                                                                               animated: true,
-//                                                                               completion: nil)
-//            }
-//
-//        }
-    }
-    
     /// Función que ayuda a enviar un AcceptOnlyAlert popup
     /// - parameter info : NSNotification
     static func AcceptOnlyAlert(info:AlertAcceptOnly) {
@@ -125,7 +102,7 @@ public class Observers: NSObject {
     
     /// Función que ayuda a enviar un ShowWaitDialog popup
     /// - parameter info : NSNotification
-    static func ShowWaitDialog(userEnabled:Bool) {
+    static func ShowWaitDialog(userEnabled:Bool, loadingText: String = "Cargando...") {
         if (nil == UIApplication.shared.keyWindow) {
             return;
         }
@@ -139,7 +116,7 @@ public class Observers: NSObject {
                 let view = UIView(frame: CGRect(x: 0, y: 0, width: ancho, height: alto))
                 let lblLoading = UILabel()
                 lblLoading.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(16));
-                lblLoading.text = "Cargando...";
+                lblLoading.text = loadingText
                 lblLoading.textColor = institutionalColors.claroTitleColor
                 lblLoading.numberOfLines = 0;
                 lblLoading.lineBreakMode = NSLineBreakMode.byWordWrapping;
