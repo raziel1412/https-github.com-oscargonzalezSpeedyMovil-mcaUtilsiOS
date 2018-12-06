@@ -22,6 +22,7 @@ public class mcaUtilsHelper: NSObject {
     public class func setDefaults(data: Bool, toKey: String) {
         let defaults = UserDefaults.standard
         defaults.set(data, forKey: toKey)
+        defaults.synchronize()
     }
     /// Función usada para setear datos al UserDefaults
     /// - parameter string: String
@@ -29,6 +30,7 @@ public class mcaUtilsHelper: NSObject {
     public class func setDefaults(string: String?, toKey: String) {
         let defaults = UserDefaults.standard
         defaults.set(string, forKey: toKey)
+        defaults.synchronize()
     }
     /// Función usada para obtener datos del UserDefaults
     /// - parameter toKey: String
