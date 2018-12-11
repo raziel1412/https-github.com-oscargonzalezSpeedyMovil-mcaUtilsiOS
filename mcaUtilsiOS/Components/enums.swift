@@ -112,10 +112,19 @@ public enum Sides {
 }
 
 public struct SideView{
-    var Left: Bool
-    var Right: Bool
-    var Top: Bool
-    var Bottom: Bool
+    
+    public var Left: Bool
+    public var Right: Bool
+    public var Top: Bool
+    public var Bottom: Bool
+    
+    public init(Left: Bool, Right: Bool, Top: Bool, Bottom: Bool) {
+        self.Left = Left
+        self.Right = Right
+        self.Top = Top
+        self.Bottom = Bottom
+    }
+    
 }
 
 public enum TypeAccountService {
