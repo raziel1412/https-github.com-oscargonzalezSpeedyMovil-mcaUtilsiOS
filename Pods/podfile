@@ -47,7 +47,7 @@ def project_pods
 #    pod 'SwiftyJSON'
 #    #    pod 'GooglePlacesSearchController'
 #
-#   pod 'khenshin', :git => 'https://bitbucket.org/khipu/khenshin-pod.git', :tag => '1.298'
+    pod 'khenshin', :git => 'https://bitbucket.org/khipu/khenshin-pod.git', :tag => '1.298'
 end
 
 target 'mcaLoginiOS' do
