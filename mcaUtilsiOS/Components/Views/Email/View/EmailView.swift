@@ -11,7 +11,7 @@ import SkyFloatingLabelTextField
 import Cartography
 //import mcaManageriOS
 
-protocol EmailViewDelegate {
+public protocol EmailViewDelegate {
     func emailViewChangeHeight(newHeight: CGFloat)
     func sendEmail()
 }
@@ -19,20 +19,20 @@ protocol EmailViewDelegate {
 public class EmailView: UIView {
 
     /********************************* Visual elements *********************************/
-//    var lblTitle: BlackTitleLabel!
-//    var viewContenedor: UIView!
-    var imgEmail: UIImageView!
-    var txtEmail: SimpleGreenTextField!
-    var lblComment: UILabel!
-    var txtDescription: UITextView!
-    var lblCharacters: UILabel!
-    var bottomBorderLine: UIView!
-    var btnSendMail: GreenBorderWhiteBackgroundButton!
+    public var lblTitle: BlackTitleLabel!
+    public var viewContenedor: UIView!
+    public var imgEmail: UIImageView!
+    public var txtEmail: SimpleGreenTextField!
+    public var lblComment: UILabel!
+    public var txtDescription: UITextView!
+    public var lblCharacters: UILabel!
+    public var bottomBorderLine: UIView!
+    public var btnSendMail: GreenBorderWhiteBackgroundButton!
     
     /********************************* Variables *********************************/
-    var delegate: EmailViewDelegate!
-    var placeHolderDescription: String = "Place Holder"
-//    var conf = mcaManagerSession.getGeneralConfig()
+    public var delegate: EmailViewDelegate!
+    public var placeHolderDescription: String = "Place Holder"
+    //var conf = mcaManagerSession.getGeneralConfig()
     
     /// Constructor del componente de Email, el cual incluye un textfield para ingresar el correo eléctronico y un textView para el comentario
     /// - Parameter titleCard: Titulo del componente de *emailView*
