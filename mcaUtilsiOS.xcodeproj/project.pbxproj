@@ -131,6 +131,7 @@
 		62EBFFF9219F26F000F85A3D /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 62EBFFF6219F26EF00F85A3D /* ADBMobileConfig.json */; };
 		62EBFFFA219F26F000F85A3D /* AdobeMobileLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EBFFF7219F26EF00F85A3D /* AdobeMobileLibrary.a */; };
 		7B07B54521C1753100A0461A /* RadioButtonView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFD8E219F1EEA00F85A3D /* RadioButtonView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B07B54821C18B1A00A0461A /* UIHeaderForm2.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFDB6219F1EEA00F85A3D /* UIHeaderForm2.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B564E4221B9901100890AA0 /* BlackTitleLabel.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFDA4219F1EEA00F85A3D /* BlackTitleLabel.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B564E4721B9986A00890AA0 /* enums.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62E67EFC21A4D29300B4F182 /* enums.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B564E5621B9B05F00890AA0 /* ViewExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFB68219F1EE900F85A3D /* ViewExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -655,6 +656,7 @@
 				62EBFFF8219F26F000F85A3D /* ADBMobile.h in Headers */,
 				7B07B54521C1753100A0461A /* RadioButtonView.swift in Headers */,
 				7B564E4721B9986A00890AA0 /* enums.swift in Headers */,
+				7B07B54821C18B1A00A0461A /* UIHeaderForm2.swift in Headers */,
 				7BEEA58921B88928005211C6 /* EmailView.swift in Headers */,
 				7B564E5621B9B05F00890AA0 /* ViewExtension.swift in Headers */,
 				7B564E4221B9901100890AA0 /* BlackTitleLabel.swift in Headers */,
