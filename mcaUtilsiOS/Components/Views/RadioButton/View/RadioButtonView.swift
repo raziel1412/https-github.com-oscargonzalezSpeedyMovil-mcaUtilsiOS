@@ -15,9 +15,9 @@ public struct RadioButtonOption {
     public var check: Bool = false
     
     public init(bugCode: String, description: String, check: Bool) {
-         self.bugCode = ""
-         self.description = ""
-         self.check = false
+         self.bugCode = bugCode
+         self.description = description
+         self.check = check
     }
 }
 

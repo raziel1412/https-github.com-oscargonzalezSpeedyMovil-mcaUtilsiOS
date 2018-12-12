@@ -11,20 +11,20 @@ import Cartography
 
 public class UIHeaderForm2: UIView {
     
-    private var imageView : UIImageView = {
+    public var imageView : UIImageView = {
         let iView = UIImageView(frame: .zero)
         iView.contentMode = .scaleAspectFit
         iView.clipsToBounds = true
         return iView
     }()
-    private var viewTitle : UILabel = {
+    public var viewTitle : UILabel = {
         let label = UILabel(frame: .zero)
         label.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(19))
         label.textAlignment = .left
         label.textColor = institutionalColors.claroBlackColor
         return label
     }()
-    private var subTitle : UILabel = {
+    public var subTitle : UILabel = {
         let label = UILabel(frame: .zero)
         label.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(14))
         label.numberOfLines = 0
@@ -36,23 +36,23 @@ public class UIHeaderForm2: UIView {
     }()
     
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         setupElements()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setupElements() {
+    public func setupElements() {
         self.addSubview(imageView)
         self.addSubview(viewTitle)
         self.addSubview(subTitle)
         addConstraints()
     }
     
-    private func addConstraints() {
+    public func addConstraints() {
         constrain(self, imageView, viewTitle, subTitle) { (view, image, title, sTitle) in
             image.centerY == view.centerY
             image.width == view.height * 0.5//0.8

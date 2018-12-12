@@ -8,11 +8,11 @@
 
 import UIKit
 
-extension EmailView: UITextViewDelegate {
+ extension EmailView: UITextViewDelegate {
 
     //MARK: UITextViewDelegate
-    func textViewDidChange(_ textView: UITextView) {
-        /*let textViewFixedWidth: CGFloat = textView.frame.size.width
+    public func textViewDidChange(_ textView: UITextView) {
+        let textViewFixedWidth: CGFloat = textView.frame.size.width
         let newSize : CGSize = textView.sizeThatFits(CGSize(width: textViewFixedWidth, height: CGFloat(MAXFLOAT)))
         var newFrame: CGRect = textView.frame
         
@@ -27,14 +27,14 @@ extension EmailView: UITextViewDelegate {
         textView.frame = newFrame
         
         delegate.emailViewChangeHeight(newHeight: newFrame.height)
-        self.updateBottomLinePosition()*/
+        self.updateBottomLinePosition()
     }
     
-    func updateLabelCount(numCharacteres: Int) {
+    public func updateLabelCount(numCharacteres: Int) {
         self.lblCharacters.text = NSString(format: "%d/160", numCharacteres) as String
     }
     
-    func textViewDidBeginEditing(_ textView: UITextView) {
+    public func textViewDidBeginEditing(_ textView: UITextView) {
         if textView.textColor == institutionalColors.claroLightGrayColor {
             applyNonPlaceholderStyle(textView: textView)
         }else if textView.text != placeHolderDescription {
@@ -42,17 +42,17 @@ extension EmailView: UITextViewDelegate {
         }
     }
     
-    func textViewDidEndEditing(_ textView: UITextView) {
+    public func textViewDidEndEditing(_ textView: UITextView) {
         if textView.text.isEmpty || textView.text == placeHolderDescription {
             textView.text = self.placeHolderDescription
             textView.textColor = institutionalColors.claroLightGrayColor
-//            bottomBorderLine.backgroundColor = institutionalColors.claroLightGrayColor
+           bottomBorderLine.backgroundColor = institutionalColors.claroLightGrayColor
         }else {
-//            bottomBorderLine.backgroundColor = institutionalColors.claroLightGrayColor
+           bottomBorderLine.backgroundColor = institutionalColors.claroLightGrayColor
         }
     }
     
-    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+    public func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         // remove the placeholder text when they start typing
         // first, see if the field is empty
         // if it's not empty, then the text should be black and not italic
@@ -87,7 +87,7 @@ extension EmailView: UITextViewDelegate {
     func applyNonPlaceholderStyle(textView: UITextView) {
         textView.text = nil
         textView.textColor = institutionalColors.claroBlackColor
-//        bottomBorderLine.backgroundColor = institutionalColors.claroBlueColor
+        bottomBorderLine.backgroundColor = institutionalColors.claroBlueColor
     }
     
     /// Para aplicar un diseño similar a un textfield del componente textView
@@ -95,6 +95,6 @@ extension EmailView: UITextViewDelegate {
     func applyPlaceholderStyle(textView: UITextView) {
         textView.text = placeHolderDescription
         textView.textColor = institutionalColors.claroLightGrayColor
-//        bottomBorderLine.backgroundColor = institutionalColors.claroLightGrayColor
+        bottomBorderLine.backgroundColor = institutionalColors.claroLightGrayColor
     }
 }

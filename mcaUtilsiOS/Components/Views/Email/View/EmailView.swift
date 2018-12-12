@@ -9,7 +9,6 @@
 import UIKit
 import SkyFloatingLabelTextField
 import Cartography
-//import mcaManageriOS
 
 public protocol EmailViewDelegate {
     func emailViewChangeHeight(newHeight: CGFloat)
@@ -32,7 +31,6 @@ public class EmailView: UIView {
     /********************************* Variables *********************************/
     public var delegate: EmailViewDelegate!
     public var placeHolderDescription: String = "Place Holder"
-    //var conf = mcaManagerSession.getGeneralConfig()
     
     /// Constructor del componente de Email, el cual incluye un textfield para ingresar el correo eléctronico y un textView para el comentario
     /// - Parameter titleCard: Titulo del componente de *emailView*
@@ -42,12 +40,12 @@ public class EmailView: UIView {
     public init(titleCard: String,placeHolderEmail:String, placeHolderDescription: String, size: CGSize) {
         super.init(frame: CGRect(origin: CGPoint(x:0.0, y:0.0), size: size))
         
-//        viewContenedor = UIView(frame: self.frame)
-        /*lblTitle = BlackTitleLabel()
+        viewContenedor = UIView(frame: self.frame)
+        lblTitle = BlackTitleLabel()
         lblTitle.text = titleCard
         lblTitle.font = UIFont(name: RobotoFontName.RobotoLight.rawValue, size: 18)
         lblTitle.textColor = institutionalColors.claroTitleColor
-        lblTitle.textAlignment = .left*/
+        lblTitle.textAlignment = .left
         imgEmail = UIImageView()
         imgEmail.image = UIImage(named: "icon_correo_input")
         
@@ -61,7 +59,7 @@ public class EmailView: UIView {
         bottomBorderLine.backgroundColor = institutionalColors.claroLightGrayColor
         
         lblComment = BlackBodyLabel()
-        lblComment.text = "" //FIXME: self.conf?.translations?.data?.help?.suggestionsInput ?? "Ingresa tu comentario"
+        lblComment.text = "Ingresa tu comentario"
         lblComment.font = UIFont(name: RobotoFontName.RobotoBold.rawValue, size: 14)
         lblComment.textColor = institutionalColors.claroBlackColor
         lblComment.textAlignment = .left
@@ -112,14 +110,14 @@ public class EmailView: UIView {
     //MARK: Public functions
     /// Para posicionar los componentes visuales dentro de "viewEmail"
     public func setPosition() {
-//        self.addSubview(viewContenedor)
-        /*self.addSubview(lblTitle)
+        self.addSubview(viewContenedor)
+        self.addSubview(lblTitle)
         
         constrain(self, lblTitle) { (view1, view2) in
             view2.top == view1.top + 10
             view2.width == view1.width
             view2.centerX == view1.centerX
-        }*/
+        }
         
         self.addSubview(imgEmail)
         constrain(self, imgEmail) { (view, email) in
@@ -177,9 +175,9 @@ public class EmailView: UIView {
             view2.width == view1.width
             view2.centerX == view1.centerX
             view2.height == 1.0
-        }*/
+        }
         
-//        self.addBottomBorderWithColor(color: institutionalColors.claroLightGrayColor, width: 1)
+       self.addBottomBorderWithColor(color: institutionalColors.claroLightGrayColor, width: 1)*/
     }
     
     /// Para actualizar la posición de la linea inferior
