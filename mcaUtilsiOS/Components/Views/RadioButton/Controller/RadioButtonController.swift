@@ -12,7 +12,7 @@ extension RadioButtonView: UITableViewDelegate, UITableViewDataSource {
 
     //MARK: Table delegate and Data source
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    public func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
@@ -31,7 +31,7 @@ extension RadioButtonView: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as! RadioButtonViewCell
         if cell.getMultipleSelection() {
             //"Multiple selection"
@@ -43,7 +43,7 @@ extension RadioButtonView: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 40.0
     }
     //MARK: Private functions
@@ -51,7 +51,7 @@ extension RadioButtonView: UITableViewDelegate, UITableViewDataSource {
     /// Si la opción de selección es **no es multiple** se habilita el check seleccionado y los demas se inhabilitan
     /// - Parameter tableView: Tabla que contiene las opciones de radioButton
     /// - Parameter indexPath: indice de la celda radioButton seleccionada
-    private func clearRadioButtons(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func clearRadioButtons(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         for index  in 0 ..< arrayOptions.count {
             let indexP = IndexPath(row: index, section: indexPath.section)
             let cell = tableView.cellForRow(at: indexP) as! RadioButtonViewCell
@@ -66,7 +66,7 @@ extension RadioButtonView: UITableViewDelegate, UITableViewDataSource {
     //MARK: Public functions
     /// Para recuperar las opciones seleccionadas
     /// - Returns [RadioButtonOption]: Arreglo de opciones seleccionadas
-    func getOptionsSelected() -> [RadioButtonOption] {
+    public func getOptionsSelected() -> [RadioButtonOption] {
         arrayOptionsSelected.removeAll()
         let sections = tblOptions.numberOfSections
         for sec in 0 ..< sections {

@@ -9,35 +9,41 @@
 import UIKit
 import Cartography
 
-struct RadioButtonOption {
-    var bugCode: String = ""
-    var description:String = ""
-    var check: Bool = false
+public struct RadioButtonOption {
+    public var bugCode: String = ""
+    public var description:String = ""
+    public var check: Bool = false
+    
+    public init(bugCode: String, description: String, check: Bool) {
+         self.bugCode = bugCode
+         self.description = description
+         self.check = check
+    }
 }
 
-protocol RadioButtonViewDelegate {
-    func radioButtonSingleOptionSelected(option: RadioButtonOption)
+public protocol RadioButtonViewDelegate {
+     func radioButtonSingleOptionSelected(option: RadioButtonOption)
 }
 
 public class RadioButtonView: UIView {
     
     /********************************* Variables *********************************/
-    private var titleCard:String = ""
-    var arrayOptions:[RadioButtonOption] = []
-    var arrayOptionsSelected:[RadioButtonOption] = []
+    public var titleCard:String = ""
+    public var arrayOptions:[RadioButtonOption] = []
+    public var arrayOptionsSelected:[RadioButtonOption] = []
     public var multipleSelection:Bool = false
-    var ubicationCheck:ubicationRadioButton!
-    var delegate: RadioButtonViewDelegate!
+    public var ubicationCheck:ubicationRadioButton!
+    public var delegate: RadioButtonViewDelegate!
     
     /********************************* Visual elements *********************************/
-    private var lblTitle: BlackTitleLabel!
-    var tblOptions: UITableView!
+    public var lblTitle: BlackTitleLabel!
+    public var tblOptions: UITableView!
     
     /// Constructor para la creación del componente RadioButton
     /// - Parameter titleCard: Titulo a mostrar en la vista de radioButton
     /// - Parameter arrayOptions: Listado de opciones a mostrar en la vista de RadioButton *bugcode*, *description* y *check*
     /// - Parameter size: Tamaño de la vista radioButton
-    init(titleCard: String, arrayOptions: [RadioButtonOption], size: CGSize) {
+    public init(titleCard: String, arrayOptions: [RadioButtonOption], size: CGSize) {
         super.init(frame: CGRect(origin: CGPoint(x: 0.0, y: 0.0), size: size))
         
         self.titleCard = titleCard
@@ -61,11 +67,9 @@ public class RadioButtonView: UIView {
         tblOptions.rowHeight = UITableViewAutomaticDimension
         tblOptions.isScrollEnabled = false
         tblOptions.isUserInteractionEnabled = true
-        
-        //self.backgroundColor = UIColor.blue
-    }
+        }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
