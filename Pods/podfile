@@ -11,9 +11,11 @@ project '/mcaWelcomeiOS/mcaWelcomeiOS.xcodeproj'
 project '/mcaRecoveryPasswordiOS/mcaRecoveryPassword.xcodeproj'
 project '/mcaHelpiOS/mcaHelpiOS.xcodeproj'
 project '/mcaHomeiOS/mcaHomeiOS.xcodeproj'
+project '/mcaRegistroiOS/mcaRegistroiOS.xcodeproj'
 
 project '/mcaWorkspaceiOSCENAM/mcaiOSCENAM.xcodeproj'
 project '/mcaWorkspaceiOSCL/mcaiOSCL.xcodeproj'
+
 
 
 def project_pods
@@ -23,7 +25,7 @@ def project_pods
     pod 'SkyFloatingLabelTextField', '~> 3.0'
     pod 'XLPagerTabStrip', '~> 7.0'
     pod 'ObjectMapper', '~> 3.3'
-    
+
     # Pods for MiClaro
     pod 'SidebarOverlay', '~> 4.1'
     pod 'FontAwesome.swift', '~> 1.2.0'
@@ -40,12 +42,12 @@ def project_pods
     #Crash
     pod 'Fabric', '~> 1.7.3'
     pod 'Crashlytics', '~> 3.10'
-    
+
     pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :branch => 'master'
-    pod 'SwiftyJSON'
-    #    pod 'GooglePlacesSearchController'
-    
-   pod 'khenshin', :git => 'https://bitbucket.org/khipu/khenshin-pod.git', :tag => '1.298'
+#    pod 'SwiftyJSON'
+#    #    pod 'GooglePlacesSearchController'
+#
+#   pod 'khenshin', :git => 'https://bitbucket.org/khipu/khenshin-pod.git', :tag => '1.298'
 end
 
 target 'mcaLoginiOS' do
@@ -106,6 +108,15 @@ target 'mcaHomeiOS' do
     platform :ios, '9.0'
     use_frameworks!
     project '../../mcaHomeiOS/mcaHomeiOS.xcodeproj'
+    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+    project_pods
+end
+
+target 'mcaRegistroiOS' do
+    platform :ios, '9.0'
+    use_frameworks!
+    project '../../mcaRegistroiOS/mcaRegistroiOS.xcodeproj'
     workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
