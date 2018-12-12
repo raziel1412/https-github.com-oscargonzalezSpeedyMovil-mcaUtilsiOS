@@ -9,15 +9,15 @@ import UIKit
 import Cartography
 import SidebarOverlay
 
+/// Tipo de NavigationBar
+public enum ButtonNavType {
+    case None
+    case IconBack
+    case IconMenu
+}
+
 /// Esta clase permite realizar customizaciones del Navigation Bar a partir de los parámetros proporcionados en el constructor
 public extension UIViewController  {
-    
-    /// Tipo de NavigationBar
-    public enum ButtonNavType {
-        case None
-        case IconBack
-        case IconMenu
-    }
     
     public func rightButtonAction() {
         print("right button action")

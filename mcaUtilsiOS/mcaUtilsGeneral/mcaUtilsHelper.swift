@@ -8,8 +8,6 @@
 
 import UIKit
 
-let BUNDLE_IDENTIFIER = "com.miclaro.app.mcaUtilsiOS"
-
 public class mcaUtilsHelper: NSObject {
     
     public class func refreshConfigurationFile() {
@@ -41,7 +39,7 @@ public class mcaUtilsHelper: NSObject {
     }
     
     public class func getImage(image: String) -> UIImage {
-        let bundle = Bundle(identifier: BUNDLE_IDENTIFIER)
+        let bundle = Bundle(identifier: mcaUtilsConstants.BUNDLE_IDENTIFIER)
         if let aImage = UIImage(named: image, in: bundle, compatibleWith: nil) {
             return aImage
         }
@@ -60,8 +58,16 @@ public class mcaUtilsHelper: NSObject {
         return checkImageExistsP(fileName: fileName)
     }
     
+    public class func initGenericWebView(navController: UINavigationController?, info: GenericWebViewModel!) {
+        GenericWebViewVC.show(navController: navController, info: info)
+    }
+    
+    public class func getGoogleAPIKey() -> String{
+        return mcaUtilsConstants.GOOGL_API_KEY
+    }
+    
     class func getLocalized(key: String) -> String{
-        let s =  NSLocalizedString(key, tableName: nil, bundle: Bundle(identifier: BUNDLE_IDENTIFIER) ?? Bundle(for: mcaUtilsHelper.self), value: key, comment: "")
+        let s =  NSLocalizedString(key, tableName: nil, bundle: Bundle(identifier: mcaUtilsConstants.BUNDLE_IDENTIFIER) ?? Bundle(for: mcaUtilsHelper.self), value: key, comment: "")
         return s
     }
 }
