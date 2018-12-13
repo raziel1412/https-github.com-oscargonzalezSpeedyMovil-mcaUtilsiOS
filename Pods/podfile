@@ -44,7 +44,7 @@ def project_pods
     pod 'Crashlytics', '~> 3.10'
 
     pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :branch => 'master'
-#    pod 'SwiftyJSON'
+    pod 'SwiftyJSON'
 #    #    pod 'GooglePlacesSearchController'
 #
     pod 'khenshin', :git => 'https://bitbucket.org/khipu/khenshin-pod.git', :tag => '1.298'

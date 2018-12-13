@@ -44,7 +44,7 @@ public class TermsAndConditions: UIView {
         self.url = url
         self.acceptTitle = acceptTitle
     }
-    func setParentView(_ parent: String) {
+    public func setParentView(_ parent: String) {
         parentViewName = parent
     }
 

@@ -54,6 +54,7 @@ PODS:
   - SidebarOverlay (4.2.2)
   - SkyFloatingLabelTextField (3.6.0)
   - SwiftValidator (4.0.0)
+  - SwiftyJSON (4.2.0)
   - Toast (3.1.0)
   - TTTAttributedLabel (2.0.0)
   - XLPagerTabStrip (7.0.0)
@@ -77,6 +78,7 @@ DEPENDENCIES:
   - SidebarOverlay (~> 4.1)
   - SkyFloatingLabelTextField (~> 3.0)
   - SwiftValidator (from `https://github.com/jpotts18/SwiftValidator.git`, branch `master`)
+  - SwiftyJSON
   - XLPagerTabStrip (~> 7.0)
 
 SPEC REPOS:
@@ -105,6 +107,7 @@ SPEC REPOS:
     - SevenSwitch
     - SidebarOverlay
     - SkyFloatingLabelTextField
+    - SwiftyJSON
     - Toast
     - TTTAttributedLabel
     - XLPagerTabStrip
@@ -152,10 +155,11 @@ SPEC CHECKSUMS:
   SidebarOverlay: a5365455a2f9d54f70d0765764ca1a2806b1b11d
   SkyFloatingLabelTextField: 38164979b79512f9ff9288ad8acfc4bbf5d843e3
   SwiftValidator: 25ded5ca1f10c05adf57f6ac82a72d28ac8d91af
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   XLPagerTabStrip: 9be80a66c6b7d60306b2c0a6004965016d68f813
 
-PODFILE CHECKSUM: 63d84d45ef9c1607ab7928d936e03141b57ef833
+PODFILE CHECKSUM: 950360966b5a43f1ae754d64877d6baec713cf35
 
 COCOAPODS: 1.5.3

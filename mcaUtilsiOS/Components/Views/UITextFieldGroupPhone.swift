@@ -18,8 +18,8 @@ public class UITextFieldGroupPhone : UIView {
         label.textAlignment = .center
         return label
     }()
-    var image   : UIImageView = UIImageView(frame: .zero)
-    var mandatoryInformation : MandatoryInformation = MandatoryInformation(frame: .zero)
+    public var image: UIImageView = UIImageView(frame: .zero)
+    public var mandatoryInformation : MandatoryInformation = MandatoryInformation(frame: .zero)
     
     override public init(frame: CGRect) {
         super.init(frame: frame)
