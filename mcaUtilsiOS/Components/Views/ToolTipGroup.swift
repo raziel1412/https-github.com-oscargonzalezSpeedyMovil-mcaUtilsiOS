@@ -17,7 +17,7 @@ public class ToolTipGroup : UIView {
     private var newId : ToolTipElement = ToolTipElement(frame: .zero)
     private var closeButton : GreenBorderWhiteBackgroundButton = GreenBorderWhiteBackgroundButton(textButton: "")
     
-    var haderSubtitleFont : UIFont {
+    public var haderSubtitleFont : UIFont {
         get {
             return self.haderSubtitleFont
         }
@@ -26,7 +26,7 @@ public class ToolTipGroup : UIView {
         }
     }
     
-    var tipElementSubtitleFont : UIFont {
+    public var tipElementSubtitleFont : UIFont {
         get {
             return self.tipElementSubtitleFont
         }
@@ -36,7 +36,7 @@ public class ToolTipGroup : UIView {
         }
     }
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         setupElements()
     }
@@ -81,19 +81,19 @@ public class ToolTipGroup : UIView {
         }
     }
     
-    func setHeaderContent(title: String?, subtitle: String?, imageName: String?) {
+    public func setHeaderContent(title: String?, subtitle: String?, imageName: String?) {
         self.headerView.setupElements(imageName: imageName, title: title, subTitle: subtitle)
     }
     
-    func setLeftItemContent(title: String?, subtitle: String?, imageName: String?) {
+    public func setLeftItemContent(title: String?, subtitle: String?, imageName: String?) {
         self.oldId.setupContent(title: title, description: subtitle, image: imageName)
     }
     
-    func setRightItemContent(title: String?, subtitle: String?, imageName: String?) {
+    public func setRightItemContent(title: String?, subtitle: String?, imageName: String?) {
         self.newId.setupContent(title: title, description: subtitle, image: imageName)
     }
     
-    func setButtonContent(title: String?, target: Any? = nil, action: Selector? = nil, controlEvent: UIControlEvents = .touchUpInside) {
+    public func setButtonContent(title: String?, target: Any? = nil, action: Selector? = nil, controlEvent: UIControlEvents = .touchUpInside) {
         closeButton.setTitle(title, for: .normal)
         closeButton.setTitle(title, for: .selected)
         if let _ = action, let _ = target {

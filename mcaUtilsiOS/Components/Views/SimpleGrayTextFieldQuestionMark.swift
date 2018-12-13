@@ -13,7 +13,7 @@ import Foundation
 public class SimpleGrayTextFieldQuestionMark: SimpleGrayTextField {
     private var btnView : UIButton?;
     
-    var action = {};
+    public var action = {};
     
     public override init(text: String, placeholder: String) {
         super.init(text: text, placeholder: placeholder);

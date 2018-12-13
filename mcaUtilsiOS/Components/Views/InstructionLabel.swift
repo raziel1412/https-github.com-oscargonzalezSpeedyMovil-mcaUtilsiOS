@@ -14,7 +14,7 @@ public class InstructionLabel: UILabel {
 
     var contextVC: UIView!
 
-    init(context: UIView, text: String) {
+    public init(context: UIView, text: String) {
         super.init(frame: UIScreen.main.bounds)
         self.contextVC = context
         self.text = text
@@ -26,7 +26,7 @@ public class InstructionLabel: UILabel {
     }
     
     //For init with the small text
-    init(text: String, fontSize: CGFloat, alignText: NSTextAlignment) {
+    public init(text: String, fontSize: CGFloat, alignText: NSTextAlignment) {
         super.init(frame: UIScreen.main.bounds)
         self.text = text
         self.textAlignment = alignText

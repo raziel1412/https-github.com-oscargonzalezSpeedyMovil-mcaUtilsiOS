@@ -21,7 +21,7 @@ public class UITextFieldGroupPhone : UIView {
     var image   : UIImageView = UIImageView(frame: .zero)
     var mandatoryInformation : MandatoryInformation = MandatoryInformation(frame: .zero)
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         setupElements()
     }

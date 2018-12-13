@@ -36,7 +36,7 @@ public class TermsAndConditions: UIView {
         self.addSubview(contentLabel)
         setupConstraints()
     }
-    
+    /// termsConditions.setContent(String(format: "%@ <b>%@</b> %@", parte1, parte2, parte3), url: mcaManagerSession.getGeneralConfig()?.termsAndConditions?.url ?? "", title: mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.termsAndConditions ?? "", acceptTitle: mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.closeBtn ?? "", offlineAction: {mcaManagerSession.showOfflineMessage()})
     public func setContent(_ content: String, url: String, title: String, acceptTitle: String, offlineAction: @escaping () -> Void) {
         self.content = content
         contentLabel.showText(text: content)
