@@ -176,9 +176,9 @@ public enum RobotoFontName : String {
 }
 
 public enum TypeLineOfBussines: String {
-    case Fijo = "1"
-    case Prepago = "2"
-    case Postpago = "3"
+    case Fixed = "1"
+    case Prepaid = "2"
+    case Postpaid = "3"
 }
 
 /// Enumerado del AppVersion

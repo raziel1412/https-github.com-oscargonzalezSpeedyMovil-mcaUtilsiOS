@@ -28,6 +28,17 @@ public extension UIViewController  {
         self.navigationController?.popViewController(animated: true)
     }
     
+    func openMenu() {
+//        AnalyticsInteractionSingleton.sharedInstance.ADBTrackCustomLink(viewName: "General:Menu")
+//        if let container = self.so_containerViewController {
+//            self.view.endEditing(true);
+//            container.isSideViewControllerPresented = true
+//            AnalyticsInteractionSingleton.sharedInstance.ADBTrackView(viewName: "Menu", detenido: false)
+//        }
+//        GeneralAlerts
+//        NotificationCenter.default.post(name: Notification.Name("refreshTipoPago"), object: nil);
+    }
+    
     /// El constructor permite customizar el NavigationBar dependiendo del valor de navigationType
     /// -param:
     ///     - navigationType : enum navType

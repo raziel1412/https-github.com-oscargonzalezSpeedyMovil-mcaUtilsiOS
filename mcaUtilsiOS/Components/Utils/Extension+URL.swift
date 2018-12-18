@@ -8,13 +8,13 @@
 
 import Foundation
 
-extension URL {
-    static var documentsDirectory: URL {
+public extension URL {
+    public static var documentsDirectory: URL {
         let documentsDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
         return URL(string: documentsDirectory)!
     }
     
-    static func urlInDocumentsDirectory(with filename: String) -> URL {
+    public static func urlInDocumentsDirectory(with filename: String) -> URL {
         return documentsDirectory.appendingPathComponent(filename)
     }
 }
