@@ -48,6 +48,7 @@ public extension UIViewController  {
         let customfont: UIFont = UIFont(name: RobotoFontName.RobotoMedium.rawValue, size: CGFloat(18)) ?? UIFont()
         let iconBack = mcaUtilsHelper.getImage(image: "ico_back")
         let iconLogo = mcaUtilsHelper.getImage(image: "ico_logo")
+        let iconMenu = mcaUtilsHelper.getImage(image: "ico_hamburger")
         
         switch navigationType {
             
@@ -93,13 +94,13 @@ public extension UIViewController  {
             self.navigationController?.navigationBar.tintColor = institutionalColors.claroRedColor
             break
         case .IconMenu:
-            let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 20),
+            /*let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 20),
                               NSForegroundColorAttributeName : institutionalColors.claroRedColor] as [String: Any]
             let menuButton = UIBarButtonItem();
             menuButton.style = .plain;
             menuButton.setTitleTextAttributes(attributes, for: .normal)
             menuButton.setTitleTextAttributes(attributes, for: .selected)
-            menuButton.image = UIImage(named: "ico_")
+            menuButton.image = UIImage(named: "ico_hamburger")
             menuButton.target = self;
             menuButton.action = #selector(self.leftButtonAction)
             self.navigationItem.setLeftBarButton(menuButton, animated: true);
@@ -117,9 +118,47 @@ public extension UIViewController  {
             
             self.navigationController?.setNavigationBarHidden(false, animated: true)
             if let bkg = self.navigationController?.view.viewWithTag(logoId){
+                bkg.removeFromSuperview();*/
+            
+            var iconLeftBtn = iconMenu
+            let iconRightBtn = UIImageView(image: iconLogo)
+            
+            iconRightBtn.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width * 0.144, height: 44.0)
+            iconRightBtn.contentMode = .scaleAspectFit
+            iconRightBtn.clipsToBounds = true
+            
+            let leftCustomView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 24.0, height: 44.0))
+            let rightButton = UIBarButtonItem(customView: iconRightBtn)
+            let leftButton = UIBarButtonItem(customView: leftCustomView)
+            let leftCustomButton = UIButton.init(type: .custom)
+            iconLeftBtn = iconMenu
+            leftCustomButton.setBackgroundImage(iconLeftBtn, for: .normal)
+            leftCustomButton.addTarget(self, action: #selector(leftButtonAction), for: .touchUpInside)
+            leftCustomButton.frame = CGRect(x: leftCustomView.frame.size.width * 0.053, y: 0, width: 24.0, height: 24.0)
+            leftCustomButton.center.y = leftCustomView.center.y
+            leftCustomView.addSubview(leftCustomButton)
+            let marginX = CGFloat(leftCustomButton.frame.maxX + 16.0)
+            let label = UILabel(frame: CGRect(x: marginX, y: 0.0, width: self.view.frame.width - marginX, height: 0.35 * 44))
+            label.text = headerTitle
+            label.textColor = institutionalColors.claroRedColor
+            label.textAlignment = NSTextAlignment.left
+            label.font = UIFont.init(name: RobotoFontName.RobotoMedium.rawValue, size: 18.0);
+            label.backgroundColor = UIColor.clear
+            label.adjustsFontSizeToFitWidth = true
+            label.sizeToFit()
+            leftButton.tintColor = institutionalColors.claroRedColor
+            let leftTitle = UIBarButtonItem(customView: label)
+            self.navigationItem.leftBarButtonItems = [leftButton, leftTitle]
+            self.navigationItem.rightBarButtonItem = rightButton
+            self.navigationController?.setNavigationBarHidden(false, animated: true)
+            if let bkg = self.navigationController?.view.viewWithTag(logoId){
                 bkg.removeFromSuperview();
-            break
             }
+            self.navigationController?.navigationBar.barTintColor = institutionalColors.claroPlecaColor
+            self.navigationController?.navigationBar.tintColor = institutionalColors.claroRedColor
+            
+            break
+            
         }
     }
     
