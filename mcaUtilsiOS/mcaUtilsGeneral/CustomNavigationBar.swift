@@ -29,14 +29,13 @@ public extension UIViewController  {
     }
     
     func openMenu() {
-//        AnalyticsInteractionSingleton.sharedInstance.ADBTrackCustomLink(viewName: "General:Menu")
-//        if let container = self.so_containerViewController {
-//            self.view.endEditing(true);
-//            container.isSideViewControllerPresented = true
-//            AnalyticsInteractionSingleton.sharedInstance.ADBTrackView(viewName: "Menu", detenido: false)
-//        }
-//        GeneralAlerts
-//        NotificationCenter.default.post(name: Notification.Name("refreshTipoPago"), object: nil);
+        AnalyticsInteractionSingleton.sharedInstance.ADBTrackCustomLink(viewName: "General:Menu")
+        if let container = self.so_containerViewController {
+            self.view.endEditing(true);
+            container.isSideViewControllerPresented = true
+            AnalyticsInteractionSingleton.sharedInstance.ADBTrackView(viewName: "Menu", detenido: false)
+        }
+        NotificationCenter.default.post(name: Notification.Name("NotificationOpenMenu"), object: nil);
     }
     
     /// El constructor permite customizar el NavigationBar dependiendo del valor de navigationType
@@ -49,6 +48,10 @@ public extension UIViewController  {
         let iconBack = mcaUtilsHelper.getImage(image: "ico_back")
         let iconLogo = mcaUtilsHelper.getImage(image: "ico_logo")
         let iconMenu = mcaUtilsHelper.getImage(image: "ico_hamburger")
+        if let container = self.so_containerViewController {
+            container.isSideViewControllerPresented = false
+            print("mcaUtilsiOS container.IsSideViewControllerPresented settting to false")
+        }
         
         switch navigationType {
             
@@ -133,7 +136,7 @@ public extension UIViewController  {
             let leftCustomButton = UIButton.init(type: .custom)
             iconLeftBtn = iconMenu
             leftCustomButton.setBackgroundImage(iconLeftBtn, for: .normal)
-            leftCustomButton.addTarget(self, action: #selector(leftButtonAction), for: .touchUpInside)
+            leftCustomButton.addTarget(self, action: #selector(openMenu), for: .touchUpInside)
             leftCustomButton.frame = CGRect(x: leftCustomView.frame.size.width * 0.053, y: 0, width: 24.0, height: 24.0)
             leftCustomButton.center.y = leftCustomView.center.y
             leftCustomView.addSubview(leftCustomButton)

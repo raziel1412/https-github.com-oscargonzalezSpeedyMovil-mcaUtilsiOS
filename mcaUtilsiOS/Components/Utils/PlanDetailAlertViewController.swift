@@ -50,7 +50,7 @@ public class PlanDetailAlertViewController: UIViewController {
         self.view.addSubview(self.myScroll!);
 
         if let logo = self.alertData?.icon, AlertIconType.NoIcon != self.alertData?.icon {
-            self.icono = UIImageView(image: UIImage(named: logo.rawValue))
+            self.icono = UIImageView(image: mcaUtilsHelper.getImage(image: logo.rawValue))
             self.icono?.frame = CGRect(x: (self.bkg!.frame.size.width - self.icono!.frame.size.width) / 2, y: currentY, width: self.icono!.frame.width, height: self.icono!.frame.height)
             self.myScroll?.addSubview(self.icono!);
         } else {

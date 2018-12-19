@@ -64,8 +64,8 @@ public class SimpleGrayTextField: SkyFloatingLabelTextField {
 
     public func setupSecurityEye() {
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
-        button.setImage(UIImage(named: "icon_vercontra_inac_input"), for: .normal)
-        button.setImage(UIImage(named: "icon_vercontra_input"), for: .selected)
+        button.setImage(mcaUtilsHelper.getImage(image: "icon_vercontra_inac_input"), for: .normal)
+        button.setImage(mcaUtilsHelper.getImage(image: "icon_vercontra_input"), for: .selected)
         button.addTarget(self, action: #selector(protectUnprotect(_:)), for: .touchUpInside)
         self.isSecureTextEntry = true
         self.rightView = button

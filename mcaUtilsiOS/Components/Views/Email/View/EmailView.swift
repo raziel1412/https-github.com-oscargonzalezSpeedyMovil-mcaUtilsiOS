@@ -47,7 +47,7 @@ public class EmailView: UIView {
         lblTitle.textColor = institutionalColors.claroTitleColor
         lblTitle.textAlignment = .left
         imgEmail = UIImageView()
-        imgEmail.image = UIImage(named: "icon_correo_input")
+        imgEmail.image = mcaUtilsHelper.getImage(image: "icon_correo_input")
         
         txtEmail = SimpleGreenTextField(text: placeHolderEmail, placeholder: placeHolderEmail)
         txtEmail.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: 16)
