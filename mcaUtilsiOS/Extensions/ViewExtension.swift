@@ -29,7 +29,7 @@ public extension UIView {
         self.backgroundColor = UIColor.white
         
         for i in 0..<grecaCount{
-            let grecaImage = #imageLiteral(resourceName: "ticket_prt4")
+            let grecaImage = mcaUtilsHelper.getImage(image: "ticket_prt4") // #imageLiteral(resourceName: "ticket_prt4")
             let grecaImageView = UIImageView(image: grecaImage)
             grecaImageView.tag = 2018
             let offset : CGFloat = CGFloat(i)
