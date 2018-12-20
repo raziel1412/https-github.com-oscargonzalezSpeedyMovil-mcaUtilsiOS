@@ -12,6 +12,7 @@ project '/mcaRecoveryPasswordiOS/mcaRecoveryPassword.xcodeproj'
 project '/mcaHelpiOS/mcaHelpiOS.xcodeproj'
 project '/mcaHomeiOS/mcaHomeiOS.xcodeproj'
 project '/mcaRegistroiOS/mcaRegistroiOS.xcodeproj'
+project '/mcaCardsiOS/mcaCardsiOS.xcodeproj'
 
 project '/mcaWorkspaceiOSCENAM/mcaiOSCENAM.xcodeproj'
 project '/mcaWorkspaceiOSCL/mcaiOSCL.xcodeproj'
@@ -33,20 +34,17 @@ def project_pods
     pod 'ReachabilitySwift', '~> 3.0.0'
     pod 'PKHUD', '~> 4.2.3'
     pod 'lottie-ios'
-    #    pod 'IQKeyboardManagerSwift', '4.0.13'
     pod 'SevenSwitch', '~> 2.1'
     pod 'DLRadioButton', '~> 1.4.9'
     pod 'GoogleMaps'
-    #    pod 'GooglePlaces'
     pod 'JSONWebToken'
-    #Crash
+
+    # Pods crash
     pod 'Fabric', '~> 1.7.3'
     pod 'Crashlytics', '~> 3.10'
 
     pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :branch => 'master'
     pod 'SwiftyJSON'
-#    #    pod 'GooglePlacesSearchController'
-#
     pod 'khenshin', :git => 'https://bitbucket.org/khipu/khenshin-pod.git', :tag => '1.298'
 end
 
@@ -117,6 +115,15 @@ target 'mcaRegistroiOS' do
     platform :ios, '9.0'
     use_frameworks!
     project '../../mcaRegistroiOS/mcaRegistroiOS.xcodeproj'
+    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+    project_pods
+end
+
+target 'mcaCardsiOS' do
+    platform :ios, '9.0'
+    use_frameworks!
+    project '../../mcaCardsiOS/mcaCardsiOS.xcodeproj'
     workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods

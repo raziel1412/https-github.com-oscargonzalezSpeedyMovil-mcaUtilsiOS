@@ -330,7 +330,7 @@ public class CustomAlertView: UIViewController {
                                               for: UIControlEvents.touchUpInside)
                 self.bkg?.addSubview(self.botonEliminar!);
                 
-                let accessoryViewDelete = UIImageView(image: UIImage(named: "ico_siguiente")!)
+                let accessoryViewDelete = UIImageView(image: mcaUtilsHelper.getImage(image: "ico_siguiente"))
                 accessoryViewDelete.frame = CGRect(x: (botonEliminar?.frame.width)! - 15, y: currentY+10, width: 20.0, height: 20.0)
                 self.bkg?.addSubview(accessoryViewDelete);
                 
