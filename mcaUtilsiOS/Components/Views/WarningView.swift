@@ -32,7 +32,7 @@ public class WarningView: UIView {
     func setup() {
         lblTexto = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 30))
         let myConf = ""//FIXME: mcaManagerSession.getGeneralConfig()
-        self.imgWarning = UIImageView(image: UIImage(named: "ic_error_naranja_16px"));
+        self.imgWarning = UIImageView(image: mcaUtilsHelper.getImage(image: "ic_error_naranja_16px"));
         self.lblTexto?.text = "" //FIXME: myConf?.translations?.data?.generales?.serviceNotRespond ?? "Información no actualizada por el momento";
         self.lblTexto?.textColor = institutionalColors.claroTextColor;
         self.lblTexto?.font = UIFont(name: RobotoFontName.RobotoLight.rawValue, size: CGFloat(13));

@@ -22,7 +22,7 @@ public class MobilePhoneNumberContainerView: UIView, UITextFieldDelegate {
     public var phoneLabel: PhoneLabel!
     private var iconImage : UIImageView = {
         let imageView = UIImageView(frame: .zero)
-        imageView.image = UIImage(named: "icon_telefono_input")
+        imageView.image = mcaUtilsHelper.getImage(image: "icon_telefono_input")
         imageView.contentMode = .scaleToFill
         imageView.clipsToBounds = true
         return imageView

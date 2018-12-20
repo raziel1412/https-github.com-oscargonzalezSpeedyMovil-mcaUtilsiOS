@@ -43,7 +43,7 @@ public class RedBackgroundButton: UIButton {
     public func addDecorationButton(nameImage: String, color: UIColor) {
         let imgIcon = UIImageView()
         imgIcon.frame = CGRect(x: 0, y: 0, width: 20.0, height: self.frame.height)
-        imgIcon.image = UIImage(named: nameImage)
+        imgIcon.image = mcaUtilsHelper.getImage(image: nameImage)
         imgIcon.contentMode = .scaleAspectFit
         imgIcon.center = CGPoint(x: self.frame.width - 20.0, y: self.frame.height / 2)
         self.addSubview(imgIcon)

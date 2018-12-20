@@ -64,7 +64,7 @@ public class ArcProgressView: UIView {
     override public func draw(_ rect: CGRect) {
 
         if false == showGraph {
-            let infinito = UIImageView(image: UIImage(named: "ic_infinito"));
+            let infinito = UIImageView(image: mcaUtilsHelper.getImage(image: "ic_infinito"))
             infinito.frame.size.width = self.frame.size.width;
             infinito.frame.size.height = self.frame.size.height;
             infinito.contentMode = .center

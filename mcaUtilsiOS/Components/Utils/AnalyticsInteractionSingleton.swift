@@ -540,7 +540,7 @@ public class AnalyticsInteractionSingleton {
         ADBMobile.trackAction(viewName, data: contextData as? [AnyHashable : Any])
     }
     
-    func cleanAccountArrays(){
+    public func cleanAccountArrays(){
         accountArray.removeAll()
         arraySummary.removeAll()
     }

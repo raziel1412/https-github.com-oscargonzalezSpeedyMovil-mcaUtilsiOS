@@ -99,7 +99,7 @@ extension ListOptionsVC: UITableViewDelegate, UITableViewDataSource {
             let selectBtn = UIButton(frame: CGRect(x: 0, y: 0, width: 16, height: 16))
             selectBtn.cornerRadius = 8
             selectBtn.backgroundColor = institutionalColors.claroBlueColor
-            selectBtn.setImage(UIImage(named: "ic_tick"), for: .normal)
+            selectBtn.setImage(mcaUtilsHelper.getImage(image: "ic_tick"), for: .normal)
             selectBtn.imageEdgeInsets = UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3)
             cell.accessoryView = selectBtn
         } else {

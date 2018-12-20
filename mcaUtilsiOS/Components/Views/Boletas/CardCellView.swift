@@ -186,7 +186,7 @@ public class CardCellView: UITableViewCell, UITextFieldDelegate {
         self.addSubview(txtPeriods)
         
         imageHeader = UIImageView(frame: CGRect(x: textFieldWidth - 30, y: txtPeriods.frame.size.height - 30, width: 21, height: 21))
-        let image = UIImage(named: "ico_drop_down")
+        let image = mcaUtilsHelper.getImage(image: "ico_drop_down")
         imageHeader.image = image
         txtPeriods.addSubview(imageHeader)
         

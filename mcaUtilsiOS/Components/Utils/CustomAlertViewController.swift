@@ -63,7 +63,7 @@ public class CustomAlertView: UIViewController {
                 let image = UIImage(contentsOfFile: path)
                 self.icono?.image = resizeImageP(image: image!, targetSize: CGSize(width: tamFoto*3, height: tamFoto*3))
             }else{
-                self.icono?.image = UIImage(named: logo.rawValue)
+                self.icono?.image = mcaUtilsHelper.getImage(image: logo.rawValue)
             }
             self.icono?.frame = CGRect(x: (self.bkg!.frame.size.width - tamFoto) / 2, y: currentY, width: tamFoto, height: tamFoto)
             self.bkg?.addSubview(self.icono!);
@@ -157,10 +157,10 @@ public class CustomAlertView: UIViewController {
             tituloTelefono.text = a.userPhone //"*******5678"
             tituloEmail.text = a.userEmail//"Na**********************@gmail.com"
             
-            let imageTelefono = UIImage(named: "icon_telefono_input")
+            let imageTelefono = mcaUtilsHelper.getImage(image: "icon_telefono_input")
             iconoTelefono.image = imageTelefono
             
-            let imageEmail = UIImage(named: "icon_correo_input")
+            let imageEmail = mcaUtilsHelper.getImage(image: "icon_correo_input")
             iconoEmail.image = imageEmail
             
             //adding contact info to Alert
@@ -277,7 +277,7 @@ public class CustomAlertView: UIViewController {
                                     for: UIControlEvents.touchUpInside)
             self.bkg?.addSubview(self.botonOk!);
             
-            let accessoryViewOk = UIImageView(image: UIImage(named: "ico_siguiente")!)
+            let accessoryViewOk = UIImageView(image: mcaUtilsHelper.getImage(image: "ico_siguiente"))
             accessoryViewOk.frame = CGRect(x: (botonOk?.frame.width)! - 15, y: currentY+10, width: 20.0, height: 20.0)
             self.bkg?.addSubview(accessoryViewOk);
             
@@ -302,7 +302,7 @@ public class CustomAlertView: UIViewController {
                                         for: UIControlEvents.touchUpInside)
             self.bkg?.addSubview(self.botonCamara!);
             
-            let accessoryViewCamara = UIImageView(image: UIImage(named: "ico_siguiente")!)
+            let accessoryViewCamara = UIImageView(image: mcaUtilsHelper.getImage(image: "ico_siguiente"))
             accessoryViewCamara.frame = CGRect(x: (botonCamara?.frame.width)! - 15, y: currentY+10, width: 20.0, height: 20.0)
             self.bkg?.addSubview(accessoryViewCamara);
             
