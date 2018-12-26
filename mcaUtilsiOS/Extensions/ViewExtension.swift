@@ -30,11 +30,11 @@ public extension UIView {
         
         for i in 0..<grecaCount{
             let grecaImage = mcaUtilsHelper.getImage(image: "ticket_prt4") // #imageLiteral(resourceName: "ticket_prt4")
-            let grecaImageView = UIImageView(image: grecaImage)
-            grecaImageView.tag = 2018
             let offset : CGFloat = CGFloat(i)
             let frame = CGRect(x: grecaWidth * offset, y: self.frame.height - grecaHeight, width: grecaWidth, height: grecaHeight)
-            grecaImageView.frame = frame
+            let grecaImageView = UIImageView(frame: frame)
+            grecaImageView.tag = 2018
+            grecaImageView.image = grecaImage
             self.addSubview(grecaImageView)
         }
     

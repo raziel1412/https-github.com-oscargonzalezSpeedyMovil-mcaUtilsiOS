@@ -71,13 +71,13 @@ public enum ServiceType : Int {
 /// Enumerado de Típo de card
 public enum TypeCardView : String {
     case None
-    case Resumen
-    case Móvil
+    case Summary = "Resumen"
+    case Mobile = "Móvil"
     case Internet
-    case Televisión
+    case Television = "Televisión"
     case TodoClaro = "Todo Claro"
-    case Teléfono
-    case Suscripción
+    case phone = "Teléfono"
+    case Subscription = "Suscripción"
 }
 
 /// Enumerado Tipo de cuenta

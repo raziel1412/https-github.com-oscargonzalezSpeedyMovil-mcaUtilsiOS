@@ -44,13 +44,38 @@ public class UIHeaderForm: UIView {
         label.textColor = institutionalColors.claroTextColor
         return label
     }()
+    private var divisorView : UIImageView = {
+        let dView = UIImageView(frame: .zero)
+        dView.contentMode = .scaleAspectFit
+        dView.clipsToBounds = true
+        return dView
+    }()
     
-    var subtitleFont : UIFont {
+    public var titleFont : UIFont {
         get {
-            return self.subtitleFont
+            return self.viewTitle.font
+        }
+        set(font) {
+            self.viewTitle.font = font
+        }
+    }
+    
+    public var subtitleFont : UIFont {
+        get {
+            return self.subTitle.font
         }
         set(font) {
             self.subTitle.font = font
+        }
+    }
+    
+    public var hideDivisorView: Bool {
+        
+        get {
+            return self.divisorView.isHidden
+        }
+        set(hide) {
+            self.divisorView.isHidden = hide
         }
     }
 
@@ -67,11 +92,14 @@ public class UIHeaderForm: UIView {
         self.addSubview(imageView)
         self.addSubview(viewTitle)
         self.addSubview(subTitle)
+        self.addSubview(divisorView)
+        self.divisorView.backgroundColor = .lightGray
+        self.divisorView.isHidden = true
         addConstraints()
     }
     
     private func addConstraints() {
-        constrain(self, imageView, viewTitle, subTitle) { (view, image, title, sTitle) in
+        constrain(self, imageView, viewTitle, subTitle, divisorView) { (view, image, title, sTitle, divisor) in
             image.top == view.top
             image.centerX == view.centerX
             image.width == view.width * 0.32
@@ -84,6 +112,10 @@ public class UIHeaderForm: UIView {
             sTitle.leading == view.leading + 32.0
             sTitle.trailing == view.trailing - 31.0
             sTitle.height == 44.0
+            divisor.top == sTitle.bottom //+ 2.0
+            divisor.centerX == title.centerX
+            divisor.width == title.width * 0.45
+            divisor.height == 1.0
         }
     }
     
@@ -91,6 +123,12 @@ public class UIHeaderForm: UIView {
         self.imageView.image = mcaUtilsHelper.getImage(image:imageName != nil ? imageName! : "" )
         self.viewTitle.text = title != nil ? title! : ""
         self.subTitle.text = subTitle != nil ? subTitle! : ""
+        if subTitle == "" {
+            constrain(viewTitle, self.subTitle) { (title, sTitle) in
+                sTitle.top == title.bottom + 8.0
+                sTitle.height == 0
+            }
+        }
     }
     
     
