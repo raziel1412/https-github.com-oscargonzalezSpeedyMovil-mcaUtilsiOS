@@ -13,6 +13,8 @@ project '/mcaHelpiOS/mcaHelpiOS.xcodeproj'
 project '/mcaHomeiOS/mcaHomeiOS.xcodeproj'
 project '/mcaRegistroiOS/mcaRegistroiOS.xcodeproj'
 project '/mcaCardsiOS/mcaCardsiOS.xcodeproj'
+project '/mcaProfileiOS/mcaProfileiOS.xcodeproj'
+project '/mcaScheduleiOS/mcaScheduleiOS.xcodeproj'
 
 project '/mcaWorkspaceiOSCENAM/mcaiOSCENAM.xcodeproj'
 project '/mcaWorkspaceiOSCL/mcaiOSCL.xcodeproj'
@@ -124,6 +126,24 @@ target 'mcaCardsiOS' do
     platform :ios, '9.0'
     use_frameworks!
     project '../../mcaCardsiOS/mcaCardsiOS.xcodeproj'
+    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+    project_pods
+end
+
+target 'mcaProfileiOS' do
+    platform :ios, '9.0'
+    use_frameworks!
+    project '../../mcaProfileiOS/mcaProfileiOS.xcodeproj'
+    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+    project_pods
+end
+
+target 'mcaScheduleiOS' do
+    platform :ios, '9.0'
+    use_frameworks!
+    project '../../mcaScheduleiOS/mcaScheduleiOS.xcodeproj'
     workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
