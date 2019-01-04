@@ -15,10 +15,10 @@ project '/mcaRegistroiOS/mcaRegistroiOS.xcodeproj'
 project '/mcaCardsiOS/mcaCardsiOS.xcodeproj'
 project '/mcaProfileiOS/mcaProfileiOS.xcodeproj'
 project '/mcaScheduleiOS/mcaScheduleiOS.xcodeproj'
+project '/mcaBillingiOS/mcaBillingiOS.xcodeproj'
 
 project '/mcaWorkspaceiOSCENAM/mcaiOSCENAM.xcodeproj'
 project '/mcaWorkspaceiOSCL/mcaiOSCL.xcodeproj'
-project '/mcaWorkspaceiOSCL/mcaBillingiOS.xcodeproj'
 
 
 
@@ -149,6 +149,7 @@ target 'mcaScheduleiOS' do
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
 end
+
 target 'mcaBillingiOS' do
     platform :ios, '9.0'
     use_frameworks!
@@ -157,6 +158,7 @@ target 'mcaBillingiOS' do
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
 end
+
 target 'mcaiOSCENAM' do
    platform :ios, '9.0'
    use_frameworks!
