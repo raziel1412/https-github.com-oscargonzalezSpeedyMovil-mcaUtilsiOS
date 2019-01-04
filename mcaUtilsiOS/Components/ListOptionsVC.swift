@@ -20,8 +20,10 @@ public class OptionModel: NSObject{
     
 }
 
-public class ListOptionsVC: UIViewController {
+public class ListOptionsVC: UIViewController, UITableViewDelegate, UITableViewDataSource  {
 
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var imageBackground: UIImageView!
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var optionsTableView: UITableView!
     @IBOutlet weak var acceptBtn: DesignableButton!
@@ -32,23 +34,39 @@ public class ListOptionsVC: UIViewController {
 //    var acceptSelector: ((_ indexSelected:Int) -> Void)?
     var lastVC: UIViewController?
     var titleStr: String = ""
+    var indexSelectedAction: (_ indexSelected: Int) -> Void = {_ in}
     
     override public func viewDidLoad() {
         super.viewDidLoad()
         self.optionsTableView.allowsMultipleSelection = true
         self.optionsTableView.allowsMultipleSelectionDuringEditing = true
-        self.optionsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        self.optionsTableView.delegate = self
         self.optionsTableView.dataSource = self
+        self.optionsTableView.delegate = self
+        self.optionsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        self.optionsTableView.dataSource = self
+        self.optionsTableView.delegate = self
         self.optionsTableView.estimatedRowHeight = 44.0
         self.optionsTableView.rowHeight = UITableViewAutomaticDimension
         self.titleLbl.text = titleStr
         acceptBtn.addTarget(self, action: #selector(acceptction), for: .touchUpInside)
         cancelBtn.addTarget(self, action: #selector(cancelAction), for: .touchUpInside)
+//        if #available(iOS 11.0, *) {
+//            imageBackground.insetsLayoutMarginsFromSafeArea = false
+//        }
     }
     
-    public static func show(inViewController: UIViewController, array: [OptionModel], title: String, indexSelected: Int) {
-        let popupVC = ListOptionsVC(nibName: "ListOptionsVC", bundle: nil)
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+//        let heightComponents: CGFloat = CGFloat(self.optionsArray.count * 44) + 121.0
+//        if heightComponents < containerView.frame.height {
+//            let originY = (self.view.frame.height - heightComponents) / 2
+//            containerView.frame = CGRect(x: containerView.frame.origin.x, y: originY, width: containerView.frame.width, height: heightComponents)
+//        }
+    }
+    
+    public static func show(inViewController: UIViewController, array: [OptionModel], title: String, indexSelected: Int, indexSelectedAction: @escaping (_ indexSelected: Int) -> Void) {
+        let bundle = Bundle(for: ListOptionsVC.self)
+        let popupVC = ListOptionsVC(nibName: "ListOptionsVC", bundle: bundle)
         popupVC.modalPresentationStyle = .overFullScreen
         popupVC.providesPresentationContextTransitionStyle = true;
         popupVC.definesPresentationContext = true;
@@ -58,12 +76,13 @@ public class ListOptionsVC: UIViewController {
         popupVC.optionsArray = array
         popupVC.indexSelected = indexSelected
         popupVC.titleStr = title
+        popupVC.indexSelectedAction = indexSelectedAction
         inViewController.present(popupVC, animated: true, completion: nil)
     }
     
     func acceptction() {
         self.dismiss(animated: true, completion: {
-                self.lastVC?.indexSelected(selected: self.indexSelected)
+            self.indexSelectedAction(self.indexSelected)
         })
     }
     
@@ -78,10 +97,7 @@ public class ListOptionsVC: UIViewController {
 }
 
 //MARK: UITableViewDelegate, UITableViewDataSource
-extension ListOptionsVC: UITableViewDelegate, UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
+extension ListOptionsVC{
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.optionsArray.count
@@ -116,13 +132,13 @@ extension ListOptionsVC: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("did select")
         self.indexSelected = indexPath.row
         self.optionsTableView.reloadData()
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 44.0
     }
 }

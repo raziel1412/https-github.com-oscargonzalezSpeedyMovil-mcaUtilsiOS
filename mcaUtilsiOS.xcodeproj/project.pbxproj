@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D1D3E3921D69FE100FA21D9 /* Utilities.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFB46219F1EE900F85A3D /* Utilities.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D1E496521B5BCE4007C61B1 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E496421B5BCE4007C61B1 /* CustomNavigationBar.swift */; };
 		1D1E498521B5EB6B007C61B1 /* LinkeableEventDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E498421B5EB6B007C61B1 /* LinkeableEventDelegate.swift */; };
 		1D1E498C21B70D40007C61B1 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E498B21B70D40007C61B1 /* FontExtension.swift */; };
@@ -652,6 +653,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D1D3E3921D69FE100FA21D9 /* Utilities.swift in Headers */,
 				1DCFABEE21ADFCBD00056A67 /* mcaUtilsHelper.swift in Headers */,
 				62EBFFF8219F26F000F85A3D /* ADBMobile.h in Headers */,
 				7B07B54521C1753100A0461A /* RadioButtonView.swift in Headers */,

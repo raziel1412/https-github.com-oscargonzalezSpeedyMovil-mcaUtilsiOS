@@ -178,9 +178,6 @@ public extension UIViewController  {
         }
     }
     
-    public func indexSelected(selected:Int) {
-        print("selected at extension: ()")
-    }
-    
 }
+
 

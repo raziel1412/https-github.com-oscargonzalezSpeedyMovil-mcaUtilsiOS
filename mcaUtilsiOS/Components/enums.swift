@@ -76,8 +76,8 @@ public enum TypeCardView : String {
     case Internet
     case Television = "Televisión"
     case TodoClaro = "Todo Claro"
-    case phone = "Teléfono"
-    case Subscription = "Suscripción"
+    case Telephone = "Teléfono"
+    case Subscription = "Suscripciones"
 }
 
 /// Enumerado Tipo de cuenta
