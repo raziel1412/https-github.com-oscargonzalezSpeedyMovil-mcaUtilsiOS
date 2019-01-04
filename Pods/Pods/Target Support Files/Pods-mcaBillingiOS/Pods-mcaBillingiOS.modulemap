@@ -1,0 +1,6 @@
+framework module Pods_mcaBillingiOS {
+  umbrella header "Pods-mcaBillingiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
