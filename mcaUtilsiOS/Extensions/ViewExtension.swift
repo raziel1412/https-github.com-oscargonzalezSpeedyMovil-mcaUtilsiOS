@@ -47,7 +47,7 @@ public extension UIView {
         let linesHeight = linesWidth * 0.80
         self.backgroundColor = institutionalColors.claroWhiteColor
         for i in 0..<linesCount{
-            let lineImage = #imageLiteral(resourceName: "guion")
+            let lineImage = mcaUtilsHelper.getImage(image: "guion") // #imageLiteral(resourceName: "guion")
             let lineImageView = UIImageView(image: lineImage)
             let offset : CGFloat = CGFloat(i)
             let frame = CGRect(x: linesWidth * offset, y: self.frame.height - linesHeight, width: 3.0, height: 1.0)
