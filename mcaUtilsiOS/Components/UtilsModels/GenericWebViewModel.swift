@@ -13,8 +13,8 @@ public class GenericWebViewModel: NSObject {
     public var headerTitle: String!
     public var serviceSelected: WebViewType! /// Variable que almacena el servicio seleccionado
     public var buttonNavType: ButtonNavType!
-    public var rut: String? /// Required for para billing payment, ScheduleCAC, HoursCAC
-    public var email: String? /// Required for para billing payment, ScheduleCAC, , HoursCAC
+    public var rut: String? /// Required for billing payment, ScheduleCAC, HoursCAC
+    public var email: String? /// Required for billing payment, ScheduleCAC, , HoursCAC
     public var name: String? /// Required for ScheduleCAC
     public var reloadUrlSuccess: String! /// Constante que tiene la URL recarga
     public var paidUrlSucces: String! /// Constante que tiene la URL pago

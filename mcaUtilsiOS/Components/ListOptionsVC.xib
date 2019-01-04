@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,11 +15,13 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListOptionsVC" customModule="MiClaro" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListOptionsVC" customModule="mcaUtilsiOS" customModuleProvider="target">
             <connections>
                 <outlet property="acceptBtn" destination="9pI-QP-qwC" id="Ugd-2w-vMw"/>
                 <outlet property="cancelBtn" destination="k4Z-au-2PZ" id="aja-ys-pCp"/>
-                <outlet property="optionsTableView" destination="nMJ-Sq-aeE" id="XrV-9O-a7V"/>
+                <outlet property="containerView" destination="P2e-Hg-LZM" id="UwL-iY-VY8"/>
+                <outlet property="imageBackground" destination="VOD-MS-Bsm" id="WtP-5a-EXz"/>
+                <outlet property="optionsTableView" destination="nMJ-Sq-aeE" id="7PE-Ww-UeQ"/>
                 <outlet property="titleLbl" destination="f6V-PB-OjI" id="Ley-sA-XN1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -29,8 +31,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VOD-MS-Bsm">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOD-MS-Bsm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="867"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P2e-Hg-LZM">
@@ -45,7 +47,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4Z-au-2PZ" customClass="DesignableButton" customModule="MiClaro" customModuleProvider="target">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4Z-au-2PZ" customClass="DesignableButton" customModule="mcaUtilsiOS" customModuleProvider="target">
                             <rect key="frame" x="8" y="417" width="284" height="42"/>
                             <state key="normal" title="Cancelar">
                                 <color key="titleColor" red="0.062745098040000002" green="0.59215686270000001" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -59,7 +61,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pI-QP-qwC" customClass="DesignableButton" customModule="MiClaro" customModuleProvider="target">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pI-QP-qwC" customClass="DesignableButton" customModule="mcaUtilsiOS" customModuleProvider="target">
                             <rect key="frame" x="8" y="367" width="284" height="42"/>
                             <state key="normal" title="Confirmar">
                                 <color key="titleColor" red="0.062745098040000002" green="0.59215686270000001" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -106,9 +108,9 @@
             <constraints>
                 <constraint firstItem="P2e-Hg-LZM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8T2-GY-fxF"/>
                 <constraint firstItem="P2e-Hg-LZM" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.7" id="8zh-j2-h0v"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="VOD-MS-Bsm" secondAttribute="bottom" id="ETx-VC-cZD"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VOD-MS-Bsm" secondAttribute="trailing" id="RCN-1P-5xb"/>
-                <constraint firstItem="VOD-MS-Bsm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gXU-rJ-FOl"/>
+                <constraint firstAttribute="bottom" secondItem="VOD-MS-Bsm" secondAttribute="bottom" id="ETx-VC-cZD"/>
+                <constraint firstAttribute="trailing" secondItem="VOD-MS-Bsm" secondAttribute="trailing" id="RCN-1P-5xb"/>
+                <constraint firstItem="VOD-MS-Bsm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gXU-rJ-FOl"/>
                 <constraint firstItem="P2e-Hg-LZM" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="oBf-aG-zEb"/>
                 <constraint firstItem="VOD-MS-Bsm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qtq-ff-hzj"/>
                 <constraint firstItem="P2e-Hg-LZM" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="yMB-0P-EHY"/>

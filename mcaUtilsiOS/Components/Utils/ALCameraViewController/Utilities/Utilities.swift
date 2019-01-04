@@ -104,10 +104,10 @@ internal func flashImage(_ mode: AVCaptureDevice.FlashMode) -> String {
     return image
 }
 
-struct ScreenSize {
-    static let SCREEN_WIDTH         = UIScreen.main.bounds.size.width
-    static let SCREEN_HEIGHT        = UIScreen.main.bounds.size.height
-    static let SCREEN_MAX_LENGTH    = max(ScreenSize.SCREEN_WIDTH, ScreenSize.SCREEN_HEIGHT)
+public struct ScreenSize {
+    public static let SCREEN_WIDTH         = UIScreen.main.bounds.size.width
+    public static let SCREEN_HEIGHT        = UIScreen.main.bounds.size.height
+    public static let SCREEN_MAX_LENGTH    = max(ScreenSize.SCREEN_WIDTH, ScreenSize.SCREEN_HEIGHT)
 }
 
 struct DeviceConfig {
