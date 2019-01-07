@@ -94,8 +94,12 @@ public class TermsAndConditions: UIView {
         
 
         if(parentViewName == "Registro"){
-            AnalyticsInteractionSingleton.sharedInstance.ADBTrackViewRecoveryPass(viewName: "Recuperar contrasena|Terminos y condiciones", detenido: false)
-            AnalyticsInteractionSingleton.sharedInstance.ADBTrackCustomLink(viewName: "Registro|Paso 1|Ingresar datos:Terminos y condiciones")
+            
+            let notificationAnalyticsRec = NotificationAnalyticsModel(viewName: "Recuperar contrasena|Terminos y condiciones")
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "ADBTrackViewRecoveryPass"), object: notificationAnalyticsRec)
+            
+            let notificationAnalyticsLink = NotificationAnalyticsModel(viewName: "Registro|Paso 1|Ingresar datos:Terminos y condiciones")
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "ADBTrackCustomLink"), object: notificationAnalyticsLink)
         }
         
     }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D1D3E3921D69FE100FA21D9 /* Utilities.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFB46219F1EE900F85A3D /* Utilities.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D1D422C21E3BFF400FA21D9 /* NotificationAnalyticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1D422B21E3BFF400FA21D9 /* NotificationAnalyticsModel.swift */; };
 		1D1E496521B5BCE4007C61B1 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E496421B5BCE4007C61B1 /* CustomNavigationBar.swift */; };
 		1D1E498521B5EB6B007C61B1 /* LinkeableEventDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E498421B5EB6B007C61B1 /* LinkeableEventDelegate.swift */; };
 		1D1E498C21B70D40007C61B1 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E498B21B70D40007C61B1 /* FontExtension.swift */; };
@@ -18,10 +19,7 @@
 		1DCFABFA21AE065200056A67 /* GeneralAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F0DFC321A609BD001D98AC /* GeneralAlerts.swift */; };
 		1DCFAC5521AF683F00056A67 /* mcaUtilsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */; };
 		50916FA9B8B50EA870C2BC6E /* Pods_mcaUtilsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170AEF6659E0C1B563ED2A8C /* Pods_mcaUtilsiOS.framework */; };
-		621A65BB21A769BF00D85FBA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 621A65BA21A769BF00D85FBA /* libsqlite3.tbd */; };
 		622ED4DC21A8AE1D00BE746A /* Extension+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622ED4DB21A8AE1D00BE746A /* Extension+UIApplication.swift */; };
-		626C054521A7296B0031EF19 /* CardsSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C054421A7296B0031EF19 /* CardsSummaryModel.swift */; };
-		6282911621A708FD00AF8144 /* AnalyticsInteractionSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6282911521A708FD00AF8144 /* AnalyticsInteractionSingleton.swift */; };
 		6282911821A720CA00AF8144 /* Extension+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6282911721A720CA00AF8144 /* Extension+URL.swift */; };
 		62874661219CD9B200C53384 /* mcaUtilsiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 62874653219CD9B200C53384 /* mcaUtilsiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62E67EFD21A4D29300B4F182 /* enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E67EFC21A4D29300B4F182 /* enums.swift */; };
@@ -128,9 +126,6 @@
 		62EBFFC7219F1EEB00F85A3D /* SimpleGrayTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFDBE219F1EEA00F85A3D /* SimpleGrayTextField.swift */; };
 		62EBFFC8219F1EEB00F85A3D /* RedBackgroundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFDBF219F1EEA00F85A3D /* RedBackgroundButton.swift */; };
 		62EBFFC9219F1EEB00F85A3D /* TermsAndConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFDC0219F1EEA00F85A3D /* TermsAndConditions.swift */; };
-		62EBFFF8219F26F000F85A3D /* ADBMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFFF5219F26EF00F85A3D /* ADBMobile.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62EBFFF9219F26F000F85A3D /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 62EBFFF6219F26EF00F85A3D /* ADBMobileConfig.json */; };
-		62EBFFFA219F26F000F85A3D /* AdobeMobileLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EBFFF7219F26EF00F85A3D /* AdobeMobileLibrary.a */; };
 		7B07B54521C1753100A0461A /* RadioButtonView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFD8E219F1EEA00F85A3D /* RadioButtonView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B07B54821C18B1A00A0461A /* UIHeaderForm2.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFDB6219F1EEA00F85A3D /* UIHeaderForm2.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B564E4221B9901100890AA0 /* BlackTitleLabel.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFDA4219F1EEA00F85A3D /* BlackTitleLabel.swift */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -141,6 +136,7 @@
 
 /* Begin PBXFileReference section */
 		170AEF6659E0C1B563ED2A8C /* Pods_mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D1D422B21E3BFF400FA21D9 /* NotificationAnalyticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAnalyticsModel.swift; sourceTree = "<group>"; };
 		1D1E496421B5BCE4007C61B1 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		1D1E498421B5EB6B007C61B1 /* LinkeableEventDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkeableEventDelegate.swift; sourceTree = "<group>"; };
 		1D1E498B21B70D40007C61B1 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
@@ -150,8 +146,6 @@
 		1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mcaUtilsHelper.swift; sourceTree = "<group>"; };
 		621A65BA21A769BF00D85FBA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		622ED4DB21A8AE1D00BE746A /* Extension+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIApplication.swift"; sourceTree = "<group>"; };
-		626C054421A7296B0031EF19 /* CardsSummaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsSummaryModel.swift; sourceTree = "<group>"; };
-		6282911521A708FD00AF8144 /* AnalyticsInteractionSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsInteractionSingleton.swift; sourceTree = "<group>"; };
 		6282911721A720CA00AF8144 /* Extension+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+URL.swift"; sourceTree = "<group>"; };
 		62874650219CD9B200C53384 /* mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62874653219CD9B200C53384 /* mcaUtilsiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mcaUtilsiOS.h; sourceTree = "<group>"; };
@@ -260,9 +254,6 @@
 		62EBFDBE219F1EEA00F85A3D /* SimpleGrayTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleGrayTextField.swift; sourceTree = "<group>"; };
 		62EBFDBF219F1EEA00F85A3D /* RedBackgroundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedBackgroundButton.swift; sourceTree = "<group>"; };
 		62EBFDC0219F1EEA00F85A3D /* TermsAndConditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsAndConditions.swift; sourceTree = "<group>"; };
-		62EBFFF5219F26EF00F85A3D /* ADBMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADBMobile.h; sourceTree = "<group>"; };
-		62EBFFF6219F26EF00F85A3D /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfig.json; sourceTree = "<group>"; };
-		62EBFFF7219F26EF00F85A3D /* AdobeMobileLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AdobeMobileLibrary.a; sourceTree = "<group>"; };
 		62F0DFC321A609BD001D98AC /* GeneralAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralAlerts.swift; sourceTree = "<group>"; };
 		A6DEFDA3D524114A7F85AF9B /* Pods-mcaUtilsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.debug.xcconfig"; path = "Pods/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D83C877DBFD091C133148C26 /* Pods-mcaUtilsiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.release.xcconfig"; path = "Pods/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -273,9 +264,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				621A65BB21A769BF00D85FBA /* libsqlite3.tbd in Frameworks */,
 				50916FA9B8B50EA870C2BC6E /* Pods_mcaUtilsiOS.framework in Frameworks */,
-				62EBFFFA219F26F000F85A3D /* AdobeMobileLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +318,7 @@
 				1D1E496421B5BCE4007C61B1 /* CustomNavigationBar.swift */,
 				1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */,
 				62F0DFC321A609BD001D98AC /* GeneralAlerts.swift */,
+				1D1D422B21E3BFF400FA21D9 /* NotificationAnalyticsModel.swift */,
 			);
 			path = mcaUtilsGeneral;
 			sourceTree = "<group>";
@@ -367,7 +357,6 @@
 				1D1E498A21B70CE6007C61B1 /* Extensions */,
 				1D1E498321B5EB30007C61B1 /* Protocols */,
 				1DCFAC1021AF12D000056A67 /* mcaUtilsGeneral */,
-				62EBFFF4219F26EF00F85A3D /* AdobeMobileLibrary */,
 				62874654219CD9B200C53384 /* Info.plist */,
 				62EB36A6219E444500864FD4 /* Assets.xcassets */,
 				62EBFAEE219F1EE900F85A3D /* Components */,
@@ -430,9 +419,7 @@
 				62EBFB42219F1EE900F85A3D /* ALCameraViewController */,
 				62EBFB61219F1EE900F85A3D /* Network */,
 				62EBFB73219F1EE900F85A3D /* Spinners */,
-				6282911521A708FD00AF8144 /* AnalyticsInteractionSingleton.swift */,
 				6282911721A720CA00AF8144 /* Extension+URL.swift */,
-				626C054421A7296B0031EF19 /* CardsSummaryModel.swift */,
 				622ED4DB21A8AE1D00BE746A /* Extension+UIApplication.swift */,
 			);
 			path = Utils;
@@ -636,16 +623,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		62EBFFF4219F26EF00F85A3D /* AdobeMobileLibrary */ = {
-			isa = PBXGroup;
-			children = (
-				62EBFFF5219F26EF00F85A3D /* ADBMobile.h */,
-				62EBFFF6219F26EF00F85A3D /* ADBMobileConfig.json */,
-				62EBFFF7219F26EF00F85A3D /* AdobeMobileLibrary.a */,
-			);
-			path = AdobeMobileLibrary;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -655,7 +632,6 @@
 			files = (
 				1D1D3E3921D69FE100FA21D9 /* Utilities.swift in Headers */,
 				1DCFABEE21ADFCBD00056A67 /* mcaUtilsHelper.swift in Headers */,
-				62EBFFF8219F26F000F85A3D /* ADBMobile.h in Headers */,
 				7B07B54521C1753100A0461A /* RadioButtonView.swift in Headers */,
 				7B564E4721B9986A00890AA0 /* enums.swift in Headers */,
 				7B07B54821C18B1A00A0461A /* UIHeaderForm2.swift in Headers */,
@@ -740,7 +716,6 @@
 				62EB3B98219E447900864FD4 /* Roboto-BoldCondensedItalic.ttf in Resources */,
 				62EB3B95219E447900864FD4 /* Roboto-Regular.ttf in Resources */,
 				62EB3BA2219E447900864FD4 /* Roboto-Thin.ttf in Resources */,
-				62EBFFF9219F26F000F85A3D /* ADBMobileConfig.json in Resources */,
 				62EB3B9B219E447900864FD4 /* Roboto-ThinItalic.ttf in Resources */,
 				62EB3B99219E447900864FD4 /* Roboto-Condensed.ttf in Resources */,
 				62EB3BA0219E447900864FD4 /* Roboto-BlackItalic.ttf in Resources */,
@@ -805,10 +780,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D1D422C21E3BFF400FA21D9 /* NotificationAnalyticsModel.swift in Sources */,
 				1DCFAC5521AF683F00056A67 /* mcaUtilsHelper.swift in Sources */,
 				1D2B53CA21C184F4008ABC44 /* GenericWebViewVC.swift in Sources */,
 				62EBFE2C219F1EEA00F85A3D /* Extension+UIView.swift in Sources */,
-				6282911621A708FD00AF8144 /* AnalyticsInteractionSingleton.swift in Sources */,
 				62EBFFB8219F1EEB00F85A3D /* PasswordCustomTableViewCell.swift in Sources */,
 				62EBFE1F219F1EEA00F85A3D /* CustomAlertViewController.swift in Sources */,
 				62EBFE15219F1EEA00F85A3D /* CameraView.swift in Sources */,
@@ -885,7 +860,6 @@
 				62EBFF9D219F1EEA00F85A3D /* RedBorderWhiteBackgroundButton.swift in Sources */,
 				1D1E498C21B70D40007C61B1 /* FontExtension.swift in Sources */,
 				62EBFFC1219F1EEB00F85A3D /* UITextFieldGroupPhone.swift in Sources */,
-				626C054521A7296B0031EF19 /* CardsSummaryModel.swift in Sources */,
 				62EBFFAC219F1EEA00F85A3D /* WebView.swift in Sources */,
 				62EBFE12219F1EEA00F85A3D /* ConfirmViewController.swift in Sources */,
 				62EBFE2E219F1EEA00F85A3D /* Appearance.swift in Sources */,

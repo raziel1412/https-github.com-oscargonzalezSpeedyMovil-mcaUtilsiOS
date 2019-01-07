@@ -126,7 +126,9 @@ public class PlanDetailAlertViewController: UIViewController {
         self.cuerpo?.sizeToFit();
         self.cuerpo?.frame.size.width = self.bkg!.frame.size.width - (margin * 2);
         currentY = currentY + self.cuerpo!.frame.size.height + 20
-        AnalyticsInteractionSingleton.sharedInstance.ADBTrackView(viewName: "Alerta", detenido: false, mensaje: self.cuerpo?.text)
+        
+        let notificationAnalytics = NotificationAnalyticsModel(viewName: "Alerta", isStopped: false, message: self.cuerpo?.text ?? "")
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "ADBTrackView"), object: notificationAnalytics)
 
         if let a = self.alertData {
             self.botonOk = UIButton();

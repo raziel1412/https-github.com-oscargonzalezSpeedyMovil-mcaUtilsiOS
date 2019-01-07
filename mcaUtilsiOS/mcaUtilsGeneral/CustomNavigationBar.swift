@@ -29,11 +29,15 @@ public extension UIViewController  {
     }
     
     func openMenu() {
-        AnalyticsInteractionSingleton.sharedInstance.ADBTrackCustomLink(viewName: "General:Menu")
+        let notificationAnalytics = NotificationAnalyticsModel(viewName: "General:Menu")
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "ADBTrackCustomLink"), object: notificationAnalytics)
+        
         if let container = self.so_containerViewController {
             self.view.endEditing(true);
             container.isSideViewControllerPresented = true
-            AnalyticsInteractionSingleton.sharedInstance.ADBTrackView(viewName: "Menu", detenido: false)
+            
+            let notificationAnalytics = NotificationAnalyticsModel(viewName: "Menu", isStopped: false)
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "AddTrackView"), object: notificationAnalytics)
         }
         NotificationCenter.default.post(name: Notification.Name("NotificationOpenMenu"), object: nil);
     }
