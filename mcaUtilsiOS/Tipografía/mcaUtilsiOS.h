@@ -17,5 +17,4 @@ FOUNDATION_EXPORT const unsigned char mcaUtilsiOSVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <mcaUtilsiOS/PublicHeader.h>
 
 #include <ifaddrs.h>
-#include "ADBMobile.h"
 
