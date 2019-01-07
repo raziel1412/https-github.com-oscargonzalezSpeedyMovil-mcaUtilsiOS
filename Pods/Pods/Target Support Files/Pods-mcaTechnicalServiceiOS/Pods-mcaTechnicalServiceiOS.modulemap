@@ -1,0 +1,6 @@
+framework module Pods_mcaTechnicalServiceiOS {
+  umbrella header "Pods-mcaTechnicalServiceiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

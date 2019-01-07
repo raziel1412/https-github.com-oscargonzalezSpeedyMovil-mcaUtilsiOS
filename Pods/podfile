@@ -17,6 +17,13 @@ project '/mcaProfileiOS/mcaProfileiOS.xcodeproj'
 project '/mcaScheduleiOS/mcaScheduleiOS.xcodeproj'
 project '/mcaBillingiOS/mcaBillingiOS.xcodeproj'
 
+project '/mcaAddServiceiOS/mcaAddServiceiOS.xcodeproj'
+project '/mcaClick2BuyiOS/mcaClick2BuyiOS.xcodeproj'
+project '/mcaPaidsiOS/mcaPaidsiOS.xcodeproj'
+project '/mcaPushNotificationsiOS/mcaPushNotificationsiOS.xcodeproj'
+project '/mcaTechnicalServiceiOS/mcaTechnicalServiceiOS.xcodeproj'
+project '/mcaTopUpRefilliOS/mcaTopUpRefilliOS.xcodeproj'
+
 project '/mcaWorkspaceiOSCENAM/mcaiOSCENAM.xcodeproj'
 project '/mcaWorkspaceiOSCL/mcaiOSCL.xcodeproj'
 
@@ -154,6 +161,60 @@ target 'mcaBillingiOS' do
     platform :ios, '9.0'
     use_frameworks!
     project '../../mcaBillingiOS/mcaBillingiOS.xcodeproj'
+    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+    project_pods
+end
+
+target 'mcaAddServiceiOS' do
+    platform :ios, '9.0'
+    use_frameworks!
+    project '../../mcaAddServiceiOS/mcaAddServiceiOS.xcodeproj'
+    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+    project_pods
+end
+
+target 'mcaClick2BuyiOS' do
+    platform :ios, '9.0'
+    use_frameworks!
+    project '../../mcaClick2BuyiOS/mcaClick2BuyiOS.xcodeproj'
+    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+    project_pods
+end
+
+target 'mcaPaidsiOS' do
+    platform :ios, '9.0'
+    use_frameworks!
+    project '../../mcaPaidsiOS/mcaPaidsiOS.xcodeproj'
+    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+    project_pods
+end
+
+target 'mcaPushNotificationsiOS' do
+    platform :ios, '9.0'
+    use_frameworks!
+    project '../../mcaPushNotificationsiOS/mcaPushNotificationsiOS.xcodeproj'
+    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+    project_pods
+end
+
+target 'mcaTechnicalServiceiOS' do
+    platform :ios, '9.0'
+    use_frameworks!
+    project '../../mcaTechnicalServiceiOS/mcaTechnicalServiceiOS.xcodeproj'
+    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+    project_pods
+end
+
+target 'mcaTopUpRefilliOS' do
+    platform :ios, '9.0'
+    use_frameworks!
+    project '../../mcaTopUpRefilliOS/mcaTopUpRefilliOS.xcodeproj'
     workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
