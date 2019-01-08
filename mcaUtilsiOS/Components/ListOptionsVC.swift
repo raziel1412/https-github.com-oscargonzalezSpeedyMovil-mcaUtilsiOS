@@ -77,7 +77,16 @@ public class ListOptionsVC: UIViewController, UITableViewDelegate, UITableViewDa
         popupVC.indexSelected = indexSelected
         popupVC.titleStr = title
         popupVC.indexSelectedAction = indexSelectedAction
-        inViewController.present(popupVC, animated: true, completion: nil)
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        let vc = UIViewController()
+        vc.view.backgroundColor = .clear
+        window.rootViewController = vc
+        window.windowLevel = UIWindowLevelAlert + 1
+        window.makeKeyAndVisible()
+        vc.present(popupVC, animated: true, completion: nil)
+        //inViewController.present(popupVC, animated: true, completion: nil)
+        
     }
     
     func acceptction() {
