@@ -52,6 +52,7 @@ def project_pods
     # Pods crash
     pod 'Fabric', '~> 1.7.3'
     pod 'Crashlytics', '~> 3.10'
+    pod 'UrbanAirship-iOS-SDK'
 
     pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :branch => 'master'
     pod 'SwiftyJSON'

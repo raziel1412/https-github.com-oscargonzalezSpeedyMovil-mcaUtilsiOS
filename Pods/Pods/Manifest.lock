@@ -57,6 +57,7 @@ PODS:
   - SwiftyJSON (4.2.0)
   - Toast (3.1.0)
   - TTTAttributedLabel (2.0.0)
+  - UrbanAirship-iOS-SDK (9.4.0)
   - XLPagerTabStrip (7.0.0)
 
 DEPENDENCIES:
@@ -79,6 +80,7 @@ DEPENDENCIES:
   - SkyFloatingLabelTextField (~> 3.0)
   - SwiftValidator (from `https://github.com/jpotts18/SwiftValidator.git`, branch `master`)
   - SwiftyJSON
+  - UrbanAirship-iOS-SDK
   - XLPagerTabStrip (~> 7.0)
 
 EXTERNAL SOURCES:
@@ -127,8 +129,9 @@ SPEC CHECKSUMS:
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  UrbanAirship-iOS-SDK: 25f155c0142b62e4a94ec21093d65c6e128f5213
   XLPagerTabStrip: 9be80a66c6b7d60306b2c0a6004965016d68f813
 
-PODFILE CHECKSUM: a9a79aa325aba0be87fc3efc0a7686429d87aed7
+PODFILE CHECKSUM: c54f114a4ce6bb4f05218aa8fc3a7387452514fa
 
 COCOAPODS: 1.4.0
