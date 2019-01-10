@@ -8,7 +8,7 @@
 import UIKit
 import Cartography
 import SidebarOverlay
-
+ 
 /// Tipo de NavigationBar
 public enum ButtonNavType {
     case None
@@ -17,18 +17,18 @@ public enum ButtonNavType {
 }
 
 /// Esta clase permite realizar customizaciones del Navigation Bar a partir de los parámetros proporcionados en el constructor
-public extension UIViewController  {
+extension UIViewController  {
     
-    public func rightButtonAction() {
+    open func rightButtonAction() {
         print("right button action")
     }
     
-    public func leftButtonAction() {
+    open func leftButtonAction() {
         print("left button action")
         self.navigationController?.popViewController(animated: true)
     }
     
-    func openMenu() {
+    open func openMenu() {
         let notificationAnalytics = NotificationAnalyticsModel(viewName: "General:Menu")
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "ADBTrackCustomLink"), object: notificationAnalytics)
         
@@ -45,7 +45,7 @@ public extension UIViewController  {
     /// El constructor permite customizar el NavigationBar dependiendo del valor de navigationType
     /// -param:
     ///     - navigationType : enum navType
-    public func initWith(navigationType: ButtonNavType, backToMain: Bool = false, headerTitle: String, rightButtontitle: String = "", leftButtonTitle: String = "", isLogged: Bool = false) {
+    open func initWith(navigationType: ButtonNavType, backToMain: Bool = false, headerTitle: String, rightButtontitle: String = "", leftButtonTitle: String = "", isLogged: Bool = false) {
         
         let logoId = -1
         let customfont: UIFont = UIFont(name: RobotoFontName.RobotoMedium.rawValue, size: CGFloat(18)) ?? UIFont()
@@ -170,7 +170,7 @@ public extension UIViewController  {
     }
     
     /// Get distance from top, based on status bar and navigation
-    public var topDistance : CGFloat{
+    open var topDistance : CGFloat{
         get{
             if self.navigationController == nil{
                 return 0
