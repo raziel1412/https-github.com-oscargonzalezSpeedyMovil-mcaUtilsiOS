@@ -10,7 +10,6 @@ import UIKit
 import PKHUD
 import Lottie
 import Cartography
-import ReachabilitySwift
 
 /// Clase usada para el uso del NotificationCenter (Observabilidad)
 public class Observers: NSObject {

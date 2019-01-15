@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1010"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0A0C1451FC8FB89CEC1A1FAE11796DB9"
+               BlueprintIdentifier = "F9BB840744BC822CEC56162565921BF2"
                BuildableName = "Pods_mcaScheduleiOS.framework"
                BlueprintName = "Pods-mcaScheduleiOS"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0A0C1451FC8FB89CEC1A1FAE11796DB9"
+            BlueprintIdentifier = "F9BB840744BC822CEC56162565921BF2"
             BuildableName = "Pods_mcaScheduleiOS.framework"
             BlueprintName = "Pods-mcaScheduleiOS"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0A0C1451FC8FB89CEC1A1FAE11796DB9"
-            BuildableName = "Pods_mcaScheduleiOS.framework"
-            BlueprintName = "Pods-mcaScheduleiOS"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -17,10 +17,10 @@ PODS:
     - AFNetworking/NSURLSession
   - BEMCheckBox (1.4.1)
   - Cartography (1.1.0)
-  - Crashlytics (3.10.8):
-    - Fabric (~> 1.7.12)
+  - Crashlytics (3.10.9):
+    - Fabric (~> 1.7.13)
   - DLRadioButton (1.4.12)
-  - Fabric (1.7.12)
+  - Fabric (1.7.13)
   - FontAwesome.swift (1.2.0)
   - GoogleMaps (2.7.0):
     - GoogleMaps/Maps (= 2.7.0)
@@ -83,10 +83,42 @@ DEPENDENCIES:
   - UrbanAirship-iOS-SDK
   - XLPagerTabStrip (~> 7.0)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ActionSheetPicker-3.0
+    - AFNetworking
+    - BEMCheckBox
+    - Cartography
+    - Crashlytics
+    - DLRadioButton
+    - Fabric
+    - FontAwesome.swift
+    - GoogleMaps
+    - IBMMobileFirstPlatformFoundation
+    - IQKeyboardManager
+    - JSONModel
+    - JSONWebToken
+    - JVFloatLabeledTextField
+    - lottie-ios
+    - MTPopup
+    - ObjectMapper
+    - PKHUD
+    - PPTopMostController
+    - RaptureXML
+    - ReachabilitySwift
+    - SevenSwitch
+    - SidebarOverlay
+    - SkyFloatingLabelTextField
+    - SwiftyJSON
+    - Toast
+    - TTTAttributedLabel
+    - UrbanAirship-iOS-SDK
+    - XLPagerTabStrip
+
 EXTERNAL SOURCES:
   khenshin:
     :git: https://bitbucket.org/khipu/khenshin-pod.git
-    :tag: 1.298
+    :tag: '1.298'
   SwiftValidator:
     :branch: master
     :git: https://github.com/jpotts18/SwiftValidator.git
@@ -94,7 +126,7 @@ EXTERNAL SOURCES:
 CHECKOUT OPTIONS:
   khenshin:
     :git: https://bitbucket.org/khipu/khenshin-pod.git
-    :tag: 1.298
+    :tag: '1.298'
   SwiftValidator:
     :commit: c0ee801a2d107eca5f748d07932b449666d8effd
     :git: https://github.com/jpotts18/SwiftValidator.git
@@ -104,9 +136,9 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   Cartography: 0538ccb4044acbbda2266335fc58cb4228794d90
-  Crashlytics: 058dc1ba579f6c100bc60a6878703779bff383c4
+  Crashlytics: 55e24fc23989680285a21cb1146578d9d18e432c
   DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
-  Fabric: d7387db9a31aadff63b147a4b91d982c53afaa4f
+  Fabric: 25d0963b691fc97be566392243ff0ecef5a68338
   FontAwesome.swift: 60063e3f19ba4801155d4b0f2334ab7585763ab3
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   IBMMobileFirstPlatformFoundation: a092592de6c9c72fd1f8c8d416f028ae8e0469c3
@@ -134,4 +166,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: c54f114a4ce6bb4f05218aa8fc3a7387452514fa
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

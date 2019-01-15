@@ -8,8 +8,6 @@
 
 import UIKit
 import SkyFloatingLabelTextField
-import DLRadioButton
-//import mcaManageriOS
 
 public class CardCellView: UITableViewCell, UITextFieldDelegate {
 

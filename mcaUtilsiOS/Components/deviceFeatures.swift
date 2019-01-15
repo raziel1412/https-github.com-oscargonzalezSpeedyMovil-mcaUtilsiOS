@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ReachabilitySwift
 /*
 public func isNetworkConnected() -> Bool {
     
