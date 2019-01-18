@@ -48,7 +48,6 @@ extension UIViewController  {
     open func initWith(navigationType: ButtonNavType, backToMain: Bool = false, headerTitle: String, rightButtontitle: String = "", leftButtonTitle: String = "", isLogged: Bool = false) {
         
         let logoId = -1
-        let customfont: UIFont = UIFont(name: RobotoFontName.RobotoMedium.rawValue, size: CGFloat(18)) ?? UIFont()
         let iconBack = mcaUtilsHelper.getImage(image: "ico_back")
         let iconLogo = mcaUtilsHelper.getImage(image: "ico_logo")
         let iconMenu = mcaUtilsHelper.getImage(image: "ico_hamburger")

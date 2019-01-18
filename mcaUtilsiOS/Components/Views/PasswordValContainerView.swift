@@ -73,7 +73,7 @@ public class PasswordValContainerView: UITableView, UITableViewDataSource, UITab
         }
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 20
     }
     

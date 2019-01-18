@@ -42,11 +42,6 @@ internal class PermissionsView: UIView {
         closeButton.setImage(UIImage(named: "retakeButton", in: CameraGlobals.shared.bundle, compatibleWith: nil), for: UIControlState())
         closeButton.sizeToFit()
         
-        let size = view.frame.size
-        let closeSize = closeButton.frame.size
-        let closeX = horizontalPadding
-        let closeY = size.height - (closeSize.height + verticalPadding)
-        
         closeButton.frame.origin = CGPoint(x: 20, y: 20)
     }
     

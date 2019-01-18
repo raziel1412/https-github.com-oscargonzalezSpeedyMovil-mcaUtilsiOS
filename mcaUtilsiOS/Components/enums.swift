@@ -88,21 +88,6 @@ public enum TypeAccounts {
     case None
 }
 
-public enum TypeSocialNetwork {
-    case Facebook// 1
-    case Twitter // 2
-    case Whatsapp // 3
-    case Instagram // 4
-    case ClaroMusica // 5
-    case Snapchat // 6
-    case Waze // 7
-    case ColaboraCloud// 8
-    case Gmail // 9
-    case Hotmail // 10
-    case Yahoo // 11
-    case facebookMessenger // 12
-}
-
 /// Colocar el borde dependiendo el lado elegido
 public enum Sides {
     case left
@@ -125,18 +110,6 @@ public struct SideView{
         self.Bottom = Bottom
     }
     
-}
-
-public enum TypeAccountService {
-    case None
-    case Resumen
-    case MovilPrepago
-    case MovilPospago
-    case Television
-    case TodoClaro
-    case Internet
-    case LineaFija
-    case Suscripcion
 }
 
 public enum SupportSectionType {

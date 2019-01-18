@@ -25,18 +25,6 @@ extension UIApplication {
     }
 }
 
-public extension UIResponder {
-    
-    public static func upgradeConfigurationFile(){
-        print("upgrade config file")
-    }
-    
-//    public static func changeValuesOfConfig(checkNetworkAndServices: Bool) {
-//        print("changeValuesOfConfig")
-//    }
-    
-}
-
 extension UIViewController {
     func topMostViewController() -> UIViewController {
         if self.presentedViewController == nil {

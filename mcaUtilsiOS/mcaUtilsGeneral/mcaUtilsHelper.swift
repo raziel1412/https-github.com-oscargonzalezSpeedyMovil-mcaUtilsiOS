@@ -10,10 +10,6 @@ import UIKit
 
 public class mcaUtilsHelper: NSObject {
     
-    public class func refreshConfigurationFile() {
-        UIResponder.upgradeConfigurationFile()
-    }
-    
     /// Función usada para setear datos al UserDefaults
     /// - parameter data: Bool
     /// - parameter toKey: String

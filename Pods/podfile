@@ -44,7 +44,6 @@ def project_pods
     pod 'ReachabilitySwift', '~> 3.0.0'
     pod 'PKHUD', '~> 4.2.3'
     pod 'lottie-ios'
-    pod 'SevenSwitch', '~> 2.1'
     pod 'DLRadioButton', '~> 1.4.9'
     pod 'GoogleMaps'
     pod 'JSONWebToken'
