@@ -50,7 +50,6 @@ PODS:
   - PPTopMostController (0.0.1)
   - RaptureXML (1.0.1)
   - ReachabilitySwift (3)
-  - SevenSwitch (2.1.0)
   - SidebarOverlay (4.2.2)
   - SkyFloatingLabelTextField (3.6.0)
   - SwiftValidator (4.0.0)
@@ -75,7 +74,6 @@ DEPENDENCIES:
   - ObjectMapper (~> 3.3)
   - PKHUD (~> 4.2.3)
   - ReachabilitySwift (~> 3.0.0)
-  - SevenSwitch (~> 2.1)
   - SidebarOverlay (~> 4.1)
   - SkyFloatingLabelTextField (~> 3.0)
   - SwiftValidator (from `https://github.com/jpotts18/SwiftValidator.git`, branch `master`)
@@ -106,7 +104,6 @@ SPEC REPOS:
     - PPTopMostController
     - RaptureXML
     - ReachabilitySwift
-    - SevenSwitch
     - SidebarOverlay
     - SkyFloatingLabelTextField
     - SwiftyJSON
@@ -154,7 +151,6 @@ SPEC CHECKSUMS:
   PPTopMostController: 4e6f1e5f8c645bdcc74cd837a20f607ff262c048
   RaptureXML: b5c33c04c1a4adfd8ad0d5463329a31820596e82
   ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
-  SevenSwitch: 5543327829b7bec5b29b73bad5f3cc3f92c1736d
   SidebarOverlay: a5365455a2f9d54f70d0765764ca1a2806b1b11d
   SkyFloatingLabelTextField: 38164979b79512f9ff9288ad8acfc4bbf5d843e3
   SwiftValidator: 25ded5ca1f10c05adf57f6ac82a72d28ac8d91af
@@ -164,6 +160,6 @@ SPEC CHECKSUMS:
   UrbanAirship-iOS-SDK: 25f155c0142b62e4a94ec21093d65c6e128f5213
   XLPagerTabStrip: 9be80a66c6b7d60306b2c0a6004965016d68f813
 
-PODFILE CHECKSUM: c54f114a4ce6bb4f05218aa8fc3a7387452514fa
+PODFILE CHECKSUM: edd9542683c0c7000295bc265a30aa7b8894bf43
 
 COCOAPODS: 1.5.3
