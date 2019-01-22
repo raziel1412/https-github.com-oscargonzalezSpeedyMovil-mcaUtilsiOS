@@ -191,27 +191,28 @@ public func convertStringToDate2(stringDate : String) -> Date{
 
 /// Función que da el formato a la moneda según el archivo de configuración del país seleccionado
 /// - parameter monto: Float
-/// - parameter countryCurrency: mcaManagerSession.getGeneralConfig()?.country?.currency ?? "$"
+/// - parameter amountSeparator (SessionSingleton.sharedInstance.getAmountSeparator())
+/// - parameter countryCurrency (SessionSingleton.sharedInstance.getGeneralConfig()?.country?.currency ?? "$")
 /// - Returns String: Formateado
-public func formatToCountryCurrency(monto : Float, countryCurrency: String) -> String {
-    let monto_decimal = modf(monto).1;
+public func formatToCountryCurrency(monto : Float, amountSeparator: String, countryCurrency: String) -> String {
+    let monto_decimal = modf(monto).1
     if monto_decimal > 0 {
         let strMonto = monto.description
-        return formatToCountryCurrency(strMonto: strMonto, countryCurrency: countryCurrency);
+        return formatToCountryCurrency(strMonto: strMonto, countryCurrency: countryCurrency)
     } else {
-        let formatter = NumberFormatter();
-        formatter.groupingSeparator = "" //FIXME: mcaManagerSession.getAmountSeparator()
-        formatter.numberStyle = .decimal;
+        let formatter = NumberFormatter()
+        formatter.groupingSeparator = amountSeparator
+        formatter.numberStyle = .decimal
         let strMonto = formatter.string(from: NSNumber(value: monto)) ?? "0"
-        return formatToCountryCurrency(strMonto: strMonto, countryCurrency: countryCurrency);
+        return formatToCountryCurrency(strMonto: strMonto, countryCurrency: countryCurrency)
     }
 }
 
 /// Función que da el formato a la moneda según el archivo de configuración del país seleccionado
 /// - parameter monto: String
+/// - parameter countryCurrency (SessionSingleton.sharedInstance.getGeneralConfig()?.country?.currency ?? "$")
 /// - Returns String: Formateado
 public func formatToCountryCurrency(strMonto: String, countryCurrency: String) -> String {
-    //FIXME: let moneda = String(format: "%@ %@", mcaManagerSession.getGeneralConfig()?.country?.currency ?? "$", strMonto);
     let moneda = String(format: "%@ %@", countryCurrency, strMonto);
     return moneda;
 }

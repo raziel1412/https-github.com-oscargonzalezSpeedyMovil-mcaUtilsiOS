@@ -29,34 +29,29 @@ public class WarningView: UIView {
         super.awakeFromNib()
     }
 
-    func setup() {
+    ///Params
+    /// serviceNotRespond (myConf?.translations?.data?.generales?.serviceNotRespond)
+    func setup(serviceNotRespond: String?) {
         lblTexto = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 30))
-        let myConf = ""//FIXME: mcaManagerSession.getGeneralConfig()
-        self.imgWarning = UIImageView(image: mcaUtilsHelper.getImage(image: "ic_error_naranja_16px"));
-        self.lblTexto?.text = "" //FIXME: myConf?.translations?.data?.generales?.serviceNotRespond ?? "Información no actualizada por el momento";
-        self.lblTexto?.textColor = institutionalColors.claroTextColor;
-        self.lblTexto?.font = UIFont(name: RobotoFontName.RobotoLight.rawValue, size: CGFloat(13));
+        self.imgWarning = UIImageView(image: UIImage(named: "ic_error_naranja_16px"))
+        self.lblTexto?.text = serviceNotRespond ?? "Información no actualizada por el momento";
+        self.lblTexto?.textColor = institutionalColors.claroTextColor
+        self.lblTexto?.font = UIFont(name: RobotoFontName.RobotoLight.rawValue, size: CGFloat(13))
         self.lblTexto?.textAlignment = .center
-        self.lblTexto?.lineBreakMode = .byWordWrapping;
-        self.lblTexto?.numberOfLines = 0;
-        self.layer.borderColor = institutionalColors.claroOrangeColor.cgColor;
-        self.layer.borderWidth = 1;
-
-        self.addSubview(imgWarning!);
-        self.addSubview(lblTexto!);
-
-        //self.lblTexto?.sizeToFit();
-        //self.lblTexto?.adjustHeighToFit();
+        self.lblTexto?.lineBreakMode = .byWordWrapping
+        self.lblTexto?.numberOfLines = 0
+        self.layer.borderColor = institutionalColors.claroOrangeColor.cgColor
+        self.layer.borderWidth = 1
         
-        
-        //self.sizeToFit();
+        self.addSubview(imgWarning!)
+        self.addSubview(lblTexto!)
         
         if let needs = self.lblTexto?.needAdjustHeightLabel(), needs.needs {
             self.lblTexto?.frame = CGRect(x: self.lblTexto!.frame.origin.x, y: self.lblTexto!.frame.origin.y, width: self.lblTexto!.frame.width, height: needs.newHeight)
             self.frame = CGRect(x: self.frame.origin.x, y: self.frame.origin.y, width: self.frame.width, height: needs.newHeight + 20)
         }
-
-       constrain(self, imgWarning!, lblTexto!) { (vw, img, lbl) in
+        
+        constrain(self, imgWarning!, lblTexto!) { (vw, img, lbl) in
             img.centerY == vw.centerY
             img.height == vw.height * 0.5
             img.width == img.height
@@ -66,9 +61,6 @@ public class WarningView: UIView {
             lbl.width == vw.width * 0.75
             lbl.height >= img.height * 2
         }
-        
-        
     }
-
 
 }

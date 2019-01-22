@@ -33,24 +33,22 @@ public class MobilePhoneNumberContainerView: UIView, UITextFieldDelegate {
     }()
     public var delegate : MobilePhoneNumberOnChangeDelegate?;
     
-    public init() {
+    /// Params
+    /// addPrepaidNumber (conf?.translations?.data?.addService?.addPrepaidNumber) ?? "")
+    /// phoneCountryCode (SessionSingleton.sharedInstance.getGeneralConfig()?.country?.phoneCountryCode)
+    public init(addPrepaidNumber: String, phoneCountryCode: String?) {
         super.init(frame: CGRect.zero)
         
-        let conf = "" //FIXME: mcaManagerSession.getGeneralConfig()
-        //let mobileNum = (conf?.translations?.data?.generales?.mobileNumber)!
-        let mobileNum = "" //FIXME:  (conf?.translations?.data?.addService?.addPrepaidNumber) ?? ""
+        let mobileNum = addPrepaidNumber
         mobileTextfield = SimpleGrayTextField(text: mobileNum, placeholder: mobileNum)
         mobileTextfield.delegate = self
         mobileTextfield.textAlignment = .left
         mobileTextfield.keyboardType = .numberPad
-
-        //FIXME: All this
-        /*
-        if let phone = mcaManagerSession.getGeneralConfig()?.country?.phoneCountryCode {
+        
+        if let phone = phoneCountryCode {
             phoneLabel = PhoneLabel(text: phone)
             phoneLabel.textAlignment = .center
         }
-         */
         
         //TEST
         self.setPosition()

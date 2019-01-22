@@ -9,6 +9,40 @@
 import UIKit
 import SkyFloatingLabelTextField
 
+public class CardCellViewModel {
+    
+    var planName: String!
+    var accountId: String!
+    var period: String!
+    var totalIssued: String!
+    var expiration: String!
+    var activatePaperless: String!
+    var sendBill: String!
+    var downloadBill: String!
+    
+    ///PARAMS
+//    accountId (conf?.translations?.data?.billing?.accountId)
+//    period (conf?.translations?.data?.billing?.period)
+//    totalIssued (conf?.translations?.data?.billing?.totalIssued)
+//    expiration (conf?.translations?.data?.billing?.expiration)
+//    activatePaperless (conf?.translations?.data?.billing?.activatePaperless)
+//    sendBill (conf?.translations?.data?.billing?.sendBill)
+//    downloadBill (conf?.translations?.data?.billing?.downloadBill)
+    
+    init(planName: String?, accountId: String?, period: String?, totalIssued: String?, expiration: String?, activatePaperless: String?, sendBill: String?, downloadBill: String?) {
+        self.planName = planName ?? ""
+        self.accountId = accountId ?? ""
+        self.period = period ?? ""
+        self.totalIssued = totalIssued ?? ""
+        self.expiration = expiration ?? ""
+        self.activatePaperless = activatePaperless ?? ""
+        self.sendBill = sendBill ?? ""
+        self.downloadBill = downloadBill ?? ""
+    }
+    
+    
+}
+
 public class CardCellView: UITableViewCell, UITextFieldDelegate {
 
     //MARK: Variables
@@ -22,8 +56,6 @@ public class CardCellView: UITableViewCell, UITextFieldDelegate {
     var fontSize14 : CGFloat = 14
 
     //MARK: UI-Variables
-    ///Referencia a la clase PlanCard que contiene la informacion de cards
-    //FIXME: var plan : PlanCard!
     ///Textfield contenedor del mes actual de la boleta
     var txtPeriods = UITextField()
     ///Etiqueta que contiene la informacion de la variable billing?.activatePaperless
@@ -85,16 +117,7 @@ public class CardCellView: UITableViewCell, UITextFieldDelegate {
     }
     //MARK: - Funcion que construye los objetos de la celda
     ///Creacion he inicializacion de los objetos que seran utilizado dentro de la celda customizada, que sera utilizada en Boletas
-    func setup(){
- 
-        let conf = "" //FIXME: mcaManagerSession.getGeneralConfig()
-        let lbNoCta = "" //FIXME:  (conf?.translations?.data?.billing?.accountId) ?? ""
-        let lbSeleccPeriods = "" //FIXME:  (conf?.translations?.data?.billing?.period) ?? ""
-        let lbmontoEmitido = "" //FIXME:  (conf?.translations?.data?.billing?.totalIssued) ?? ""
-        let lbVenc = "" //FIXME:  (conf?.translations?.data?.billing?.expiration) ?? ""
-        let lbActivarBoleta = "" //FIXME:  (conf?.translations?.data?.billing?.activatePaperless) ?? ""
-        let lbEnviarBoleta = "" //FIXME: (conf?.translations?.data?.billing?.sendBill) ?? ""
-        let lbDescargaBoleta = "" //FIXME:  (conf?.translations?.data?.billing?.downloadBill) ?? ""
+    func setup (cardCellInfo: CardCellViewModel) {
         
         self.contentView.backgroundColor = institutionalColors.claroWhiteColor
         let screenSize = UIScreen.main.bounds
@@ -130,7 +153,7 @@ public class CardCellView: UITableViewCell, UITextFieldDelegate {
         vcContainer.borderCard()
         self.addSubview(vcContainer)
 
-        lbNombrePlan.text =  "" //FIXME: self.plan?.plan?.planName
+        lbNombrePlan.text =  cardCellInfo.planName
         lbNombrePlan.frame = CGRect(x: 50, y: 50, width: textFieldWidth, height: 40)
         lbNombrePlan.textColor = institutionalColors.claroBlackColor
         lbNombrePlan.textAlignment = NSTextAlignment .left
@@ -148,7 +171,7 @@ public class CardCellView: UITableViewCell, UITextFieldDelegate {
         self.addSubview(circleView)
 
 
-        lbNumCta.text = lbNoCta
+        lbNumCta.text = cardCellInfo.accountId
         lbNumCta.frame = CGRect(x: 50, y: lbNombrePlan.frame.maxY + 5, width: 100, height: 40)
         lbNumCta.textAlignment = NSTextAlignment .left
         lbNumCta.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(14.0))
@@ -170,7 +193,7 @@ public class CardCellView: UITableViewCell, UITextFieldDelegate {
         vcLinesLower.addBottomlines()
         self.addSubview(vcLinesLower)
         
-        lbTitleTextfieldPeriods.text = lbSeleccPeriods
+        lbTitleTextfieldPeriods.text = cardCellInfo.period
         lbTitleTextfieldPeriods.frame = CGRect(x: 30, y: vcLinesLower.frame.maxY + 20, width: self.frame.width, height: 40)
         lbTitleTextfieldPeriods.textAlignment = NSTextAlignment .left
         lbTitleTextfieldPeriods.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(12.0))
@@ -188,7 +211,7 @@ public class CardCellView: UITableViewCell, UITextFieldDelegate {
         imageHeader.image = image
         txtPeriods.addSubview(imageHeader)
         
-        lbmonto.text = lbmontoEmitido //"Monto emitido"
+        lbmonto.text = cardCellInfo.totalIssued //"Monto emitido"
         lbmonto.frame = CGRect(x: 30, y: txtPeriods.frame.maxY + 16, width: 200, height: 40)
         lbmonto.textAlignment = NSTextAlignment .left
         lbmonto.textColor = institutionalColors.claroBlackColor
@@ -205,7 +228,7 @@ public class CardCellView: UITableViewCell, UITextFieldDelegate {
         lbMontoTipo.backgroundColor = institutionalColors.claroWhiteColor
         self.addSubview(lbMontoTipo)
         
-        lbVencimiento.text = lbVenc //"Vencimiento"
+        lbVencimiento.text = cardCellInfo.expiration //"Vencimiento"
         lbVencimiento.frame = CGRect(x: 30, y: lbmonto.frame.maxY + 5, width: 200, height: 40)
         lbVencimiento.textAlignment = NSTextAlignment .left
         lbVencimiento.textColor = institutionalColors.claroTextColor
@@ -233,7 +256,7 @@ public class CardCellView: UITableViewCell, UITextFieldDelegate {
         activarBoleta = LinkableLabel();
         activarBoleta?.frame = CGRect (x: 20, y: imgSend.frame.maxY + 10, width: 135, height: 90)
         activarBoleta?.textColor = institutionalColors.claroBlueColor
-        activarBoleta?.showText(text: lbActivarBoleta)
+        activarBoleta?.showText(text: cardCellInfo.activatePaperless)
         activarBoleta?.textAlignment = .center
         activarBoleta?.numberOfLines = 2
         activarBoleta?.font =  UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(12.0))
@@ -253,7 +276,7 @@ public class CardCellView: UITableViewCell, UITextFieldDelegate {
         enviarBoleta?.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(12.0))
         enviarBoleta?.frame = CGRect (x: imgMail.center.x - 35, y: imgMail.frame.maxY + 10, width: 100, height: 90)
         enviarBoleta?.textColor = institutionalColors.claroBlueColor
-        enviarBoleta?.showText(text: lbEnviarBoleta)
+        enviarBoleta?.showText(text: cardCellInfo.sendBill)
         enviarBoleta?.textAlignment = .center
         enviarBoleta?.numberOfLines =  2
         enviarBoleta?.sizeToFit()
@@ -275,7 +298,7 @@ public class CardCellView: UITableViewCell, UITextFieldDelegate {
         descargaBoleta?.frame = CGRect (x: imgDownload.center.x - 35, y: imgDownload.frame.maxY + 10, width: 60, height: 90)
         descargaBoleta?.backgroundColor = UIColor.clear
         descargaBoleta?.textColor = institutionalColors.claroBlueColor
-        descargaBoleta?.showText(text: lbDescargaBoleta)
+        descargaBoleta?.showText(text: cardCellInfo.downloadBill)
         descargaBoleta?.textAlignment = .center;
         descargaBoleta?.numberOfLines = 2
         descargaBoleta? .sizeToFit()
