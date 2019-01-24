@@ -151,4 +151,8 @@ class GenericWebViewVC: UIViewController, UIWebViewDelegate {
         super.didReceiveMemoryWarning()
     }
 
+    func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
+        indicatorView.stopAnimating()
+        webView.stopLoading()
+    }
 }

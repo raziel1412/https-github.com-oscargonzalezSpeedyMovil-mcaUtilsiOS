@@ -16,8 +16,8 @@ public enum ButtonNavType {
     case IconMenu
 }
 
-struct TextNumberNotification {
-    static var labelBadg =  UILabel()
+public struct TextNumberNotification {
+    public static var labelBadg =  UILabel()
 }
 
 /// Esta clase permite realizar customizaciones del Navigation Bar a partir de los parámetros proporcionados en el constructor
