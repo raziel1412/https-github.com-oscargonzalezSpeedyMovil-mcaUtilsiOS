@@ -16,6 +16,10 @@ public enum ButtonNavType {
     case IconMenu
 }
 
+struct TextNumberNotification {
+    static var labelBadg =  UILabel()
+}
+
 /// Esta clase permite realizar customizaciones del Navigation Bar a partir de los parámetros proporcionados en el constructor
 extension UIViewController  {
     
@@ -26,6 +30,11 @@ extension UIViewController  {
     open func leftButtonAction() {
         print("left button action")
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    open func openNotificationCenter() {
+        print("Notification btn was pressed")
+        NotificationCenter.default.post(name: NSNotification.Name("goToNotificationMessageCenter"), object: nil)
     }
     
     open func openMenu() {
@@ -45,7 +54,7 @@ extension UIViewController  {
     /// El constructor permite customizar el NavigationBar dependiendo del valor de navigationType
     /// -param:
     ///     - navigationType : enum navType
-    open func initWith(navigationType: ButtonNavType, backToMain: Bool = false, headerTitle: String, rightButtontitle: String = "", leftButtonTitle: String = "", isLogged: Bool = false) {
+    open func initWith(navigationType: ButtonNavType, backToMain: Bool = false, headerTitle: String, rightButtontitle: String = "", leftButtonTitle: String = "", isLogged: Bool = false, enableNotificationBtn: Bool = false) {
         
         let logoId = -1
         let iconBack = mcaUtilsHelper.getImage(image: "ico_back")
@@ -91,7 +100,32 @@ extension UIViewController  {
             leftButton.tintColor = institutionalColors.claroRedColor
             let leftTitle = UIBarButtonItem(customView: label)
             self.navigationItem.leftBarButtonItems = [leftButton, leftTitle]
-            self.navigationItem.rightBarButtonItem = rightButton
+            
+            ///Btn notification
+            if enableNotificationBtn {
+                TextNumberNotification.labelBadg = UILabel(frame: CGRect(x: 18, y: 0, width: 20, height: 20))
+                TextNumberNotification.labelBadg.layer.borderColor = UIColor.clear.cgColor
+                TextNumberNotification.labelBadg.layer.borderWidth = 2
+                TextNumberNotification.labelBadg.layer.cornerRadius = 20 / 2
+                TextNumberNotification.labelBadg.textAlignment = .center
+                TextNumberNotification.labelBadg.layer.masksToBounds = true
+                TextNumberNotification.labelBadg.textColor = .white
+                TextNumberNotification.labelBadg.backgroundColor = institutionalColors.claroBlueColor
+                
+                let rightButtonNotification = UIButton(frame: CGRect(x: 0, y: 0, width: 25, height: 25))
+                let image = mcaUtilsHelper.getImage(image: "notification")
+                rightButtonNotification.setImage(image.tint(with: institutionalColors.claroRedColor), for: .normal)
+                rightButtonNotification.imageEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5)
+                rightButtonNotification.imageView?.contentMode = .scaleAspectFit
+                rightButtonNotification.addTarget(self, action: #selector(openNotificationCenter), for: .touchUpInside)
+                rightButtonNotification.addSubview(TextNumberNotification.labelBadg)
+                let rightBarButtomItemNotification = UIBarButtonItem(customView: rightButtonNotification)
+                
+                self.navigationItem.rightBarButtonItems =  [rightButton, rightBarButtomItemNotification]
+            } else {
+                self.navigationItem.rightBarButtonItem =  rightButton
+            }
+            
             self.navigationController?.setNavigationBarHidden(false, animated: true)
             if let bkg = self.navigationController?.view.viewWithTag(logoId){
                 bkg.removeFromSuperview();
@@ -155,7 +189,32 @@ extension UIViewController  {
             leftButton.tintColor = institutionalColors.claroRedColor
             let leftTitle = UIBarButtonItem(customView: label)
             self.navigationItem.leftBarButtonItems = [leftButton, leftTitle]
-            self.navigationItem.rightBarButtonItem = rightButton
+            
+            ///Btn notification
+            if enableNotificationBtn {
+                TextNumberNotification.labelBadg = UILabel(frame: CGRect(x: 18, y: 0, width: 20, height: 20))
+                TextNumberNotification.labelBadg.layer.borderColor = UIColor.clear.cgColor
+                TextNumberNotification.labelBadg.layer.borderWidth = 2
+                TextNumberNotification.labelBadg.layer.cornerRadius = 20 / 2
+                TextNumberNotification.labelBadg.textAlignment = .center
+                TextNumberNotification.labelBadg.layer.masksToBounds = true
+                TextNumberNotification.labelBadg.textColor = .white
+                TextNumberNotification.labelBadg.backgroundColor = institutionalColors.claroBlueColor
+                
+                let rightButtonNotification = UIButton(frame: CGRect(x: 0, y: 0, width: 25, height: 25))
+                let image = mcaUtilsHelper.getImage(image: "notification")
+                rightButtonNotification.setImage(image.tint(with: institutionalColors.claroRedColor), for: .normal)
+                rightButtonNotification.imageEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5)
+                rightButtonNotification.imageView?.contentMode = .scaleAspectFit
+                rightButtonNotification.addTarget(self, action: #selector(openNotificationCenter), for: .touchUpInside)
+                rightButtonNotification.addSubview(TextNumberNotification.labelBadg)
+                let rightBarButtomItemNotification = UIBarButtonItem(customView: rightButtonNotification)
+                
+                self.navigationItem.rightBarButtonItems =  [rightButton, rightBarButtomItemNotification]
+            } else {
+                self.navigationItem.rightBarButtonItem =  rightButton
+            }
+            
             self.navigationController?.setNavigationBarHidden(false, animated: true)
             if let bkg = self.navigationController?.view.viewWithTag(logoId){
                 bkg.removeFromSuperview();
