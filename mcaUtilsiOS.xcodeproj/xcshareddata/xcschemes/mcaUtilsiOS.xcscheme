@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0585A084E8D534D82E512CD9ECAFC402"
+               BuildableName = "Pods_mcaUtilsiOS.framework"
+               BlueprintName = "Pods-mcaUtilsiOS"
+               ReferencedContainer = "container:Pods/Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "6287464F219CD9B200C53384"
                BuildableName = "mcaUtilsiOS.framework"
                BlueprintName = "mcaUtilsiOS"
@@ -29,6 +43,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6287464F219CD9B200C53384"
+            BuildableName = "mcaUtilsiOS.framework"
+            BlueprintName = "mcaUtilsiOS"
+            ReferencedContainer = "container:mcaUtilsiOS.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

@@ -22,7 +22,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		1D037A8821EFF64C00F70AF5 /* Pods_mcaUtilsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D037A8721EFF64C00F70AF5 /* Pods_mcaUtilsiOS.framework */; };
 		1D1D3E3921D69FE100FA21D9 /* Utilities.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFB46219F1EE900F85A3D /* Utilities.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D1D422C21E3BFF400FA21D9 /* NotificationAnalyticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1D422B21E3BFF400FA21D9 /* NotificationAnalyticsModel.swift */; };
 		1D1E496521B5BCE4007C61B1 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E496421B5BCE4007C61B1 /* CustomNavigationBar.swift */; };
@@ -31,7 +30,7 @@
 		1D2B53CA21C184F4008ABC44 /* GenericWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B53C921C184F4008ABC44 /* GenericWebViewVC.swift */; };
 		1D2B53CD21C189F2008ABC44 /* GenericWebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B53CC21C189F2008ABC44 /* GenericWebViewModel.swift */; };
 		1D2B53D021C19A80008ABC44 /* mcaUtilsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B53CF21C19A80008ABC44 /* mcaUtilsConstants.swift */; };
-		1D373EE621F24B3200168BF4 /* Pods_mcaUtilsiOS.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D037A8721EFF64C00F70AF5 /* Pods_mcaUtilsiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1D8C3B6521F92F8C005DBA39 /* Pods_mcaUtilsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8C3B6421F92F8C005DBA39 /* Pods_mcaUtilsiOS.framework */; };
 		1DCFABEE21ADFCBD00056A67 /* mcaUtilsHelper.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DCFABFA21AE065200056A67 /* GeneralAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F0DFC321A609BD001D98AC /* GeneralAlerts.swift */; };
 		1DCFAC5521AF683F00056A67 /* mcaUtilsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */; };
@@ -157,14 +156,12 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1D373EE621F24B3200168BF4 /* Pods_mcaUtilsiOS.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1D037A8721EFF64C00F70AF5 /* Pods_mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D1D422B21E3BFF400FA21D9 /* NotificationAnalyticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAnalyticsModel.swift; sourceTree = "<group>"; };
 		1D1E496421B5BCE4007C61B1 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		1D1E498421B5EB6B007C61B1 /* LinkeableEventDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkeableEventDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +169,7 @@
 		1D2B53C921C184F4008ABC44 /* GenericWebViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericWebViewVC.swift; sourceTree = "<group>"; };
 		1D2B53CC21C189F2008ABC44 /* GenericWebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebViewModel.swift; sourceTree = "<group>"; };
 		1D2B53CF21C19A80008ABC44 /* mcaUtilsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mcaUtilsConstants.swift; sourceTree = "<group>"; };
+		1D8C3B6421F92F8C005DBA39 /* Pods_mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mcaUtilsHelper.swift; sourceTree = "<group>"; };
 		622ED4DB21A8AE1D00BE746A /* Extension+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIApplication.swift"; sourceTree = "<group>"; };
 		6282911721A720CA00AF8144 /* Extension+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+URL.swift"; sourceTree = "<group>"; };
@@ -292,7 +290,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D037A8821EFF64C00F70AF5 /* Pods_mcaUtilsiOS.framework in Frameworks */,
+				1D8C3B6521F92F8C005DBA39 /* Pods_mcaUtilsiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +300,7 @@
 		0ABA20FE799B6879AC113E81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1D037A8721EFF64C00F70AF5 /* Pods_mcaUtilsiOS.framework */,
+				1D8C3B6421F92F8C005DBA39 /* Pods_mcaUtilsiOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -681,7 +679,7 @@
 				6287464C219CD9B200C53384 /* Sources */,
 				6287464D219CD9B200C53384 /* Frameworks */,
 				6287464E219CD9B200C53384 /* Resources */,
-				480AF7294D7C36E626C8052E /* [CP] Copy Pods Resources */,
+				3DF957758E8C4D07130012BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -795,7 +793,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		480AF7294D7C36E626C8052E /* [CP] Copy Pods Resources */ = {
+		3DF957758E8C4D07130012BC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -923,7 +921,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 85E3H648RA;
 				ENABLE_BITCODE = NO;
-				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "arm64 arm64e armv7 armv7s i386";
 			};
@@ -1000,7 +997,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1076,7 +1072,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A6DEFDA3D524114A7F85AF9B /* Pods-mcaUtilsiOS.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -1098,7 +1093,6 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.miclaro.app.mcaUtilsiOS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1113,7 +1107,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D83C877DBFD091C133148C26 /* Pods-mcaUtilsiOS.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -1135,7 +1128,6 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.miclaro.app.mcaUtilsiOS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

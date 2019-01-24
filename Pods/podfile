@@ -108,6 +108,7 @@ target 'mcaManageriOS' do
     crash_pods
     manager_pods
     reachability_pods
+    help_pods
 end
 
 target 'mcaUtilsiOS' do
@@ -331,15 +332,18 @@ target 'mcaiOSCENAM' do
    project '../../mcaWorkspaceiOSCENAM/mcaiOSCENAM/mcaiOSCENAM.xcodeproj'
    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
    #workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
-   project_pods
    localization_pods
    crash_pods
    notifications_pods
-   ui_pods
-   #Autolinked frameworks
+   tab_pods
+   popup_pods
    manager_pods
+   help_pods
    utils_pods
+   ui_pods
    reachability_pods
+   register_pods
+   project_pods
 end
 
 target 'mcaiOSCL' do
@@ -348,15 +352,18 @@ target 'mcaiOSCL' do
    project '../../mcaWorkspaceiOSCL/mcaiOSCL/mcaiOSCL.xcodeproj'
    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
 #   workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
-   project_pods
    localization_pods
    crash_pods
    notifications_pods
-   ui_pods
-   #Autolinked frameworks
+   tab_pods
+   popup_pods
    manager_pods
+   help_pods
    utils_pods
+   ui_pods
    reachability_pods
+   register_pods
+   project_pods
    
 end
 
