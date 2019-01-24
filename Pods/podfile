@@ -97,6 +97,7 @@ target 'mcaLoginiOS' do
     manager_pods
     utils_pods
     reachability_pods
+    notifications_pods
 end
 
 target 'mcaManageriOS' do
