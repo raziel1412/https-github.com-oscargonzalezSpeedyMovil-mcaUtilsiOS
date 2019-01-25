@@ -121,10 +121,8 @@ extension UIViewController  {
                 rightButtonNotification.addSubview(TextNumberNotification.labelBadg)
                 let rightBarButtomItemNotification = UIBarButtonItem(customView: rightButtonNotification)
                 
-                self.navigationItem.rightBarButtonItem = nil
                 self.navigationItem.rightBarButtonItems =  [rightButton, rightBarButtomItemNotification]
             } else {
-                self.navigationItem.rightBarButtonItems = nil
                 self.navigationItem.rightBarButtonItem =  rightButton
             }
             
@@ -212,10 +210,8 @@ extension UIViewController  {
                 rightButtonNotification.addSubview(TextNumberNotification.labelBadg)
                 let rightBarButtomItemNotification = UIBarButtonItem(customView: rightButtonNotification)
                 
-                self.navigationItem.rightBarButtonItem = nil
                 self.navigationItem.rightBarButtonItems =  [rightButton, rightBarButtomItemNotification]
             } else {
-                self.navigationItem.rightBarButtonItems = nil
                 self.navigationItem.rightBarButtonItem =  rightButton
             }
             
