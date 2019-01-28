@@ -27,6 +27,11 @@ extension UIViewController  {
         print("right button action")
     }
     
+    open func openHome() {
+        print("go home action")
+        NotificationCenter.default.post(name: NSNotification.Name("selectTabHome"), object: nil)
+    }
+    
     open func leftButtonAction() {
         print("left button action")
         self.navigationController?.popViewController(animated: true)
@@ -54,7 +59,7 @@ extension UIViewController  {
     /// El constructor permite customizar el NavigationBar dependiendo del valor de navigationType
     /// -param:
     ///     - navigationType : enum navType
-    open func initWith(navigationType: ButtonNavType, backToMain: Bool = false, headerTitle: String, rightButtontitle: String = "", leftButtonTitle: String = "", isLogged: Bool = false, enableNotificationBtn: Bool = false) {
+    open func initWith(navigationType: ButtonNavType, backToMain: Bool = false, headerTitle: String, rightButtontitle: String = "", leftButtonTitle: String = "", isLogged: Bool = false, enableNotificationBtn: Bool = false, goHomeWithBackBtn: Bool = false) {
         
         let logoId = -1
         let iconBack = mcaUtilsHelper.getImage(image: "ico_back")
@@ -84,7 +89,11 @@ extension UIViewController  {
             let leftCustomButton = UIButton.init(type: .custom)
             iconLeftBtn = iconBack
             leftCustomButton.setBackgroundImage(iconLeftBtn, for: .normal)
-            leftCustomButton.addTarget(self, action: #selector(leftButtonAction), for: .touchUpInside)
+            if goHomeWithBackBtn {
+                leftCustomButton.addTarget(self, action: #selector(openHome), for: .touchUpInside)
+            } else {
+                leftCustomButton.addTarget(self, action: #selector(leftButtonAction), for: .touchUpInside)
+            }
             leftCustomButton.frame = CGRect(x: leftCustomView.frame.size.width * 0.053, y: 0, width: 24.0, height: 24.0)
             leftCustomButton.center.y = leftCustomView.center.y
             leftCustomView.addSubview(leftCustomButton)
