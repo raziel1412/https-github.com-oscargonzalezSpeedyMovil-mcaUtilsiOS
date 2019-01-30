@@ -26,7 +26,7 @@ import UIKit
         
         textView.frame = newFrame
         
-        delegate.emailViewChangeHeight(newHeight: newFrame.height)
+        delegate?.emailViewChangeHeight(newHeight: newFrame.height)
         self.updateBottomLinePosition()
     }
     
