@@ -159,6 +159,7 @@ target 'mcaHelpiOS' do
     project_pods
     localization_pods
     help_pods
+    notifications_pods
     #Autolinked frameworks
     manager_pods
     utils_pods

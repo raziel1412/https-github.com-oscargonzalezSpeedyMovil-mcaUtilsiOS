@@ -9,8 +9,8 @@
 import UIKit
 
 public class OptionModel: NSObject{
-    var isSelectedOp: Bool?
-    var detailText: String?
+    public var isSelectedOp: Bool?
+    public var detailText: String?
     
     public init(isSelected: Bool, detailText: String) {
         super.init()
