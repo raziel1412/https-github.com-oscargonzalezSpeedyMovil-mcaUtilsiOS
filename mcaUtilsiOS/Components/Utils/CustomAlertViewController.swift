@@ -13,7 +13,7 @@ public class CustomAlertView: UIViewController {
     var alertData : AlertInfo?
     var icono : UIImageView?
     var titulo : UILabel?
-    var cuerpo : UILabel?
+    var cuerpo : CustomCopyUILabel?
     var botonOk : UIButton?
     var botonCamara: UIButton?
     var botonEliminar: UIButton?
@@ -89,12 +89,15 @@ public class CustomAlertView: UIViewController {
             currentY = currentY + self.titulo!.frame.size.height + 10
         }
         
-        self.cuerpo = UILabel();
+        self.cuerpo = CustomCopyUILabel();
         self.cuerpo?.frame = CGRect(x: margin, y: currentY, width: self.bkg!.frame.size.width - (margin * 2), height: 20)
         self.cuerpo?.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(16))
         self.cuerpo?.textColor = institutionalColors.claroTextAlertBodyColor
         self.cuerpo?.textAlignment = .center
         self.cuerpo?.backgroundColor = UIColor.clear
+        if let isCopy = alertData?.isEnabledLabelCopy, isCopy{
+            self.cuerpo?.setup()
+        }
         
         if let attributedText = try? NSAttributedString(htmlString: self.alertData?.text ?? "",
                                                         font: UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(16)),
@@ -421,4 +424,49 @@ public class CustomAlertView: UIViewController {
     }
     
 }
+
+class CustomCopyUILabel: UILabel {
+    
+    override public var canBecomeFirstResponder: Bool {
+        get {
+            return true
+        }
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    func setup() {
+        isUserInteractionEnabled = true
+        addGestureRecognizer(UILongPressGestureRecognizer(
+            target: self,
+            action: #selector(showCopyMenu(sender:))
+        ))
+        
+    }
+    
+    override func copy(_ sender: Any?) {
+        UIPasteboard.general.string = text
+        UIMenuController.shared.setMenuVisible(false, animated: true)
+    }
+    
+    func showCopyMenu(sender: Any?) {
+        becomeFirstResponder()
+        let menu = UIMenuController.shared
+        if !menu.isMenuVisible {
+            menu.setTargetRect(bounds, in: self)
+            menu.setMenuVisible(true, animated: true)
+        }
+    }
+    
+    override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
+        return (action == #selector(copy(_:)))
+    }
+}
+
 

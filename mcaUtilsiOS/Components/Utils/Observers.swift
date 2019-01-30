@@ -319,6 +319,9 @@ public class AlertInfo {
     public var cancelButtonName : String? = nil
     /// Button color
     public var cancelButtonColor : UIColor? = institutionalColors.claroBlueColor;
+    
+    /// Variable para habilitar copiar texto del UILabel
+    var isEnabledLabelCopy: Bool = false
 }
 
 

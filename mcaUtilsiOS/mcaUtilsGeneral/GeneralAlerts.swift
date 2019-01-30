@@ -43,7 +43,7 @@ public class GeneralAlerts {
     }
     
     //case AcceptOnlyAlert
-    public static func showAcceptOnly(title: String = "", text: String = "", icon: AlertIconType, cancelBtnColor: UIColor? = nil, cancelButtonName: String = "", acceptTitle: String = "", acceptBtnColor: UIColor? = nil, buttonName: String = "", onAcceptEvent: @escaping() -> Void) {
+    public static func showAcceptOnly(title: String = "", text: String = "", icon: AlertIconType, cancelBtnColor: UIColor? = nil, cancelButtonName: String = "", acceptTitle: String = "", acceptBtnColor: UIColor? = nil, buttonName: String = "", onAcceptEvent: @escaping() -> Void, isEnabledLabelCopy: Bool = false) {
         let alert = AlertAcceptOnly();
         alert.title = title
         alert.icon = icon
@@ -65,6 +65,7 @@ public class GeneralAlerts {
         }
         alert.cancelButtonColor = cancelBtnColor
         alert.cancelButtonName = cancelButtonName
+        alert.isEnabledLabelCopy = isEnabledLabelCopy
         
         Observers.AcceptOnlyAlert(info: alert)
     }
