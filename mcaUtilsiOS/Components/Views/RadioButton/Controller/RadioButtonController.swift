@@ -39,7 +39,8 @@ extension RadioButtonView: UITableViewDelegate, UITableViewDataSource {
         }else {
             //"Single selection"
             self.clearRadioButtons(tableView, didSelectRowAt: indexPath)
-            delegate.radioButtonSingleOptionSelected(option: arrayOptions[indexPath.row])
+            delegate?.radioButtonSingleOptionSelected(option: arrayOptions[indexPath.row])
+            
         }
     }
     

@@ -29,7 +29,7 @@ public class EmailView: UIView {
     public var btnSendMail: GreenBorderWhiteBackgroundButton!
     
     /********************************* Variables *********************************/
-    public var delegate: EmailViewDelegate!
+    public var delegate: EmailViewDelegate? = nil
     public var placeHolderDescription: String = "Place Holder"
     
     /// Constructor del componente de Email, el cual incluye un textfield para ingresar el correo eléctronico y un textView para el comentario
@@ -95,7 +95,7 @@ public class EmailView: UIView {
     }
     
     public func sendMailAction() {
-        self.delegate.sendEmail()
+        self.delegate?.sendEmail()
     }
     /// Agregar linea en la parte inferior del componente *viewEmail*
     /// - Parameter color: Color de la linea inferior

@@ -21,7 +21,7 @@ public struct RadioButtonOption {
     }
 }
 
-public protocol RadioButtonViewDelegate {
+ public protocol RadioButtonViewDelegate {
      func radioButtonSingleOptionSelected(option: RadioButtonOption)
 }
 
@@ -33,7 +33,7 @@ public class RadioButtonView: UIView {
     public var arrayOptionsSelected:[RadioButtonOption] = []
     public var multipleSelection:Bool = false
     public var ubicationCheck:ubicationRadioButton!
-    public var delegate: RadioButtonViewDelegate!
+    public var delegate: RadioButtonViewDelegate? = nil
     
     /********************************* Visual elements *********************************/
     public var lblTitle: BlackTitleLabel!
