@@ -48,6 +48,13 @@ public enum navType {
     case packagesDetail
 }
 
+/// Tipo de NavigationBar
+public enum ButtonNavType {
+    case None
+    case IconBack
+    case IconMenu
+}
+
 public enum ubicationRadioButton {
     case left
     case right

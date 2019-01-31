@@ -110,6 +110,7 @@ target 'mcaManageriOS' do
     manager_pods
     reachability_pods
     help_pods
+    utils_pods
 end
 
 target 'mcaUtilsiOS' do
@@ -177,6 +178,7 @@ target 'mcaHomeiOS' do
     manager_pods
     utils_pods
     reachability_pods
+    register_pods
 end
 
 target 'mcaRegistroiOS' do

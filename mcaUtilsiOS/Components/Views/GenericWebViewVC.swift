@@ -76,7 +76,8 @@ class GenericWebViewVC: UIViewController, UIWebViewDelegate {
     
     /// Función que setea el navigation bar
     func setNavigationBar() {
-        self.initWith(navigationType: information.buttonNavType, headerTitle: information.headerTitle)
+        /*IMPORTANTE Jorge ISAI DESCOMENTAR ESA LINEA*/
+        //self.initWith(navigationType: information.buttonNavType, headerTitle: information.headerTitle)
     }
     
     /// Función que permite obtener la combinación de diversas combinaciónes dependiendo del típo de URL

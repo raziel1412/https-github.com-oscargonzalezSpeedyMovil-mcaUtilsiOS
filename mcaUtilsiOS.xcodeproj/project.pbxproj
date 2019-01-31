@@ -24,7 +24,6 @@
 /* Begin PBXBuildFile section */
 		1D1D3E3921D69FE100FA21D9 /* Utilities.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFB46219F1EE900F85A3D /* Utilities.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D1D422C21E3BFF400FA21D9 /* NotificationAnalyticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1D422B21E3BFF400FA21D9 /* NotificationAnalyticsModel.swift */; };
-		1D1E496521B5BCE4007C61B1 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E496421B5BCE4007C61B1 /* CustomNavigationBar.swift */; };
 		1D1E498521B5EB6B007C61B1 /* LinkeableEventDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E498421B5EB6B007C61B1 /* LinkeableEventDelegate.swift */; };
 		1D1E498C21B70D40007C61B1 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E498B21B70D40007C61B1 /* FontExtension.swift */; };
 		1D2B53CA21C184F4008ABC44 /* GenericWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B53C921C184F4008ABC44 /* GenericWebViewVC.swift */; };
@@ -163,7 +162,6 @@
 
 /* Begin PBXFileReference section */
 		1D1D422B21E3BFF400FA21D9 /* NotificationAnalyticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAnalyticsModel.swift; sourceTree = "<group>"; };
-		1D1E496421B5BCE4007C61B1 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		1D1E498421B5EB6B007C61B1 /* LinkeableEventDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkeableEventDelegate.swift; sourceTree = "<group>"; };
 		1D1E498B21B70D40007C61B1 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		1D2B53C921C184F4008ABC44 /* GenericWebViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericWebViewVC.swift; sourceTree = "<group>"; };
@@ -340,7 +338,6 @@
 		1DCFAC1021AF12D000056A67 /* mcaUtilsGeneral */ = {
 			isa = PBXGroup;
 			children = (
-				1D1E496421B5BCE4007C61B1 /* CustomNavigationBar.swift */,
 				1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */,
 				62F0DFC321A609BD001D98AC /* GeneralAlerts.swift */,
 				1D1D422B21E3BFF400FA21D9 /* NotificationAnalyticsModel.swift */,
@@ -865,7 +862,6 @@
 				62EBFE1A219F1EEA00F85A3D /* Extension + UIViewController.swift in Sources */,
 				1DCFABFA21AE065200056A67 /* GeneralAlerts.swift in Sources */,
 				62EBFFB5219F1EEA00F85A3D /* SimpleGreenTextField.swift in Sources */,
-				1D1E496521B5BCE4007C61B1 /* CustomNavigationBar.swift in Sources */,
 				62EBFE0D219F1EEA00F85A3D /* UIButtonExtensions.swift in Sources */,
 				62EBFFBC219F1EEB00F85A3D /* GreenBorderWhiteBackgroundButton.swift in Sources */,
 				62EBFE20219F1EEA00F85A3D /* GooglePlacesSearchController.swift in Sources */,
