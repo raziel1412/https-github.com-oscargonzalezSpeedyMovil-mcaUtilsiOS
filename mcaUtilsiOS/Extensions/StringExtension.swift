@@ -74,7 +74,9 @@ public extension String {
             maskedPhone.insert(string: " ", ind: maskedPhone.count - 12)
         }
         
-        maskedPhone += "@" + mail[1]
+        if mail.count > 1{
+            maskedPhone += "@" + mail[1]
+        }
         return maskedPhone
     }
     
