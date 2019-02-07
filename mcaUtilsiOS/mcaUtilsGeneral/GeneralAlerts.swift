@@ -81,16 +81,6 @@ public class GeneralAlerts {
         alert.onAcceptEvent = {
             onAcceptEvent()
         }
-        //alert.presenter = presenter
-        
-        /*if(presenter != nil){
-            let presenterData:[String: UIViewController] = ["presenter": presenter!]
-            //NotificationCenter.default.post(name: Observers.ObserverList.UpdateAppAlert.name, object: alert, userInfo: presenterData);
-            NotificationCenter.default.post(name: Observers.ObserverList.WebViewAlert.name,
-                                            object: alert, userInfo: presenterData);
-        }else{
-            print("> No has definido el ViewController")
-        }*/
         
         Observers.WebViewAlert(info: alert)
         
@@ -102,22 +92,12 @@ public class GeneralAlerts {
         
         let alert = PlanDetailAlertData();
         
-        alert.title = title//conf?.translations?.data?.updatePlan?.actualPlanDetail ?? "";
-        alert.subtitle = subtitle//nombrePlan;
-        alert.includes = includes//conf?.translations?.data?.updatePlan?.planIncludes ?? "";
-        alert.text = detallePlan//detallePlan;
-        alert.acceptTitle = acceptTitle//conf?.translations?.data?.generales?.closeBtn ?? "";
-        alert.icon = icon//.IconoAlertaInformacion;
-        //alert.presenter = presenter
-            
-            /*if(presenter != nil){
-                let presenterData:[String: UIViewController] = ["presenter": presenter!]
-                //NotificationCenter.default.post(name: Observers.ObserverList.UpdateAppAlert.name, object: alert, userInfo: presenterData);
-                NotificationCenter.default.post(name: Observers.ObserverList.PlanDataDetailAlert.name,
-                                                object: alert, userInfo: presenterData);
-            }else{
-                print("> No has definido el ViewController")
-            }*/
+        alert.title = title
+        alert.subtitle = subtitle
+        alert.includes = includes
+        alert.text = detallePlan
+        alert.acceptTitle = acceptTitle
+        alert.icon = icon
             
             Observers.PlanDataDetailAlert(info: alert)
         

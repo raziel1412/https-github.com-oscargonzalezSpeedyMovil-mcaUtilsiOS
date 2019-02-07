@@ -20,6 +20,7 @@ class GenericWebViewVC: UIViewController, UIWebViewDelegate {
     var indicatorView: UIActivityIndicatorView!
     var fromMenu : Bool = false
     var information: GenericWebViewModel!
+    var viewAlert = CustomView()
     
     
     class func show( navController: UINavigationController?, info: GenericWebViewModel!) {
@@ -48,6 +49,11 @@ class GenericWebViewVC: UIViewController, UIWebViewDelegate {
         webView.scalesPageToFit = true
         self.webView.delegate = self
         view.addSubview(webView)
+        
+        viewAlert = CustomView.init(frame: CGRect(x: self.view.frame.origin.x, y: 0, width: self.view.frame.width, height: self.view.frame.height))
+        viewAlert.khipuSuccess = information.khipuSuccess
+        viewAlert.khipuFail = information.khipuFail
+        viewAlert.backgroundColor = UIColor.white
         
         indicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
         //        indicatorView.startAnimating()
@@ -133,8 +139,12 @@ class GenericWebViewVC: UIViewController, UIWebViewDelegate {
             //"dujA9hJmIWa6JGkXgIG4"
             KhenshinInterface.startEngine(withPaymentExternalId: mySubstring , userIdentifier:"", isExternalPayment: true, success: { (exitURL: URL?) in
                 NSLog("SUCCESS")
+                self.viewAlert.setIconAndText(isSuccess: true)
+                self.view.addSubview(self.viewAlert)
             }, failure: { (exitURL: URL?) in
                 NSLog("FAILURE")
+                self.viewAlert.setIconAndText(isSuccess: false)
+                self.view.addSubview(self.viewAlert)
             }, animated: false)
         }
         if request.url?.absoluteString == information.reloadUrlSuccess || request.url?.absoluteString == information.paidUrlSucces {
@@ -157,3 +167,72 @@ class GenericWebViewVC: UIViewController, UIWebViewDelegate {
         webView.stopLoading()
     }
 }
+
+class CustomView: UIView {
+    var label: UILabel = UILabel()
+    var icono : UIImageView?
+    var superFrame : CGRect = CGRect()
+    var khipuSuccess: String = ""
+    var khipuFail: String = ""
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        superFrame = frame
+        self.addCustomView()
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setIconAndText(isSuccess: Bool){
+        if isSuccess{
+            self.icono?.image = UIImage(named: "ico_alerta_ok")
+            label.text = self.khipuSuccess
+        }else{
+            self.icono?.image = UIImage(named: "ico_alerta_error")
+            label.text = self.khipuFail
+        }
+    }
+    
+    func addCustomView() {
+        
+        self.icono = UIImageView()
+        self.icono?.image = UIImage(named: "ico_alerta_ok")
+        self.icono?.frame = CGRect(x: (self.frame.size.width - 120) / 2, y: 10, width: 120, height: 120)
+        self.addSubview(self.icono!);
+        
+        label.frame = CGRect(x: (self.frame.size.width - 280) / 2, y: (self.icono?.frame.maxY)!, width: 280, height: 100)
+        label.backgroundColor=UIColor.white
+        label.textAlignment = NSTextAlignment.center
+        label.text = ""
+        
+        label.font = UIFont(name: RobotoFontName.RobotoBold.rawValue, size: CGFloat(20))
+        label.textColor = institutionalColors.claroBlackColor
+        label.textAlignment = .center
+        label.backgroundColor = UIColor.clear
+        label.lineBreakMode = .byWordWrapping;
+        label.numberOfLines = 0;
+        self.addSubview(label)
+        
+        let btn: UIButton = UIButton()
+        btn.frame = CGRect(x:(self.frame.size.width - 200) / 2, y: label.frame.maxY, width: 200, height: 40)
+        btn.setTitle("Volver a Inicio", for: UIControlState.normal)
+        btn.titleLabel?.font = UIFont(name: RobotoFontName.RobotoBold.rawValue, size: CGFloat(16))
+        btn.setTitleColor(institutionalColors.claroBlueColor, for: UIControlState.normal)
+        btn.setTitleColor(institutionalColors.claroBlueColor, for: UIControlState.selected)
+        btn.layer.borderColor = institutionalColors.claroBlueColor.cgColor
+        btn.layer.borderWidth = 1;
+        btn.layer.cornerRadius = 2
+        btn.addTarget(self,
+                      action: #selector(goToHome),
+                      for: UIControlEvents.touchUpInside)
+        self.addSubview(btn)
+        
+    }
+    
+    func goToHome() {
+        NotificationCenter.default.post(name: Notification.Name("initializeHome"), object: nil)
+    }
+}
+
