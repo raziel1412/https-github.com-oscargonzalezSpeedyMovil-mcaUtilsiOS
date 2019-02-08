@@ -19,8 +19,10 @@ public class GenericWebViewModel: NSObject {
     public var reloadUrlSuccess: String! /// Constante que tiene la URL recarga
     public var paidUrlSucces: String! /// Constante que tiene la URL pago
     public var loadUrl: String! /// url to show in Web view
+    public var khipuSuccess: String! // only required for Reload //self.textConfiguration?.translations?.data?.topUpMobile?.khipuSuccess ?? ""
+    public var khipuFail: String! // only required for Reload //self.textConfiguration?.translations?.data?.topUpMobile?.khipuSuccess ?? ""
     
-    public init(headerTitle: String!, serviceSelected: WebViewType!, loadUrl: String!, buttonNavType: ButtonNavType!, rut: String? = "", email: String? = "", name: String? = "", reloadUrlSuccess: String!, paidUrlSucces: String!) {
+    public init(headerTitle: String!, serviceSelected: WebViewType!, loadUrl: String!, buttonNavType: ButtonNavType!, rut: String? = "", email: String? = "", name: String? = "", reloadUrlSuccess: String!, paidUrlSucces: String!, khipuSuccess: String? = "", khipuFail: String? = "") {
         super.init()
         self.headerTitle = headerTitle
         self.serviceSelected = serviceSelected
@@ -31,6 +33,8 @@ public class GenericWebViewModel: NSObject {
         if let _ = rut {self.name = rut} else {self.name = ""}
         self.reloadUrlSuccess = reloadUrlSuccess
         self.paidUrlSucces = paidUrlSucces
+        self.khipuSuccess = khipuSuccess ?? ""
+        self.khipuFail = khipuSuccess ?? ""
     }
 
 }
@@ -38,7 +42,7 @@ public class GenericWebViewModel: NSObject {
 public enum WebViewType: String {
     case BillingPayment = "billingPayment"
     case Reload = "reload"
-    case TermsAndConditios = "t&c"
+    case TermsAndConditions = "t&c"
     case Hiring = "hiring"
     case BranchV = "sucursalV"
     case HelpCenters = "centrosAyuda"
