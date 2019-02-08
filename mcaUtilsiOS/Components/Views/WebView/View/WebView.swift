@@ -10,7 +10,7 @@ import UIKit
 
 public class WebView: UIWebView {
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         
     }
@@ -18,7 +18,7 @@ public class WebView: UIWebView {
     /// Constructor del componente webView
     /// - Parameter url: URL a consultar
     /// - Parameter frame: Tamaño del componente webView
-    init(url: String, frame: CGRect, method: String = "GET", body : String? = nil) {
+    public init(url: String, frame: CGRect, method: String = "GET", body : String? = nil) {
         super.init(frame: frame)
         let url = url.addingPercentEncoding( withAllowedCharacters: NSCharacterSet.urlQueryAllowed)
         if let urlWeb = URL(string: url!) {
@@ -32,7 +32,7 @@ public class WebView: UIWebView {
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 

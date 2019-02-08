@@ -54,10 +54,6 @@ public class mcaUtilsHelper: NSObject {
         return checkImageExistsP(fileName: fileName)
     }
     
-    public class func initGenericWebView(navController: UINavigationController?, info: GenericWebViewModel!) {
-        GenericWebViewVC.show(navController: navController, info: info)
-    }
-    
     public class func getGoogleAPIKey() -> String{
         return mcaUtilsConstants.GOOGL_API_KEY
     }
