@@ -76,7 +76,7 @@ class GenericWebViewVC: UIViewController, UIWebViewDelegate {
     
     /// Función que setea el navigation bar
     func setNavigationBar() {
-        /*IMPORTANTE Jorge ISAI DESCOMENTAR ESA LINEA*/
+        /*IMPORTANTE ISAI DESCOMENTAR ESA LINEA*/
         //self.initWith(navigationType: information.buttonNavType, headerTitle: information.headerTitle)
     }
     
