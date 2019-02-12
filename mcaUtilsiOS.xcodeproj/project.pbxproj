@@ -12,7 +12,6 @@
 			buildConfigurationList = 1D03790621ECF38E00F70AF5 /* Build configuration list for PBXAggregateTarget "mcaUtilsiOSUniversal" */;
 			buildPhases = (
 				1D03790821ECF4F600F70AF5 /* ShellScript */,
-				1D0379CC21ED3BB700F70AF5 /* CopyFiles */,
 			);
 			dependencies = (
 			);
@@ -28,10 +27,10 @@
 		1D1E498C21B70D40007C61B1 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E498B21B70D40007C61B1 /* FontExtension.swift */; };
 		1D2B53CD21C189F2008ABC44 /* GenericWebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B53CC21C189F2008ABC44 /* GenericWebViewModel.swift */; };
 		1D2B53D021C19A80008ABC44 /* mcaUtilsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B53CF21C19A80008ABC44 /* mcaUtilsConstants.swift */; };
-		1D8C3B6521F92F8C005DBA39 /* Pods_mcaUtilsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8C3B6421F92F8C005DBA39 /* Pods_mcaUtilsiOS.framework */; };
 		1DCFABEE21ADFCBD00056A67 /* mcaUtilsHelper.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DCFABFA21AE065200056A67 /* GeneralAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F0DFC321A609BD001D98AC /* GeneralAlerts.swift */; };
 		1DCFAC5521AF683F00056A67 /* mcaUtilsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */; };
+		1DF8AD202213741500D67950 /* Pods_mcaUtilsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8C3B6421F92F8C005DBA39 /* Pods_mcaUtilsiOS.framework */; };
 		622ED4DC21A8AE1D00BE746A /* Extension+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622ED4DB21A8AE1D00BE746A /* Extension+UIApplication.swift */; };
 		6282911821A720CA00AF8144 /* Extension+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6282911721A720CA00AF8144 /* Extension+URL.swift */; };
 		62874661219CD9B200C53384 /* mcaUtilsiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 62874653219CD9B200C53384 /* mcaUtilsiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -146,18 +145,6 @@
 		7B564E5621B9B05F00890AA0 /* ViewExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFB68219F1EE900F85A3D /* ViewExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BEEA58921B88928005211C6 /* EmailView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFDBB219F1EEA00F85A3D /* EmailView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		1D0379CC21ED3BB700F70AF5 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1D1D422B21E3BFF400FA21D9 /* NotificationAnalyticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAnalyticsModel.swift; sourceTree = "<group>"; };
@@ -286,7 +273,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D8C3B6521F92F8C005DBA39 /* Pods_mcaUtilsiOS.framework in Frameworks */,
+				1DF8AD202213741500D67950 /* Pods_mcaUtilsiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,7 +660,7 @@
 				6287464C219CD9B200C53384 /* Sources */,
 				6287464D219CD9B200C53384 /* Frameworks */,
 				6287464E219CD9B200C53384 /* Resources */,
-				AB8CF5E5E3A05F6C88DB7B00 /* [CP] Copy Pods Resources */,
+				EF4B540DE4549A2D8BEF74DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -787,7 +774,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AB8CF5E5E3A05F6C88DB7B00 /* [CP] Copy Pods Resources */ = {
+		EF4B540DE4549A2D8BEF74DE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -908,7 +895,6 @@
 /* Begin XCBuildConfiguration section */
 		1D03790421ECF38E00F70AF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D83C877DBFD091C133148C26 /* Pods-mcaUtilsiOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 85E3H648RA;
@@ -920,7 +906,6 @@
 		};
 		1D03790521ECF38E00F70AF5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D83C877DBFD091C133148C26 /* Pods-mcaUtilsiOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 85E3H648RA;
@@ -933,7 +918,6 @@
 		};
 		62874662219CD9B200C53384 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6DEFDA3D524114A7F85AF9B /* Pods-mcaUtilsiOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
@@ -1000,7 +984,6 @@
 		};
 		62874663219CD9B200C53384 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D83C877DBFD091C133148C26 /* Pods-mcaUtilsiOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
@@ -1140,7 +1123,7 @@
 				1D03790521ECF38E00F70AF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		6287464A219CD9B200C53384 /* Build configuration list for PBXProject "mcaUtilsiOS" */ = {
 			isa = XCConfigurationList;
@@ -1149,7 +1132,7 @@
 				62874663219CD9B200C53384 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		62874664219CD9B200C53384 /* Build configuration list for PBXNativeTarget "mcaUtilsiOS" */ = {
 			isa = XCConfigurationList;
@@ -1158,7 +1141,7 @@
 				62874666219CD9B200C53384 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
