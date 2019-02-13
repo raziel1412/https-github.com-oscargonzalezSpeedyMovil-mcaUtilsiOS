@@ -9,19 +9,19 @@
 import Foundation
 import UIKit
 
-protocol ActionViewDelegate {
+public protocol ActionViewDelegate {
     func resultOk()
 }
 
 public class ActionView : UIView {
     
-    var btnShowTicket: GreenBorderWhiteBackgroundButton!
-    let viewModalActionBlack = UIView()
-    let viewModalActionWhite = UIView()
-    let img = UIImageView()
-    let lbTitle = UILabel()
-    let lbTitleDetail = UILabel()
-    var delegate : ActionViewDelegate!
+    public var btnShowTicket: GreenBorderWhiteBackgroundButton!
+    public let viewModalActionBlack = UIView()
+    public let viewModalActionWhite = UIView()
+    public let img = UIImageView()
+    public let lbTitle = UILabel()
+    public let lbTitleDetail = UILabel()
+    public var delegate : ActionViewDelegate!
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -34,7 +34,7 @@ public class ActionView : UIView {
     }
     
     
-    func setup(imagen: UIImage, title:  String, subTitle: String, titleBtn: String) {
+    public func setup(imagen: UIImage, title:  String, subTitle: String, titleBtn: String) {
         
         self.frame = CGRect (x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         //let conf = SessionSingleton.sharedInstance.getGeneralConfig()
@@ -84,7 +84,7 @@ public class ActionView : UIView {
         btnShowTicket.isHidden = false
     }
     
-    func showTicketAction(){
+    public func showTicketAction(){
         print("Clic ActionView")
         self.delegate?.resultOk()
     }
