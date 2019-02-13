@@ -79,12 +79,9 @@
 		62EBFE16219F1EEA00F85A3D /* CropOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB59219F1EE900F85A3D /* CropOverlay.swift */; };
 		62EBFE17219F1EEA00F85A3D /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB5A219F1EE900F85A3D /* PermissionsView.swift */; };
 		62EBFE18219F1EEA00F85A3D /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB5B219F1EE900F85A3D /* ImageCell.swift */; };
-		62EBFE1A219F1EEA00F85A3D /* Extension + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB5D219F1EE900F85A3D /* Extension + UIViewController.swift */; };
 		62EBFE1D219F1EEA00F85A3D /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB60219F1EE900F85A3D /* UILabelExtension.swift */; };
-		62EBFE1E219F1EEA00F85A3D /* ReachabilityManual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB62219F1EE900F85A3D /* ReachabilityManual.swift */; };
 		62EBFE1F219F1EEA00F85A3D /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB63219F1EE900F85A3D /* CustomAlertViewController.swift */; };
 		62EBFE20219F1EEA00F85A3D /* GooglePlacesSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB64219F1EE900F85A3D /* GooglePlacesSearchController.swift */; };
-		62EBFE21219F1EEA00F85A3D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62EBFB65219F1EE900F85A3D /* Localizable.strings */; };
 		62EBFE24219F1EEA00F85A3D /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB68219F1EE900F85A3D /* ViewExtension.swift */; };
 		62EBFE25219F1EEA00F85A3D /* WebViewAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB69219F1EE900F85A3D /* WebViewAlertViewController.swift */; };
 		62EBFE26219F1EEA00F85A3D /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFB6A219F1EE900F85A3D /* ImageViewExtension.swift */; };
@@ -203,12 +200,9 @@
 		62EBFB59219F1EE900F85A3D /* CropOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropOverlay.swift; sourceTree = "<group>"; };
 		62EBFB5A219F1EE900F85A3D /* PermissionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
 		62EBFB5B219F1EE900F85A3D /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
-		62EBFB5D219F1EE900F85A3D /* Extension + UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension + UIViewController.swift"; sourceTree = "<group>"; };
 		62EBFB60219F1EE900F85A3D /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
-		62EBFB62219F1EE900F85A3D /* ReachabilityManual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManual.swift; sourceTree = "<group>"; };
 		62EBFB63219F1EE900F85A3D /* CustomAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
 		62EBFB64219F1EE900F85A3D /* GooglePlacesSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlacesSearchController.swift; sourceTree = "<group>"; };
-		62EBFB65219F1EE900F85A3D /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		62EBFB68219F1EE900F85A3D /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		62EBFB69219F1EE900F85A3D /* WebViewAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewAlertViewController.swift; sourceTree = "<group>"; };
 		62EBFB6A219F1EE900F85A3D /* ImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
@@ -297,7 +291,6 @@
 		1D1E498A21B70CE6007C61B1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				62EBFB5D219F1EE900F85A3D /* Extension + UIViewController.swift */,
 				62EBFB71219F1EE900F85A3D /* Extension+Date.swift */,
 				62EBFB70219F1EE900F85A3D /* Extension+UIView.swift */,
 				62EBFB41219F1EE900F85A3D /* HexColorExtension.swift */,
@@ -413,7 +406,6 @@
 		62EBFB40219F1EE900F85A3D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				62EBFB65219F1EE900F85A3D /* Localizable.strings */,
 				62EBFB72219F1EE900F85A3D /* Appearance.swift */,
 				62EBFB63219F1EE900F85A3D /* CustomAlertViewController.swift */,
 				62EBFB6E219F1EE900F85A3D /* GeneralUtils.swift */,
@@ -422,7 +414,6 @@
 				62EBFB6B219F1EE900F85A3D /* PlanDetailAlertViewController.swift */,
 				62EBFB69219F1EE900F85A3D /* WebViewAlertViewController.swift */,
 				62EBFB42219F1EE900F85A3D /* ALCameraViewController */,
-				62EBFB61219F1EE900F85A3D /* Network */,
 				62EBFB73219F1EE900F85A3D /* Spinners */,
 				6282911721A720CA00AF8144 /* Extension+URL.swift */,
 				622ED4DB21A8AE1D00BE746A /* Extension+UIApplication.swift */,
@@ -481,14 +472,6 @@
 				62EBFB5B219F1EE900F85A3D /* ImageCell.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		62EBFB61219F1EE900F85A3D /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				62EBFB62219F1EE900F85A3D /* ReachabilityManual.swift */,
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		62EBFB73219F1EE900F85A3D /* Spinners */ = {
@@ -721,7 +704,6 @@
 				62EB3B9E219E447900864FD4 /* Roboto-CondensedItalic.ttf in Resources */,
 				62EB3B9F219E447900864FD4 /* Roboto-Italic.ttf in Resources */,
 				62EB3B97219E447900864FD4 /* Roboto-BoldCondensed.ttf in Resources */,
-				62EBFE21219F1EEA00F85A3D /* Localizable.strings in Resources */,
 				62EBFE14219F1EEA00F85A3D /* ConfirmViewController.xib in Resources */,
 				62EB3B9D219E447900864FD4 /* Roboto-LightItalic.ttf in Resources */,
 				62EBFE03219F1EEA00F85A3D /* CameraViewAssets.xcassets in Resources */,
@@ -830,7 +812,6 @@
 				62EBFE05219F1EEA00F85A3D /* Utilities.swift in Sources */,
 				62EBFF9C219F1EEA00F85A3D /* WarningView.swift in Sources */,
 				62EBFFB3219F1EEA00F85A3D /* PhoneLabel.swift in Sources */,
-				62EBFE1A219F1EEA00F85A3D /* Extension + UIViewController.swift in Sources */,
 				1DCFABFA21AE065200056A67 /* GeneralAlerts.swift in Sources */,
 				62EBFFB5219F1EEA00F85A3D /* SimpleGreenTextField.swift in Sources */,
 				62EBFE0D219F1EEA00F85A3D /* UIButtonExtensions.swift in Sources */,
@@ -872,7 +853,6 @@
 				62EBFE13219F1EEA00F85A3D /* CameraViewController.swift in Sources */,
 				62EBFE10219F1EEA00F85A3D /* CameraViewControllerConstraint.swift in Sources */,
 				62EBFE09219F1EEA00F85A3D /* SingleImageSaver.swift in Sources */,
-				62EBFE1E219F1EEA00F85A3D /* ReachabilityManual.swift in Sources */,
 				62EBFE06219F1EEA00F85A3D /* CameraGlobals.swift in Sources */,
 				62EBFFBF219F1EEB00F85A3D /* ArcProgressView.swift in Sources */,
 			);
