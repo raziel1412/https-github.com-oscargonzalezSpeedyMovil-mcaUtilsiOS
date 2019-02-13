@@ -26,7 +26,6 @@ public class Appearance: NSObject {
         let selectionView = UIView()
         selectionView.backgroundColor = UIColor.white
         UITableViewCell.appearance().selectedBackgroundView = selectionView
-        UIApplication.shared.statusBarStyle = .lightContent
     }
     
 }

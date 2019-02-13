@@ -110,7 +110,6 @@
 		62EBFFAA219F1EEA00F85A3D /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFD9A219F1EEA00F85A3D /* ActionView.swift */; };
 		62EBFFAB219F1EEA00F85A3D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFD9D219F1EEA00F85A3D /* WebViewController.swift */; };
 		62EBFFAC219F1EEA00F85A3D /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFD9F219F1EEA00F85A3D /* WebView.swift */; };
-		62EBFFAD219F1EEA00F85A3D /* CardCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFDA1219F1EEA00F85A3D /* CardCellView.swift */; };
 		62EBFFAE219F1EEA00F85A3D /* MandatoryInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFDA2219F1EEA00F85A3D /* MandatoryInformation.swift */; };
 		62EBFFAF219F1EEA00F85A3D /* CodeContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFDA3219F1EEA00F85A3D /* CodeContainerView.swift */; };
 		62EBFFB0219F1EEA00F85A3D /* BlackTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBFDA4219F1EEA00F85A3D /* BlackTitleLabel.swift */; };
@@ -235,7 +234,6 @@
 		62EBFD9A219F1EEA00F85A3D /* ActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
 		62EBFD9D219F1EEA00F85A3D /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		62EBFD9F219F1EEA00F85A3D /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		62EBFDA1219F1EEA00F85A3D /* CardCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCellView.swift; sourceTree = "<group>"; };
 		62EBFDA2219F1EEA00F85A3D /* MandatoryInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MandatoryInformation.swift; sourceTree = "<group>"; };
 		62EBFDA3219F1EEA00F85A3D /* CodeContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeContainerView.swift; sourceTree = "<group>"; };
 		62EBFDA4219F1EEA00F85A3D /* BlackTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackTitleLabel.swift; sourceTree = "<group>"; };
@@ -537,7 +535,6 @@
 				62EBFDA6219F1EEA00F85A3D /* UITextFieldGroup.swift */,
 				62EBFDB5219F1EEA00F85A3D /* UITextFieldGroupPhone.swift */,
 				62EBFD87219F1EEA00F85A3D /* WarningView.swift */,
-				62EBFDA0219F1EEA00F85A3D /* Boletas */,
 				62EBFDB7219F1EEA00F85A3D /* Email */,
 				62EBFD89219F1EEA00F85A3D /* RadioButton */,
 				62EBFD9B219F1EEA00F85A3D /* WebView */,
@@ -594,14 +591,6 @@
 				62EBFD9F219F1EEA00F85A3D /* WebView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		62EBFDA0219F1EEA00F85A3D /* Boletas */ = {
-			isa = PBXGroup;
-			children = (
-				62EBFDA1219F1EEA00F85A3D /* CardCellView.swift */,
-			);
-			path = Boletas;
 			sourceTree = "<group>";
 		};
 		62EBFDB7219F1EEA00F85A3D /* Email */ = {
@@ -831,7 +820,6 @@
 				62EBFE25219F1EEA00F85A3D /* WebViewAlertViewController.swift in Sources */,
 				62EBFFC6219F1EEB00F85A3D /* CustomWaitAnimation.swift in Sources */,
 				62EBFFC2219F1EEB00F85A3D /* UIHeaderForm2.swift in Sources */,
-				62EBFFAD219F1EEA00F85A3D /* CardCellView.swift in Sources */,
 				62EBFE2A219F1EEA00F85A3D /* GeneralUtils.swift in Sources */,
 				62EBFFB7219F1EEB00F85A3D /* PasswordRulesContainer.swift in Sources */,
 				62EBFFC0219F1EEB00F85A3D /* RoundedCheckbox.swift in Sources */,
