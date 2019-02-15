@@ -1428,17 +1428,6 @@ limitations under the License.</string>
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright 2016 khipu SpA. All rights reserved.
-</string>
-			<key>License</key>
-			<string>Copyright</string>
-			<key>Title</key>
-			<string>khenshin</string>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-		</dict>
-		<dict>
-			<key>FooterText</key>
 			<string>The MIT License (MIT)
 
 Copyright (c) 2017 Xmartlabs SRL
@@ -1465,6 +1454,17 @@ SOFTWARE.
 			<string>MIT</string>
 			<key>Title</key>
 			<string>XLPagerTabStrip</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2016 khipu SpA. All rights reserved.
+</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>khenshin</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
