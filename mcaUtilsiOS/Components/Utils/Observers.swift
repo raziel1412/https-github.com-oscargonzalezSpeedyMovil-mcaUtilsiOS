@@ -10,6 +10,8 @@ import UIKit
 import PKHUD
 import Lottie
 import Cartography
+import ReachabilitySwift
+import IQKeyboardManager
 
 /// Clase usada para el uso del NotificationCenter (Observabilidad)
 public class Observers: NSObject {
@@ -61,13 +63,15 @@ public class Observers: NSObject {
     /// Función que ayuda a enviar un YesNoAlert popup
     /// - parameter info : NSNotification
     static func YesNoAlert(info:AlertYesNo) {
-            let custom = CustomAlertView()
-            custom.alertData = info
-            custom.providesPresentationContextTransitionStyle = true;
-            custom.definesPresentationContext = true;
-            custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
-            custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-            UIApplication.shared.keyWindow?.rootViewController?.present(custom, animated: true, completion: nil)
+        let custom = CustomAlertView();
+        custom.alertData = info
+        custom.providesPresentationContextTransitionStyle = true;
+        custom.definesPresentationContext = true;
+        custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        UIApplication.shared.keyWindow?.currentViewController?.present(custom,
+                                                                       animated: true,
+                                                                       completion: nil)
     }
     
     /// Función que ayuda a enviar un FotoAlert popup
