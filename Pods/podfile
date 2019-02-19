@@ -40,36 +40,16 @@ def notifications_pods
     pod 'UrbanAirship-iOS-SDK'
 end
 
-def tab_pods
-    pod 'XLPagerTabStrip', '~> 7.0'
-end
-
 def popup_pods
     pod 'MTPopup', '~> 1.0.2'
-end
-
-def manager_pods
-    pod 'ObjectMapper', '~> 3.3'
-    pod 'IBMMobileFirstPlatformFoundation'
-    pod 'JSONWebToken'
 end
 
 def help_pods
     pod 'SwiftyJSON'
 end
 
-def utils_pods
-    pod 'PKHUD', '~> 4.2.3'
-    pod 'SidebarOverlay', '~> 4.1'
-end
-
 def ui_pods
     pod 'lottie-ios'
-end
-    
-
-def reachability_pods
-    pod 'ReachabilitySwift', '~> 3.0.0'
 end
 
 def register_pods
@@ -84,6 +64,14 @@ def project_pods
     pod 'FontAwesome.swift', '~> 1.2.0'
     pod 'DLRadioButton', '~> 1.4.9'
     pod 'khenshin', :git => 'https://bitbucket.org/khipu/khenshin-pod.git', :tag => '1.298'
+    #auto-linked
+    pod 'ObjectMapper', '~> 3.3'
+    pod 'IBMMobileFirstPlatformFoundation'
+    pod 'JSONWebToken'
+    pod 'PKHUD', '~> 4.2.3'
+    pod 'SidebarOverlay', '~> 4.1'
+    pod 'XLPagerTabStrip', '~> 7.0'
+    pod 'ReachabilitySwift', '~> 3.0.0'
 end
 
 target 'mcaLoginiOS' do
@@ -94,9 +82,6 @@ target 'mcaLoginiOS' do
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
     #Autolinked frameworks
-    manager_pods
-    utils_pods
-    reachability_pods
     notifications_pods
 end
 
@@ -107,10 +92,8 @@ target 'mcaManageriOS' do
     workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     crash_pods
-    manager_pods
-    reachability_pods
+    project_pods
     help_pods
-    utils_pods
 end
 
 target 'mcaUtilsiOS' do
@@ -120,8 +103,6 @@ target 'mcaUtilsiOS' do
     workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
-    utils_pods
-    reachability_pods
     ui_pods
 end
 
@@ -132,10 +113,6 @@ target 'mcaWelcomeiOS' do
     workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
-    #Autolinked frameworks
-    manager_pods
-    utils_pods
-    reachability_pods
 end
 
 target 'mcaRecoveryPassword' do
@@ -145,10 +122,6 @@ target 'mcaRecoveryPassword' do
     workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
-    #Autolinked frameworks
-    manager_pods
-    utils_pods
-    reachability_pods
 end
 
 target 'mcaHelpiOS' do
@@ -161,10 +134,6 @@ target 'mcaHelpiOS' do
     localization_pods
     help_pods
     notifications_pods
-    #Autolinked frameworks
-    manager_pods
-    utils_pods
-    reachability_pods
 end
 
 target 'mcaHomeiOS' do
@@ -174,11 +143,6 @@ target 'mcaHomeiOS' do
     workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
-    #Autolinked frameworks
-    manager_pods
-    utils_pods
-    reachability_pods
-    register_pods
 end
 
 target 'mcaRegistroiOS' do
@@ -190,10 +154,6 @@ target 'mcaRegistroiOS' do
     project_pods
     popup_pods
     register_pods
-    #Autolinked frameworks
-    manager_pods
-    utils_pods
-    reachability_pods
     
 end
 
@@ -204,11 +164,6 @@ target 'mcaCardsiOS' do
     workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
-    tab_pods
-    #Autolinked frameworks
-    manager_pods
-    utils_pods
-    reachability_pods
 end
 
 target 'mcaProfileiOS' do
@@ -218,10 +173,6 @@ target 'mcaProfileiOS' do
     workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
-    #Autolinked frameworks
-    manager_pods
-    utils_pods
-    reachability_pods
 end
 
 target 'mcaScheduleiOS' do
@@ -231,10 +182,6 @@ target 'mcaScheduleiOS' do
     workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
-    #Autolinked frameworks
-    manager_pods
-    utils_pods
-    reachability_pods
 end
 
 target 'mcaBillingiOS' do
@@ -244,10 +191,6 @@ target 'mcaBillingiOS' do
     workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
-    #Autolinked frameworks
-    manager_pods
-    utils_pods
-    reachability_pods
 end
 
 target 'mcaAddServiceiOS' do
@@ -257,10 +200,6 @@ target 'mcaAddServiceiOS' do
     workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
-    #Autolinked frameworks
-    manager_pods
-    utils_pods
-    reachability_pods
 end
 
 target 'mcaClick2BuyiOS' do
@@ -270,10 +209,6 @@ target 'mcaClick2BuyiOS' do
     workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
-    #Autolinked frameworks
-    manager_pods
-    utils_pods
-    reachability_pods
 end
 
 target 'mcaPaidsiOS' do
@@ -283,10 +218,6 @@ target 'mcaPaidsiOS' do
     workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
-    #Autolinked frameworks
-    manager_pods
-    utils_pods
-    reachability_pods
 end
 
 target 'mcaPushNotificationsiOS' do
@@ -297,11 +228,6 @@ target 'mcaPushNotificationsiOS' do
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
     notifications_pods
-    tab_pods
-    #Autolinked frameworks
-    manager_pods
-    utils_pods
-    reachability_pods
 end
 
 target 'mcaTechnicalServiceiOS' do
@@ -311,10 +237,6 @@ target 'mcaTechnicalServiceiOS' do
     workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
-    #Autolinked frameworks
-    manager_pods
-    utils_pods
-    reachability_pods
 end
 
 target 'mcaTopUpRefilliOS' do
@@ -324,10 +246,6 @@ target 'mcaTopUpRefilliOS' do
     workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
-    #Autolinked frameworks
-    manager_pods
-    utils_pods
-    reachability_pods
 end
 
 target 'mcaiOSCENAM' do
@@ -339,13 +257,9 @@ target 'mcaiOSCENAM' do
    localization_pods
    crash_pods
    notifications_pods
-   tab_pods
    popup_pods
-   manager_pods
    help_pods
-   utils_pods
    ui_pods
-   reachability_pods
    register_pods
    project_pods
 end
@@ -359,13 +273,9 @@ target 'mcaiOSCL' do
    localization_pods
    crash_pods
    notifications_pods
-   tab_pods
    popup_pods
-   manager_pods
    help_pods
-   utils_pods
    ui_pods
-   reachability_pods
    register_pods
    project_pods
    
