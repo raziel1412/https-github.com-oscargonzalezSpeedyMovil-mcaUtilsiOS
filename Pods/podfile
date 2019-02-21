@@ -24,6 +24,8 @@ project '/mcaPushNotificationsiOS/mcaPushNotificationsiOS.xcodeproj'
 project '/mcaTechnicalServiceiOS/mcaTechnicalServiceiOS.xcodeproj'
 project '/mcaTopUpRefilliOS/mcaTopUpRefilliOS.xcodeproj'
 
+project '/mcaUsersWithoutAccountsiOS⁩/mcaUsersWithoutAccountsiOS⁩.xcodeproj'
+
 project '/mcaWorkspaceiOSCENAM/mcaiOSCENAM.xcodeproj'
 project '/mcaWorkspaceiOSCL/mcaiOSCL.xcodeproj'
 
@@ -246,6 +248,16 @@ target 'mcaTopUpRefilliOS' do
     workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
+end
+
+target 'mcaUsersWithoutAccountsiOS' do
+    platform :ios, '9.0'
+    use_frameworks!
+    project '../../mcaUsersWithoutAccountsiOS/mcaUsersWithoutAccountsiOS.xcodeproj'
+    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+    project_pods
+
 end
 
 target 'mcaiOSCENAM' do
