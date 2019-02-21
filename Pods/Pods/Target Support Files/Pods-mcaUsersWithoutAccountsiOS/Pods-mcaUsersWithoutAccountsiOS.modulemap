@@ -1,0 +1,6 @@
+framework module Pods_mcaUsersWithoutAccountsiOS {
+  umbrella header "Pods-mcaUsersWithoutAccountsiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
