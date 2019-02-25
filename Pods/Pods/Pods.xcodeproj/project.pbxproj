@@ -14478,7 +14478,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -17469,7 +17468,7 @@
 				F258E05F2153E3BDB1408DA1816A21B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		024494F138475DD251D95592E7A1052E /* Build configuration list for PBXNativeTarget "Pods-mcaCardsiOS" */ = {
 			isa = XCConfigurationList;
@@ -17478,7 +17477,7 @@
 				5696D62713C947AB2168F8AF9D02F00D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		04FC2500D27BC4B2FFA5288D67734AF2 /* Build configuration list for PBXNativeTarget "Pods-mcaPushNotificationsiOS" */ = {
 			isa = XCConfigurationList;
@@ -17487,7 +17486,7 @@
 				D1A448BD52F0929D27C3020D409A8F89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		065117DE0022022DF014B0ABC2BD3412 /* Build configuration list for PBXNativeTarget "Pods-mcaiOSCENAM" */ = {
 			isa = XCConfigurationList;
@@ -17496,7 +17495,7 @@
 				B5F92FFEDF51F2680658A5B4B9C84B52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		06CC0063BA918D3DF3074D129FD163F4 /* Build configuration list for PBXNativeTarget "Pods-mcaScheduleiOS" */ = {
 			isa = XCConfigurationList;
@@ -17505,7 +17504,7 @@
 				8F4FE2D6329C4A98A97891C56F047BEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		0812A9DB0DCADBAA62CC6005D6D2C476 /* Build configuration list for PBXNativeTarget "Pods-mcaManageriOS" */ = {
 			isa = XCConfigurationList;
@@ -17514,7 +17513,7 @@
 				6C6511FC19298AE5089B78BFFDBB2CAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		089A2A08ED665C115F8BC6658D54BD5E /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */ = {
 			isa = XCConfigurationList;
@@ -17523,7 +17522,7 @@
 				E3AF31DAF856E870DF6EF4FB4C4E13FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		0A45EBC9953BA0F394CD47D13173EA34 /* Build configuration list for PBXNativeTarget "Pods-mcaHelpiOS" */ = {
 			isa = XCConfigurationList;
@@ -17532,7 +17531,7 @@
 				CB7F7053F855B009AC891B286E9B3418 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		118FCC60066EF1D7DD17E50B82C12AA4 /* Build configuration list for PBXNativeTarget "DLRadioButton" */ = {
 			isa = XCConfigurationList;
@@ -17541,7 +17540,7 @@
 				73C2F308D172646DDB6DD72E2E501EE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		1381F0C9853C1940FDB24EA7EBE8FA40 /* Build configuration list for PBXNativeTarget "Pods-mcaUsersWithoutAccountsiOS" */ = {
 			isa = XCConfigurationList;
@@ -17550,7 +17549,7 @@
 				A77EAEF564F34DB03B5631749A358DCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		1973D00C2BBC97FE3DD005962D850FE9 /* Build configuration list for PBXNativeTarget "Pods-mcaRegistroiOS" */ = {
 			isa = XCConfigurationList;
@@ -17559,7 +17558,7 @@
 				3A86794A014DDE472761F8B9C37F698A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		23CFD86DE455F2B998EC09D589DA285D /* Build configuration list for PBXNativeTarget "ObjectMapper" */ = {
 			isa = XCConfigurationList;
@@ -17568,7 +17567,7 @@
 				490884F399F39D661D71A833887067CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
@@ -17577,7 +17576,7 @@
 				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		31E01BC98C827BD8A78F94173CDCC418 /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
 			isa = XCConfigurationList;
@@ -17586,7 +17585,7 @@
 				3BF016649078803BD1067092459084D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		3BD237FA1C5C8831103FB4CE853611E1 /* Build configuration list for PBXNativeTarget "Pods-mcaTechnicalServiceiOS" */ = {
 			isa = XCConfigurationList;
@@ -17595,7 +17594,7 @@
 				A7DB4CEF4D88162D375C5C0D384133B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		3CD08D465F3A58E8A5CABC547A7A84C5 /* Build configuration list for PBXNativeTarget "PPTopMostController" */ = {
 			isa = XCConfigurationList;
@@ -17604,7 +17603,7 @@
 				539F0C6D7A06652C955DDB5319A44B3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		42CD15DFC262AFC5288B25B732177128 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */ = {
 			isa = XCConfigurationList;
@@ -17613,7 +17612,7 @@
 				175272A9D4FF449443DBCE06CAD30106 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		45F491822B5DB82BC20402492A89277C /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */ = {
 			isa = XCConfigurationList;
@@ -17622,7 +17621,7 @@
 				7FB6BF32A293269E0E699409CA65D614 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4640A3FD22DAF78390468CA450BB29DA /* Build configuration list for PBXNativeTarget "Cartography" */ = {
 			isa = XCConfigurationList;
@@ -17631,7 +17630,7 @@
 				6DAB01A917D506C038587132373F8750 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4678E30D2ED36E4E45880753D9AA3064 /* Build configuration list for PBXNativeTarget "Pods-mcaProfileiOS" */ = {
 			isa = XCConfigurationList;
@@ -17640,7 +17639,7 @@
 				95B7A3C7D4601D88A538575507B1C9CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		522966D47BDB58619ED93112D59C60A1 /* Build configuration list for PBXNativeTarget "Pods-mcaLoginiOS" */ = {
 			isa = XCConfigurationList;
@@ -17649,7 +17648,7 @@
 				68311B69EFA7EC584A2387CD7377A909 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		557A91C9342B4AA67D60E0BA0F9B886B /* Build configuration list for PBXNativeTarget "Pods-mcaTopUpRefilliOS" */ = {
 			isa = XCConfigurationList;
@@ -17658,7 +17657,7 @@
 				A0FE3E5788C1CAE66975B23D1F8FF1CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		5842CEE6BFE76ABFF9C69FF2327D366C /* Build configuration list for PBXNativeTarget "Pods-mcaWelcomeiOS" */ = {
 			isa = XCConfigurationList;
@@ -17667,7 +17666,7 @@
 				C28DDB43E746AEAB444017613FAF1DD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		606A9D57457A68346278B646467A430D /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */ = {
 			isa = XCConfigurationList;
@@ -17676,7 +17675,7 @@
 				B72ABF8EA819DE99AFBE256403A85390 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		66A4216E9F75F21671D5042964E6CAA2 /* Build configuration list for PBXNativeTarget "TTTAttributedLabel" */ = {
 			isa = XCConfigurationList;
@@ -17685,7 +17684,7 @@
 				7474D86B5F74AEA22915598EAC4CFA82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		775D1A44AE56F7E027E2B5B168A3F761 /* Build configuration list for PBXNativeTarget "Pods-mcaClick2BuyiOS" */ = {
 			isa = XCConfigurationList;
@@ -17694,7 +17693,7 @@
 				8C68CC781A8D2927769715513E1C2E00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		7E127E32D0465A08437982F8B2A3077E /* Build configuration list for PBXNativeTarget "ActionSheetPicker-3.0" */ = {
 			isa = XCConfigurationList;
@@ -17703,7 +17702,7 @@
 				672B79F7BDAAF6B1078C6D3EA38F75BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		881EDCA9AF3A1D4627857ED500110A03 /* Build configuration list for PBXNativeTarget "SidebarOverlay" */ = {
 			isa = XCConfigurationList;
@@ -17712,7 +17711,7 @@
 				683B5A845225309FB56C3FE1CD48FB08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		8A1192466985C60041994C4723695355 /* Build configuration list for PBXNativeTarget "IQKeyboardManager" */ = {
 			isa = XCConfigurationList;
@@ -17721,7 +17720,7 @@
 				7FEFCCCB15893DBA5B6C747D1E579AE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		8C414E0068C63C34D8BEC8252D016A1D /* Build configuration list for PBXNativeTarget "JVFloatLabeledTextField" */ = {
 			isa = XCConfigurationList;
@@ -17730,7 +17729,7 @@
 				D80C78076BD36D4AF9F24744173A4C74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		8D647550AC543F36CDA7093F28F22389 /* Build configuration list for PBXNativeTarget "FontAwesome.swift" */ = {
 			isa = XCConfigurationList;
@@ -17739,7 +17738,7 @@
 				651FCFF7E767306EFD97536E37D21264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		8DBB796267284E26CD180CF709CA7968 /* Build configuration list for PBXNativeTarget "Pods-mcaHomeiOS" */ = {
 			isa = XCConfigurationList;
@@ -17748,7 +17747,7 @@
 				C18E8B3F747EE94CF09141A487BF0CBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		9306D49004A2A30AC52787A7B1C9C87A /* Build configuration list for PBXNativeTarget "PKHUD" */ = {
 			isa = XCConfigurationList;
@@ -17757,7 +17756,7 @@
 				7A0418D048AE2D13C8C6F2FF99453A33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		97513A6B1F457EFED12AD11ACBDEF1F4 /* Build configuration list for PBXNativeTarget "Toast" */ = {
 			isa = XCConfigurationList;
@@ -17766,7 +17765,7 @@
 				2D1E91AF10C34C58353F036467DEBEE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		9BF648061093ADEA095776AF6B54C982 /* Build configuration list for PBXNativeTarget "lottie-ios" */ = {
 			isa = XCConfigurationList;
@@ -17775,7 +17774,7 @@
 				8E14BF8BF406210F58E8F0713CBCB6F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		9D854153C50EBDDE140DAF690833BB34 /* Build configuration list for PBXNativeTarget "Pods-mcaiOSCL" */ = {
 			isa = XCConfigurationList;
@@ -17784,7 +17783,7 @@
 				764FB4025394497A327496DF4A477D1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A4AFD0204F3D0B06237CF9CBFF1A58BE /* Build configuration list for PBXNativeTarget "Pods-mcaBillingiOS" */ = {
 			isa = XCConfigurationList;
@@ -17793,7 +17792,7 @@
 				3AF50DA6818401583FAD277FF22D17E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A621E18324B9554A63BCBE43DC39E388 /* Build configuration list for PBXNativeTarget "UrbanAirship-iOS-SDK" */ = {
 			isa = XCConfigurationList;
@@ -17802,7 +17801,7 @@
 				3973220CAA514AB7B3818EE91DED7332 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A7077EFC36FB535A72C81F11F2D25887 /* Build configuration list for PBXNativeTarget "Pods-mcaRecoveryPassword" */ = {
 			isa = XCConfigurationList;
@@ -17811,7 +17810,7 @@
 				29AEF3CCC155D6196840BA72153E8C44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A91ACF4D4E342DEB04B7C57FA8EA6CC1 /* Build configuration list for PBXNativeTarget "FontAwesome.swift-FontAwesome.swift" */ = {
 			isa = XCConfigurationList;
@@ -17820,7 +17819,7 @@
 				FEE81985885E3F6B115EFBC0EB182EA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		B27E23EC850E83DC0C9970F7150820AB /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
@@ -17829,7 +17828,7 @@
 				AD173C8706E1F966082AFA72882D8944 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		B5A33D7DF7DD274E56728F6338C8E91A /* Build configuration list for PBXNativeTarget "SwiftValidator" */ = {
 			isa = XCConfigurationList;
@@ -17838,7 +17837,7 @@
 				EECA773F822854E7E552BF705BBDFE4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		B87694447C3E8378879D97F0C68449E2 /* Build configuration list for PBXNativeTarget "UrbanAirship-iOS-SDK-AirshipResources" */ = {
 			isa = XCConfigurationList;
@@ -17847,7 +17846,7 @@
 				BAC0A57FED75DDAB9D842E6C0F7ACB1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		C45DE2F3438D2FF873BCEF2AE5E68E60 /* Build configuration list for PBXNativeTarget "MTPopup" */ = {
 			isa = XCConfigurationList;
@@ -17856,7 +17855,7 @@
 				FFED085DE159872593F6B68F7844502B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		C5E633F198F34C925DB90697642FAEAD /* Build configuration list for PBXNativeTarget "Pods-mcaUtilsiOS" */ = {
 			isa = XCConfigurationList;
@@ -17865,7 +17864,7 @@
 				2196F0AD6E71427098B18891490E4322 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		D294669999A5797B65D49C9B416BB95F /* Build configuration list for PBXNativeTarget "Pods-mcaAddServiceiOS" */ = {
 			isa = XCConfigurationList;
@@ -17874,7 +17873,7 @@
 				26C14C5C4FF6EB52FB325F8F2B1B3586 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		E18B13079323CE5433E5C1E414FA2474 /* Build configuration list for PBXNativeTarget "RaptureXML" */ = {
 			isa = XCConfigurationList;
@@ -17883,7 +17882,7 @@
 				294FDF9AB7E533DC3D468505285EE01D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		E5B0B4ADA14C207585034DB73CDE6843 /* Build configuration list for PBXNativeTarget "JSONWebToken" */ = {
 			isa = XCConfigurationList;
@@ -17892,7 +17891,7 @@
 				925DCCB7478EA38D6B131347C436C80D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		EAA359345CB6E7DFED063ED11C3E3C8E /* Build configuration list for PBXNativeTarget "Pods-mcaPaidsiOS" */ = {
 			isa = XCConfigurationList;
@@ -17901,7 +17900,7 @@
 				3CA38619C48B6948F9BF351967001844 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		F4D16BF2938703D3A0079C402F5E75D8 /* Build configuration list for PBXNativeTarget "JSONModel" */ = {
 			isa = XCConfigurationList;
@@ -17910,7 +17909,7 @@
 				63BD63E99D3B9F8F2CB43243DA63DB6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 
