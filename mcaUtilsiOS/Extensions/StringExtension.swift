@@ -34,7 +34,7 @@ public extension String {
         guard let emailDetector = try? NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue) else { return false }
         let matches = emailDetector.matches(in: self, options: NSRegularExpression.MatchingOptions.anchored, range: NSRange(location: 0, length: self.count))
         guard matches.count == 1 else { return false }
-        return matches[0].url?.scheme == "mailto"
+        return matches[safe:0]?.url?.scheme == "mailto"
     }
     
     public mutating func insert(string:String,ind:Int) {
