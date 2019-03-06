@@ -27,6 +27,9 @@ public class UIHeaderForm: UIView {
         }
         label.textAlignment = .center
         label.textColor = institutionalColors.claroBlackColor
+        label.numberOfLines = 2
+        label.adjustsFontSizeToFitWidth = true
+        
         return label
     }()
     private var subTitle : UILabel = {
@@ -107,7 +110,7 @@ public class UIHeaderForm: UIView {
             title.top == image.bottom + 8.0
             title.leading == view.leading +  22.0
             title.trailing == view.trailing - 21.0
-            title.height == 24.0
+            title.height == 30.0
             sTitle.top == title.bottom + 8.0
             sTitle.leading == view.leading + 32.0
             sTitle.trailing == view.trailing - 31.0

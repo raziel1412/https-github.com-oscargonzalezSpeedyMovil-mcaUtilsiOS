@@ -12,163 +12,73 @@ import Cartography
 
 /// Esta clase especializa un UIView para permitirle tener apariencia de ventana especial para la captura de tokens o códigos enviados por SMS.
 public class CodeContainerView: UIView, UITextFieldDelegate {
+
     
-    private var firstCodeTextfield: SimpleGreenTextField!
-    private var secondCodeTextfield: SimpleGreenTextField!
-    private var thirdCodeTextfield: SimpleGreenTextField!
-    private var fourthCodeTextfield: SimpleGreenTextField!
-    //private var codeLabel: PhoneLabel!
+    private var arrayTextField = [SimpleGreenTextField]()
+    
+    public var numberCode = 0
     
     public init() {
         super.init(frame: CGRect.zero)
-        
-        //let conf = SessionSingleton.sharedInstance.getGeneralConfig();
-        //let code = (conf?.translations?.data?.generales?.pin)!
-        
-        let tipoTeclado : UIKeyboardType = .namePhonePad;
-        let capitalizacion : UITextAutocapitalizationType = .none;
-        firstCodeTextfield = SimpleGreenTextField(text: "", placeholder: "")
-        firstCodeTextfield.delegate = self
-        firstCodeTextfield.textAlignment = .center
-        firstCodeTextfield.keyboardType = tipoTeclado
-        firstCodeTextfield.autocapitalizationType = capitalizacion;
-        firstCodeTextfield.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(14))
-        
-        secondCodeTextfield = SimpleGreenTextField(text: "", placeholder: "")
-        secondCodeTextfield.textAlignment = .center
-        secondCodeTextfield.keyboardType = tipoTeclado
-        secondCodeTextfield.delegate = self
-        secondCodeTextfield.autocapitalizationType = capitalizacion;
-        secondCodeTextfield.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(14))
-        
-        thirdCodeTextfield = SimpleGreenTextField(text: "", placeholder: "")
-        thirdCodeTextfield.textAlignment = .center
-        thirdCodeTextfield.keyboardType = tipoTeclado
-        thirdCodeTextfield.delegate = self
-        thirdCodeTextfield.autocapitalizationType = capitalizacion;
-        thirdCodeTextfield.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(14))
-        
-        fourthCodeTextfield = SimpleGreenTextField(text: "", placeholder: "")
-        fourthCodeTextfield.textAlignment = .center
-        fourthCodeTextfield.keyboardType = tipoTeclado
-        fourthCodeTextfield.delegate = self
-        fourthCodeTextfield.autocapitalizationType = capitalizacion;
-        fourthCodeTextfield.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(14))
-        
-        /*codeLabel = PhoneLabel(text: code)
-        codeLabel.textColor = institutionalColors.claroLightGrayColor
-        codeLabel.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(16))*/
     }
 
     public func setKeyboardType(tipoTeclado : UIKeyboardType) {
-        firstCodeTextfield.keyboardType = tipoTeclado
-        secondCodeTextfield.keyboardType = tipoTeclado
-        thirdCodeTextfield.keyboardType = tipoTeclado
-        fourthCodeTextfield.keyboardType = tipoTeclado
+        for textField in self.arrayTextField {
+            textField.keyboardType = tipoTeclado
+        }
     }
     
     public func setPosition() {
-        self.addSubview(firstCodeTextfield)
-        self.addSubview(secondCodeTextfield)
-        self.addSubview(thirdCodeTextfield)
-        self.addSubview(fourthCodeTextfield)
-        //self.addSubview(codeLabel)
+        let tipoTeclado : UIKeyboardType = .namePhonePad;
+        let capitalizacion : UITextAutocapitalizationType = .none;
         
-        /*constrain(self, codeLabel) { (view1, view2) in
-            view2.top == view1.top
-            view2.leading == view1.leading
-        }
-        
-        constrain(self, firstCodeTextfield, codeLabel) { (view1, view2, view3) in
-            view2.top == view3.bottomMargin
-            view2.leading == view3.leading
-            view2.width == view1.width * 0.20
-        }*/
         let kSpacing = self.frame.size.width * 0.05
-        constrain(self, firstCodeTextfield) { (view, code) in
-            code.top == view.top
-            code.bottom == view.bottom
-            code.leading == view.leading
-            code.width == view.width * 0.20
+        var maxXText: CGFloat = 0
+        let width: CGFloat = self.frame.width - (CGFloat(numberCode - 1) * kSpacing)
+
+        for i in 0 ... numberCode - 1 {
+            
+            let textField = SimpleGreenTextField(text: "", placeholder: "")
+            textField.frame = CGRect(x: maxXText, y: 0, width: width / CGFloat(numberCode), height: self.frame.height)
+            textField.delegate = self
+            textField.textAlignment = .center
+            textField.keyboardType = tipoTeclado
+            textField.autocapitalizationType = capitalizacion;
+            textField.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(14))
+            textField.tag = i
+            
+            maxXText = textField.frame.maxX + kSpacing
+            self.addSubview(textField)
+            self.arrayTextField.append(textField)
             
         }
-        
-        constrain(self, secondCodeTextfield, firstCodeTextfield) { (view1, view2, view3) in
-            view2.leading == view3.trailing + kSpacing
-            view2.width == view1.width * 0.20
-            view2.top == view1.top
-            view2.bottom == view1.bottom
-            
-        }
-        
-        constrain(self, thirdCodeTextfield, secondCodeTextfield) { (view1, view2, view3) in
-            view2.leading == view3.trailing + kSpacing
-            view2.width == view1.width * 0.20
-            view2.top == view1.top
-            view2.bottom == view1.bottom
-        }
-        
-        constrain(self, fourthCodeTextfield, thirdCodeTextfield) { (view1, view2, view3) in
-            view2.leading == view3.trailing + kSpacing
-            view2.width == view1.width * 0.20
-            view2.top == view1.top
-            view2.bottom == view1.bottom
-        }
-        
+
     }
     
     public func resignResponder() {
-        if firstCodeTextfield.canResignFirstResponder {
-            firstCodeTextfield.resignFirstResponder();
-        }
-        
-        if secondCodeTextfield.canResignFirstResponder {
-            secondCodeTextfield.resignFirstResponder();
-        }
-        
-        if thirdCodeTextfield.canResignFirstResponder {
-            thirdCodeTextfield.resignFirstResponder();
-        }
-        
-        if fourthCodeTextfield.canResignFirstResponder {
-            fourthCodeTextfield.resignFirstResponder();
+        for textField in self.arrayTextField{
+            if textField.canResignFirstResponder {
+                textField.resignFirstResponder()
+            }
         }
     }
     
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if ((textField.text?.count)! < 1  && string.count > 0){
-            if(textField == firstCodeTextfield){
-                secondCodeTextfield.becomeFirstResponder()
-            }
-            if(textField == secondCodeTextfield){
-                thirdCodeTextfield.becomeFirstResponder()
-            }
-            if(textField == thirdCodeTextfield){
-                fourthCodeTextfield.becomeFirstResponder()
+            if textField.tag != numberCode - 1{
+                self.arrayTextField[textField.tag + 1].becomeFirstResponder()
             }
             textField.text = string
             return false
         }else if ((textField.text?.count)! >= 1  && string.count == 0){
-            if(textField == secondCodeTextfield){
-                firstCodeTextfield.becomeFirstResponder()
-            }
-            if(textField == thirdCodeTextfield){
-                secondCodeTextfield.becomeFirstResponder()
-            }
-            if(textField == fourthCodeTextfield) {
-                thirdCodeTextfield.becomeFirstResponder()
+            if textField.tag != 0 {
+                self.arrayTextField[textField.tag - 1].becomeFirstResponder()
             }
             textField.text = ""
             return false
         }else if ((textField.text?.count)! >= 1  ){
-            if(textField == firstCodeTextfield){
-                secondCodeTextfield.becomeFirstResponder()
-            }
-            if(textField == secondCodeTextfield){
-                thirdCodeTextfield.becomeFirstResponder()
-            }
-            if(textField == thirdCodeTextfield){
-                fourthCodeTextfield.becomeFirstResponder()
+            if textField.tag != numberCode - 1{
+                self.arrayTextField[textField.tag + 1].becomeFirstResponder()
             }
             textField.text = string
             return false
@@ -182,18 +92,20 @@ public class CodeContainerView: UIView, UITextFieldDelegate {
     }
     
     public func getCode() -> String {
-        let code = String.init(format: "%@%@%@%@", firstCodeTextfield.text!,
-                               secondCodeTextfield.text!,
-                               thirdCodeTextfield.text!,
-                               fourthCodeTextfield.text!);
+        var formatText = ""
+        for textField in self.arrayTextField {
+            formatText += textField.text!
+        }
         
+        let code = formatText
+
         return code
     }
     
     public func cleanCode() {
-        firstCodeTextfield.text = "";
-        secondCodeTextfield.text = "";
-        thirdCodeTextfield.text = "";
-        fourthCodeTextfield.text = "";
+        for textField in self.arrayTextField {
+            textField.text = ""
+        }
     }
+    
 }
