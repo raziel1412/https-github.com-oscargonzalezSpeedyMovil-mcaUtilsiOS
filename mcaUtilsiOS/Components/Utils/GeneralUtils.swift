@@ -445,6 +445,18 @@ func checkImageExistsP(fileName: String) -> Bool{
     }
     return false
 }
-
+func drawViewUnderLineP(generalView: UIView, topObject: UIView, whereSubview: UIView, color: UIColor?, width: CGFloat?, height: CGFloat?, proportion: CGFloat?) -> UIView{
+    ///Linea con UIView
+    let viewLinear = UIView()
+    ///Proporción
+    let lProportion :CGFloat = proportion != nil ? proportion! : 0.45
+    let contraProportion = 1.0 - lProportion
+    let posXViewLinear = (generalView.frame.width * contraProportion / 2)
+    let posYViewLinear = topObject.frame.maxY + 8.0
+    viewLinear.backgroundColor = color != nil ? color : .lightGray
+    viewLinear.frame = CGRect(x: posXViewLinear, y:posYViewLinear, width: topObject.bounds.width * lProportion, height: 2)
+    whereSubview.addSubview(viewLinear)
+    return viewLinear
+}
 
 

@@ -19,10 +19,8 @@ public class GenericWebViewModel: NSObject {
     public var reloadUrlSuccess: String! /// Constante que tiene la URL recarga
     public var paidUrlSucces: String! /// Constante que tiene la URL pago
     public var loadUrl: String! /// url to show in Web view
-    public var khipuSuccess: String! // only required for Reload //self.textConfiguration?.translations?.data?.topUpMobile?.khipuSuccess ?? ""
-    public var khipuFail: String! // only required for Reload //self.textConfiguration?.translations?.data?.topUpMobile?.khipuSuccess ?? ""
     
-    public init(headerTitle: String!, serviceSelected: WebViewType!, loadUrl: String!, buttonNavType: ButtonNavType!, rut: String? = "", email: String? = "", name: String? = "", reloadUrlSuccess: String!, paidUrlSucces: String!, khipuSuccess: String? = "", khipuFail: String? = "") {
+    public init(headerTitle: String!, serviceSelected: WebViewType!, loadUrl: String!, buttonNavType: ButtonNavType!, rut: String? = "", email: String? = "", name: String? = "", reloadUrlSuccess: String!, paidUrlSucces: String!) {
         super.init()
         self.headerTitle = headerTitle
         self.serviceSelected = serviceSelected
@@ -33,8 +31,6 @@ public class GenericWebViewModel: NSObject {
         if let _ = rut {self.name = rut} else {self.name = ""}
         self.reloadUrlSuccess = reloadUrlSuccess
         self.paidUrlSucces = paidUrlSucces
-        self.khipuSuccess = khipuSuccess ?? ""
-        self.khipuFail = khipuSuccess ?? ""
     }
 
 }

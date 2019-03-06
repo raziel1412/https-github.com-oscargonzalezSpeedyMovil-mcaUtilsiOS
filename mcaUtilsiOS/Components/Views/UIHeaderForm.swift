@@ -21,9 +21,9 @@ public class UIHeaderForm: UIView {
         let label = UILabel(frame: .zero)
         
         if UIScreen.main.bounds.width == 320{
-            label.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(16))
-        }else{
             label.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(20))
+        }else{
+            label.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(25))
         }
         label.textAlignment = .center
         label.textColor = institutionalColors.claroBlackColor
@@ -38,7 +38,7 @@ public class UIHeaderForm: UIView {
         if UIScreen.main.bounds.width == 320{
             label.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(12))
         }else{
-            label.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(15))
+            label.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(20))
         }
         
         

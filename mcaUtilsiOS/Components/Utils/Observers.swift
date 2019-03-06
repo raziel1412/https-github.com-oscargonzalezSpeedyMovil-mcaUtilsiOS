@@ -10,6 +10,8 @@ import UIKit
 import PKHUD
 import Lottie
 import Cartography
+import ReachabilitySwift
+import IQKeyboardManager
 
 /// Clase usada para el uso del NotificationCenter (Observabilidad)
 public class Observers: NSObject {
@@ -61,13 +63,15 @@ public class Observers: NSObject {
     /// Función que ayuda a enviar un YesNoAlert popup
     /// - parameter info : NSNotification
     static func YesNoAlert(info:AlertYesNo) {
-            let custom = CustomAlertView()
-            custom.alertData = info
-            custom.providesPresentationContextTransitionStyle = true;
-            custom.definesPresentationContext = true;
-            custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
-            custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-            UIApplication.shared.keyWindow?.rootViewController?.present(custom, animated: true, completion: nil)
+        let custom = CustomAlertView();
+        custom.alertData = info
+        custom.providesPresentationContextTransitionStyle = true;
+        custom.definesPresentationContext = true;
+        custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        UIApplication.shared.keyWindow?.currentViewController?.present(custom,
+                                                                       animated: true,
+                                                                       completion: nil)
     }
     
     /// Función que ayuda a enviar un FotoAlert popup
@@ -155,51 +159,6 @@ public class Observers: NSObject {
         }
     }
     
-    
-    // Return IP address of WiFi interface (en0) as a String, or `nil`
-    /// Función que ayuda a obtener la ip de la interfáz del wifi
-    /// - Returns : InternetProtocolAddress?
-    private static func getWiFiAddress() -> InternetProtocolAddress? {
-        let wifi_name = "en0";
-        let cellular_name = "pdp_ip0";
-        
-        var addresses = [InternetProtocolAddress]()
-        
-        var ifaddr : UnsafeMutablePointer<ifaddrs>?
-        guard getifaddrs(&ifaddr) == 0 else { return nil }
-        guard let firstAddr = ifaddr else { return nil }
-        
-        for ptr in sequence(first: firstAddr, next: { $0.pointee.ifa_next }) {
-            let flags = Int32(ptr.pointee.ifa_flags)
-            let addr = ptr.pointee.ifa_addr.pointee
-            
-            if (flags & (IFF_UP|IFF_RUNNING|IFF_LOOPBACK)) == (IFF_UP|IFF_RUNNING) {
-                if addr.sa_family == UInt8(AF_INET) /*|| addr.sa_family == UInt8(AF_INET6)*/ {
-                    
-                    var hostname = [CChar](repeating: 0, count: Int(NI_MAXHOST))
-                    let name = String(cString: ptr.pointee.ifa_name);
-                    if (wifi_name == name || cellular_name == name) {
-                        if (getnameinfo(ptr.pointee.ifa_addr, socklen_t(addr.sa_len), &hostname, socklen_t(hostname.count), nil, socklen_t(0), NI_NUMERICHOST) == 0) {
-                            let address = String(cString: hostname)
-                            var ipType = IPType.Unknown;
-                            if (wifi_name == name) {
-                                ipType = IPType.WifiAddress;
-                            } else if(cellular_name == name) {
-                                ipType = IPType.CellularAddress;
-                            }
-                            let ipInfo = InternetProtocolAddress(ip: address, ipType: ipType)
-                            addresses.append(ipInfo)
-                        }
-                    }
-                }
-            }
-        }
-        
-        freeifaddrs(ifaddr)
-        
-        return addresses.first
-    }
-    
     /// Función que modifica el texto de una alerta
     /// - parameter text : String
     /// - Returns : String
@@ -229,58 +188,6 @@ public enum IPType : String {
     case Unknown
     case WifiAddress
     case CellularAddress
-}
-
-/// Clase de Internet Protocol
-public class InternetProtocolAddress {
-    private var ip : String;
-    private var ipType : IPType;
-    /// Inicializador
-    init () {
-        self.ip = "";
-        self.ipType = IPType.Unknown;
-    }
-    /// Inicializador
-    /// - parameter ip: String
-    /// - parameter ipType : IPType
-    init(ip : String, ipType : IPType) {
-        self.ip = ip;
-        self.ipType = ipType;
-    }
-    /// Función para setear el valor de la IP
-    /// - parameter value : String
-    public func setIP(value : String) {
-        self.ip = value;
-    }
-    /// Función que obtiene la IP
-    /// - Returns : String
-    public func getIP() -> String {
-        return ip;
-    }
-    /// Función para setear el tipo de la IP
-    /// - parameter value : IPType
-    public func setIPType(value : IPType) {
-        self.ipType = value;
-    }
-    /// Función que obtiene la Tipo de Ip
-    /// - Returns : IPType
-    public func getIPType() -> IPType {
-        return ipType;
-    }
-}
-
-/// Protocolo de Notification name
-protocol NotificationName {
-    var name: Notification.Name { get }
-}
-
-/// Extensión de RawRepresentable
-extension RawRepresentable where RawValue == String, Self: NotificationName {
-    var name: Notification.Name {
-        get {
-            return Notification.Name(self.rawValue)
-        }
-    }
 }
 
 public enum AlertIconType : String {
