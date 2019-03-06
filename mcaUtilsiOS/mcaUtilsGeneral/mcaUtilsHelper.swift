@@ -62,4 +62,10 @@ public class mcaUtilsHelper: NSObject {
         let s =  NSLocalizedString(key, tableName: nil, bundle: Bundle(identifier: mcaUtilsConstants.BUNDLE_IDENTIFIER) ?? Bundle(for: mcaUtilsHelper.self), value: key, comment: "")
         return s
     }
+    
+    public class func drawViewUnderLine(generalView: UIView, topObject: UIView, whereSubview: UIView, color: UIColor?, width: CGFloat?, height: CGFloat?, proportion: CGFloat?) -> UIView{
+        return drawViewUnderLineP(generalView: generalView, topObject: topObject, whereSubview: whereSubview, color: color, width: width, height: height, proportion:proportion)
+        
+    }
+    
 }
