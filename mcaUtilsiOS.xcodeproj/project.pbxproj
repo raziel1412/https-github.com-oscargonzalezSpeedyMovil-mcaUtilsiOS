@@ -271,7 +271,7 @@
 		62EBFDBF219F1EEA00F85A3D /* RedBackgroundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedBackgroundButton.swift; sourceTree = "<group>"; };
 		62EBFDC0219F1EEA00F85A3D /* TermsAndConditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsAndConditions.swift; sourceTree = "<group>"; };
 		62F0DFC321A609BD001D98AC /* GeneralAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralAlerts.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
+
 		A6DEFDA3D524114A7F85AF9B /* Pods-mcaUtilsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.debug.xcconfig"; path = "Pods/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D83C877DBFD091C133148C26 /* Pods-mcaUtilsiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.release.xcconfig"; path = "Pods/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.release.xcconfig"; sourceTree = "<group>"; };
 		F4A115B4222F3724006E9AF2 /* BankCardsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankCardsView.swift; sourceTree = "<group>"; };
@@ -283,10 +283,10 @@
 		F4A115C522303576006E9AF2 /* FailedTransactionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FailedTransactionView.swift; sourceTree = "<group>"; };
 		F4C063EE221F52130092021B /* UIHeaderForm3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHeaderForm3.swift; sourceTree = "<group>"; };
 		F4C5472D2224773C009316EF /* UITextFieldGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldGroupView.swift; sourceTree = "<group>"; };
-=======
+
 		CC19E8BC2F0D95DF1DFF9D22 /* Pods-mcaUtilsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.debug.xcconfig"; path = "Pods/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E7C2CB8DA6EEB40460AF8277 /* Pods_mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
->>>>>>> origin/dev
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
