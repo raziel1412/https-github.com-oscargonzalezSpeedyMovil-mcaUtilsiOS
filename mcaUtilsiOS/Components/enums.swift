@@ -53,6 +53,7 @@ public enum ButtonNavType {
     case None
     case IconBack
     case IconMenu
+    case IconBackHiden
 }
 
 public enum ubicationRadioButton {
