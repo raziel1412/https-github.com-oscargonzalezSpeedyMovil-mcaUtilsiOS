@@ -146,7 +146,9 @@
 		7B564E4721B9986A00890AA0 /* enums.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62E67EFC21A4D29300B4F182 /* enums.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B564E5621B9B05F00890AA0 /* ViewExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFB68219F1EE900F85A3D /* ViewExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BEEA58921B88928005211C6 /* EmailView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFDBB219F1EEA00F85A3D /* EmailView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		E905CBA92236BB410095356C /* NoticeRegistryAndEditPaswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905CBA72236BB400095356C /* NoticeRegistryAndEditPaswordView.swift */; };
 		E90929932231DAD700945E00 /* alertRegistryAndEditPaswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90929922231DAD700945E00 /* alertRegistryAndEditPaswordView.swift */; };
+		E94052E32237295B00ED4AAF /* UIHeaderForm3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94052E22237295B00ED4AAF /* UIHeaderForm3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -265,7 +267,9 @@
 		62F0DFC321A609BD001D98AC /* GeneralAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralAlerts.swift; sourceTree = "<group>"; };
 		CC19E8BC2F0D95DF1DFF9D22 /* Pods-mcaUtilsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.debug.xcconfig"; path = "Pods/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E7C2CB8DA6EEB40460AF8277 /* Pods_mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E905CBA72236BB400095356C /* NoticeRegistryAndEditPaswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeRegistryAndEditPaswordView.swift; sourceTree = "<group>"; };
 		E90929922231DAD700945E00 /* alertRegistryAndEditPaswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertRegistryAndEditPaswordView.swift; sourceTree = "<group>"; };
+		E94052E22237295B00ED4AAF /* UIHeaderForm3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHeaderForm3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -516,6 +520,7 @@
 				62EBFD86219F1EEA00F85A3D /* ToolTipGroup.swift */,
 				62EBFDAD219F1EEA00F85A3D /* UIHeaderForm.swift */,
 				62EBFDB6219F1EEA00F85A3D /* UIHeaderForm2.swift */,
+				E94052E22237295B00ED4AAF /* UIHeaderForm3.swift */,
 				62EBFDA6219F1EEA00F85A3D /* UITextFieldGroup.swift */,
 				62EBFDB5219F1EEA00F85A3D /* UITextFieldGroupPhone.swift */,
 				62EBFD87219F1EEA00F85A3D /* WarningView.swift */,
@@ -614,6 +619,7 @@
 			isa = PBXGroup;
 			children = (
 				E90929922231DAD700945E00 /* alertRegistryAndEditPaswordView.swift */,
+				E905CBA72236BB400095356C /* NoticeRegistryAndEditPaswordView.swift */,
 			);
 			path = AlertRegistryAndEditPasswordVC;
 			sourceTree = "<group>";
@@ -826,6 +832,7 @@
 				62EBFE17219F1EEA00F85A3D /* PermissionsView.swift in Sources */,
 				62EBFFAB219F1EEA00F85A3D /* WebViewController.swift in Sources */,
 				62EBFE25219F1EEA00F85A3D /* WebViewAlertViewController.swift in Sources */,
+				E905CBA92236BB410095356C /* NoticeRegistryAndEditPaswordView.swift in Sources */,
 				62EBFFC6219F1EEB00F85A3D /* CustomWaitAnimation.swift in Sources */,
 				62EBFFC2219F1EEB00F85A3D /* UIHeaderForm2.swift in Sources */,
 				62EBFE2A219F1EEA00F85A3D /* GeneralUtils.swift in Sources */,
@@ -862,6 +869,7 @@
 				62E67EFF21A4D29F00B4F182 /* structs.swift in Sources */,
 				62EBFFA0219F1EEA00F85A3D /* RadioButtonView.swift in Sources */,
 				62EBFFBA219F1EEB00F85A3D /* ToolTipElement.swift in Sources */,
+				E94052E32237295B00ED4AAF /* UIHeaderForm3.swift in Sources */,
 				62EBFE0C219F1EEA00F85A3D /* UIViewExtensions.swift in Sources */,
 				62EBFFA2219F1EEA00F85A3D /* PasswordValContainerView.swift in Sources */,
 				62EBFE11219F1EEA00F85A3D /* PhotoLibraryViewController.swift in Sources */,

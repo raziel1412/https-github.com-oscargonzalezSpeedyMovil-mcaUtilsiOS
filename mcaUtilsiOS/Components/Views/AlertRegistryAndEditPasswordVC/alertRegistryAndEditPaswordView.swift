@@ -12,7 +12,7 @@ public class alertRegistryAndEditPaswordView: UIView {
     
     public let mywindow = UIWindow(frame: UIScreen.main.bounds)
     let shadowContent = UIView()
-    let headerView = UIHeaderForm()
+    let headerView = UIHeaderForm3()
     var btnAlertContinue : RedBackgroundButton!
     var btnAlertClose : GreenBorderWhiteBackgroundButton!
     let container = UIView()
@@ -20,40 +20,43 @@ public class alertRegistryAndEditPaswordView: UIView {
     var txtBtnAlertClose: String = ""
     let heightButton: CGFloat = 40
     var font: UIFont = UIFont(name: RobotoFontName.RobotoBold.rawValue, size: 17)!
+    var heightView : CGFloat = 0
+    public var delegate: alertRegistryAndEditPaswordViewDelegate!
     
     override init(frame: CGRect){
         super.init(frame: frame)
-        commomInit()
+        commonInit()
         
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        commomInit()
+        commonInit()
     }
     
     public func configure(imageName: String, title: String, subTitle: String, hiddenBtnAlertContinue: Bool, textAlertContinueButton:String?, hiddenBtnAlertClose: Bool, textAlertCloseButton: String?){
         
-        headerView.setupElements(imageName: imageName, title: title, subTitle: subTitle)
+        self.headerView.setupElements(imageName: imageName, title: title, subTitle: subTitle)
+        self.headerView.colorTextSetupElements(colorTitle: institutionalColors.claroBlackColor, colorSubtitle: nil)
         
-        txtBtnAlertContinue = textAlertContinueButton ?? txtBtnAlertContinue
-        txtBtnAlertClose = textAlertCloseButton ?? txtBtnAlertClose
+        self.txtBtnAlertContinue = textAlertContinueButton ?? txtBtnAlertContinue
+        self.txtBtnAlertClose = textAlertCloseButton ?? txtBtnAlertClose
         
-        btnAlertContinue.setTitle(txtBtnAlertContinue, for: .normal)
-        btnAlertContinue.isHidden = hiddenBtnAlertContinue
+        self.btnAlertContinue.setTitle(txtBtnAlertContinue, for: .normal)
+        self.btnAlertContinue.isHidden = hiddenBtnAlertContinue
         
-        btnAlertClose.setTitle(txtBtnAlertClose, for: .normal)
-        btnAlertClose.isHidden = hiddenBtnAlertClose
+        self.btnAlertClose.setTitle(txtBtnAlertClose, for: .normal)
+        self.btnAlertClose.isHidden = hiddenBtnAlertClose
         
-        if (hiddenBtnAlertContinue || hiddenBtnAlertClose){
-            container.frame.size = CGSize(width: 288, height: container.bounds.height - heightButton + 10)
-        } else if (hiddenBtnAlertContinue && hiddenBtnAlertClose) {
-            container.frame.size = CGSize(width: 288, height: container.bounds.height - heightButton + 10)
-        } else {
-            container.frame.size = CGSize(width: 288, height: 306)
-        }
+        let headerHeight = self.headerView.frame.height
+        let btnAlertContinueHeight = self.btnAlertContinue.frame.height
+        let btnAlertCloseHeight = self.btnAlertClose.frame.height
+        self.heightView = headerHeight + btnAlertContinueHeight + btnAlertCloseHeight + 30
+        
+        self.container.frame.size = CGSize(width: 288, height:heightView)
+        
     }
     
-    func commomInit(){
+    func commonInit(){
 //        Bundle.main.loadNibNamed("alertRegistryAndEditPaswordView", owner: self, options: nil)
         shadowContent.frame = mywindow.bounds
         shadowContent.backgroundColor = institutionalColors.claroBlackColor.withAlphaComponent(0.6)
@@ -71,23 +74,29 @@ public class alertRegistryAndEditPaswordView: UIView {
         btnAlertContinue = RedBackgroundButton(textButton: "Next")
         btnAlertContinue.frame = CGRect(x: 20, y: headerView.frame.maxY + 10, width: self.container.frame.width - 40, height: heightButton)
         btnAlertContinue.titleLabel?.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(16))
-        btnAlertContinue.addTarget(self, action: #selector(self.nextAction), for: UIControlEvents.touchUpInside)
+        btnAlertContinue.addTarget(self, action: #selector(nextAction), for: UIControlEvents.touchUpInside)
         container.addSubview(btnAlertContinue)
         
         btnAlertClose = GreenBorderWhiteBackgroundButton(textButton: "Close")
-        btnAlertClose.addTarget(self, action: #selector(self.closeAction), for: UIControlEvents.touchUpInside)
+        btnAlertClose.addTarget(self, action: #selector(closeAction), for: UIControlEvents.touchUpInside)
         btnAlertClose.frame = CGRect(x: 20, y: btnAlertContinue.frame.maxY + 10, width: self.container.frame.width - 40, height: heightButton)
         
         container.addSubview(btnAlertClose)
+
         
     }
     
     func nextAction(){
-        
+        self.delegate.delNextAction!()
     }
     
     func closeAction(){
-        
+        self.delegate.delCloseAction!()
     }
 
+}
+
+@objc public protocol alertRegistryAndEditPaswordViewDelegate: class {
+    @objc optional func delNextAction()
+    @objc optional func delCloseAction()
 }
