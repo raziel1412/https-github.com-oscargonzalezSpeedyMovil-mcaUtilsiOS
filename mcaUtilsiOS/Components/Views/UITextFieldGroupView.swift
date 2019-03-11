@@ -16,9 +16,11 @@ public class UITextFieldGroupView: UIView {
     public var textField : UITextField = UITextField(frame: .zero)
     public var image   : UIImageView = UIImageView(frame: .zero)
     public var mandatoryInformation : MandatoryInformation = MandatoryInformation(frame: .zero)
+    public var isHidenImage = false
     
-    public override init(frame: CGRect) {
+    public init(frame: CGRect,isHidenImage: Bool) {
         super.init(frame: frame)
+        self.isHidenImage = isHidenImage
         self.setupElements()
     }
     
@@ -43,7 +45,9 @@ public class UITextFieldGroupView: UIView {
         
         self.addSubview(labelTitle)
         self.viewBorder.addSubview(textField)
-        self.viewBorder.addSubview(image)
+        if !self.isHidenImage {
+            self.viewBorder.addSubview(image)
+        }
         self.viewBorder.addSubview(mandatoryInformation)
         self.addSubview(viewBorder)
         
@@ -69,14 +73,16 @@ public class UITextFieldGroupView: UIView {
             
             
             text.leading == view.leading + 10
-            text.trailing == view.trailing - 60
+            text.trailing == view.trailing - (self.isHidenImage ? 10 : 60)
             text.centerY == view.centerY
             text.height == 40.0
             
-            img.trailing == view.trailing - 10
-            img.centerY == view.centerY
-            img.width == 40.0
-            img.height == 25.0
+            if !self.isHidenImage {
+                img.trailing == view.trailing - 10
+                img.centerY == view.centerY
+                img.width == 40.0
+                img.height == 25.0
+            }
             
             mandatory.top == text.bottom + 4.0
             mandatory.height == 16.0
