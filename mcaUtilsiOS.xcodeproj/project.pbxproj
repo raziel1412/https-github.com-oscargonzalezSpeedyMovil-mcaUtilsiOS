@@ -146,6 +146,7 @@
 		7B564E4721B9986A00890AA0 /* enums.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62E67EFC21A4D29300B4F182 /* enums.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B564E5621B9B05F00890AA0 /* ViewExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFB68219F1EE900F85A3D /* ViewExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BEEA58921B88928005211C6 /* EmailView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFDBB219F1EEA00F85A3D /* EmailView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		E90929932231DAD700945E00 /* alertRegistryAndEditPaswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90929922231DAD700945E00 /* alertRegistryAndEditPaswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -264,6 +265,7 @@
 		62F0DFC321A609BD001D98AC /* GeneralAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralAlerts.swift; sourceTree = "<group>"; };
 		CC19E8BC2F0D95DF1DFF9D22 /* Pods-mcaUtilsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.debug.xcconfig"; path = "Pods/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E7C2CB8DA6EEB40460AF8277 /* Pods_mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90929922231DAD700945E00 /* alertRegistryAndEditPaswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertRegistryAndEditPaswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -484,6 +486,7 @@
 		62EBFD85219F1EEA00F85A3D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E909298D2231882B00945E00 /* AlertRegistryAndEditPasswordVC */,
 				62EBFD9A219F1EEA00F85A3D /* ActionView.swift */,
 				62EBFDB3219F1EEA00F85A3D /* ArcProgressView.swift */,
 				62EBFDB2219F1EEA00F85A3D /* BlackBodyLabel.swift */,
@@ -605,6 +608,14 @@
 				E7C2CB8DA6EEB40460AF8277 /* Pods_mcaUtilsiOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E909298D2231882B00945E00 /* AlertRegistryAndEditPasswordVC */ = {
+			isa = PBXGroup;
+			children = (
+				E90929922231DAD700945E00 /* alertRegistryAndEditPaswordView.swift */,
+			);
+			path = AlertRegistryAndEditPasswordVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -794,6 +805,7 @@
 				62E67F0121A4DC6600B4F182 /* deviceFeatures.swift in Sources */,
 				62EBFE0B219F1EEA00F85A3D /* PhotoLibraryAuthorizer.swift in Sources */,
 				622ED4DC21A8AE1D00BE746A /* Extension+UIApplication.swift in Sources */,
+				E90929932231DAD700945E00 /* alertRegistryAndEditPaswordView.swift in Sources */,
 				1D2B53D021C19A80008ABC44 /* mcaUtilsConstants.swift in Sources */,
 				62EBFE2B219F1EEA00F85A3D /* StringExtension.swift in Sources */,
 				62E67EFD21A4D29300B4F182 /* enums.swift in Sources */,
