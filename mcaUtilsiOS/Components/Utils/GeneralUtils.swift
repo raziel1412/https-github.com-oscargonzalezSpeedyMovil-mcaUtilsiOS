@@ -365,46 +365,6 @@ public extension Array {
     }
 }
 
-// Methods for update alert
-public func isUpdateAvailable() {
-    //FIXME: All this
-    /*
-    DispatchQueue.global().async {
-        do {
-            let conf = "" //FIXME: mcaManagerSession.getGeneralConfig()
-            let updateAvailable = "" //FIXME: conf?.newUpdateAvailable?.updateAvailable ?? false
-            
-            if updateAvailable && true //FIXME:  mcaManagerSession.getCanUpdateApp() {
-                let update = try isUpdateAppAvailable()
-                //FIXME: mcaManagerSession.setIsUpdateAppAvailable(isUpdateAppAvailable: update)
-                showUpdateAlertView()
-            }
-            
-        } as! @convention(block) () -> Void catch {
-            print(error)
-        }
-    */
-    }
-
-public func isUpdateAppAvailable() throws -> Bool {
-    let country = "" //FIXME: mcaManagerSession.getCountry()?.lowercased() ?? ""
-    guard let info = Bundle.main.infoDictionary,
-        let currentVersion = info["CFBundleShortVersionString"] as? String,
-        let identifier = info["CFBundleIdentifier"] as? String,
-        let url = URL(string: "http://itunes.apple.com/\(country)/lookup?bundleId=\(identifier)") else {
-            throw VersionError.invalidBundleInfo
-    }
-    
-    let data = try Data(contentsOf: url)
-    guard let json = try JSONSerialization.jsonObject(with: data, options: [.allowFragments]) as? [String: Any] else {
-        throw VersionError.invalidResponse
-    }
-    if let result = (json["results"] as? [Any])?.first as? [String: Any], let version = result["version"] as? String {
-        return version != currentVersion
-    }
-    throw VersionError.invalidResponse
-}
-
 func resizeImageP(image: UIImage, targetSize: CGSize) -> UIImage {
     let size = image.size
     

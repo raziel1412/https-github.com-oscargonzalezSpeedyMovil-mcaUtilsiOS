@@ -270,7 +270,7 @@ class AlertYesNo : AlertInfo {
 /// Clase para guardar los elementos de un AlertAcceptOnly
 class AlertAcceptOnly : AlertInfo {
     /// Variable de acceptTitle
-    var acceptTitle : String = "" //FIXME: NSLocalizedString(/*"alert-aceptar-button"*/ mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.acceptBtn?.uppercased() ?? "", comment: "");
+    var acceptTitle : String = NSLocalizedString("alert-aceptar-button", comment: "");
     /// Trigger onAcceptEvent
     var onAcceptEvent = {};
 }
@@ -278,7 +278,7 @@ class AlertAcceptOnly : AlertInfo {
 /// Clase para guardar los elementos de un AlertAcceptOnly
 class AlertAcceptOnlyPasswordReq : AlertInfo {
     /// Variable de acceptTitle
-    var acceptTitle : String = "" //FIXME: NSLocalizedString(/*"alert-aceptar-button"*/ mcaManagerSession.getGeneralConfig()?.translations?.data?.generales?.acceptBtn?.uppercased() ?? "", comment: "");
+    var acceptTitle : String = NSLocalizedString("alert-aceptar-button", comment: "");
     /// Trigger onAcceptEvent
     var userEmail : String = ""
     var userPhone : String = ""
