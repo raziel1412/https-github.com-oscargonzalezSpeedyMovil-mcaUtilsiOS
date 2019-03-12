@@ -153,7 +153,7 @@
 		F4A115C622303576006E9AF2 /* DetailTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A115C322303575006E9AF2 /* DetailTransactionView.swift */; };
 		F4A115C722303576006E9AF2 /* ServicePayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A115C422303576006E9AF2 /* ServicePayView.swift */; };
 		F4A115C822303576006E9AF2 /* FailedTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A115C522303576006E9AF2 /* FailedTransactionView.swift */; };
-		F4C063EF221F52130092021B /* UIHeaderForm3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C063EE221F52130092021B /* UIHeaderForm3.swift */; };
+		F4C063EF221F52130092021B /* UICustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C063EE221F52130092021B /* UICustomHeader.swift */; };
 		F4C5472E2224773C009316EF /* UITextFieldGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C5472D2224773C009316EF /* UITextFieldGroupView.swift */; };
 /* End PBXBuildFile section */
 
@@ -280,7 +280,7 @@
 		F4A115C322303575006E9AF2 /* DetailTransactionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTransactionView.swift; sourceTree = "<group>"; };
 		F4A115C422303576006E9AF2 /* ServicePayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicePayView.swift; sourceTree = "<group>"; };
 		F4A115C522303576006E9AF2 /* FailedTransactionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FailedTransactionView.swift; sourceTree = "<group>"; };
-		F4C063EE221F52130092021B /* UIHeaderForm3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHeaderForm3.swift; sourceTree = "<group>"; };
+		F4C063EE221F52130092021B /* UICustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICustomHeader.swift; sourceTree = "<group>"; };
 		F4C5472D2224773C009316EF /* UITextFieldGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldGroupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -537,7 +537,7 @@
 				62EBFD86219F1EEA00F85A3D /* ToolTipGroup.swift */,
 				62EBFDAD219F1EEA00F85A3D /* UIHeaderForm.swift */,
 				62EBFDB6219F1EEA00F85A3D /* UIHeaderForm2.swift */,
-				F4C063EE221F52130092021B /* UIHeaderForm3.swift */,
+				F4C063EE221F52130092021B /* UICustomHeader.swift */,
 				62EBFDA6219F1EEA00F85A3D /* UITextFieldGroup.swift */,
 				62EBFDB5219F1EEA00F85A3D /* UITextFieldGroupPhone.swift */,
 				F4C5472D2224773C009316EF /* UITextFieldGroupView.swift */,
@@ -841,7 +841,7 @@
 				62EBFFC8219F1EEB00F85A3D /* RedBackgroundButton.swift in Sources */,
 				62EBFFAF219F1EEA00F85A3D /* CodeContainerView.swift in Sources */,
 				62EBFE27219F1EEA00F85A3D /* PlanDetailAlertViewController.swift in Sources */,
-				F4C063EF221F52130092021B /* UIHeaderForm3.swift in Sources */,
+				F4C063EF221F52130092021B /* UICustomHeader.swift in Sources */,
 				62EBFE26219F1EEA00F85A3D /* ImageViewExtension.swift in Sources */,
 				62EBFF9B219F1EEA00F85A3D /* ToolTipGroup.swift in Sources */,
 				62EBFFC4219F1EEB00F85A3D /* EmailView.swift in Sources */,

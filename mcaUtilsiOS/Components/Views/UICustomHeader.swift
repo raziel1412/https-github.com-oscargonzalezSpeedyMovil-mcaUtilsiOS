@@ -9,7 +9,14 @@
 import UIKit
 import Cartography
 
-public class UIHeaderForm3: UIView {
+/**
+ View para visualizar el encabezado con un titulo en la parte de arriba y centrado, imagen debajo del titulo y
+ subtitulo bajo la imagen.
+            viewTitle
+            imageView
+            subTitle
+ */
+public class UICustomHeader: UIView {
 
     public var viewTitle : UILabel = {
         let label = UILabel(frame: .zero)
