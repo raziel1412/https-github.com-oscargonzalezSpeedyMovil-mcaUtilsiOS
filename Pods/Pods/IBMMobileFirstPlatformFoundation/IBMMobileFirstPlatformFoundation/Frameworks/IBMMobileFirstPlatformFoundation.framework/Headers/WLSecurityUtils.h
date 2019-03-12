@@ -100,7 +100,9 @@ extern NSString * const WLClientErrorDomain;
 +(NSData*) _decodeBase64WithString:(NSString*) strBase64;
 
 + (BOOL) verifyPayloadWithSignedData:(NSData *)payloadData signedDataBase64:(NSString*)dataBase64;
++ (BOOL) verifyNativePayloadWithSignedData:(NSData *)payloadData signedDataBase64:(NSString*)dataBase64;
 + (BOOL) checkPublicKeyValidity;
++ (BOOL) checkPublicKeyValidityForModelUpdate;
 + (BOOL)verifySignature:(NSData *)plainText secKeyRef:(SecKeyRef)publicKey signature:(NSData *)sig;
 
 + (NSData *) sha1FromFile:(NSString *)path;
