@@ -10,6 +10,9 @@ import UIKit
 import Cartography
 
 public class UIHeaderForm3: UIView {
+    
+    var heightTitle: CGFloat = 44
+    var heightSubTitle: CGFloat = 47
 
     private var imageView : UIImageView = {
         let iView = UIImageView(frame: .zero)
@@ -40,10 +43,11 @@ public class UIHeaderForm3: UIView {
             label.font = UIFont(name: RobotoFontName.RobotoRegular.rawValue, size: CGFloat(20))
         }
         
-        
-        label.numberOfLines = 0
         label.textAlignment = .center
         label.textColor = institutionalColors.claroTextColor
+        label.numberOfLines = 0
+        label.lineBreakMode = NSLineBreakMode.byWordWrapping
+        
         return label
     }()
     private var divisorView : UIImageView = {
@@ -97,7 +101,7 @@ public class UIHeaderForm3: UIView {
         self.addSubview(divisorView)
         self.divisorView.backgroundColor = .lightGray
         self.divisorView.isHidden = true
-        addConstraints()
+    
     }
     
     private func addConstraints() {
@@ -107,13 +111,13 @@ public class UIHeaderForm3: UIView {
             image.width == view.width * 0.32
             image.height == view.width * 0.32
             title.top == image.bottom + 8.0
-            title.leading == view.leading +  22.0
-            title.trailing == view.trailing - 21.0
-            title.height == 47.0
+            title.leading == view.leading +  17.0
+            title.trailing == view.trailing - 17.0
+            title.height == heightTitle
             sTitle.top == title.bottom + 8.0
-            sTitle.leading == view.leading + 32.0
-            sTitle.trailing == view.trailing - 31.0
-            sTitle.height == 44.0
+            sTitle.leading == view.leading + 20.0
+            sTitle.trailing == view.trailing - 20.0
+            sTitle.height == heightSubTitle
             divisor.top == sTitle.bottom //+ 2.0
             divisor.centerX == title.centerX
             divisor.width == title.width * 0.45
@@ -125,17 +129,30 @@ public class UIHeaderForm3: UIView {
         self.imageView.image = mcaUtilsHelper.getImage(image:imageName != nil ? imageName! : "" )
         self.viewTitle.text = title != nil ? title! : ""
         self.subTitle.text = subTitle != nil ? subTitle! : ""
-        if subTitle == "" {
-            constrain(viewTitle, self.subTitle) { (title, sTitle) in
-                sTitle.top == title.bottom + 8.0
-                sTitle.height == 0
-            }
-        }
+        
+        heightTitle = heightForView(text: self.viewTitle.text!, font: self.viewTitle.font, width: self.frame.width - 34)
+        heightSubTitle = heightForView(text: self.subTitle.text!, font: self.subTitle.font, width: self.frame.width - 40)
+        
+        addConstraints()
+        
+        
     }
     
     public func colorTextSetupElements(colorTitle: UIColor?, colorSubtitle: UIColor?){
         self.viewTitle.textColor = colorTitle != nil ? colorTitle : institutionalColors.claroRedColor
         self.subTitle.textColor = colorSubtitle != nil ? colorSubtitle : institutionalColors.claroTextColor
+    }
+    
+    func heightForView(text:String, font:UIFont, width:CGFloat) -> CGFloat{
+        
+        let label:UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: width, height: CGFloat.greatestFiniteMagnitude))
+        label.numberOfLines = 0
+        label.lineBreakMode = NSLineBreakMode.byWordWrapping
+        label.font = font
+        label.text = text
+        label.sizeToFit()
+        
+        return label.frame.height
     }
 
 }
