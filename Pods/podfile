@@ -23,11 +23,10 @@ project '/mcaPaidsiOS/mcaPaidsiOS.xcodeproj'
 project '/mcaPushNotificationsiOS/mcaPushNotificationsiOS.xcodeproj'
 project '/mcaTechnicalServiceiOS/mcaTechnicalServiceiOS.xcodeproj'
 project '/mcaTopUpRefilliOS/mcaTopUpRefilliOS.xcodeproj'
-
 project '/mcaUsersWithoutAccountsiOS⁩/mcaUsersWithoutAccountsiOS⁩.xcodeproj'
-
 project '/mcaWorkspaceiOSCENAM/mcaiOSCENAM.xcodeproj'
 project '/mcaWorkspaceiOSCL/mcaiOSCL.xcodeproj'
+project '/mcaRechargeHistoryiOS/mcaRechargeHistoryiOS.xcodeproj'
 
 def localization_pods
     pod 'GoogleMaps'
@@ -258,6 +257,16 @@ target 'mcaUsersWithoutAccountsiOS' do
     workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
     project_pods
 
+end
+
+target 'mcaRechargeHistoryiOS' do
+    platform :ios, '9.0'
+    use_frameworks!
+    project '../../mcaRechargeHistoryiOS/mcaRechargeHistoryiOS.xcodeproj'
+    workspace '../../mcaWorkspaceiOSCL/mcaWorkspaceiOSCL.xcworkspace'
+    workspace '../../mcaWorkspaceiOSCENAM/mcaWorkspaceiOSCENAM.xcworkspace'
+    project_pods
+    
 end
 
 target 'mcaiOSCENAM' do
