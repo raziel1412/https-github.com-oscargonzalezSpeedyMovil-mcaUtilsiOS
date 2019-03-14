@@ -24,6 +24,14 @@ import UIKit
             newFrame.offsetBy(dx: 0.0, dy: 0.0)
         }
         
+        if textView.text.isEmpty{
+            self.btnSendMail.isUserInteractionEnabled = false
+            self.btnSendMail.alpha = 0.5
+        }else{
+            self.btnSendMail.isUserInteractionEnabled = true
+            self.btnSendMail.alpha = 1.0
+        }
+        
         textView.frame = newFrame
         
         delegate?.emailViewChangeHeight(newHeight: newFrame.height)
