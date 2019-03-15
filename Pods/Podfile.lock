@@ -27,7 +27,7 @@ PODS:
   - GoogleMaps/Base (3.0.3)
   - GoogleMaps/Maps (3.0.3):
     - GoogleMaps/Base
-  - IBMMobileFirstPlatformFoundation (8.0.2019030211)
+  - IBMMobileFirstPlatformFoundation (8.0.2019012819)
   - IQKeyboardManager (5.0.3)
   - JSONModel (1.7.0)
   - JSONWebToken (2.2.0)
@@ -43,7 +43,7 @@ PODS:
     - RaptureXML (= 1.0.1)
     - Toast (= 3.1.0)
     - TTTAttributedLabel (= 2.0.0)
-  - lottie-ios (2.5.3)
+  - lottie-ios (2.5.2)
   - MTPopup (1.0.2)
   - ObjectMapper (3.4.2)
   - PKHUD (4.2.3)
@@ -138,13 +138,13 @@ SPEC CHECKSUMS:
   Fabric: 25d0963b691fc97be566392243ff0ecef5a68338
   FontAwesome.swift: 60063e3f19ba4801155d4b0f2334ab7585763ab3
   GoogleMaps: fd5c9fa58871781b9fb94d4936f19c69fe60ce32
-  IBMMobileFirstPlatformFoundation: 4e24493c34ec22b72a768833b9cdc9729eab55ea
+  IBMMobileFirstPlatformFoundation: 2aeb1a8a1c2cf256710a486e184b90e07ec4398d
   IQKeyboardManager: dc5b18b47e5170e4d150bb86dbee8c8a2fc48997
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   JSONWebToken: 6fae32489632658d563dd6952a5c34020ea813e4
   JVFloatLabeledTextField: cfc44e3c4d493b2ed92ede8035e8e89c2912ba64
   khenshin: 5370cef6374854482a3fc356425abff78fab71cb
-  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
   MTPopup: 7fd0259ba4688aaa65caab223bbb88a4907516f3
   ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
   PKHUD: c7692163a09875cbf15827dc581df3c5cf7f1015
@@ -162,4 +162,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 97c2aa392e45787a74d99a5a6259464e4bf02933
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.5.3

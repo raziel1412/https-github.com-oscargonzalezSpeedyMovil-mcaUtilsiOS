@@ -16,5 +16,7 @@ Pod deintegrate '../../mcaPaidsiOS/mcaPaidsiOS.xcodeproj'
 Pod deintegrate '../../mcaPushNotificationsiOS/mcaPushNotificationsiOS.xcodeproj'
 Pod deintegrate '../../mcaTechnicalServiceiOS/mcaTechnicalServiceiOS.xcodeproj'
 Pod deintegrate '../../mcaTopUpRefilliOS/mcaTopUpRefilliOS.xcodeproj'
+Pod deintegrate '../../mcaRechargeHistoryiOS/mcaRechargeHistoryiOS.xcodeproj'
 Pod deintegrate '../../mcaWorkspaceiOSCENAM/mcaiOSCENAM/mcaiOSCENAM.xcodeproj'
 Pod deintegrate '../../mcaWorkspaceiOSCL/mcaiOSCL/mcaiOSCL.xcodeproj'
+

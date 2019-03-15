@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		09E22B29673D151DC1D05591 /* Pods_mcaUtilsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92C3DF605E26130E1A88788 /* Pods_mcaUtilsiOS.framework */; };
 		1D1D3E3921D69FE100FA21D9 /* Utilities.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFB46219F1EE900F85A3D /* Utilities.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D1D422C21E3BFF400FA21D9 /* NotificationAnalyticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1D422B21E3BFF400FA21D9 /* NotificationAnalyticsModel.swift */; };
 		1D1E498521B5EB6B007C61B1 /* LinkeableEventDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E498421B5EB6B007C61B1 /* LinkeableEventDelegate.swift */; };
@@ -145,7 +146,9 @@
 		7B564E4721B9986A00890AA0 /* enums.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62E67EFC21A4D29300B4F182 /* enums.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B564E5621B9B05F00890AA0 /* ViewExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFB68219F1EE900F85A3D /* ViewExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BEEA58921B88928005211C6 /* EmailView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFDBB219F1EEA00F85A3D /* EmailView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-
+		E905CBA92236BB410095356C /* NoticeRegistryAndEditPaswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905CBA72236BB400095356C /* NoticeRegistryAndEditPaswordView.swift */; };
+		E90929932231DAD700945E00 /* alertRegistryAndEditPaswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90929922231DAD700945E00 /* alertRegistryAndEditPaswordView.swift */; };
+		E94052E32237295B00ED4AAF /* UIHeaderForm3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94052E22237295B00ED4AAF /* UIHeaderForm3.swift */; };
 		F4A115B5222F3724006E9AF2 /* BankCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A115B4222F3724006E9AF2 /* BankCardsView.swift */; };
 		F4A115B8222F37EC006E9AF2 /* BankCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A115B7222F37EC006E9AF2 /* BankCardViewCell.swift */; };
 		F4A115BA222F3C97006E9AF2 /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A115B9222F3C97006E9AF2 /* CreditCardView.swift */; };
@@ -155,22 +158,16 @@
 		F4A115C822303576006E9AF2 /* FailedTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A115C522303576006E9AF2 /* FailedTransactionView.swift */; };
 		F4C063EF221F52130092021B /* UICustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C063EE221F52130092021B /* UICustomHeader.swift */; };
 		F4C5472E2224773C009316EF /* UITextFieldGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C5472D2224773C009316EF /* UITextFieldGroupView.swift */; };
-
-		E905CBA92236BB410095356C /* NoticeRegistryAndEditPaswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905CBA72236BB400095356C /* NoticeRegistryAndEditPaswordView.swift */; };
-		E90929932231DAD700945E00 /* alertRegistryAndEditPaswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90929922231DAD700945E00 /* alertRegistryAndEditPaswordView.swift */; };
-		E94052E32237295B00ED4AAF /* UIHeaderForm3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94052E22237295B00ED4AAF /* UIHeaderForm3.swift */; };
-		EB1ECF4B826550497F11FC7C /* Pods_mcaUtilsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D5893B46B9036BE4C15936 /* Pods_mcaUtilsiOS.framework */; };
-
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		07DB5AF94FD41102636D6083 /* Pods-mcaUtilsiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.release.xcconfig"; path = "Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.release.xcconfig"; sourceTree = "<group>"; };
 		1D1D422B21E3BFF400FA21D9 /* NotificationAnalyticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAnalyticsModel.swift; sourceTree = "<group>"; };
 		1D1E498421B5EB6B007C61B1 /* LinkeableEventDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkeableEventDelegate.swift; sourceTree = "<group>"; };
 		1D1E498B21B70D40007C61B1 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		1D2B53CC21C189F2008ABC44 /* GenericWebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebViewModel.swift; sourceTree = "<group>"; };
 		1D2B53CF21C19A80008ABC44 /* mcaUtilsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mcaUtilsConstants.swift; sourceTree = "<group>"; };
 		1DCFABEA21ADFA8300056A67 /* mcaUtilsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mcaUtilsHelper.swift; sourceTree = "<group>"; };
+		4B277688AF2A384CB4FD376B /* Pods-mcaUtilsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.debug.xcconfig"; path = "Pods/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		622ED4DB21A8AE1D00BE746A /* Extension+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIApplication.swift"; sourceTree = "<group>"; };
 		6282911721A720CA00AF8144 /* Extension+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+URL.swift"; sourceTree = "<group>"; };
 		62874650219CD9B200C53384 /* mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -277,8 +274,11 @@
 		62EBFDBF219F1EEA00F85A3D /* RedBackgroundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedBackgroundButton.swift; sourceTree = "<group>"; };
 		62EBFDC0219F1EEA00F85A3D /* TermsAndConditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsAndConditions.swift; sourceTree = "<group>"; };
 		62F0DFC321A609BD001D98AC /* GeneralAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralAlerts.swift; sourceTree = "<group>"; };
-
-
+		A92C3DF605E26130E1A88788 /* Pods_mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B117AB3D9C75FF3BAC278BF4 /* Pods-mcaUtilsiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.release.xcconfig"; path = "Pods/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.release.xcconfig"; sourceTree = "<group>"; };
+		E905CBA72236BB400095356C /* NoticeRegistryAndEditPaswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeRegistryAndEditPaswordView.swift; sourceTree = "<group>"; };
+		E90929922231DAD700945E00 /* alertRegistryAndEditPaswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertRegistryAndEditPaswordView.swift; sourceTree = "<group>"; };
+		E94052E22237295B00ED4AAF /* UIHeaderForm3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHeaderForm3.swift; sourceTree = "<group>"; };
 		F4A115B4222F3724006E9AF2 /* BankCardsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankCardsView.swift; sourceTree = "<group>"; };
 		F4A115B7222F37EC006E9AF2 /* BankCardViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankCardViewCell.swift; sourceTree = "<group>"; };
 		F4A115B9222F3C97006E9AF2 /* CreditCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
@@ -288,13 +288,6 @@
 		F4A115C522303576006E9AF2 /* FailedTransactionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FailedTransactionView.swift; sourceTree = "<group>"; };
 		F4C063EE221F52130092021B /* UICustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICustomHeader.swift; sourceTree = "<group>"; };
 		F4C5472D2224773C009316EF /* UITextFieldGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldGroupView.swift; sourceTree = "<group>"; };
-
-		D1D5893B46B9036BE4C15936 /* Pods_mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3A9535B5EED5BA68789CB76 /* Pods-mcaUtilsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.debug.xcconfig"; path = "Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.debug.xcconfig"; sourceTree = "<group>"; };
-		E905CBA72236BB400095356C /* NoticeRegistryAndEditPaswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeRegistryAndEditPaswordView.swift; sourceTree = "<group>"; };
-		E90929922231DAD700945E00 /* alertRegistryAndEditPaswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertRegistryAndEditPaswordView.swift; sourceTree = "<group>"; };
-		E94052E22237295B00ED4AAF /* UIHeaderForm3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHeaderForm3.swift; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,7 +295,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB1ECF4B826550497F11FC7C /* Pods_mcaUtilsiOS.framework in Frameworks */,
+				09E22B29673D151DC1D05591 /* Pods_mcaUtilsiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,14 +343,31 @@
 			path = mcaUtilsGeneral;
 			sourceTree = "<group>";
 		};
+		4302803F8D91E338853E88F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B277688AF2A384CB4FD376B /* Pods-mcaUtilsiOS.debug.xcconfig */,
+				B117AB3D9C75FF3BAC278BF4 /* Pods-mcaUtilsiOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		513197AE866B6D9102DEC7F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A92C3DF605E26130E1A88788 /* Pods_mcaUtilsiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		62874646219CD9B200C53384 = {
 			isa = PBXGroup;
 			children = (
 				62874652219CD9B200C53384 /* mcaUtilsiOS */,
 				62874651219CD9B200C53384 /* Products */,
-				B23FEB2F9F6104DDF2937EC2 /* Pods */,
-				67600F5035FD224EEE615A3D /* Frameworks */,
-
+				67600F5035FD224EEE615A3D /* Recovered References */,
+				4302803F8D91E338853E88F2 /* Pods */,
+				513197AE866B6D9102DEC7F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -508,15 +518,12 @@
 		62EBFD85219F1EEA00F85A3D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-
 				F4A115B9222F3C97006E9AF2 /* CreditCardView.swift */,
 				F4A115C322303575006E9AF2 /* DetailTransactionView.swift */,
 				F4A115C422303576006E9AF2 /* ServicePayView.swift */,
 				F4A115C522303576006E9AF2 /* FailedTransactionView.swift */,
 				F4A115B4222F3724006E9AF2 /* BankCardsView.swift */,
-
 				E909298D2231882B00945E00 /* AlertRegistryAndEditPasswordVC */,
-
 				62EBFD9A219F1EEA00F85A3D /* ActionView.swift */,
 				62EBFDB3219F1EEA00F85A3D /* ArcProgressView.swift */,
 				62EBFDB2219F1EEA00F85A3D /* BlackBodyLabel.swift */,
@@ -546,11 +553,8 @@
 				62EBFD86219F1EEA00F85A3D /* ToolTipGroup.swift */,
 				62EBFDAD219F1EEA00F85A3D /* UIHeaderForm.swift */,
 				62EBFDB6219F1EEA00F85A3D /* UIHeaderForm2.swift */,
-
 				F4C063EE221F52130092021B /* UICustomHeader.swift */,
-
 				E94052E22237295B00ED4AAF /* UIHeaderForm3.swift */,
-
 				62EBFDA6219F1EEA00F85A3D /* UITextFieldGroup.swift */,
 				62EBFDB5219F1EEA00F85A3D /* UITextFieldGroupPhone.swift */,
 				F4C5472D2224773C009316EF /* UITextFieldGroupView.swift */,
@@ -639,34 +643,11 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-
-		F4A115B6222F37B9006E9AF2 /* CustomCell */ = {
+		67600F5035FD224EEE615A3D /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				F4A115B7222F37EC006E9AF2 /* BankCardViewCell.swift */,
-			);
-			path = CustomCell;
-			sourceTree = "<group>";
-		};
-
-
-		67600F5035FD224EEE615A3D /* Frameworks */ = {
-
-			isa = PBXGroup;
-			children = (
-				D1D5893B46B9036BE4C15936 /* Pods_mcaUtilsiOS.framework */,
 			);
 			name = "Recovered References";
-			sourceTree = "<group>";
-		};
-		B23FEB2F9F6104DDF2937EC2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D3A9535B5EED5BA68789CB76 /* Pods-mcaUtilsiOS.debug.xcconfig */,
-				07DB5AF94FD41102636D6083 /* Pods-mcaUtilsiOS.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods/Pods;
 			sourceTree = "<group>";
 		};
 		E909298D2231882B00945E00 /* AlertRegistryAndEditPasswordVC */ = {
@@ -676,6 +657,14 @@
 				E905CBA72236BB400095356C /* NoticeRegistryAndEditPaswordView.swift */,
 			);
 			path = AlertRegistryAndEditPasswordVC;
+			sourceTree = "<group>";
+		};
+		F4A115B6222F37B9006E9AF2 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				F4A115B7222F37EC006E9AF2 /* BankCardViewCell.swift */,
+			);
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -710,12 +699,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62874664219CD9B200C53384 /* Build configuration list for PBXNativeTarget "mcaUtilsiOS" */;
 			buildPhases = (
-				7EBE8C3A3F071719C511B647 /* [CP] Check Pods Manifest.lock */,
+				FDAFAA126103990A606DBA39 /* [CP] Check Pods Manifest.lock */,
 				6287464B219CD9B200C53384 /* Headers */,
 				6287464C219CD9B200C53384 /* Sources */,
 				6287464D219CD9B200C53384 /* Frameworks */,
 				6287464E219CD9B200C53384 /* Resources */,
-				15EAB718ACBD3FFF255E3231 /* [CP] Copy Pods Resources */,
+				AAC37E56DE23E6E84B74DE86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -797,30 +786,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		15EAB718ACBD3FFF255E3231 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS-resources.sh",
-				"${PODS_ROOT}/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Resources/Localizations.bundle",
-				"${PODS_ROOT}/khenshin/Products/khenshin.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Localizations.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/khenshin.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		1D03790821ECF4F600F70AF5 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -834,7 +799,31 @@
 			shellPath = /bin/sh;
 			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\nPROD_NAME=mcaUtilsiOS\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROD_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Copy the framework structure to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROD_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\nif [ \"${SIMULATOR_AVAILABLE}\" = \"true\" ]; then\nxcodebuild -target \"${PROD_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n\n# Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROD_NAME}.framework/Modules/${PROD_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROD_NAME}.framework/Modules/${PROD_NAME}.swiftmodule\"\nfi\n\n# Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROD_NAME}.framework/${PROD_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROD_NAME}.framework/${PROD_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROD_NAME}.framework/${PROD_NAME}\"\n\n# Open the Universal output folder for convenience\n# open \"${UNIVERSAL_OUTPUTFOLDER}\"\nfi\n\n\n\n\n";
 		};
-		7EBE8C3A3F071719C511B647 /* [CP] Check Pods Manifest.lock */ = {
+		AAC37E56DE23E6E84B74DE86 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS-resources.sh",
+				"${PODS_ROOT}/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Resources/Localizations.bundle",
+				"${PODS_ROOT}/khenshin/Products/khenshin.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Localizations.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/khenshin.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDAFAA126103990A606DBA39 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1118,7 +1107,7 @@
 		};
 		62874665219CD9B200C53384 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3A9535B5EED5BA68789CB76 /* Pods-mcaUtilsiOS.debug.xcconfig */;
+			baseConfigurationReference = 4B277688AF2A384CB4FD376B /* Pods-mcaUtilsiOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -1154,7 +1143,7 @@
 		};
 		62874666219CD9B200C53384 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07DB5AF94FD41102636D6083 /* Pods-mcaUtilsiOS.release.xcconfig */;
+			baseConfigurationReference = B117AB3D9C75FF3BAC278BF4 /* Pods-mcaUtilsiOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
