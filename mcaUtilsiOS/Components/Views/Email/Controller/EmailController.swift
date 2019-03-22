@@ -13,17 +13,17 @@ import UIKit
 
     //MARK: UITextViewDelegate
     public func textViewDidChange(_ textView: UITextView) {
-        let textViewFixedWidth: CGFloat = textView.frame.size.width
-        let newSize : CGSize = textView.sizeThatFits(CGSize(width: textViewFixedWidth, height: CGFloat(MAXFLOAT)))
-        var newFrame: CGRect = textView.frame
-        
-        //var textViewYPosition = self.txtDescription.frame.origin.y
-        let heightDifference = textView.frame.height - newSize.height
-        
-        if (abs(heightDifference) > 20) {
-            newFrame.size = CGSize(width: fmax(newSize.width, textViewFixedWidth), height: newSize.height)
-            newFrame.offsetBy(dx: 0.0, dy: 0.0)
-        }
+//        let textViewFixedWidth: CGFloat = textView.frame.size.width
+//        let newSize : CGSize = textView.sizeThatFits(CGSize(width: textViewFixedWidth, height: CGFloat(MAXFLOAT)))
+//        var newFrame: CGRect = textView.frame
+//
+//        //var textViewYPosition = self.txtDescription.frame.origin.y
+//        let heightDifference = textView.frame.height - newSize.height
+//
+//        if (abs(heightDifference) > 20) {
+//            newFrame.size = CGSize(width: fmax(newSize.width, textViewFixedWidth), height: newSize.height)
+//            newFrame.offsetBy(dx: 0.0, dy: 0.0)
+//        }
         
         if textView.text.isEmpty || !(txtEmail.text?.isValidEmailOption2())!{
             self.btnSendMail.isUserInteractionEnabled = false
@@ -33,10 +33,10 @@ import UIKit
             self.btnSendMail.alpha = 1.0
         }
         
-        textView.frame = newFrame
+//        textView.frame = newFrame
         
 //        delegate?.emailViewChangeHeight(newHeight: newFrame.height)
-        self.updateBottomLinePosition()
+//        self.updateBottomLinePosition()
     }
     
 /*    public func textViewDidChange(_ textView: UITextView) {

@@ -43,8 +43,8 @@ public class EmailView: UIView {
         viewContenedor = UIView(frame: self.frame)
         lblTitle = BlackTitleLabel()
         lblTitle.text = titleCard
-        lblTitle.font = UIFont(name: RobotoFontName.RobotoLight.rawValue, size: 18)
-        lblTitle.textColor = institutionalColors.claroTitleColor
+        lblTitle.font = UIFont(name: RobotoFontName.RobotoBold.rawValue, size: 14.0)
+        lblTitle.textColor = institutionalColors.claroBlackColor
         lblTitle.textAlignment = .left
         imgEmail = UIImageView()
         imgEmail.image = mcaUtilsHelper.getImage(image: "icon_correo_input")
