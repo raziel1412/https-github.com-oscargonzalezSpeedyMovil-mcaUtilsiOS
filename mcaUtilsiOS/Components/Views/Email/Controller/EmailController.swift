@@ -8,7 +8,8 @@
 
 import UIKit
 
- extension EmailView: UITextViewDelegate {
+ extension EmailView: UITextViewDelegate, UITextFieldDelegate {
+    
 
     //MARK: UITextViewDelegate
     public func textViewDidChange(_ textView: UITextView) {
@@ -24,7 +25,7 @@ import UIKit
             newFrame.offsetBy(dx: 0.0, dy: 0.0)
         }
         
-        if textView.text.isEmpty{
+        if textView.text.isEmpty || !(txtEmail.text?.isValidEmailOption2())!{
             self.btnSendMail.isUserInteractionEnabled = false
             self.btnSendMail.alpha = 0.5
         }else{
@@ -34,9 +35,16 @@ import UIKit
         
         textView.frame = newFrame
         
-        delegate?.emailViewChangeHeight(newHeight: newFrame.height)
+//        delegate?.emailViewChangeHeight(newHeight: newFrame.height)
         self.updateBottomLinePosition()
     }
+    
+/*    public func textViewDidChange(_ textView: UITextView) {
+      
+        
+        delegate?.emailViewChangeHeight(newHeight: newFrame.height)
+        self.updateBottomLinePosition()
+    }*/
     
     public func updateLabelCount(numCharacteres: Int) {
         self.lblCharacters.text = NSString(format: "%d/160", numCharacteres) as String
@@ -104,5 +112,36 @@ import UIKit
         textView.text = placeHolderDescription
         textView.textColor = institutionalColors.claroLightGrayColor
         bottomBorderLine.backgroundColor = institutionalColors.claroLightGrayColor
+    }
+    
+    public func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField.text!.isEmpty || !(txtEmail.text?.isValidEmailOption2())! {
+            self.btnSendMail.isUserInteractionEnabled = false
+            self.btnSendMail.alpha = 0.5
+        }else if !textField.text!.isEmpty && txtDescription.text != placeHolderDescription{
+            self.btnSendMail.isUserInteractionEnabled = true
+            self.btnSendMail.alpha = 1.0
+        }
+    }
+    
+    public func textFieldDidBeginEditing(_ textField: UITextField) {
+        if textField.text!.isEmpty || !(txtEmail.text?.isValidEmailOption2())! {
+            self.btnSendMail.isUserInteractionEnabled = false
+            self.btnSendMail.alpha = 0.5
+        }else if !textField.text!.isEmpty && txtDescription.text != placeHolderDescription{
+            self.btnSendMail.isUserInteractionEnabled = true
+            self.btnSendMail.alpha = 1.0
+        }
+    }
+    
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if textField.text!.isEmpty || !(txtEmail.text?.isValidEmailOption2())! {
+            self.btnSendMail.isUserInteractionEnabled = false
+            self.btnSendMail.alpha = 0.5
+        }else if !textField.text!.isEmpty && txtDescription.text != placeHolderDescription{
+            self.btnSendMail.isUserInteractionEnabled = true
+            self.btnSendMail.alpha = 1.0
+        }
+        return true
     }
 }

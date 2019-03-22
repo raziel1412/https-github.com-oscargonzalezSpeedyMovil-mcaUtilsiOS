@@ -54,6 +54,7 @@ public class EmailView: UIView {
         txtEmail.autocorrectionType = .no;
         txtEmail.autocapitalizationType = .none;
         txtEmail.keyboardType = .emailAddress
+        txtEmail.delegate = self
         
         bottomBorderLine = UIView()
         bottomBorderLine.backgroundColor = institutionalColors.claroLightGrayColor
@@ -114,31 +115,32 @@ public class EmailView: UIView {
         self.addSubview(lblTitle)
         
         constrain(self, lblTitle) { (view1, view2) in
-            view2.top == view1.top + 10
-            view2.width == view1.width
-            view2.centerX == view1.centerX
+            view2.top == view1.top
+            view2.trailing == view1.trailing
+            view2.leading == view1.leading + 20
+            view2.height == 25
+            
         }
         
         self.addSubview(imgEmail)
-        constrain(self, imgEmail) { (view, email) in
-            email.top == view.top + 20
+        constrain(self, lblTitle, imgEmail) { (view, title, email) in
+            email.top == title.bottom + 22
             email.width == 20
             email.height == 20
             email.leading == view.leading + 20.0
         }
         
         self.addSubview(txtEmail)
-        constrain(self, imgEmail, txtEmail) { (view1, email, view2) in
-//            view2.top == email.top
-            view2.leading == email.trailing + 5
-            view2.centerY == email.centerY
+        constrain(self, lblTitle, imgEmail, txtEmail) { (view1, title, email, view2) in
+            view2.top == title.bottom + 3
+            view2.leading == email.trailing + 10
             view2.trailing == view1.trailing - 20
             view2.height == email.height * 2
         }
         
         self.addSubview(lblComment)
         constrain(self, txtEmail, lblComment) { (view, mail, comment) in
-            comment.top == mail.bottom + 30
+            comment.top == mail.bottom + 20
             comment.width == mail.width
             comment.centerX == mail.centerX
             comment.height == 20
