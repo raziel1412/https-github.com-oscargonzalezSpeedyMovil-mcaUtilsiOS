@@ -100,6 +100,9 @@ public class TermsAndConditions: UIView {
             
             let notificationAnalyticsLink = NotificationAnalyticsModel(viewName: "Registro|Paso 1|Ingresar datos:Terminos y condiciones")
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "ADBTrackCustomLink"), object: notificationAnalyticsLink)
+        }else{
+            let notificationAnalyticsLink = NotificationAnalyticsModel(viewName: "Mis servicios|Agregar prepago|Paso 1|Ingresar numero movil:Terminos y condiciones")
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "ADBTrackCustomLink"), object: notificationAnalyticsLink)
         }
         
     }
