@@ -146,6 +146,7 @@
 		7B564E4721B9986A00890AA0 /* enums.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62E67EFC21A4D29300B4F182 /* enums.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B564E5621B9B05F00890AA0 /* ViewExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFB68219F1EE900F85A3D /* ViewExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BEEA58921B88928005211C6 /* EmailView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 62EBFDBB219F1EEA00F85A3D /* EmailView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDC5EACA22495E7900C52796 /* Extension+UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC5EAC922495E7900C52796 /* Extension+UIDevice.swift */; };
 		E905CBA92236BB410095356C /* NoticeRegistryAndEditPaswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905CBA72236BB400095356C /* NoticeRegistryAndEditPaswordView.swift */; };
 		E90929932231DAD700945E00 /* alertRegistryAndEditPaswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90929922231DAD700945E00 /* alertRegistryAndEditPaswordView.swift */; };
 		E94052E32237295B00ED4AAF /* UIHeaderForm3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94052E22237295B00ED4AAF /* UIHeaderForm3.swift */; };
@@ -276,6 +277,7 @@
 		62F0DFC321A609BD001D98AC /* GeneralAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralAlerts.swift; sourceTree = "<group>"; };
 		A92C3DF605E26130E1A88788 /* Pods_mcaUtilsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mcaUtilsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B117AB3D9C75FF3BAC278BF4 /* Pods-mcaUtilsiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcaUtilsiOS.release.xcconfig"; path = "Pods/Pods/Target Support Files/Pods-mcaUtilsiOS/Pods-mcaUtilsiOS.release.xcconfig"; sourceTree = "<group>"; };
+		BDC5EAC922495E7900C52796 /* Extension+UIDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIDevice.swift"; sourceTree = "<group>"; };
 		E905CBA72236BB400095356C /* NoticeRegistryAndEditPaswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeRegistryAndEditPaswordView.swift; sourceTree = "<group>"; };
 		E90929922231DAD700945E00 /* alertRegistryAndEditPaswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertRegistryAndEditPaswordView.swift; sourceTree = "<group>"; };
 		E94052E22237295B00ED4AAF /* UIHeaderForm3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHeaderForm3.swift; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				62EBFB71219F1EE900F85A3D /* Extension+Date.swift */,
+				BDC5EAC922495E7900C52796 /* Extension+UIDevice.swift */,
 				62EBFB70219F1EE900F85A3D /* Extension+UIView.swift */,
 				62EBFB41219F1EE900F85A3D /* HexColorExtension.swift */,
 				62EBFB6A219F1EE900F85A3D /* ImageViewExtension.swift */,
@@ -943,6 +946,7 @@
 				62EBFFAC219F1EEA00F85A3D /* WebView.swift in Sources */,
 				62EBFE12219F1EEA00F85A3D /* ConfirmViewController.swift in Sources */,
 				62EBFE2E219F1EEA00F85A3D /* Appearance.swift in Sources */,
+				BDC5EACA22495E7900C52796 /* Extension+UIDevice.swift in Sources */,
 				62EBFF9E219F1EEA00F85A3D /* RadioButtonController.swift in Sources */,
 				62EBFE13219F1EEA00F85A3D /* CameraViewController.swift in Sources */,
 				62EBFE10219F1EEA00F85A3D /* CameraViewControllerConstraint.swift in Sources */,
