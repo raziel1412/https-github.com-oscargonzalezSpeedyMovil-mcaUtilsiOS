@@ -14,7 +14,6 @@
 #import "WLResponse.h"
 #import "AccessToken.h"
 
-
 extern NSString * const ERROR_OAUTH_PREVENT_REDIRECT;
 extern NSString * const ERROR_OAUTH_CANCELED;
 
@@ -39,6 +38,7 @@ extern NSString * const ERROR_OAUTH_CANCELED;
  * @return <code>WLAuthorizationManager</code> shared instance
  */
 + (WLAuthorizationManager *)sharedInstance;
+
 
 /**
  * Obtains an access token for the specified MobileFirst protected resource scope.
@@ -102,6 +102,7 @@ withCompletionHandler:(void(^)(NSError* error))completionHandler;
  */
 - (NSString *) resourceScopeFromResponse:(NSURLResponse *)response;
 
+
 /**
  * Clears an invalid Access token from the WLAuthorizationManager cache
  *
@@ -121,7 +122,7 @@ withCompletionHandler:(void(^)(NSError* error))completionHandler;
  * if this value is not set by user, then deault 10s is considered as the default timeout
  * @param timeout
  */
--(void) setLoginTimeout:(NSNumber *)timeOut;
+-(void) setLoginTimeOut:(NSNumber *)timeOut;
 /**
  * Returns the resource scope from a response for a request to a MobileFirst protected resource.
  *

@@ -73,8 +73,6 @@ extern NSMutableDictionary *piggyBackData;
 
 @property (nonatomic) BOOL isRequestFailed;
 
-@property (nonatomic) BOOL showProgressBar;
-
 /**
  * This method returns the shared instance of <code>WLClient</code>.
  * @return <code>WLClient</code>
@@ -270,23 +268,6 @@ extern NSMutableDictionary *piggyBackData;
  *                          of the device is returned in the completion handler's <code>deviceDisplayName</code> parameter.
  */
 -(void) getDeviceDisplayNameWithCompletionHandler:(void(^)(NSString *deviceDisplayName , NSError *error))completionHandler;
-
-/**
- * Downloads Model Update package from MobileFirst Server if available.
- *
- * @param completionHandler A completion-handler callback function. In the case of a successful completion, the location of
- *            downloaded model update package is returned in the completion handler's <code>modelUpdateFilePath</code> parameter.
- */
--(void) downloadModelUpdateWithCompletionHandler:(void(^)(NSString *status, NSString *modelUpdateFilePath))completionHandler;
-
-/**
- * Downloads Model Update package from MobileFirst Server if available.
- *
- * @param completionHandler A completion-handler callback function. In the case of a successful completion, the location of
- *            downloaded model update package is returned in the completion handler's <code>modelUpdateFilePath</code> parameter.
- * @param showProgressBar Boolean to display or hide the download progress bar.
- */
--(void) downloadModelUpdateWithCompletionHandler:(void(^)(NSString *status, NSString *modelUpdateFilePath))completionHandler showProgressBar:(BOOL)showUpdateUI;
 
 /**
  * Specifies default request time out.

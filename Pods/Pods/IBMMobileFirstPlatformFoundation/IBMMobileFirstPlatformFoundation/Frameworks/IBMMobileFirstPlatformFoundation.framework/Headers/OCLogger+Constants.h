@@ -121,7 +121,6 @@ extern NSString* const CERTMANAGER_PACKAGE;
 extern NSString* const USERCERT_PACKAGE;
 extern NSString* const WL_SECURITYUTILS_PACKAGE;
 extern NSString* const SIMPLE_DATA_SHARING_PACKAGE;
-extern NSString* const WL_MODEL_UPDATE_PACKAGE;
 extern NSString* const WL_DIRECT_UPDATE_PACKAGE;
 extern NSString* const WL_SPLASH_PACKAGE;
 extern NSString* const WL_CLIENT_PACKAGE;
