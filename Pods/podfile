@@ -95,6 +95,7 @@ target 'mcaManageriOS' do
     crash_pods
     project_pods
     help_pods
+    notifications_pods
 end
 
 target 'mcaUtilsiOS' do
