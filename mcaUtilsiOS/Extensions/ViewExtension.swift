@@ -478,3 +478,27 @@ public extension CALayer {
     }
 }
 
+extension UITextField {
+    public func setBottomBorder() {
+        self.borderStyle = .none
+        self.layer.backgroundColor = UIColor.white.cgColor
+        
+        self.layer.masksToBounds = false
+        self.layer.shadowColor = UIColor.gray.cgColor
+        self.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
+        self.layer.shadowOpacity = 1.0
+        self.layer.shadowRadius = 0.0
+    }
+}
+
+extension SimpleGrayTextFieldQuestionMark {
+    public func disable(){
+        self.alpha = 0.5;
+        self.isUserInteractionEnabled = false
+    }
+    
+    public func enable() {
+        self.alpha = 1.0;
+        self.isUserInteractionEnabled = true
+    }
+}
