@@ -70,6 +70,7 @@ public class GeneralAlerts {
         Observers.AcceptOnlyAlert(info: alert)
     }
     
+    
     //case WebViewAlertData
     public static func showDataWebView(title: String = "", url: String = "", method: String = "POST", acceptTitle: String = "Aceptar", onAcceptEvent: @escaping ()->() = {}){
         
