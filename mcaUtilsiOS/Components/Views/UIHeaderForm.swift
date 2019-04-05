@@ -43,6 +43,7 @@ public class UIHeaderForm: UIView {
         
         
         label.numberOfLines = 0
+        label.lineBreakMode = NSLineBreakMode.byWordWrapping
         label.textAlignment = .center
         label.textColor = institutionalColors.claroTextColor
         return label
@@ -112,9 +113,8 @@ public class UIHeaderForm: UIView {
             title.trailing == view.trailing - 21.0
             title.height == 30.0
             sTitle.top == title.bottom + 8.0
-            sTitle.leading == view.leading + 32.0
-            sTitle.trailing == view.trailing - 31.0
-            sTitle.height == 44.0
+            sTitle.centerX == view.centerX
+            sTitle.width == view.width * 0.90
             divisor.top == sTitle.bottom //+ 2.0
             divisor.centerX == title.centerX
             divisor.width == title.width * 0.45
@@ -132,6 +132,29 @@ public class UIHeaderForm: UIView {
                 sTitle.height == 0
             }
         }
+        else{
+            constrain(self,viewTitle, self.subTitle) { (view,title, sTitle) in
+                sTitle.top == title.bottom
+                sTitle.height == self.heightForView(text: self.subTitle.text!, font: self.subTitle.font, width: 200)
+            }
+        }
+        self.layoutIfNeeded()
+    }
+    
+    func heightForView(text:String, font:UIFont, width:CGFloat) -> CGFloat{
+        
+        let label:UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: width, height: CGFloat.greatestFiniteMagnitude))
+        label.numberOfLines = 0
+        label.lineBreakMode = NSLineBreakMode.byWordWrapping
+        label.font = font
+        label.text = text
+        label.sizeToFit()
+        
+        return label.frame.height
+    }
+    
+    public func getHeight() -> CGFloat{
+        return self.imageView.frame.height + self.viewTitle.frame.height + self.subTitle.frame.height + self.divisorView.frame.height
     }
     
     
