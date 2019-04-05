@@ -48,6 +48,12 @@ public enum navType {
     case packagesDetail
 }
 
+public enum TypeRegisterView {
+    case AddPrepaid
+    case Register
+    case RegisterPrepaid
+}
+
 /// Tipo de NavigationBar
 public enum ButtonNavType {
     case None
