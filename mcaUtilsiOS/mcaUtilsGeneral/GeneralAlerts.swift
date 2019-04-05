@@ -176,6 +176,10 @@ public class GeneralAlerts {
         alert.onAcceptEvent = {
             onAcceptEvent()
         }
+        
+        Observers.AcceptOnlyAlertPasswordReq(info: alert)
+        
+        
         //alert.presenter = presenter
         
         /*if(presenter != nil){

@@ -41,6 +41,27 @@ public class Observers: NSObject {
 //                                                                           completion: nil);
     }
     
+    /// Función que ayuda a enviar un AcceptOnlyAlertPasswordReq popup (Only for Password Req)
+    /// - parameter info : NSNotification
+    static func AcceptOnlyAlertPasswordReq(info:AlertAcceptOnlyPasswordReq) {
+        
+        let topMost = UIApplication.shared.keyWindow?.topMostWindowController;
+        if nil != topMost && true == topMost?.isKind(of: CustomAlertView.self) {
+            return; // Evita que se muestren en pantalla dos o más alertas
+        }
+        
+        let custom = CustomAlertView();
+        custom.alertData = info;
+        custom.providesPresentationContextTransitionStyle = true;
+        custom.definesPresentationContext = true;
+        custom.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        custom.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        UIApplication.shared.keyWindow?.currentViewController?.present(custom,
+                                                                       animated: true,
+                                                                       completion: nil);
+    }
+
+
     /// Función que ayuda a enviar un WebViewAlert popup
     /// - parameter info : NSNotification
     static func WebViewAlert(info:WebViewAlertData) {
